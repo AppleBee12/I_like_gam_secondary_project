@@ -1,0 +1,29 @@
+:root{
+	/* color */
+	--primary:#0A2972;
+	--secondary:#0E3092;
+	--tertiary:#00A0C8;
+	--red:#f00;
+	--green:#7dc31e;
+	--yellow:#ffb400;
+	--gold:#866d48;
+	--lightgray:#7d7d7d;
+	--silver:#8a8d8f;
+	--darkgray:#373728;
+	/* pc fonts */
+	--pc_big:110px;
+	--pc_title:56px;
+	--pc_mid_body:32px;
+	--pc_body:20px;
+	--pc_sub_title:28px;
+	--pc_sub_body:16px;
+	/* mobile fonts */
+	--mo_big:50px;
+	--mo_title:32px;
+	--mo_body:16px;
+	--mo_subtitle:20px;
+	--mo_sub_body:14px;
+	--mo_mid_body:28px;
+}
+body{font-family: 'SUIT Variable', sans-serif;}
+
