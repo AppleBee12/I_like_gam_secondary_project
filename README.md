@@ -31,7 +31,7 @@ CSS 등 사용자 UI 디자인 변경
 !HOTFIX
 급하게 치명적인 버그를 고쳐야하는 경우
 
-Style
+Style    (index.html)
 코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우
 
 Refactor
