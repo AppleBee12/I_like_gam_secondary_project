@@ -1,3 +1,15 @@
+<!--git terminal language-->
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/AppleBee12/I_like_gam_secondary_project.git
+git push -u origin master
+
+git merge master
+git merge hong
+
+<!--//git terminal language-->
+
 공통문서 - 네이밍규칙
 
 파일, 폴더 네이밍
