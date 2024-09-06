@@ -25,5 +25,7 @@
 	--mo_sub_body:14px;
 	--mo_mid_body:28px;
 }
-body{font-family: 'SUIT Variable', sans-serif;}
+body{
+	font-family: 'SUIT Variable', sans-serif;
+}
 
