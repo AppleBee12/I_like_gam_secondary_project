@@ -97,39 +97,28 @@ header{
 /* video */
 header video{
 	width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -3;
-  position: absolute;
+	height: 100%;
+	object-fit: cover;
+	z-index: -3;
+	position: relative;
 	top: 0;
 	left: 0;
 }
-header .video_btn{
+.video_btn button{
+	color: white;
 	position: absolute;
+	display: inline-block;
 	bottom: 10%;
-	left:26%;
-	font-size: 52px;
-	line-height: 50px;
+	left: 15%;
 }
-.video_btn .start_btn{
-	border:none;
-	color:#fff;
-	background: transparent;
-}
-.video_btn .pause_btn{
-	border:none;
-	background: transparent;
-	color:#fff;
+.video_btn input{
+	position: absolute;
+	bottom: 5%;
+	left: 15%;
+	width: 20%;
 }
 
 /* tablet */
-
-
-
-
-
-
-
 
 
 
@@ -150,7 +139,7 @@ header .video_btn{
 		display: block;
 	}
 	header video{
-		position: relative;;
+		position: relative;
 	}
 	header .video_btn{
 		font-size: var(--mo_title);
