@@ -104,19 +104,29 @@ header video{
 	top: 0;
 	left: 0;
 }
+.controls{
+	position: relative;
+	bottom: 30%;
+	left: 10%;
+	max-width: 1440px;
+	
+	height: 50px;
+}
 .video_btn button{
-	color: white;
+	border-radius: 50%;
 	position: absolute;
 	display: inline-block;
-	bottom: 10%;
-	left: 15%;
+	color: white;
+	border: 1px solid white;
 }
-.video_btn input{
-	position: absolute;
-	bottom: 5%;
-	left: 15%;
-	width: 20%;
+.video_btn button:hover{
+	color: var(--tertiary);
+	border: 1px solid var(--tertiary);
+	
 }
+
+
+
 
 /* tablet */
 
