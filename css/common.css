@@ -11,21 +11,149 @@
 	--silver:#8a8d8f;
 	--darkgray:#373728;
 	/* pc fonts */
-	--pc_big:110px;
-	--pc_title:56px;
-	--pc_mid_body:32px;
-	--pc_body:20px;
-	--pc_sub_title:28px;
-	--pc_sub_body:16px;
+	--pc_big:6.875rem;
+	--pc_title:3.5rem;
+	--pc_mid_body:2rem;
+	--pc_body:1.25rem;
+	--pc_sub_title:1.75rem;
+	--pc_sub_body:1rem;
 	/* mobile fonts */
-	--mo_big:50px;
-	--mo_title:32px;
-	--mo_body:16px;
-	--mo_subtitle:20px;
-	--mo_sub_body:14px;
-	--mo_mid_body:28px;
+	--mo_big:3.125rem;
+	--mo_title:2rem;
+	--mo_body:1rem;
+	--mo_subtitle:1.25rem;
+	--mo_sub_body:0.875rem;
+	--mo_mid_body:1.75rem;
 }
 body{
 	font-family: 'SUIT Variable', sans-serif;
 }
 
+/* header */
+header{
+  width:100vw;
+  height: 720px;
+  position: relative;
+}
+.top_nav{
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+	position: relative;
+}
+
+.top_nav .container{
+  width: 90%;
+	max-width: 1440px;
+  height: 87px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 85px;
+}
+.container button{
+	border: none;
+	background: transparent;
+	font-size: 39px;
+	line-height: 40px;
+	display: none;
+}
+.main_menu{
+  display: flex;
+  gap:85px;
+	position: relative;
+	font-size: var(--pc_body);
+	padding:40px 0;
+}
+.main_menu li a{
+  color: #fff;
+}
+.top_nav:hover li a{
+	color:#000;
+}
+.main_menu .sub_menu{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	position: absolute;
+	top:90%;
+	transition: 0.3s;
+	opacity: 0;
+	font-size: var(--pc_sub_body);
+	z-index: -2;
+}
+
+.main_menu .sub_menu li a{
+	padding: 10px 0;
+	color:#000;
+	box-sizing: border-box;
+}
+.top_nav:hover .sub_menu{
+	opacity: 1;
+	top:110%;
+	z-index: 1;
+}
+
+/* video */
+header video{
+	width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -3;
+  position: absolute;
+	top: 0;
+	left: 0;
+}
+header .video_btn{
+	position: absolute;
+	bottom: 10%;
+	left:26%;
+	font-size: 52px;
+	line-height: 50px;
+}
+.video_btn .start_btn{
+	border:none;
+	color:#fff;
+	background: transparent;
+}
+.video_btn .pause_btn{
+	border:none;
+	background: transparent;
+	color:#fff;
+}
+
+/* tablet */
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 834px){
+	.main_menu{
+		display: none;
+	}
+	.top_nav:hover{
+		height: auto;
+	}
+	header .top_nav{
+		border-bottom: 1px solid #000;
+	}
+	header .top_nav .container{
+		justify-content: space-between;
+	}
+	.container button{
+		display: block;
+	}
+	header video{
+		position: relative;;
+	}
+	header .video_btn{
+		font-size: var(--mo_title);
+	}
+}
+/* //header */
