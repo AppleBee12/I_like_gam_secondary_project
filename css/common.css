@@ -113,16 +113,24 @@ nav .main_menu li ul{
 /* video */
 header video{
 	width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -3;
-  position: absolute;
+	height: 100%;
+	object-fit: cover;
+	z-index: -3;
+	position: relative;
 	top: 0;
 	left: 0;
 }
 
 
 /* tablet */
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 834px){
@@ -142,7 +150,7 @@ header video{
 		display: block;
 	}
 	header video{
-		position: relative;;
+		position: relative;
 	}
 	header .video_btn{
 		font-size: var(--mo_title);
