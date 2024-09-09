@@ -17,22 +17,6 @@ topNav.addEventListener('mouseleave', () => {
   }
 });
 
-// 비디오
-let video = document.getElementById('hdvideo');
-let playBtn = document.getElementById("play");
-let pauseBtn = document.getElementById("stop");
-let playPauseBtn = document.querySelector('.video_btn button')
-let progressBar = document.getElementById('progress');
 
-playPauseBtn.addEventListener('click', function() {
-
-  if (video.paused) {
-      video.play();
-      playPauseBtn.innerHTML = '<i class="fa-solid fa-pause fa-2x"></i>';
-    } else {
-      video.pause();
-      playPauseBtn.innerHTML = '<i class="fa-solid fa-play fa-2x"></i>';
-  }
-});
 
 

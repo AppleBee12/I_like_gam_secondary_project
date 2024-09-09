@@ -29,6 +29,60 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <style>
+    /* video */
+header video{
+  width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -3;
+position: relative;
+top: 0;
+left: 0;
+}
+.vwrapper{
+  position: relative;
+}
+#controls{
+position: absolute;
+bottom: 23%;
+left: 10%;
+max-width: 1440px;
+height: 50px;
+}
+.progress {
+  left: 10%;
+right: 70%;
+bottom: 20%;
+height: 10px;
+overflow: hidden;
+background: rgba(255,255,255,0.2);
+position: absolute;
+  border-radius: 0;
+}
+.progress .bar{
+position: absolute;
+left: 0;
+top: 0;
+bottom: 0;
+width: 0;
+background: var(--secondary);
+transition:  0.5s ;	
+}
+.video_btn button{
+border-radius: 50%;
+position: absolute;
+display: inline-block;
+color: white;
+border: 1px solid white;
+}
+.video_btn button:hover{
+color: var(--tertiary);
+border: 1px solid var(--tertiary);
+
+}
+  </style>
 </head>
 
 <body>
@@ -91,13 +145,18 @@
         <button><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
-    <video src="images/mainheader_bg.mp4" id="hdvideo" muted autoplay loop></video>
-    <div class="controls">
-        <div class="video_btn">
-          <button id="stop" class="btn" onclick="pausevid()"><i class="fa-solid fa-pause fa-2x"></i></button>
-          <!-- <input type="range" id="progress" class="progress" min="0" max="100" value="43" step="1" controls> -->
-        </div>
-        <!-- <div class="pagenation swiper-pagination"></div> -->
+    <div class="vwrapper">
+      <video src="images/mainheader_bg.mp4" id="hdvideo" muted autoplay loop></video>
+      <div class="progress">
+        <div class="bar"></div>
+      </div>
+      <div id="controls">
+          <div class="video_btn">
+            <button id="stop" class="btn" onclick="pausevid()"><i class="fa-solid fa-pause fa-2x"></i></button>
+            <!-- <input type="range" id="progress" class="progress" min="0" max="100" value="43" step="1" controls> -->
+          </div>
+          <!-- <div class="pagenation swiper-pagination"></div> -->
+      </div>
     </div>
   </header>
   <!--//Header 나승일-->
@@ -154,6 +213,37 @@
     crossorigin="anonymous"></script>
   <script src="js/common.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    // 비디오
+let video = document.getElementById('hdvideo');
+let playBtn = document.querySelector('#play');
+let pauseBtn = document.querySelector('#stop');
+let playPauseBtn = document.querySelector('.video_btn button')
+let progressBar = document.getElementById('progress');
+
+let vcontrols = document.querySelector('#controls');
+let bar = document.querySelector('.progress .bar');
+
+playPauseBtn.addEventListener('click', function() {
+    if (video.paused) {
+        video.play();
+        playPauseBtn.innerHTML = '<i class="fa-solid fa-pause fa-2x"></i>';
+    } else {
+        video.pause();
+        playPauseBtn.innerHTML = '<i class="fa-solid fa-play fa-2x"></i>';
+
+        const duration = video.duration;    //전체길이
+        let timer = setInterval(()=>{
+            let ct = video.currentTime;
+            let percent = ct/duration*100;
+            bar.style.width = percent + '%';
+            if(percent === 100){
+                clearInterval(timer);
+            }
+        }, 1000);
+    }
+});
+  </script>
 </body>
 
 </html>
