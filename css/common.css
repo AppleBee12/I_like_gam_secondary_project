@@ -289,6 +289,7 @@ header video{
 footer{
 background-color: var(--primary);
 height: 475px;
+font-size: var(--pc_body);
 }
 .ft-1{
 	color: #fff;
