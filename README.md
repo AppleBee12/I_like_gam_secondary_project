@@ -1,72 +1,27 @@
-<!--git terminal language-->
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/AppleBee12/I_like_gam_secondary_project.git
-git push -u origin master
-
-git merge master
-git merge hong
-
-<!--//git terminal language-->
-
-공통문서 - 네이밍규칙
-
-파일, 폴더 네이밍
+🎉Welcome to I like gam project  
+ 감2조아팀의 '현대제철'홈페이지 리뉴얼 프로젝트에 오신 것을 환영합니다.
 
 
-주석 규칙
-<!-- header -->
-<!-- //header -->
+---
+감2조아 팀소개
+-
 
-#wrap 페이지 전체 영역
-#header 머리글 영역
-#container 본문 영역
-#content 주요 콘텐츠 영역
-#footer 바닥글 영역
+- 팀장:
+  - 홍수진 (*총괄, 메인- section3/4/5, 서브- 제품기술)
+- 팀원:
+  - 나승일(메인- header/menu, 서브- 사회공헌)
+  - 장지훈(메인- footer, 서브- 회사소개)
+  - 조채림(메인 - section1/2, 서브- 홍보센터)
+
+--- 
+프로젝트 진행기간
+-
+2024.08.22 ~ 2024.09.26
+
+--- 
+프로젝트 가이드
+-
 
 
-<!-- 커밋 규칙 -->
-
-Feat
-새로운 기능을 추가할 경우
-
-Fix
-버그를 고친 경우
-
-Design
-CSS 등 사용자 UI 디자인 변경
-
-!BREAKING CHANGE
-커다란 API 변경의 경우
-
-!HOTFIX
-급하게 치명적인 버그를 고쳐야하는 경우
-
-Style    (index.html)
-코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우
-
-Refactor
-프로덕션 코드 리팩토링
-
-Comment
-필요한 주석 추가 및 변경
-
-Docs
-문서를 수정한 경우
-
-Test
-테스트 추가, 테스트 리팩토링(프로덕션 코드 변경 X)
-
-Chore
-빌드 태스트 업데이트, 패키지 매니저를 설정하는 경우(프로덕션 코드 변경 X)
-
-Rename
-파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우
-
-Remove
-파일을 삭제하는 작업만 수행한 경우
-출처: https://overcome-the-limits.tistory.com/entry/협업-협업을-위한-기본적인-git-커밋컨벤션-설정하기 [Plus Ultra:티스토리]
-
-<!-- //커밋 규칙 -->
-
+check out the [Wiki](https://github.com/AppleBee12/I_like_gam_secondary_project/wiki/v01_Guide-(%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%BB%A8%EB%B2%A4%EC%85%98---%EC%BD%94%EB%94%A9-%EC%8A%A4%ED%83%80%EC%9D%BC---%EC%BB%A4%EB%B0%8B)_%5B20240907%5D)
+ please!
