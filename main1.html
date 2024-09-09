@@ -67,7 +67,7 @@ left: 0;
 top: 0;
 bottom: 0;
 width: 0;
-background: var(--secondary);
+background: var(--tertiary);
 transition:  0.5s ;	
 }
 .video_btn button{
@@ -207,6 +207,7 @@ border: 1px solid var(--tertiary);
   </footer>
   <!--Footer 장지훈 -->
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -214,35 +215,15 @@ border: 1px solid var(--tertiary);
   <script src="js/common.js"></script>
   <script src="js/main.js"></script>
   <script>
-    // 비디오
-let video = document.getElementById('hdvideo');
-let playBtn = document.querySelector('#play');
-let pauseBtn = document.querySelector('#stop');
-let playPauseBtn = document.querySelector('.video_btn button')
-let progressBar = document.getElementById('progress');
+    let video = $('#hdvideo');
+    let playBtn = $('#play');
+    let pauseBtn = $('#stop');
+    let playPauseBtn = $('.video_btn button');
+    let progressBar = $('#progress');
 
-let vcontrols = document.querySelector('#controls');
-let bar = document.querySelector('.progress .bar');
+    let vcontrols = $('#controls');
+    let bar = $('.progress .bar');
 
-playPauseBtn.addEventListener('click', function() {
-    if (video.paused) {
-        video.play();
-        playPauseBtn.innerHTML = '<i class="fa-solid fa-pause fa-2x"></i>';
-    } else {
-        video.pause();
-        playPauseBtn.innerHTML = '<i class="fa-solid fa-play fa-2x"></i>';
-
-        const duration = video.duration;    //전체길이
-        let timer = setInterval(()=>{
-            let ct = video.currentTime;
-            let percent = ct/duration*100;
-            bar.style.width = percent + '%';
-            if(percent === 100){
-                clearInterval(timer);
-            }
-        }, 1000);
-    }
-});
   </script>
 </body>
 
