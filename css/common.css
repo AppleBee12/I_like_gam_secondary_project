@@ -259,6 +259,7 @@ nav .main_menu li ul{
 footer{
 background-color: var(--primary);
 height: 475px;
+font-size: var(--pc_body);
 }
 .ft-1{
 	color: #fff;
