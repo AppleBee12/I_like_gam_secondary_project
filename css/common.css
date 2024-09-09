@@ -113,26 +113,14 @@ nav .main_menu li ul{
 /* video */
 header video{
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	z-index: -3;
-	position: relative;
+  height: 100%;
+  object-fit: cover;
+  z-index: -3;
+  position: absolute;
 	top: 0;
 	left: 0;
 }
-.video_btn button{
-	color: white;
-	position: absolute;
-	display: inline-block;
-	bottom: 10%;
-	left: 15%;
-}
-.video_btn input{
-	position: absolute;
-	bottom: 5%;
-	left: 15%;
-	width: 20%;
-}
+
 
 /* tablet */
 
