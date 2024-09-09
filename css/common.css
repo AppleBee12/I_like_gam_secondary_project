@@ -149,109 +149,6 @@ nav .main_menu li ul{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer */
 .popup{
 	display: none;
@@ -260,6 +157,15 @@ footer{
 background-color: var(--primary);
 height: 475px;
 font-size: var(--pc_body);
+}
+.snsBtn img{
+	width: 28px;
+	height: 28px;
+	margin-right: 58px;     
+}
+
+.ft-1 .ft-3 li a{
+	gap: 20px;
 }
 .ft-1{
 	color: #fff;
@@ -277,4 +183,23 @@ address{
 .ft-2{
 	margin-bottom: 56px;
 }
+.familysite{
+	position: relative;
+}
+.familysite a{
+	fill: #fff;
+	position: absolute;
+	
+	right: 0;
+}
+.familysite a:hover{
+	fill:#000;
+}
+
+
+@media screen and (max-width: 920px){
+footer{font-size: var(--mo_sub_body);}
+
+}
+
 /* //footer */
