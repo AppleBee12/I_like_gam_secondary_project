@@ -68,6 +68,12 @@ header{
 .main_menu li a{
   color: #fff;
 }
+nav>ul>li:after{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	border-bottom: 3px solid var(--primary);
+}
 .top_nav:hover li a{
 	color:#000;
 }
@@ -97,30 +103,36 @@ header{
 /* video */
 header video{
 	width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -3;
-  position: absolute;
+	height: 100%;
+	object-fit: cover;
+	z-index: -3;
+	position: relative;
 	top: 0;
 	left: 0;
 }
-header .video_btn{
+.controls{
+	position: relative;
+	bottom: 30%;
+	left: 10%;
+	max-width: 1440px;
+	
+	height: 50px;
+}
+.video_btn button{
+	border-radius: 50%;
 	position: absolute;
-	bottom: 10%;
-	left:26%;
-	font-size: 52px;
-	line-height: 50px;
+	display: inline-block;
+	color: white;
+	border: 1px solid white;
 }
-.video_btn .start_btn{
-	border:none;
-	color:#fff;
-	background: transparent;
+.video_btn button:hover{
+	color: var(--tertiary);
+	border: 1px solid var(--tertiary);
+	
 }
-.video_btn .pause_btn{
-	border:none;
-	background: transparent;
-	color:#fff;
-}
+
+
+
 
 /* tablet */
 
@@ -150,7 +162,7 @@ header .video_btn{
 		display: block;
 	}
 	header video{
-		position: relative;;
+		position: relative;
 	}
 	header .video_btn{
 		font-size: var(--mo_title);
