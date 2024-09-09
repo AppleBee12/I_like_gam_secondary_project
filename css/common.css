@@ -25,13 +25,15 @@
 	--mo_sub_body:0.875rem;
 	--mo_mid_body:1.75rem;
 }
+
 body{
 	font-family: 'SUIT Variable', sans-serif;
 }
 
 /* header */
 header{
-  width:100vw;
+	max-width: 1920px;
+  width:100%;
   height: 720px;
   position: relative;
 }
@@ -62,11 +64,12 @@ header{
   gap:85px;
 	position: relative;
 	font-size: var(--pc_body);
-	padding:40px 0;
+	padding:40px 0px;
 }
 .main_menu li a{
   color: #fff;
 }
+
 
 .top_nav:hover .main_menu li a{
 	color:#000;
@@ -93,20 +96,22 @@ header{
 	color:var(--primary);
 	font-weight: 700;
 }
-
+#main_list:nth-child(4):after{
+	width: 107px;
+}
 #main_list::after{
 	display:block;
   content: '';
   background-color: var(--primary); 
-	width: 150px;
+	width: 73px;
 	height: 3px;
 	position: absolute;
 	bottom:5%;
   transition: 0.3s;
-	transform: scaleX(0) 
+	transform: scaleX(0);
 }
 #main_list:hover:after{
-	transform: scaleX(1)  
+	transform: scaleX(1);
 }
 
 .top_nav:hover .sub_menu{
