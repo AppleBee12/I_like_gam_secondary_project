@@ -313,10 +313,14 @@ address{
 	width: 100%;
 	position: relative;
 }
+.snsBtn{
+	display: flex;
+	justify-content: space-between; /*수정하기  start end로 마진 주기 X*/
+}
 .snsBtn img{
 	width: 28px;
 	height: 28px;
-	margin-right: 58px;     
+	  
 }
 
 .snsBtn a{
@@ -374,7 +378,7 @@ address{
 	 position: absolute;	 
 	}
 	.ft-1 .sns .snsBtn{
-	 justify-content:right;
+	  display: block;
 		/* display: flex; */
 	  /* align-items: end; */
 	
