@@ -342,10 +342,11 @@ address{
 	}
 	.ft-1 address{
 		order:1;
+		display: block;
 	}
 	.ft-2{
-		display: flex;
-		flex-direction: column;
+		/* display: flex; */
+		/* flex-direction: column; */
 	}
 	.ft-2 ul:nth-of-type(2){
 		text-indent: -239487em;
@@ -360,15 +361,13 @@ address{
 		position: absolute;	 
 		order: 2;
 	}
-	.snsBtn a{
-		display: block !important;
+	.snsBtn{
 		display: flex; 
-	
-	
-		
-		
 	}
-	
+	.snsBtn a{
+		display: block !important;	
+	}
+
 }
 
 /* //footer */
