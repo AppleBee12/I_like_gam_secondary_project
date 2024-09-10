@@ -23,7 +23,7 @@ topNav.addEventListener('mouseleave', () => {
  if (window.innerWidth > 834) {
    topNav.style.backgroundColor = 'transparent';
    topNav.style.borderBottom = '1px solid white';
-   topNav.style.height = '';
+   topNav.style.height = '88px';
  }
 });
 
