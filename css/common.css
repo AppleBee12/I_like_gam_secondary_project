@@ -277,28 +277,13 @@ header video{
 
 
 /* footer */
-.popup{
-	display: none;
-}
 footer{
-background-color: var(--primary);
-height: 475px;
-font-size: var(--pc_body);
-}
-.snsBtn img{
-	width: 28px;
-	height: 28px;
-	margin-right: 58px;     
-}
-
-.ft-1 .ft-3 li a{
-	gap: 20px;
-}
-footer h3{
-	text-indent: -2939872323em;
-}
-footer h3{
-	text-indent: -2939872323em;
+	position: relative; 
+	background-color: var(--primary);
+	height: 475px;
+	font-size: var(--pc_body);
+	width: 100%;
+	
 }
 .ft-1{
 	color: #fff;
@@ -316,23 +301,55 @@ address{
 .ft-2{
 	margin-bottom: 56px;
 }
-.familysite{
+.ft-2 ul:nth-child(1){
+	width:560px;
+
+}
+.ft-2 ul:nth-child(2){
+	width:325px;
 	position: relative;
 }
-.familysite a{
-	fill: #fff;
+.snsBtn img{
+	width: 28px;
+	height: 28px;
+	margin-right: 58px;     
+}
+
+.snsBtn a{
+	right: 0;
+	color: #fff;
+}
+.snsBtn a:last-child {
+  margin-left: auto; 
+	border:solid 1px;
+	padding: 20px 15px;
+	border-radius: 4px;
+
+}
+.container .copyright{
+	position: absolute;
+	color: #fff;
+  left: 50%;
+  transform: translateX(-50%);	
+	text-align: center;	
+	bottom: 20px;	
+}
+.container .familysite a{
 	position: absolute;
 	
+	color: #fff;
 	right: 0;
 	width: 190px;
 	border: solid 1px ;
 	border-radius: 4px;
-	padding: 5px 10px;
+	padding: 5px 11px;
 	text-align: center;	
 }
 .popup{
 	display: none;
 }
+
+/* //footer */
 
 
 @media screen and (max-width: 980px){
