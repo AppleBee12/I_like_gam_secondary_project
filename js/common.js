@@ -1,4 +1,6 @@
-topNav=document.querySelector('.top_nav')
+const topNav=document.querySelector('.top_nav')
+NavBtn = $('.container button');
+tbNavBtn = $('.tb_navbar button');
 //topNav = $('.top_nav');
 
 /*
@@ -26,6 +28,14 @@ topNav.addEventListener('mouseleave', () => {
    topNav.style.height = '88px';
  }
 });
+
+NavBtn.click(function(){
+  $('.tb_menu').css({display:'block'});
+})
+tbNavBtn.click(function(){
+  $('.tb_menu').css({display:'none'});
+})
+
 
 
 
