@@ -173,6 +173,109 @@ header video{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 .popup{
 	display: none;
@@ -190,6 +293,12 @@ font-size: var(--pc_body);
 
 .ft-1 .ft-3 li a{
 	gap: 20px;
+}
+footer h3{
+	text-indent: -2939872323em;
+}
+footer h3{
+	text-indent: -2939872323em;
 }
 .ft-1{
 	color: #fff;
@@ -215,15 +324,30 @@ address{
 	position: absolute;
 	
 	right: 0;
+	width: 190px;
+	border: solid 1px ;
+	border-radius: 4px;
+	padding: 5px 10px;
+	text-align: center;	
 }
-.familysite a:hover{
-	fill:#000;
+.popup{
+	display: none;
 }
 
 
-@media screen and (max-width: 920px){
-footer{font-size: var(--mo_sub_body);}
-
+@media screen and (max-width: 980px){
+	.ft-1{
+		width: 100vw
+	}
+	.ft-2 ul:nth-child(2){
+		text-indent: -239487em;
+	}
+	.ft-2 ul:nth-child(1){
+		display: flex;
+		justify-content: space-between;
+		width: 100vw;
+	 font-size: var(--mo_sub_body);
+	}
 }
 
 /* //footer */
