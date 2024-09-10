@@ -309,6 +309,10 @@ address{
 	width:325px;
 	position: relative;
 }
+.sns{
+	width: 100%;
+	position: relative;
+}
 .snsBtn img{
 	width: 28px;
 	height: 28px;
@@ -318,13 +322,6 @@ address{
 .snsBtn a{
 	right: 0;
 	color: #fff;
-}
-.snsBtn a:last-child {
-  margin-left: auto; 
-	border:solid 1px;
-	padding: 20px 15px;
-	border-radius: 4px;
-
 }
 .container .copyright{
 	position: absolute;
@@ -342,7 +339,7 @@ address{
 	width: 190px;
 	border: solid 1px ;
 	border-radius: 4px;
-	padding: 5px 11px;
+	padding: 10px 11px;
 	text-align: center;	
 }
 .popup{
@@ -353,17 +350,27 @@ address{
 
 
 @media screen and (max-width: 980px){
+	footer{font-size: var(--mo_sub_body);}
 	.ft-1{
-		width: 100vw
+		width: 100%;
+		position: relative;
+	}
+	.ft-2{
+		display: flex;
+		flex-direction: column;
 	}
 	.ft-2 ul:nth-child(2){
 		text-indent: -239487em;
+		order: 1;
 	}
 	.ft-2 ul:nth-child(1){
 		display: flex;
 		justify-content: space-between;
-		width: 100vw;
+		width: 100%;
 	 font-size: var(--mo_sub_body);
+	 position: absolute;
+	 order: 2;
+	 
 	}
 }
 
