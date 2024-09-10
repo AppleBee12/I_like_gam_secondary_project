@@ -378,7 +378,7 @@ address{
 	 position: absolute;	 
 	}
 	.ft-1 .sns .snsBtn{
-	  display: block;
+	  display: block !important;
 		/* display: flex; */
 	  /* align-items: end; */
 	
