@@ -132,8 +132,11 @@ header video{
 	top: 0;
 	left: 0;
 }
+
+
 /* tablet_menu */
 .tb_menu{
+	display: none;
 	max-width: 834px;
 	width: 100%;
 	height: 100vh;
@@ -156,7 +159,7 @@ header video{
 	align-items: center;
 	border-bottom: 1px solid #000;
 	margin-bottom: 30px;
-	padding: 0 20px;
+	padding: 0 52px;
 }
 
 .tb_nav>ul{
@@ -196,19 +199,21 @@ header video{
 	margin-top: 30px;
 	padding: 6px 12px;
 }
+.tb_nav ul li ul li a:hover{
+text-decoration: underline;
+color:var(--primary);
+font-weight: 700;
+}
 
 
+/* tablet button */
+.tb_navbar button{
+	border: none;
+	background: transparent;
+	font-size: 39px;
+	line-height: 40px;
+}
 
-
-
-
-
-
-
-
-
-
-/* tablet_menu */
 
 
 /* tablet */
@@ -219,6 +224,7 @@ header video{
 }
 
 @media screen and (max-width: 834px){
+	
 	.main_menu{
 		display: none;
 	}
@@ -241,6 +247,8 @@ header video{
 		font-size: var(--mo_title);
 	}
 }
+
+
 /* //header */
 
 
