@@ -32,30 +32,101 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
   <style>
-@media screen and (max-width: 1920px){
-      .container{
-        max-width: 1440px;
-        margin: 168px 0;
+    /* 통합부분에서 수정할 부분 */
+    @media screen and (min-width: 835px) {
+      .container {
+        max-width: 1460px;
+        margin: 168px auto;
+        width: 100%;
+      }
+      .container h2{
+        font-size:var(--pc_title);
+      }
+      .container h4{
+        
       }
     }
-@media screen and (max-width: 834px){
-  .container{
-    margin:120px 20px;
-    max-width: 794px;
-  }
-}
 
-@media screen and (max-width: 320px){
-  .container{
-    margin:100px 20px;
-    max-width: 280px;
-  }
+    @media screen and (max-width: 834px) {
+      section{
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom:0;
+      }
+      .container {
+        margin: 120px 20px;
+        max-width: 794px;
+        width: 100%;
+      }
+      .container h2{
+        font-size:var(--pc_title);
+        font-family:hdharmony
+        line-height:var(--pc_title);
+        margin-bottom:var(--pc_title);
+        
+      }
+      .container h4{
+        font-size:var(--pc_body);
+        line-height:var(--sub_title);
+      }
+    }
 
-}
+    @media screen and (max-width: 320px) {
+      .container {
+        margin: 100px 20px;
+        max-width: 280px;
+        width: 100%;
+      }
+      .container h2{
+        font-size:var(--pc_title);
+      }
+      .container h4{
+        
+      }
 
+    }
+
+    .header .top_nav .container {
+      margin: 0;
+    }
+
+    .section1 .container {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    /* //통합부분에서 수정할 부분*/
+    .section3 .sec3_card_wrap{
+       display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center; 
+    }
+
+
+    .section3 .sec3_card {
+      width: 17vw;
+      max-width: none;
+      min-width: none;
+      height: 560px;   
+
+      text-align: center;
+      padding: 112px 0;
+    }
+
+    .section3 .sec3_cardtitle{
+      font-size: 40px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .section3 .sec3_cardtitle span{
+      color: var(--secondary);
+    }
 
   </style>
 </head>
+
 <body>
   <!--Header 나승일-->
   <header>
@@ -114,7 +185,7 @@
         <button><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
-    <video src="images/mainheader_bg.mp4" muted autoplay loop></video>
+
 
     <!-- tablet -->
 
@@ -125,7 +196,10 @@
   <main>
     <!-- section1 조채림 -->
     <section class="section1">
+      <div class="container">
+        <video src="images/mainheader_bg.mp4" muted autoplay loop></video>
 
+      </div>
     </section>
     <!-- //section1 조채림 -->
 
@@ -133,7 +207,8 @@
 
     <!-- section2 조채림 -->
     <section class="section2">
-
+      <div class="container">
+      </div>
     </section>
     <!-- //section2 조채림 -->
 
@@ -146,40 +221,40 @@
           <h2>Business</h2>
           <h4>뛰어난 기술력과 차별화된 제품 경쟁력을 갖춘 프리미엄 건설용 강재</h4>
         </div>
-        <div class="sec3_card">
-          <p class="sec3_cardtitle"><span>C</span>aring</p>
-          <p class="sec3_carddesc">고객이 있는 곳이<br>
-            집, 쇼핑몰 그 어디든<br>
-            보다 안심하고 편안할 수 있도록<br>
-            세심하고 정교한 기술력에<br>
-             프리미엄 브랜드 경험을 전합니다</p>
+        <div class="sec3_card_wrap">
+          <div class="sec3_card">
+            <p class="sec3_cardtitle"><span>C</span>aring</p>
+            <p class="sec3_carddesc">고객이 있는 곳이<br>
+              집, 쇼핑몰 그 어디든<br>
+              보다 안심하고 편안할 수 있도록<br>
+              세심하고 정교한 기술력에<br>
+              프리미엄 브랜드 경험을 전합니다</p>
+          </div>
+          <div class="sec3_card">
+            <p class="sec3_cardtitle"><span>O</span>ptimal</p>
+            <p class="sec3_carddesc">생산공정, 기술력 향상 뿐만 아니라 <br>
+              최적화된 의사결정을 이끄는<br>
+              Smart Enterprise를 통해<br>
+              보다 스마트하고 혁신적으로<br>
+              비즈니스를 성공으로 이끕니다.</p>
+          </div>
+          <div class="sec3_card">
+            <p class="sec3_cardtitle"><span>R</span>ecover</p>
+            <p class="sec3_carddesc">자연상태의 철에서 완성품으로<br>
+              그리고 다시 재활용 원료인<br>
+              철 스크랩으로 끊임없이 순환하며<br>
+              철을 중심으로 한<br>
+              자원 순환시스템을 만들어갑니다.</p>
+          </div>
+          <div class="sec3_card">
+            <p class="sec3_cardtitle"><span>E</span>ssential</p>
+            <p class="sec3_carddesc">내진 강재 제품에서<br>
+              건축, 토목, 플랜드, 에너지 등<br>
+              건설 영역의 핵심브랜드로 나아가며<br>
+              가장 믿을 수 있는<br>
+              최고 품질의 제품을 만듭니다.</p>
+          </div>
         </div>
-        <div class="sec3_card">
-          <p class="sec3_cardtitle"><span>O</span>ptimal</p>
-          <p class="sec3_carddesc">생산공정, 기술력 향상 뿐만 아니라 <br>
-            최적화된 의사결정을 이끄는<br>
-            Smart Enterprise를 통해<br>
-            보다 스마트하고 혁신적으로<br>
-            비즈니스를 성공으로 이끕니다.</p>
-        </div>
-        <div class="sec3_card">
-          <p class="sec3_cardtitle"><span>R</span>ecover</p>
-          <p class="sec3_carddesc">자연상태의 철에서 완성품으로<br>
-            그리고 다시 재활용 원료인<br>
-            철 스크랩으로 끊임없이 순환하며<br>
-            철을 중심으로 한<br>
-            자원 순환시스템을 만들어갑니다.</p>
-        </div>
-        <div class="sec3_card">
-          <p class="sec3_cardtitle"><span>E</span>ssential</p>
-          <p class="sec3_carddesc">내진 강재 제품에서<br>
-            건축, 토목, 플랜드, 에너지 등<br>
-            건설 영역의 핵심브랜드로 나아가며<br>
-            가장 믿을 수 있는<br>
-            최고 품질의 제품을 만듭니다.</p>
-        </div>
-
-
       </div>
 
 
@@ -210,14 +285,16 @@
 
   </footer>
   <!--Footer 장지훈 -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="js/common.js"></script>
   <script src="js/main.js"></script>
   <script>
-    
+
 
   </script>
-  
-  
+
+
 </body>
+
 </html>
