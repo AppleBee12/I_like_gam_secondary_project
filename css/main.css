@@ -150,6 +150,7 @@
 }
 .explain p{
 	font-size: var(--pc_mid_body);
+	line-height: 56px;
 }
 .pager{
 	margin-top: 50px;
