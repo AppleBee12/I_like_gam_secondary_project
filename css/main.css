@@ -122,7 +122,102 @@
 	}
 }
 
+.she_pic, .she_pic img{
+	width: 560px;
+	height: 588px;
+}
+.s2.container .she{
+	display: flex;
+	font-size: 110px;
+	color: #757575;
+	width: 488px;
+}
+.s2 h2{
+	font-size: var(--pc_title);
+	margin-bottom: 28px;
+}
+.s2 h4{
+	font-size: var(--pc_body);
+}
+.she_title{
+	margin-bottom: 84px;
+}
+.explain{
+	display: inline-block;
+	width: 780px;
+}
+.explain h2{
+	font-size: var(--pc_title);
+	color: #3E3D3D;
+}
+.explain p{
+	font-size: var(--pc_mid_body);
+	line-height: 56px;
+}
+.pager{
+	margin-top: 50px;
+	font-size: var(--pc_big);
+	font-weight: 600;
+}
+.pager hr{
+	color: #111;
+	margin-top: -15px;
+	width: 488px;
+}
+.pager a{
+	color: var(--lightgray);
+}
+#she_wrapper{
+	display: flex;
+}
+.explain_wrapper{
+	margin-left: 100px;
+	margin-top: 56px;
+}
+.details{
+	font-size: var(--pc_sub_title);
+	transition: 0.3s;
 
+}
+.details h3{
+	margin-top: 70px;
+	margin-bottom: 28px;
+}
+.details div p{
+	transition: 0.3s;
+
+}
+.she_pic img{
+	display: none;
+}
+.she_pic img.active{
+	display: block;
+	animation: fadeInLeft 1s ease forwards;
+
+}
+.details div{
+	display: none;
+}
+.details div.active{
+	display: block;
+	animation: fadeInLeft 1s ease forwards;
+}
+.pager a:focus{
+	color: var(--secondary);
+	transition: 0.3s;
+}
+[data-animate-in="left"] {
+    transform: translate3d(-25%, 0, 0)
+}
+@keyframes fadeInLeft{
+	from{opacity:0; translateX:(-25%);}
+	to{opacity:1; translateX:none;}
+  }
+.pager a:hover{
+	color: var(--secondary);
+	transition: 0.3s;
+	margin-top: -28px;
+}
 
 
 
