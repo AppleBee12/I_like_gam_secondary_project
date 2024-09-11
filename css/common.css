@@ -138,6 +138,94 @@ nav .main_menu li ul{
 		font-size: var(--mo_title);
 	}
 }
+
+
+
+
+/* 통합부분에서 수정할 부분 */
+
+    /* xs devices (less than 576px) */
+    @media (max-width: 575.98px) {
+      .container {
+        margin: 100px 20px;
+      }
+
+      .container h2 {
+        font-size: var(--mo_title);
+        font-weight: 500;
+        /* font-family:hdharmony; */
+      }
+
+      .container h4 {
+        font-size: var(--mo_body);
+      }
+    }
+
+    /* sm devices (phones, 576px and up) */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      /* 여기에 스타일 추가 */
+    }
+
+    /* md devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+
+      .container {
+        padding: 120px 20px;
+        max-width: 794px;
+        width: 100%;
+      }
+
+      .container h2 {
+        font-size: var(--mo_title);
+        font-weight: 500;
+        /* font-family:hdharmony; */
+      }
+
+      .container h4 {
+        font-size: var(--mo_body);
+      }
+    }
+
+    /* lg devices (PC버전desktops, 992px and up) */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      /* 여기에 스타일 추가 */
+    }
+
+    /* xl devices (1200px and up) */
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+      /* 여기에 스타일 추가 */
+    }
+
+    /*xxl devices (1400px and up)*/
+    @media screen and (min-width: 1400px) {
+
+      .container {
+        margin: 0 auto;
+        width: 100%;
+        padding: 168px 20px;
+      }
+
+      .container h2 {
+        font-size: var(--pc_title);
+        /* font-family:hdharmony; */
+        line-height: var(--pc_title);
+        margin-bottom: var(--pc_title);
+      }
+
+      .container h4 {
+        font-size: var(--pc_body);
+        line-height: var(--sub_title);
+      }
+    }
+
+
+
+
+    /* //통합부분에서 수정할 부분*/
+
+
+
 /* //header */
 
 
