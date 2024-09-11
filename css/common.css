@@ -65,6 +65,7 @@ header{
 	height: 100%;
 	right:30px;
 	top: 35px;
+	z-index: 999;
 }
 .hamburger_button span{
 	position: absolute;
@@ -186,13 +187,14 @@ header video{
 
 
 @media screen and (max-width: 768px){
+	/* header 승일 */
 	.tb_container{
 		width: 100%;
 		height: 100vh;
 		position: fixed;
 		left: 0;
 		right: 0;
-		top:87px;
+		top:0;
 		bottom:0;
 		overflow: hidden;
 		background: #3498db;
@@ -201,8 +203,8 @@ header video{
 		align-items: center;
 		transition: 0.5s;
 		opacity: 0;
-		z-index: 999;
 	}
+	
 	.tb_container.visible{
 		opacity: 1;
 	}
@@ -264,8 +266,6 @@ header video{
 
 	header .top_nav{
 		border-bottom: 1px solid #000;
-		position: sticky;
-		top: 0;
 
 	}
 	header .top_nav .nav_container{
@@ -280,6 +280,10 @@ header video{
 	header .video_btn{
 		font-size: var(--mo_title);
 	}
+	/* //header 승일 */
+
+
+
 }
 
 
@@ -308,7 +312,13 @@ header video{
     /* md devices (tablets, 768px and up) */
     @media (min-width: 768px) and (max-width: 991.98px) {
 
-			/* basic */
+
+      .container {
+        padding: 120px 20px;
+        max-width: 794px;
+        width: 100%;
+      }
+
       .container h2 {
         font-size: var(--mo_title);
         font-weight: 500;
