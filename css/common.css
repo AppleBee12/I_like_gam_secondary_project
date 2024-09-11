@@ -25,11 +25,9 @@
 	--mo_sub_body:0.875rem;
 	--mo_mid_body:1.75rem;
 }
-
 body{
 	font-family: 'SUIT Variable', sans-serif;
 }
-
 /* header */
 header{
 	max-width: 1920px;
@@ -45,7 +43,6 @@ header{
 	transition: 0.5s;
 	overflow: hidden;
 }
-
 .top_nav .container{
   width: 90%;
   height: 87px;
@@ -71,8 +68,6 @@ header{
 .main_menu li a{
   color: #fff;
 }
-
-
 .top_nav:hover .main_menu li a{
 	color:#000;
 }
@@ -87,7 +82,6 @@ header{
 	font-size: var(--pc_sub_body);
 	z-index: -2;
 }
-
 .main_menu .sub_menu li a{
 	padding: 10px 0;
 	color:#000;
@@ -115,13 +109,11 @@ header{
 #main_list:hover:after{
 	transform: scaleX(1);
 }
-
 .top_nav:hover .sub_menu{
 	opacity: 1;
 	top:110%;
 	z-index: 1;
 }
-
 /* video */
 header video{
 	width: 100%;
@@ -132,8 +124,6 @@ header video{
 	top: 0;
 	left: 0;
 }
-
-
 /* tablet_menu */
 .tb_menu{
 	display: none;
@@ -161,14 +151,12 @@ header video{
 	margin-bottom: 30px;
 	padding: 0 52px;
 }
-
 .tb_nav>ul{
 	display: flex;
 	gap:20%;
 	flex-wrap:wrap;
 	padding:0 90px ;
 }
-
 .tb_nav>ul>li>a{
 	font-size: var(--mo_subtitle);
 	position: relative;
@@ -191,7 +179,6 @@ header video{
 .tb_nav>ul>li{
 	margin-bottom: 60px;
 }
-
 .tb_nav ul li ul{
 	display: flex;
 	flex-direction: column;
@@ -204,8 +191,6 @@ text-decoration: underline;
 color:var(--primary);
 font-weight: 700;
 }
-
-
 /* tablet button */
 .tb_navbar button{
 	border: none;
@@ -213,16 +198,12 @@ font-weight: 700;
 	font-size: 39px;
 	line-height: 40px;
 }
-
-
-
 /* tablet */
 @media screen and (max-width: 1920px){
 	.container{
 		max-width: 1440px;
 	}
 }
-
 @media screen and (max-width: 834px){
 	
 	.main_menu{
@@ -247,9 +228,23 @@ font-weight: 700;
 		font-size: var(--mo_title);
 	}
 }
-
-
 /* //header */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -282,8 +277,9 @@ address{
 	margin-bottom: 56px;
 }
 .ft-2 > ul:first-of-type li:first-of-type{
-    display: none;
+	display: none;
 }
+
 .ft-2 ul:nth-child(1){
 	width:560px;
 
@@ -304,7 +300,7 @@ address{
 .snsBtn a{
 	width: 28px;
 	height: 28px;
-
+	
 }
 
 
@@ -332,29 +328,18 @@ address{
 	display: none;
 }
 
+
+
+.container .copyright{
+	position: absolute;
+	color: #fff;
+}
 /* //footer */
 
 /*태블릿반응형*/
 @media screen and (max-width: 768px){
 	footer{
 		font-size: var(--mo_sub_body);
-	}
-	.ft-1{
-		width: 100vw;
-		position: relative;
-	}
-	.ft-1 address{
-		order:1;
-		display: block;
-	}
-	.ft-2{
-		/* display: flex; */
-		/* flex-direction: column; */
-	}
-	.ft-2 ul:nth-of-type(2){
-		text-indent: -239487em;
-		order: 1;
-		
 	}
 	.ft-2  ul:nth-of-type(1){
 		display: flex;
@@ -367,8 +352,8 @@ address{
 	.sns{
 		width: 100vw;
 		 position: relative;
-		
-	
+
+
 	}
 	.snsBtn a{
 		/* position: absolute; */
@@ -394,9 +379,9 @@ address{
 	}
 	.ft-2 > ul:first-of-type li:first-of-type{
     display: block;
-		
+
 }
-	
+
 .ft-2 {
 	display: flex;
 	justify-content: space-between;
@@ -406,7 +391,7 @@ address{
 	flex-direction: column;
 	gap: 10px;
 	order: 1;
-	
+
 }
 
 .ft-2 > ul li:last-of-type {
