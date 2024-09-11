@@ -1,33 +1,71 @@
+/* xs devices (less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* sm devices (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	/* 여기에 스타일 추가 */
+}
+
+/* md devices (phones, 576px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	/* 여기에 스타일 추가 */
+}
+
+/* lg devices (PC버전desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	/* 여기에 스타일 추가 */
+}
+
+/* xl devices (1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+	/* 여기에 스타일 추가 */
+}
+
+/*xxl devices (1400px and up)*/
+@media screen and (min-width: 1400px) {
+	/* 여기에 스타일 추가 */
+}
+
+
+
+
+
+
+
+
 /* video */
 
 
-#controls{
+#controls {
 	position: absolute;
 	bottom: 23%;
 	left: 10%;
 	max-width: 1440px;
 	height: 50px;
 }
+
 .progress {
 	left: 10%;
 	right: 70%;
 	bottom: 20%;
 	height: 10px;
 	overflow: hidden;
-	background: rgba(255,255,255,0.2);
+	background: rgba(255, 255, 255, 0.2);
 	position: absolute;
 	border-radius: 0;
 }
-.progress .bar{
+
+.progress .bar {
 	position: absolute;
 	left: 0;
 	top: 0;
 	bottom: 0;
 	width: 0;
 	background: var(--tertiary);
-	transition:  0.5s ;	
+	transition: 0.5s;
 }
-.video_btn button{
+
+.video_btn button {
 	border-radius: 50%;
 	position: absolute;
 	display: inline-block;
@@ -39,41 +77,46 @@
 	color: var(--tertiary);
 	border: 1px solid var(--tertiary);
 }
-@media screen and (max-width: 768px){
-	#controls{
+
+@media screen and (max-width: 768px) {
+	#controls {
 		position: absolute;
 		bottom: 23%;
 		left: 10%;
 		max-width: 1440px;
 		height: 50px;
 	}
+
 	.progress {
 		left: 10%;
 		right: 70%;
 		bottom: 20%;
 		height: 10px;
 		overflow: hidden;
-		background: rgba(255,255,255,0.2);
+		background: rgba(255, 255, 255, 0.2);
 		position: absolute;
 		border-radius: 0;
 	}
-	.progress .bar{
+
+	.progress .bar {
 		position: absolute;
 		left: 0;
 		top: 0;
 		bottom: 0;
 		width: 0;
 		background: var(--tertiary);
-		transition:  0.5s ;	
+		transition: 0.5s;
 	}
-	.video_btn button{
+
+	.video_btn button {
 		border-radius: 50%;
 		position: absolute;
 		display: inline-block;
 		color: white;
 		border: 1px solid white;
 	}
-	.video_btn button:hover{
+
+	.video_btn button:hover {
 		color: var(--tertiary);
 		border: 1px solid var(--tertiary);
 	}

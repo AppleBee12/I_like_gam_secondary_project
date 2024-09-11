@@ -10,6 +10,7 @@
 	--lightgray:#7d7d7d;
 	--silver:#8a8d8f;
 	--darkgray:#373728;
+
 	/* pc fonts */
 	--pc_big:6.875rem;
 	--pc_title:3.5rem;
@@ -17,6 +18,7 @@
 	--pc_body:1.25rem;
 	--pc_sub_title:1.75rem;
 	--pc_sub_body:1rem;
+
 	/* mobile fonts */
 	--mo_big:3.125rem;
 	--mo_title:2rem;
@@ -180,11 +182,7 @@ header video{
 
 
 /* tablet */
-@media screen and (max-width: 1920px){
-	.container{
-		max-width: 1440px;
-	}
-}
+
 
 @media screen and (max-width: 768px){
 	.tb_container{
@@ -290,10 +288,6 @@ header video{
 
     /* xs devices (less than 576px) */
     @media (max-width: 575.98px) {
-      .container {
-        margin: 100px 20px;
-      }
-
       .container h2 {
         font-size: var(--mo_title);
         font-weight: 500;
@@ -313,13 +307,7 @@ header video{
     /* md devices (tablets, 768px and up) */
     @media (min-width: 768px) and (max-width: 991.98px) {
 
-
-      .container {
-        padding: 120px 20px;
-        max-width: 794px;
-        width: 100%;
-      }
-
+			/* basic */
       .container h2 {
         font-size: var(--mo_title);
         font-weight: 500;
@@ -329,6 +317,15 @@ header video{
       .container h4 {
         font-size: var(--mo_body);
       }
+
+			/* section01 video */
+
+
+			/* section02 */
+			/* section03 */
+			/* section04 */
+			/* section05 */
+
     }
 
     /* lg devices (PC버전desktops, 992px and up) */
@@ -343,11 +340,9 @@ header video{
 
     /*xxl devices (1400px and up)*/
     @media screen and (min-width: 1400px) {
-
       .container {
         margin: 0 auto;
         width: 100%;
-        padding: 168px 20px;
       }
 
       .container h2 {
@@ -468,10 +463,7 @@ address{
 		order:1;
 		display: block;
 	}
-	.ft-2{
-		/* display: flex; */
-		/* flex-direction: column; */
-	}
+
 	.ft-2 ul:nth-of-type(2){
 		text-indent: -239487em;
 		order: 1;

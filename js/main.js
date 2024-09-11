@@ -28,7 +28,10 @@ let timer = setInterval(()=>{
 }, 400);
 // //section1 조채림 끝
 
-//section3
+//section2
+
+
+//section3 홍수진
 
 $('.sec3_card').mouseenter(
   function () {
