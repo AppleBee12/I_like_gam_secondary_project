@@ -197,17 +197,19 @@ header video{
 		right: 0;
 		top:87px;
 		bottom:0;
+		transform: translateY(-115%);
 		overflow: hidden;
-		background: #3498db;
+		background: #fff;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		transition: 0.5s;
 		opacity: 0;
-		z-index: 999;
+		z-index: 3;
 	}
 	.tb_container.visible{
 		opacity: 1;
+		transform: translateY(0);
 	}
 
 	.tb_nav>ul{
