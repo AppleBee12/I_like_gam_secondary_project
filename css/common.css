@@ -55,6 +55,7 @@ header{
   align-items: center;
   gap: 85px;
 	margin: 0 auto;
+	padding: 0 30px;
 }
 .hamburger_button{
 	display: none;
@@ -74,7 +75,6 @@ header{
 	right: 0;
 	top: 0;
 	transition:0.5s;
-
 }
 .hamburger_button span:nth-child(2),
 .hamburger_button span:nth-child(3){
@@ -151,6 +151,16 @@ header{
 	top:110%;
 	z-index: 1;
 }
+/* 지우지 마세요 반응형 넘어갈때 잔상 없애기용 입니다 */
+.tb_container{
+	width: 100%;
+	position: absolute;
+	top: 12%;
+	left: 0;
+	background: white;
+	padding: 20px 0;
+	opacity: 0;
+}
 /* video */
 header video{
 	width: 100%;
@@ -162,10 +172,6 @@ header video{
 	left: 0;
 }
 /* tablet_menu */
-
-.tb_container{
-	display: none;
-}
 
 
 
@@ -181,25 +187,28 @@ header video{
 	/* header 승일 */
 	.tb_container{
 		width: 100%;
-		height: 100vh;
-		position: fixed;
+		position: absolute;
+		top: 12%;
 		left: 0;
-		right: 0;
-		top:0;
-		bottom:0;
-		overflow: hidden;
-		background: #3498db;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		transition: 0.5s;
+		background: white;
+		padding: 20px 0;
+		transition:0.3s;
 		opacity: 0;
 	}
+	header video{
+		position: none;
+	}
 	
-	.tb_container.visible{
+	
+	.visible.tb_container{
+	
+		top:12%;
 		opacity: 1;
 	}
-
+	
+.hamburger_button{
+	display: block;
+}
 .tb_nav>ul{
 	display: flex;
 	gap:20%;
@@ -242,15 +251,24 @@ text-decoration: underline;
 color:var(--primary);
 font-weight: 700;
 }
-
-
-/* tablet button */
-.tb_navbar button{
-	border: none;
-	background: transparent;
-	font-size: 39px;
-	line-height: 40px;
+.main_menu{
+	display: none;
 }
+.main_list{
+	display: none;
+}
+
+
+header .top_nav{
+	border-bottom: 1px solid #000;
+
+}
+header .top_nav .nav_container{
+	justify-content: space-between;
+	background-color: white;
+	width: 100vw;
+}
+
 
 }
 
@@ -261,37 +279,13 @@ font-weight: 700;
 	}
 }
 
-@media screen and (max-width: 834px){
 	
-	.main_menu{
-		display: none;
-	}
-	.main_list{
-		display: none;
-	}
 
-
-	header .top_nav{
-		border-bottom: 1px solid #000;
-
-	}
-	header .top_nav .nav_container{
-		justify-content: space-between;
-		background-color: white;
-		width: 100vw;
-	}
-
-	header video{
-		position: relative;;
-	}
-	header .video_btn{
-		font-size: var(--mo_title);
-	}
 	/* //header 승일 */
 
 
 
-}
+
 
 
 
@@ -581,7 +575,7 @@ address{
 	}
 .copyright{
 	width: 100%;
-	} */
+	} 
 }
-/* //모바일 반응형
+/* //모바일 반응형*/
 /* //footer */
