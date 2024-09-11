@@ -86,7 +86,11 @@
 
 /* section3 홍수진*/
 .section3 {
-	background: url(images/);
+	background: url(../images/section3_global_bg.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
 }
 
 .section3 .sec3_card_wrap {
@@ -116,19 +120,19 @@
 }
 
 .sec3_card.sec301 {
-	background-image: url(images/section3_lottetower.jpg);
+	background-image: url(../images/section3_lottetower.jpg);
 }
 
 .sec3_card.sec302 {
-	background-image: url(images/section3_antarctica.jpg);
+	background-image: url(../images/section3_antarctica.jpg);
 }
 
 .sec3_card.sec303 {
-	background-image: url(images/section3_songdo.jpg);
+	background-image: url(../images/section3_songdo.jpg);
 }
 
 .sec3_card.sec304 {
-	background-image: url(images/section3_kintex.jpg);
+	background-image: url(../images/section3_kintex.jpg);
 }
 
 
