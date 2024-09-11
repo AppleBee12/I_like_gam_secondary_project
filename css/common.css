@@ -314,10 +314,13 @@ header video{
         font-weight: 500;
         /* font-family:hdharmony; */
       }
+			
 
       .container h4 {
         font-size: var(--mo_body);
+				line-height: var(--mo_title);
       }
+
 
 			/* section01 video */
 
@@ -331,12 +334,33 @@ header video{
 
     /* lg devices (PC버전desktops, 992px and up) */
     @media (min-width: 992px) and (max-width: 1199.98px) {
-      /* 여기에 스타일 추가 */
+			.container h2 {
+        font-size: var(--pc_title);
+        /* font-family:hdharmony; */
+        line-height: var(--pc_title);
+        margin-bottom: var(--pc_title);
+				margin-top: 10.5rem;
+      }
+
+      .container h4 {
+        font-size: var(--pc_body);
+        line-height: var(--sub_title);
+      }
     }
 
     /* xl devices (1200px and up) */
     @media (min-width: 1200px) and (max-width: 1399.98px) {
-      /* 여기에 스타일 추가 */
+			.container h2 {
+        font-size: var(--pc_title);
+        /* font-family:hdharmony; */
+        line-height: var(--pc_title);
+        margin-bottom: var(--pc_title);
+      }
+
+      .container h4 {
+        font-size: var(--pc_body);
+        line-height: var(--sub_title);
+      }
     }
 
     /*xxl devices (1400px and up)*/
