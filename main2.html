@@ -33,34 +33,32 @@
   <link rel="stylesheet" href="css/main.css">
   <style>
     /* 통합부분에서 수정할 부분 */
-    @media screen and (min-width: 835px) {
+
+    /* xs devices (less than 576px) */
+    @media (max-width: 575.98px) {
       .container {
-        max-width: 1460px;
-        margin: 0 auto;
-        width: 100%;
-        padding: 168px 20px;
+        margin: 100px 20px;
       }
 
       .container h2 {
-        font-size: var(--pc_title);
+        font-size: var(--mo_title);
+        font-weight: 500;
         /* font-family:hdharmony; */
-        line-height: var(--pc_title);
-        margin-bottom: var(--pc_title);
       }
 
       .container h4 {
-        font-size: var(--pc_body);
-        line-height: var(--sub_title);
+        font-size: var(--mo_body);
       }
     }
 
-    @media screen and (max-width: 834px) {
-      section {
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-      }
+    /* sm devices (phones, 576px and up) */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      /* 여기에 스타일 추가 */
+    }
+
+    /* md devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
 
       .container {
         padding: 120px 20px;
@@ -79,24 +77,40 @@
       }
     }
 
-    @media screen and (max-width: 320px) {
+    /* lg devices (PC버전desktops, 992px and up) */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      /* 여기에 스타일 추가 */
+    }
+
+    /* xl devices (1200px and up) */
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+      /* 여기에 스타일 추가 */
+    }
+
+    /*xxl devices (1400px and up)*/
+    @media screen and (min-width: 1400px) {
+
       .container {
-        margin: 100px 20px;
-        max-width: 280px;
+        margin: 0 auto;
         width: 100%;
+        padding: 168px 20px;
       }
 
       .container h2 {
-        font-size: var(--mo_title);
-        font-weight: 500;
+        font-size: var(--pc_title);
         /* font-family:hdharmony; */
+        line-height: var(--pc_title);
+        margin-bottom: var(--pc_title);
       }
 
       .container h4 {
-        font-size: var(--mo_body);
+        font-size: var(--pc_body);
+        line-height: var(--sub_title);
       }
-
     }
+
+
+
 
     .header .top_nav .container {
       margin: 0;
@@ -125,7 +139,7 @@
       padding: 112px 0;
       border: 1px solid var(--lightgray);
       text-align: center;
-      color:white;
+      color: white;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -151,7 +165,7 @@
     }
 
     .sec3_card.sec304 {
-      background-image: url(images/section3_kintex.jpg);      
+      background-image: url(images/section3_kintex.jpg);
     }
 
 
@@ -161,7 +175,7 @@
       font-weight: 900;
       text-transform: uppercase;
       color: white;
-      transform:  translateY(60px);
+      transform: translateY(60px);
       transition: 1s;
     }
 
@@ -173,20 +187,21 @@
       line-height: 28px;
       opacity: 0;
       transition: 1s;
-      transform:  translateY(30px)
-    }
-    .section3 .sec3_card:hover .sec3_cardtitle{
-      transform:  translateY(0)
-    }
-    .section3 .sec3_card:hover .sec3_carddesc {
-      opacity: 1;
-      transform:  translateY(0)
+      transform: translateY(30px)
     }
 
+    .section3 .sec3_card:hover {
+      background-blend-mode: none;
 
+      .sec3_cardtitle {
+        transform: translateY(0);
 
-
-
+      }
+      .sec3_carddesc {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 
@@ -354,19 +369,20 @@
   <script src="js/common.js"></script>
   <script src="js/main.js"></script>
   <script>
-  
-  $('.sec3_card').hover(
-    function() {
-      $(this).css('background-image', function(_, current) {
-        return current.replace('.jpg', '.gif');
+
+    $('.sec3_card').mouseenter(
+      function () {
+        $(this).css('background-image', function (_, current) {
+          return current.replace('.jpg', '.gif');
+        });
       });
-    },
-    function() {
-      $(this).css('background-image', function(_, current) {
-        return current.replace('.gif', '.jpg');
-      });
-    }
-  );
+    $('.sec3_card').mouseleave(
+      function () {
+        $(this).css('background-image', function (_, current) {
+          return current.replace('.gif', '.jpg');
+        });
+      }
+    );
 
 
 
