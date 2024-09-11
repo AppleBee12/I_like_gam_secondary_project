@@ -412,7 +412,6 @@ font-weight: 700;
 footer{
 	position: relative; 
 	background-color: var(--primary);
-	height: 475px;
 	font-size: var(--pc_body);
 	width: 100%;
 	
@@ -421,7 +420,12 @@ footer{
 	color: #fff;
 	line-height: 28px;
 }
-footer .ft-2 ul li a{
+
+.ft-1 ul:last-of-type{
+	color: #fff;
+	gap: 50px;
+}
+footer .ft-1 ul li a{
 	color: #fff;	
 }
 footer h3{
@@ -430,19 +434,12 @@ footer h3{
 address{
 	margin-bottom: 28px;
 }
-.ft-2{
-	margin-bottom: 56px;
-}
-.ft-2 > ul:first-of-type li:first-of-type{
+
+.footer_left > ul li:first-of-type{
     display: none;
 }
-.ft-2 ul:nth-child(1){
-	width:560px;
-
-}
-.ft-2 ul:nth-child(2){
-	width:325px;
-	position: relative;
+.footer_left > ul li{
+	color: #fff;
 }
 .sns {
 	width: 100%;
@@ -452,15 +449,14 @@ address{
 	display: flex;
 	gap: 57px;
 }
-
 .snsBtn a{
 	width: 28px;
 	height: 28px;
-
 }
-
-
-
+footer p{
+	text-align: center;
+	color: #fff;
+}
 .container .copyright{
 	position: absolute;
 	color: #fff;
@@ -495,39 +491,45 @@ address{
 		width: 100vw;
 		position: relative;
 	}
-	.ft-1 address{
+	/* .ft-1 address{
 		order:1;
 		display: block;
+	} */
+	.ft-1 ul:nth-of-type(1){
+		order:-1;
 	}
-
-	.ft-2 ul:nth-of-type(2){
-		text-indent: -239487em;
-		order: 1;
+	.ft-1 ul:nth-of-type(2) li a{
+		display: none;
+		/* text-indent: -239487em; */
+	}
 		
-	}
-	.ft-2  ul:nth-of-type(1){
+		
+	/* .ft-2  ul:nth-of-type(1){
 		display: flex;
 		justify-content: space-between;
 		width: 100vw;
 		font-size: var(--mo_sub_body);
 		position: absolute;	 
 		order: 2;
-	}
-	.sns{
-		width: 100vw;
-		 position: relative;
-		
-	
-	}
-	.snsBtn a{
-		/* position: absolute; */
-		display: block !important;	
+		} */
+	.sns {
 		display: flex;
-		justify-content: flex-end;
+		flex-direction: column; 
+		align-items: center; 
+		justify-content: center; 
+		gap: 30px; 
 	}
+	.snsBtn {
+    display: flex;
+    gap:20px;
+}
+.snsBtn a img {
+	width: 24px;
+	height: auto; 
+}
+
 }
 /*//태블릿반응형*/
-
 
 /* 모바일반응형 */
 @media screen and (max-width: 576px){
@@ -583,5 +585,5 @@ address{
 	width: 100%;
 	} */
 }
-/* //모바일 반응형
+/* //모바일 반응형 */
 /* //footer */
