@@ -29,6 +29,60 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <style>
+    /* video */
+header video{
+  width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -3;
+position: relative;
+top: 0;
+left: 0;
+}
+.vwrapper{
+  position: relative;
+}
+#controls{
+position: absolute;
+bottom: 23%;
+left: 10%;
+max-width: 1440px;
+height: 50px;
+}
+.progress {
+  left: 10%;
+right: 70%;
+bottom: 20%;
+height: 10px;
+overflow: hidden;
+background: rgba(255,255,255,0.2);
+position: absolute;
+  border-radius: 0;
+}
+.progress .bar{
+position: absolute;
+left: 0;
+top: 0;
+bottom: 0;
+width: 0;
+background: var(--tertiary);
+transition:  0.5s ;	
+}
+.video_btn button{
+border-radius: 50%;
+position: absolute;
+display: inline-block;
+color: white;
+border: 1px solid white;
+}
+.video_btn button:hover{
+color: var(--tertiary);
+border: 1px solid var(--tertiary);
+
+}
+  </style>
 </head>
 
 <body>
@@ -91,13 +145,18 @@
         <button><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
-    <video src="images/mainheader_bg.mp4" id="hdvideo" muted autoplay loop></video>
-    <div class="controls">
-        <div class="video_btn">
-          <button id="stop" class="btn" onclick="pausevid()"><i class="fa-solid fa-pause fa-2x"></i></button>
-          <!-- <input type="range" id="progress" class="progress" min="0" max="100" value="43" step="1" controls> -->
-        </div>
-        <!-- <div class="pagenation swiper-pagination"></div> -->
+    <div class="vwrapper">
+      <video src="images/mainheader_bg.mp4" id="hdvideo" muted autoplay loop></video>
+      <div class="progress">
+        <div class="bar"></div>
+      </div>
+      <div id="controls">
+          <div class="video_btn">
+            <button id="stop" class="btn" onclick="pausevid()"><i class="fa-solid fa-pause fa-2x"></i></button>
+            <!-- <input type="range" id="progress" class="progress" min="0" max="100" value="43" step="1" controls> -->
+          </div>
+          <!-- <div class="pagenation swiper-pagination"></div> -->
+      </div>
     </div>
   </header>
   <!--//Header 나승일-->
@@ -148,12 +207,24 @@
   </footer>
   <!--Footer 장지훈 -->
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="js/common.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    let video = $('#hdvideo');
+    let playBtn = $('#play');
+    let pauseBtn = $('#stop');
+    let playPauseBtn = $('.video_btn button');
+    let progressBar = $('#progress');
+
+    let vcontrols = $('#controls');
+    let bar = $('.progress .bar');
+
+  </script>
 </body>
 
 </html>
