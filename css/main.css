@@ -34,7 +34,8 @@
 	color: white;
 	border: 1px solid white;
 }
-.video_btn button:hover{
+
+.video_btn button:hover {
 	color: var(--tertiary);
 	border: 1px solid var(--tertiary);
 }
@@ -77,3 +78,97 @@
 		border: 1px solid var(--tertiary);
 	}
 }
+
+
+
+
+
+
+/* section3 홍수진*/
+.section3 {
+	background: url(../images/section3_global_bg.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+}
+
+.section3 .sec3_card_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	gap: 5px;
+}
+
+.section3 .sec3_card {
+	height: 560px;
+	padding: 112px 0;
+	border: 1px solid var(--lightgray);
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #d1d1d1;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	transition: 1s;
+}
+
+.sec3_card.sec301 {
+	background-image: url(../images/section3_lottetower.jpg);
+}
+
+.sec3_card.sec302 {
+	background-image: url(../images/section3_antarctica.jpg);
+}
+
+.sec3_card.sec303 {
+	background-image: url(../images/section3_songdo.jpg);
+}
+
+.sec3_card.sec304 {
+	background-image: url(../images/section3_kintex.jpg);
+}
+
+
+.section3 .sec3_cardtitle {
+	font-size: 40px;
+	/*rem으로 변경필요하나 추후@media에서 잡아줄예정*/
+	font-weight: 900;
+	text-transform: uppercase;
+	color: white;
+	transform: translateY(60px);
+	transition: 1s;
+}
+
+.section3 .sec3_cardtitle span {
+	color: var(--secondary);
+}
+
+.section3 .sec3_carddesc {
+	line-height: 28px;
+	opacity: 0;
+	transition: 1s;
+	transform: translateY(30px)
+}
+
+.section3 .sec3_card:hover {
+	background-blend-mode: none;
+
+	.sec3_cardtitle {
+		transform: translateY(0);
+
+	}
+
+	.sec3_carddesc {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/*// section3 홍수진*/
