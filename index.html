@@ -86,7 +86,18 @@
         <button><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
-    <video src="images/mainheader_bg.mp4" muted autoplay loop></video>
+    <!-- <video src="images/mainheader_bg.mp4" muted autoplay loop></video> -->
+    <div class="vwrapper">
+      <video src="images/mainheader_bg.mp4" id="hdvideo" muted autoplay loop></video>
+      <div class="progress">
+        <div class="bar"></div>
+      </div>
+      <div id="controls">
+          <div class="video_btn">
+            <button id="stop" class="btn" onclick="pausevid()"><i class="fa-solid fa-pause fa-2x"></i></button>
+          </div>
+      </div>
+    </div>
 
 
     
