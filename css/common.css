@@ -416,7 +416,7 @@ address{
 
 
 /* 모바일반응형 */
-@media screen and (max-width: 576px){
+/* @media screen and (max-width: 576px){
 	footer{
 		position: relative;
 	}
@@ -461,15 +461,13 @@ align-items: center;
 transform: translateX(-50%);
 right: 0;
 order: 1;
-/* margin-top: 40px; */
 }
 address{
 	margin-top: 40px;
 	order: 3;
-
 }
 .copyright{
 	width: 100%;
-}
+} */
 /* //모바일 반응형 */
 /* //footer */
