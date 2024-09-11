@@ -1,18 +1,42 @@
-/*section1 조채림*/
+/* xs devices (less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* sm devices (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	/* 여기에 스타일 추가 */
+}
+
+/* md devices (phones, 576px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	/* 여기에 스타일 추가 */
+}
+
+/* lg devices (PC버전desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	/* 여기에 스타일 추가 */
+}
+
+/* xl devices (1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+	/* 여기에 스타일 추가 */
+}
+
+/*xxl devices (1400px and up)*/
+@media screen and (min-width: 1400px) {
+	/* 여기에 스타일 추가 */
+}
+
+
+
+
+
+
+
+
 /* video */
-header video{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	z-index: -3;
-	position: relative;
-	top: 0;
-	left: 0;
-}
-.vwrapper{
-	position: relative;
-}
-#controls{
+/*section2 조채림*/
+
+#controls {
 	position: absolute;
 	bottom: 23%;
 	left: 10%;
@@ -25,28 +49,248 @@ header video{
 	bottom: 20%;
 	height: 10px;
 	overflow: hidden;
-	background: rgba(255,255,255,0.2);
+	background: rgba(255, 255, 255, 0.2);
 	position: absolute;
 	border-radius: 0;
 }
-.progress .bar{
+
+.progress .bar {
 	position: absolute;
 	left: 0;
 	top: 0;
 	bottom: 0;
 	width: 0;
 	background: var(--tertiary);
-	transition:  0.5s ;	
+	transition: 0.5s;
 }
-.video_btn button{
+
+.video_btn button {
 	border-radius: 50%;
 	position: absolute;
 	display: inline-block;
 	color: white;
 	border: 1px solid white;
 }
-.video_btn button:hover{
+
+.video_btn button:hover {
 	color: var(--tertiary);
 	border: 1px solid var(--tertiary);
 }
-/* // section1 조채림 끝 */
+
+@media screen and (max-width: 768px) {
+	#controls {
+		position: absolute;
+		bottom: 23%;
+		left: 10%;
+		max-width: 1440px;
+		height: 50px;
+	}
+
+	.progress {
+		left: 10%;
+		right: 70%;
+		bottom: 20%;
+		height: 10px;
+		overflow: hidden;
+		background: rgba(255, 255, 255, 0.2);
+		position: absolute;
+		border-radius: 0;
+	}
+
+	.progress .bar {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 0;
+		background: var(--tertiary);
+		transition: 0.5s;
+	}
+
+	.video_btn button {
+		border-radius: 50%;
+		position: absolute;
+		display: inline-block;
+		color: white;
+		border: 1px solid white;
+	}
+
+	.video_btn button:hover {
+		color: var(--tertiary);
+		border: 1px solid var(--tertiary);
+	}
+}
+.she_pic, .she_pic img{
+	width: 560px;
+	height: 588px;
+}
+.s2.container .she{
+	display: flex;
+	font-size: 110px;
+	color: #757575;
+	width: 488px;
+}
+.s2 h2{
+	font-size: var(--pc_title);
+	margin-bottom: 28px;
+}
+.s2 h4{
+	font-size: var(--pc_body);
+}
+.she_title{
+	margin-bottom: 84px;
+}
+.explain{
+	display: inline-block;
+	width: 780px;
+}
+.explain h2{
+	font-size: var(--pc_title);
+	color: #3E3D3D;
+}
+.explain p{
+	font-size: var(--pc_mid_body);
+}
+.pager{
+	margin-top: 50px;
+	font-size: var(--pc_big);
+}
+.pager a{
+	color: var(--lightgray);
+}
+.she_wrapper{
+	display: flex;
+}
+.explain_wrapper{
+	margin-left: 100px;
+	margin-top: 56px;
+}
+.details{
+	font-size: var(--pc_sub_title);
+	transition: 0.3s;
+
+}
+.details h3{
+	margin-top: 70px;
+	margin-bottom: 28px;
+}
+.details div p{
+	transition: 0.3s;
+
+}
+.she_pic img{
+	display: none;
+}
+.she_pic img.active{
+	display: block;
+	animation: fadeInLeft 1s ease forwards;
+
+}
+.details div{
+	display: none;
+}
+.details div.active{
+	display: block;
+	animation: fadeInLeft 1s ease forwards;
+}
+.pager a:focus{
+	color: var(--secondary);
+	transition: 0.3s;
+}
+
+@keyframes fadeInLeft{
+	from{opacity:0; translateX:(-25%);}
+	to{opacity:1; translateX:none;}
+  }
+.pager .s1{
+	margin-top: 28px;
+}
+
+/* section3 홍수진*/
+.section3 {
+	background: url(../images/section3_global_bg.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+}
+
+.section3 .sec3_card_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	gap: 5px;
+}
+
+.section3 .sec3_card {
+	height: 560px;
+	padding: 112px 0;
+	border: 1px solid var(--lightgray);
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #d1d1d1;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	transition: 1s;
+}
+
+.sec3_card.sec301 {
+	background-image: url(../images/section3_lottetower.jpg);
+}
+
+.sec3_card.sec302 {
+	background-image: url(../images/section3_antarctica.jpg);
+}
+
+.sec3_card.sec303 {
+	background-image: url(../images/section3_songdo.jpg);
+}
+
+.sec3_card.sec304 {
+	background-image: url(../images/section3_kintex.jpg);
+}
+
+
+.section3 .sec3_cardtitle {
+	font-size: 40px;
+	/*rem으로 변경필요하나 추후@media에서 잡아줄예정*/
+	font-weight: 900;
+	text-transform: uppercase;
+	color: white;
+	transform: translateY(60px);
+	transition: 1s;
+}
+
+.section3 .sec3_cardtitle span {
+	color: var(--secondary);
+}
+
+.section3 .sec3_carddesc {
+	line-height: 28px;
+	opacity: 0;
+	transition: 1s;
+	transform: translateY(30px)
+}
+
+.section3 .sec3_card:hover {
+	background-blend-mode: none;
+
+	.sec3_cardtitle {
+		transform: translateY(0);
+
+	}
+
+	.sec3_carddesc {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/*// section3 홍수진*/

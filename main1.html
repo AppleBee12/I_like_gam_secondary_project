@@ -26,6 +26,8 @@
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
@@ -50,70 +52,7 @@
     max-width: 280px;
   }
 }
-.she_pic, .she_pic img{
-  width: 560px;
-  height: 588px;
-}
-.s2.container .she{
-  display: flex;
-  font-size: 110px;
-  color: #757575;
-  width: 488px;
-}
-.s2 h2{
-  font-size: var(--pc_title);
-  margin-bottom: 28px;
-}
-.s2 h4{
-  font-size: var(--pc_body);
-}
-.she_title{
-  margin-bottom: 84px;
-}
-.explain{
-  display: inline-block;
-  width: 780px;
-}
-.explain h2{
-  font-size: var(--pc_title);
-  color: #3E3D3D;
-}
-.explain p{
-  font-size: var(--pc_mid_body);
-}
-.pager{
-  margin-top: 50px;
-  font-size: var(--pc_big);
-}
-.pager a{
-  color: var(--lightgray);
-}
-.she_wrapper{
-  display: flex;
-}
-.explain_wrapper{
-  margin-left: 100px;
-  margin-top: 56px;
-}
-.details{
-  font-size: var(--pc_sub_title);
-}
-.details h3{
-  margin-top: 70px;
-  margin-bottom: 28px;
-}
-.she_pic img{
-  display: none;
-}
-.she_pic img.active{
-  display: block;
-}
-.details div{
-  display: none;
-}
-.details div.active{
-  display: block;
-}
+
 </style>
 <body>
   <!--Header 나승일-->
@@ -210,31 +149,34 @@
             <img src="/images/she_environment.png" alt="img3">
           </div>
           <div class="explain_wrapper">
-          <div class="explain">
-            <h2>"안전한 100년 제철소 구현"</h2>
-            <p>안전이 회사 경영의 핵심가치임을 인식하고 경영층을 중심으로 
-              안전소통 및 현장점검을 통해 안전경영을 실천하고 있습니다.</p>
-          </div>
-          <div class="pager">
-            <a href="#">S.</a>
-            <a href="#">H.</a>
-            <a href="#">E.</a>
-          </div>
-          <div class="details">
-            <div class="active">
-              <h3> safety 안전</h3>
-              <p> 안전하고 쾌적한 근무환경 조성과 지역사회 환경을 고려한 안전보건경영을 실천합니다.</p>
+            <div class="explain">
+              <h2>"안전한 100년 제철소 구현"</h2>
+              <p>안전이 회사 경영의 핵심가치임을 인식하고 경영층을 중심으로 
+                안전소통 및 현장점검을 통해 안전경영을 실천하고 있습니다.</p>
             </div>
-            <div>
-              <h3>health 보건</h3>
-              <p>현대제철은 작업환경관리, 화학물질 관리등을 통해 직원들이 안전하고 건강하게 일할 수 있는 쾌적한 
-                근무 환경 조성에 최선의 노력을 다하고 있습니다. </p>
+            <div class="pager">
+              <a href="#" class="s1">S.</a>
+              <a href="#">H.</a>
+              <a href="#">E.</a>
             </div>
-            <div><h3>Enviornment 환경</h3>
-              <p> 현대제철은 지역사회의 환경영향까지 고려한 방침을 세워 실천하고 있습니다.</p>
+            <div class="details">
+              <div class="active">
+                <h3 class="animate__animated animate__slideInRight"> 
+                  safety 안전
+                </h3>
+                <p class="animate__animated animate__slideInRight"> 안전하고 쾌적한 근무환경 조성과 지역사회 환경을 고려한 안전보건경영을 실천합니다.</p>
+              </div>
+              <div>
+                <h3 class="animate__animated animate__fadeInRight">health 보건</h3>
+                <p class="animate__animated animate__fadeInRight">현대제철은 작업환경관리, 화학물질 관리등을 통해 직원들이 안전하고 건강하게 일할 수 있는 쾌적한 
+                  근무 환경 조성에 최선의 노력을 다하고 있습니다. </p>
+              </div>
+              <div>
+                <h3 class="animate__animated animate__fadeInRight">Enviornment 환경</h3>
+                <p class="animate__animated animate__fadeInRight"> 현대제철은 지역사회의 환경영향까지 고려한 방침을 세워 실천하고 있습니다.</p>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </section>

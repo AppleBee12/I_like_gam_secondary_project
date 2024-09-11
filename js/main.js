@@ -42,6 +42,8 @@ pagers.click(function(e){
 
   details.removeClass('active');
   details.eq(idx).addClass('active');
+  $(this).addClass('focus');
+  $(this).css({'margin-bottom':'28px'});
 }); 
 // //section2 조채림 끝
 
