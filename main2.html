@@ -36,8 +36,9 @@
     @media screen and (min-width: 835px) {
       .container {
         max-width: 1460px;
-        margin: 168px auto;
+        margin: 0 auto;
         width: 100%;
+        padding: 168px 20px;
       }
 
       .container h2 {
@@ -45,7 +46,6 @@
         /* font-family:hdharmony; */
         line-height: var(--pc_title);
         margin-bottom: var(--pc_title);
-
       }
 
       .container h4 {
@@ -63,7 +63,7 @@
       }
 
       .container {
-        margin: 120px 20px;
+        padding: 120px 20px;
         max-width: 794px;
         width: 100%;
       }
@@ -123,14 +123,37 @@
     .section3 .sec3_card {
       height: 560px;
       padding: 112px 0;
-      background: var(--green);
-      border: 1px solid #dee2e6;
+      border: 1px solid var(--lightgray);
       text-align: center;
+      color:white;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      background-color: #d1d1d1;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-blend-mode: multiply;
+      transition: 1s;
     }
+
+    .sec3_card.sec301 {
+      background-image: url(images/section3_lottetower.jpg);
+    }
+
+    .sec3_card.sec302 {
+      background-image: url(images/section3_antarctica.jpg);
+    }
+
+    .sec3_card.sec303 {
+      background-image: url(images/section3_songdo.jpg);
+    }
+
+    .sec3_card.sec304 {
+      background-image: url(images/section3_kintex.jpg);      
+    }
+
 
     .section3 .sec3_cardtitle {
       font-size: 40px;
@@ -138,6 +161,8 @@
       font-weight: 900;
       text-transform: uppercase;
       color: white;
+      transform:  translateY(60px);
+      transition: 1s;
     }
 
     .section3 .sec3_cardtitle span {
@@ -146,23 +171,22 @@
 
     .section3 .sec3_carddesc {
       line-height: 28px;
+      opacity: 0;
+      transition: 1s;
+      transform:  translateY(30px)
+    }
+    .section3 .sec3_card:hover .sec3_cardtitle{
+      transform:  translateY(0)
+    }
+    .section3 .sec3_card:hover .sec3_carddesc {
+      opacity: 1;
+      transform:  translateY(0)
     }
 
-    .sec301 {
-      background-image: url("images/section3_lottetower.jpg");
-    }
 
-    .sec302 {
-      background-image: url("images/section3_antarctica.jpg");
-    }
 
-    .sec303 {
-      background-image: url('images/section3_songdo.png');
-    }
 
-    .sec304 {
-      background: url('images/section3_kintex.jpg');
-    }
+
   </style>
 </head>
 
@@ -324,11 +348,26 @@
 
   </footer>
   <!--Footer 장지훈 -->
+
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="js/common.js"></script>
   <script src="js/main.js"></script>
   <script>
+  
+  $('.sec3_card').hover(
+    function() {
+      $(this).css('background-image', function(_, current) {
+        return current.replace('.jpg', '.gif');
+      });
+    },
+    function() {
+      $(this).css('background-image', function(_, current) {
+        return current.replace('.gif', '.jpg');
+      });
+    }
+  );
+
 
 
   </script>
