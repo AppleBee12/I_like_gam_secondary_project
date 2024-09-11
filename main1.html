@@ -39,8 +39,8 @@
 }
 @media screen and (max-width: 834px){
   .container{
-    margin:120px 20px;
     max-width: 794px;
+    margin:120px 100px;
   }
 }
 
@@ -50,15 +50,74 @@
     max-width: 280px;
   }
 }
-
-.she_pic img{
+.she_pic, .she_pic img{
   width: 560px;
   height: 588px;
+}
+.s2.container .she{
+  display: flex;
+  font-size: 110px;
+  color: #757575;
+  width: 488px;
+}
+.s2 h2{
+  font-size: var(--pc_title);
+  margin-bottom: 28px;
+}
+.s2 h4{
+  font-size: var(--pc_body);
+}
+.she_title{
+  margin-bottom: 84px;
+}
+.explain{
+  display: inline-block;
+  width: 780px;
+}
+.explain h2{
+  font-size: var(--pc_title);
+  color: #3E3D3D;
+}
+.explain p{
+  font-size: var(--pc_mid_body);
+}
+.pager{
+  margin-top: 50px;
+  font-size: var(--pc_big);
+}
+.pager a{
+  color: var(--lightgray);
+}
+.she_wrapper{
+  display: flex;
+}
+.explain_wrapper{
+  margin-left: 100px;
+  margin-top: 56px;
+}
+.details{
+  font-size: var(--pc_sub_title);
+}
+.details h3{
+  margin-top: 70px;
+  margin-bottom: 28px;
+}
+.she_pic img{
+  display: none;
+}
+.she_pic img.active{
+  display: block;
+}
+.details div{
+  display: none;
+}
+.details div.active{
+  display: block;
 }
 </style>
 <body>
   <!--Header 나승일-->
-  <header>
+<header>
     <div class="top_nav">
       <div class="container">
         <h1 class="logo"><a href="">hyundae</a></h1>
@@ -124,9 +183,7 @@
       <div id="controls">
           <div class="video_btn">
             <button id="stop" class="btn" onclick="pausevid()"><i class="fa-solid fa-pause fa-2x"></i></button>
-            <!-- <input type="range" id="progress" class="progress" min="0" max="100" value="43" step="1" controls> -->
           </div>
-          <!-- <div class="pagenation swiper-pagination"></div> -->
       </div>
     </div>
   </header>
@@ -134,42 +191,57 @@
 
   <main>
     <!-- section1 조채림 -->
-    <section class="section1">
-    </section>
+
     <!-- //section1 조채림 -->
 
 
 
     <!-- section2 조채림 -->
-    <section class="section2">
-
+    <section class="section2 container">
+      <div class="s2 container">
+        <div class="she_title">
+          <h2>S.H.E.</h2>
+          <h4>S.H.E. MANAGEMENT</h4>
+        </div>
+        <div class="she_wrapper">
+          <div class="she_pic">
+            <img src="/images/she_safety.png" alt="img1" class="active">
+            <img src="/images/she_health.png" alt="img2">
+            <img src="/images/she_environment.png" alt="img3">
+          </div>
+          <div class="explain_wrapper">
+          <div class="explain">
+            <h2>"안전한 100년 제철소 구현"</h2>
+            <p>안전이 회사 경영의 핵심가치임을 인식하고 경영층을 중심으로 
+              안전소통 및 현장점검을 통해 안전경영을 실천하고 있습니다.</p>
+          </div>
+          <div class="pager">
+            <a href="#">S.</a>
+            <a href="#">H.</a>
+            <a href="#">E.</a>
+          </div>
+          <div class="details">
+            <div class="active">
+              <h3> safety 안전</h3>
+              <p> 안전하고 쾌적한 근무환경 조성과 지역사회 환경을 고려한 안전보건경영을 실천합니다.</p>
+            </div>
+            <div>
+              <h3>health 보건</h3>
+              <p>현대제철은 작업환경관리, 화학물질 관리등을 통해 직원들이 안전하고 건강하게 일할 수 있는 쾌적한 
+                근무 환경 조성에 최선의 노력을 다하고 있습니다. </p>
+            </div>
+            <div><h3>Enviornment 환경</h3>
+              <p> 현대제철은 지역사회의 환경영향까지 고려한 방침을 세워 실천하고 있습니다.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
     </section>
     <!-- //section2 조채림 -->
 
-
-
     <!-- section3 홍수진 -->
     <section class="section3">
-      <div class="container">
-        <h2>S.H.E.</h2>
-        <h4>S.H.E. MANAGEMENT</h4>
-        <div class="she_pic">
-          <img src="/images/she_safety.png" alt="">
-        </div>
-        <div class="she">
-          <h1>S.</h1>
-          <h1>H.</h1>
-          <h1>E.</h1>
-        </div>
-        <div class="explain">
-          <h2>"안전한 100년 제철소 구현"</h2>
-          <p>
-            안전이 회사 경영의 핵심가치임을 인식하고 경영층을 중심으로 
-            안전소통 및 현장점검을 통해 안전경영을 실천하고 있습니다.
-          </p>
-        </div>
-
-      </div>
     </section>
     <!-- //section3 홍수진 -->
 
