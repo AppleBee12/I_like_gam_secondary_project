@@ -30,16 +30,17 @@ body{
 }
 /* header */
 header{
-	max-width: 1920px;
   width:100%;
-  height: 720px;
+  height: 100vh;
   position: relative;
 }
 .top_nav{
-  width: 100%;
+  position: absolute;
+	left: 0;
+	right: 0;
+	top:0;
   border-bottom: 1px solid #fff;
   background-color: transparent;
-	position: relative;
 	transition: 0.5s;
 	overflow: hidden;
 }
@@ -51,16 +52,47 @@ header{
   align-items: center;
   gap: 85px;
 }
-.container button{
-	border: none;
-	background: transparent;
-	font-size: 39px;
-	line-height: 40px;
+.hamburger_button{
 	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right:30px;
+	top: 35px;
 }
+.hamburger_button span{
+	position: absolute;
+	width: 32px;
+	height: 3px;
+	background: #000;
+	border-radius: 4px;
+	right: 0;
+	top: 0;
+	transition:0.5s;
+
+}
+.hamburger_button span:nth-child(2),
+.hamburger_button span:nth-child(3){
+	top:8px;
+}
+.hamburger_button span:nth-child(4){
+	top:16px;
+}
+.hamburger_button.toggle span:nth-child(2){
+  transform:rotate(45deg);
+}
+.hamburger_button.toggle span:nth-child(3){
+  transform:rotate(-45deg);
+}
+.hamburger_button.toggle span:nth-child(1),
+.hamburger_button.toggle span:nth-child(4){
+  opacity: 0;
+}
+
+
 .main_menu{
   display: flex;
-  gap:85px;
+  gap:80px;
 	position: relative;
 	font-size: var(--pc_body);
 	padding:40px 0px;
@@ -125,7 +157,8 @@ header video{
 	left: 0;
 }
 /* tablet_menu */
-.tb_menu{
+
+.tb_container{
 	display: none;
 	max-width: 834px;
 	width: 100%;
@@ -151,12 +184,14 @@ header video{
 	margin-bottom: 30px;
 	padding: 0 52px;
 }
+
 .tb_nav>ul{
 	display: flex;
 	gap:20%;
 	flex-wrap:wrap;
 	padding:0 90px ;
 }
+
 .tb_nav>ul>li>a{
 	font-size: var(--mo_subtitle);
 	position: relative;
@@ -179,6 +214,7 @@ header video{
 .tb_nav>ul>li{
 	margin-bottom: 60px;
 }
+
 .tb_nav ul li ul{
 	display: flex;
 	flex-direction: column;
@@ -191,6 +227,8 @@ text-decoration: underline;
 color:var(--primary);
 font-weight: 700;
 }
+
+
 /* tablet button */
 .tb_navbar button{
 	border: none;
@@ -198,29 +236,38 @@ font-weight: 700;
 	font-size: 39px;
 	line-height: 40px;
 }
+
+
+
 /* tablet */
 @media screen and (max-width: 1920px){
 	.container{
 		max-width: 1440px;
 	}
 }
+
 @media screen and (max-width: 834px){
 	
 	.main_menu{
 		display: none;
 	}
-	.top_nav:hover{
-		height: auto;
+	.main_list{
+		display: none;
 	}
+
+
 	header .top_nav{
 		border-bottom: 1px solid #000;
+		position: sticky;
+		top: 0;
+
 	}
 	header .top_nav .container{
 		justify-content: space-between;
+		background-color: white;
+		width: 100vw;
 	}
-	.container button{
-		display: block;
-	}
+
 	header video{
 		position: relative;;
 	}
