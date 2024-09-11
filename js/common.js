@@ -1,4 +1,6 @@
-topNav=document.querySelector('.top_nav')
+const topNav=document.querySelector('.top_nav')
+NavBtn = $('.container button');
+tbNavBtn = $('.tb_navbar button');
 //topNav = $('.top_nav');
 
 /*
@@ -23,9 +25,17 @@ topNav.addEventListener('mouseleave', () => {
  if (window.innerWidth > 834) {
    topNav.style.backgroundColor = 'transparent';
    topNav.style.borderBottom = '1px solid white';
-   topNav.style.height = '';
+   topNav.style.height = '88px';
  }
 });
+
+NavBtn.click(function(){
+  $('.tb_menu').css({display:'block'});
+})
+tbNavBtn.click(function(){
+  $('.tb_menu').css({display:'none'});
+})
+
 
 
 
