@@ -205,7 +205,6 @@ color:var(--primary);
 font-weight: 700;
 }
 
-
 /* tablet button */
 .tb_navbar button{
 	border: none;
@@ -260,12 +259,6 @@ font-weight: 700;
 
 
 
-<<<<<<<<< Temporary merge branch 1
-
-
-
-=========
->>>>>>>>> Temporary merge branch 2
 /* footer */
 footer{
 background-color: var(--primary);
@@ -349,7 +342,6 @@ address{
 }
 
 
-<<<<<<<<< Temporary merge branch 1
 @media screen and (max-width: 980px){
 	.ft-1{
 		width: 100vw;
@@ -382,13 +374,11 @@ address{
 	.snsBtn a{
 		display: block !important;	
 	}
-
+}
 /* //footer */
-=========
 @media screen and (max-width: 920px){
 footer{font-size: var(--mo_sub_body);}
 
 }
 
 /* //footer */
->>>>>>>>> Temporary merge branch 2

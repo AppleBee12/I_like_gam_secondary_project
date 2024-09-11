@@ -27,3 +27,21 @@ let timer = setInterval(()=>{
   }
 }, 400);
 // //section1 조채림 끝
+
+// section2 조채림 
+
+const imgs = $('.she_pic img');
+const details = $('.details div');
+const pagers = $('.pager a');
+
+pagers.click(function(e){
+  e.preventDefault();
+  let idx = $(this).index();
+  imgs.removeClass('active');
+  imgs.eq(idx).addClass('active');
+
+  details.removeClass('active');
+  details.eq(idx).addClass('active');
+}); 
+// //section2 조채림 끝
+
