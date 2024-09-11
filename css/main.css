@@ -34,7 +34,6 @@
 
 
 /* video */
-<<<<<<< HEAD
 header video{
 	width: 100%;
 	height: 100%;
@@ -48,11 +47,6 @@ header video{
 	position: relative;
 }
 #controls{
-=======
-
-
-#controls {
->>>>>>> master
 	position: absolute;
 	bottom: 23%;
 	left: 10%;
