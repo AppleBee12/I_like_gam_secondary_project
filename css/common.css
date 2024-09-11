@@ -252,6 +252,8 @@ font-weight: 700;
 
 
 /* footer */
+
+/* footer */
 footer{
 	position: relative; 
 	background-color: var(--primary);
@@ -277,9 +279,8 @@ address{
 	margin-bottom: 56px;
 }
 .ft-2 > ul:first-of-type li:first-of-type{
-	display: none;
+    display: none;
 }
-
 .ft-2 ul:nth-child(1){
 	width:560px;
 
@@ -300,7 +301,7 @@ address{
 .snsBtn a{
 	width: 28px;
 	height: 28px;
-	
+
 }
 
 
@@ -314,7 +315,8 @@ address{
 	bottom: 20px;	
 }
 .container .familysite a{
-	position: absolute;	
+	position: absolute;
+	
 	color: #fff;
 	right: 0;
 	width: 190px;
@@ -327,18 +329,29 @@ address{
 	display: none;
 }
 
-
-
-.container .copyright{
-	position: absolute;
-	color: #fff;
-}
 /* //footer */
 
 /*태블릿반응형*/
 @media screen and (max-width: 768px){
 	footer{
 		font-size: var(--mo_sub_body);
+	}
+	.ft-1{
+		width: 100vw;
+		position: relative;
+	}
+	.ft-1 address{
+		order:1;
+		display: block;
+	}
+	.ft-2{
+		/* display: flex; */
+		/* flex-direction: column; */
+	}
+	.ft-2 ul:nth-of-type(2){
+		text-indent: -239487em;
+		order: 1;
+		
 	}
 	.ft-2  ul:nth-of-type(1){
 		display: flex;
@@ -351,8 +364,8 @@ address{
 	.sns{
 		width: 100vw;
 		 position: relative;
-
-
+		
+	
 	}
 	.snsBtn a{
 		/* position: absolute; */
@@ -378,9 +391,9 @@ address{
 	}
 	.ft-2 > ul:first-of-type li:first-of-type{
     display: block;
-
+		
 }
-
+	
 .ft-2 {
 	display: flex;
 	justify-content: space-between;
@@ -390,7 +403,7 @@ address{
 	flex-direction: column;
 	gap: 10px;
 	order: 1;
-
+	
 }
 
 .ft-2 > ul li:last-of-type {
