@@ -34,15 +34,16 @@
 
 
 /* video */
-/*section2 조채림*/
 
-#controls {
+
+#controls{
 	position: absolute;
 	bottom: 23%;
 	left: 10%;
 	max-width: 1440px;
 	height: 50px;
 }
+
 .progress {
 	left: 10%;
 	right: 70%;
@@ -120,15 +121,15 @@
 		border: 1px solid var(--tertiary);
 	}
 }
-.she_pic, .she_pic img{
-	width: 560px;
-	height: 588px;
+
+.she_title{
+	margin-bottom: 84px;
 }
 .s2.container .she{
 	display: flex;
 	font-size: 110px;
 	color: #757575;
-	width: 488px;
+	/* width: 488px; */
 }
 .s2 h2{
 	font-size: var(--pc_title);
@@ -137,12 +138,27 @@
 .s2 h4{
 	font-size: var(--pc_body);
 }
-.she_title{
-	margin-bottom: 84px;
+#she_wrapper{
+	display: flex;
 }
+.she_pic, .she_pic img{
+	/* width: 560px; */
+	height: 588px;
+}
+.she_pic img{
+	display: none;
+}
+.she_pic img.active{
+	display: block;
+	animation: fadeInLeft 1s ease forwards;
+}
+/* .explain_wrapper{
+	margin-left: 100px;
+	margin-top: 56px;
+} */
 .explain{
 	display: inline-block;
-	width: 780px;
+	/* width: 780px; */
 }
 .explain h2{
 	font-size: var(--pc_title);
@@ -165,12 +181,14 @@
 .pager a{
 	color: var(--lightgray);
 }
-#she_wrapper{
-	display: flex;
+.pager a:focus{
+	color: var(--secondary);
+	transition: 0.3s;
 }
-.explain_wrapper{
-	margin-left: 100px;
-	margin-top: 56px;
+.pager a:hover{
+	color: var(--secondary);
+	transition: 0.3s;
+	margin-top: -28px;
 }
 .details{
 	font-size: var(--pc_sub_title);
@@ -185,24 +203,13 @@
 	transition: 0.3s;
 
 }
-.she_pic img{
-	display: none;
-}
-.she_pic img.active{
-	display: block;
-	animation: fadeInLeft 1s ease forwards;
 
-}
 .details div{
 	display: none;
 }
 .details div.active{
 	display: block;
 	animation: fadeInLeft 1s ease forwards;
-}
-.pager a:focus{
-	color: var(--secondary);
-	transition: 0.3s;
 }
 [data-animate-in="left"] {
     transform: translate3d(-25%, 0, 0)
@@ -211,11 +218,9 @@
 	from{opacity:0; translateX:(-25%);}
 	to{opacity:1; translateX:none;}
   }
-.pager a:hover{
-	color: var(--secondary);
-	transition: 0.3s;
-	margin-top: -28px;
-}
+
+
+
 
 /* section3 홍수진*/
 .section3 {
