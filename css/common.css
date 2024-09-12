@@ -42,10 +42,11 @@ header {
 header .logo a {
 	width: 168px;
 	height: 45px;
-	background: url(../images/footer/pclogo.svg) no-repeat;
+	background: url(../images/header_icon.svg) no-repeat;
 	display: block;
 	text-indent: -9999em;
 }
+
 .top_nav{
   position: absolute;
 	left: 0;
@@ -238,6 +239,7 @@ header video {
 		padding: 20px 0;
 		transition: 0.3s;
 		opacity: 0;
+		z-index: 999;
 	}
 
 	header video {
@@ -324,6 +326,8 @@ header video {
 
 
 }
+
+
 
 /* tablet */
 @media screen and (max-width: 1920px) {
