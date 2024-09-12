@@ -42,6 +42,20 @@ toggleBtn.click(function(){
   $('.tb_container').toggleClass('visible');
 })
 
+//퀵메뉴
+$('.fixed-action-btn').floatingActionButton({
+  hoverEnabled: false,
+});
+
+$('.fixed-action-btn a').click(function(){
+if($(this).find('i').text() === 'add'){
+  $(this).find('i').text('close') 
+}else{
+  $(this).find('i').text('add') 
+}
+})
+
+
 
 
 

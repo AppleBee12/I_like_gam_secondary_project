@@ -43,6 +43,7 @@ header .logo a{
 	display: block;
 	text-indent: -9999em;
 }
+
 .top_nav{
   position: absolute;
 	left: 0;
@@ -158,6 +159,16 @@ header .logo a{
 	top:110%;
 	z-index: 1;
 }
+.fixed-action-btn{
+	bottom:15%;
+}
+.fixed-action-btn>ul>li{
+	margin-bottom: 40px;
+}
+
+
+
+
 /* 지우지 마세요 반응형 넘어갈때 잔상 없애기용 입니다 */
 .tb_container{
 	width: 100%;
