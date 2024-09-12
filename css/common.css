@@ -352,7 +352,15 @@ header video {
 
 /* sm devices (phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-	/* 여기에 스타일 추가 */
+	.container h2 {
+		font-size: var(--mo_title);
+		font-weight: 500;
+		/* font-family:hdharmony; */
+	}
+
+	.container h4 {
+		font-size: var(--mo_body);
+	}
 }
 
 /* md devices (tablets, 768px and up) */
