@@ -1,5 +1,7 @@
 /* xs devices (less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+	/* 여기에 스타일 추가 */
+}
 
 /* sm devices (phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -296,11 +298,10 @@
 }
 
 .section3 .sec3_card:hover {
-	background-blend-mode: none;
+	background-blend-mode: normal;
 
 	.sec3_cardtitle {
 		transform: translateY(0);
-
 	}
 
 	.sec3_carddesc {
