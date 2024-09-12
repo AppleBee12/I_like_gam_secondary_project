@@ -332,7 +332,11 @@
 
 
 
-
+.py-6 {
+	padding-top: 7rem !important;
+	padding-bottom: 7rem !important;
+  }
+  
 
 
 /* xs devices (less than 576px) */
@@ -348,7 +352,7 @@
 	  .sec3_cardtitle {
 		font-size: var(--mo_subtitle);
 		font-weight: 700;
-		
+		transform: translateY(80px);
 		
 	  }
 	  .sec3_carddesc{
@@ -369,6 +373,7 @@
 		.sec3_cardtitle {
 		  font-size: var(--mo_subtitle);
 		  font-weight: 700;
+		  transform: translateY(80px);
 		  
 		}
 		.sec3_carddesc{
@@ -387,8 +392,8 @@
 		.sec3_cardtitle {
 		  font-size: var(--mo_subtitle);
 		  font-weight: 700;
-		  
 		}
+
 		.sec3_carddesc{
 		  font-size: var(--mo_subbody);
 		}
