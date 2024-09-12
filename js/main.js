@@ -26,6 +26,7 @@ let timer = setInterval(()=>{
     clearInterval(timer);
   }
 }, 400);
+
 // //section1 조채림 끝
 
 // section2 조채림 
@@ -69,3 +70,20 @@ $(document).ready(function() {
 });
 // //section2 조채림 끝
 
+//section3 홍수진
+
+$('.sec3_card').mouseenter(
+  function () {
+    $(this).css('background-image', function (_, current) {
+      return current.replace('.jpg', '.gif');
+    });
+  });
+$('.sec3_card').mouseleave(
+  function () {
+    $(this).css('background-image', function (_, current) {
+      return current.replace('.gif', '.jpg');
+    });
+  }
+);
+
+//section3 홍수진 fin
