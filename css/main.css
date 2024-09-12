@@ -330,10 +330,14 @@
 
 
 
-
+/* gap사이즈 지정 */
 
 .py-6 {
 	padding-top: 7rem !important;
+	padding-bottom: 7rem !important;
+  }
+  
+.pb-6 {
 	padding-bottom: 7rem !important;
   }
   
