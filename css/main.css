@@ -132,7 +132,6 @@
 }
 .s2 h2{
 	font-size: var(--pc_title);
-	margin-bottom: 28px;
 }
 .s2 h4{
 	font-size: var(--pc_body);
@@ -168,7 +167,6 @@
 	line-height: 56px;
 }
 .pager{
-	margin-top: 50px;
 	font-size: var(--pc_big);
 	font-weight: 600;
 }
