@@ -559,6 +559,7 @@ footer{
 	background-color: var(--primary);
 	font-size: var(--pc_body);
 	width: 100%;	
+	padding-bottom: 60px;
 }
 footer .logo a{
   width: 211px;
@@ -571,6 +572,7 @@ footer .logo a{
 .ft-1{
 	color: #fff;
 	line-height: 28px;
+	
 }
 
 .ft-1 ul:last-of-type{
