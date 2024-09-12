@@ -238,6 +238,7 @@ header video {
 		padding: 20px 0;
 		transition: 0.3s;
 		opacity: 0;
+		z-index: 999;
 	}
 
 	header video {
@@ -324,6 +325,10 @@ header video {
 
 
 }
+
+
+
+
 
 /* tablet */
 @media screen and (max-width: 1920px) {
