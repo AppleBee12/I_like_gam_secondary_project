@@ -16,14 +16,14 @@ topNav.mouseenter(function(){
 });
 */
 topNav.addEventListener('mouseenter', () => {
-if (window.innerWidth > 798) {
+if (window.innerWidth > 768) {
   topNav.style.backgroundColor = 'white';
   topNav.style.borderBottom = '1px solid black';
   topNav.style.height = '380px';
 }
 });
 topNav.addEventListener('mouseleave', () => {
- if (window.innerWidth > 798) {
+ if (window.innerWidth > 768) {
    topNav.style.backgroundColor = 'transparent';
    topNav.style.borderBottom = '1px solid white';
    topNav.style.height = '88px';
