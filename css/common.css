@@ -681,7 +681,7 @@ footer p{
 	.ft-1  ul:nth-of-type(1){
 		display: flex;
 		justify-content: space-between;
-		margin-top: ;
+	
 		width: 100%;
 		font-size: var(--mo_sub_body);
 		position: absolute;	 
