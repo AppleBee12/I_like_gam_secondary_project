@@ -188,7 +188,7 @@ header video{
 	.tb_container{
 		width: 100%;
 		position: absolute;
-		top: 12%;
+		top: 10%;
 		left: 0;
 		background: white;
 		padding: 20px 0;
@@ -202,7 +202,7 @@ header video{
 	
 	.visible.tb_container{
 	
-		top:12%;
+		top:10%;
 		opacity: 1;
 	}
 	
