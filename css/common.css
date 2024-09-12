@@ -36,6 +36,13 @@ header{
   height: 100vh;
   position: relative;
 }
+header .logo a{
+	width: 168px;
+	height: 45px;
+	background: url(../images/footer/pclogo.svg) no-repeat;
+	display: block;
+	text-indent: -9999em;
+}
 .top_nav{
   position: absolute;
 	left: 0;
@@ -185,6 +192,10 @@ header video{
 
 @media screen and (max-width: 768px){
 	/* header 승일 */
+	header .logo a{
+		width: 78px;
+		height: 21px;
+	}
 	.tb_container{
 		width: 100%;
 		position: absolute;
@@ -498,7 +509,7 @@ footer{
 	font-size: var(--pc_body);
 	width: 100%;	
 }
-.logo a{
+footer .logo a{
   width: 211px;
   height: 56px;
 	margin-top: 80px;
@@ -577,7 +588,7 @@ footer p{
 	footer{
 		font-size: var(--mo_sub_body);
 	}
-	.logo a{
+	footer .logo a{
 		width: 207px;
 		height: 60px;
 		margin-top: 80px;
@@ -634,7 +645,7 @@ footer p{
 	footer{
 		position: relative;
 				}
-				.logo a{
+				footer .logo a{
 					width: 151px;
 					height: 40px;
 					margin-top: 80px;
