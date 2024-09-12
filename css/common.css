@@ -496,8 +496,15 @@ footer{
 	position: relative; 
 	background-color: var(--primary);
 	font-size: var(--pc_body);
-	width: 100%;
-	
+	width: 100%;	
+}
+.logo a{
+  width: 211px;
+  height: 56px;
+	margin-top: 80px;
+  background: url(../images/footer/pclogo.svg) no-repeat;
+  display: block;
+  text-indent: -9999em;
 }
 .ft-1{
 	color: #fff;
@@ -570,6 +577,14 @@ footer p{
 	footer{
 		font-size: var(--mo_sub_body);
 	}
+	.logo a{
+		width: 207px;
+		height: 60px;
+		margin-top: 80px;
+		background: url(../images/footer/pclogo.svg) no-repeat;
+		display: block;
+		text-indent: -9999em;
+	}
 	.ft-1{
 		width: 100vw;
 		position: relative;
@@ -618,6 +633,14 @@ footer p{
 @media screen and (max-width: 576px){
 	footer{
 		position: relative;
+				}
+				.logo a{
+					width: 151px;
+					height: 40px;
+					margin-top: 80px;
+					background: url(../images/footer/pclogo.svg) no-repeat;
+					display: block;
+					text-indent: -9999em;
 				}
 	.ft-1{
 		display: flex;
