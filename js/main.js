@@ -3,9 +3,9 @@ let video = $('#hdvideo');
 let playBtn = $('#play');
 let pauseBtn = $('#stop');
 let playPauseBtn = $('.video_btn button');
-let progressBar = $('#progress');
+let progressBar = $('#progress1');
 let vcontrols = $('#controls');
-let bar = $('.progress .bar');
+let bar = $('.progress1 .bar');
 
 playPauseBtn.click(function(){
   if(video.get(0).paused){
@@ -29,7 +29,8 @@ let timer = setInterval(()=>{
 
 // //section1 조채림 끝
 
-//section2
+// section2 조채림 
+
 const imgs = $('.she_pic img');
 const details = $('.details div');
 const pagers = $('.pager a');
@@ -47,12 +48,12 @@ pagers.click(function(e){
 }); 
 
 AOS.init({
-  duration: 1200,
+  duration: 1000,
 })
 
 
 
-$(document).ready(function() {
+
   let currentIndex = 0;
   const tabs = $(".tab");
 
@@ -66,7 +67,7 @@ $(document).ready(function() {
 
   // 일정 시간 간격으로 탭 자동 변경
   setInterval(autoSwitchTab, 3000); // 3000ms = 3초
-});
+
 
 //section3 홍수진
 

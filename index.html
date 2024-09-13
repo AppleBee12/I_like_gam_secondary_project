@@ -34,9 +34,6 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
-  <style>
-
-  </style>
 </head>
 
 
@@ -106,7 +103,7 @@
     <!-- <video src="images/mainheader_bg.mp4" muted autoplay loop></video> -->
     <div class="vwrapper">
       <video src="images/mainheader_bg.mp4" id="hdvideo" muted autoplay loop></video>
-      <div class="progress">
+      <div class="progress1">
         <div class="bar"></div>
       </div>
       <div id="controls">
@@ -128,7 +125,7 @@
     <div class="tb_nav">
       <ul>
         <li><a href="">회사소개</a>
-          <ul>
+          <ul class="tb_list">
             <li><a href="">사업소개</a></li>
             <li><a href="">사업창</a></li>
             <li><a href="">CEO인사말</a></li>
@@ -138,14 +135,14 @@
           </ul>
         </li>
         <li><a href="">제품기술</a>
-          <ul>
+          <ul class="tb_list">
             <li><a href="">제품목록</a></li>
             <li><a href="">종합카탈로그</a></li>
             <li><a href="">생산공정</a></li>
           </ul>
         </li>
         <li><a href="">투자정보</a>
-          <ul>
+          <ul class="tb_list">
             <li><a href="">전자공고</a></li>
             <li><a href="">요약재무제표</a></li>
             <li><a href="">신용등급</a></li>
@@ -154,7 +151,7 @@
           </ul>
         </li>
         <li><a href="">지속가능경영</a>
-          <ul>
+          <ul class="tb_list">
             <li><a href="">탄소중립로드맵</a></li>
             <li><a href="">지속가능전략</a></li>
             <li><a href="">통합보고서</a></li>
@@ -162,7 +159,7 @@
           </ul>
         </li>
         <li><a href="">홍보센터</a>
-          <ul>
+          <ul class="tb_list">
             <li><a href="">뉴스센터</a></li>
             <li><a href="">youtube</a></li>
             <li><a href="">소식지</a></li>
@@ -172,6 +169,8 @@
       </ul>
     </div>
     </div>
+
+    <!-- 퀵메뉴 -->
     <div class="fixed-action-btn">
       <a class="btn-floating btn-large  blue darken-4">
         <i class="large material-icons">add</i>
@@ -185,50 +184,54 @@
           <a href="#">지속가능</a></li>
       </ul>
     </div>
+
+    <!-- TOP 버튼 -->
+     <button id="top_btn"><i class="fa-solid fa-angles-up"></i></button>
+     
   <!--//Header 나승일-->
 
   <main>
 
 
     <!-- section2 조채림 -->
-    <section class="section2 container">
-      <div class="s2 container">
-        <div class="she_title">
-          <h2 data-aos="fade-right" data-aos="fade-right">S.H.E.</h2>
-          <h4 data-aos="fade-right" data-aos="fade-right">S.H.E. MANAGEMENT</h4>
+    <section class="section2">
+      <div class="s2 container px-5 py-5">
+        <div class="she_title col-md-12 column-gap-5">
+          <h2 class="s_tt_h2 pb-2 pb-sm-3" data-aos="fade-right" data-aos="fade-right">S.H.E.</h2>
+          <h4 class="s_tt_mgm pb-5" data-aos="fade-right" data-aos="fade-right">S.H.E. MANAGEMENT</h4>
         </div>
-        <div id="she_wrapper">
-          <div class="she_pic rumitab_content">
-            <img src="/images/she_safety.png" alt="img1" class="active" data-aos="fade-right">
-            <img src="/images/she_health.png" alt="img2" data-aos="fade-right">
-            <img src="/images/she_environment.png" alt="img3" data-aos="fade-right">
+        <div id="she_wrapper" class="column-gap-5 row ">
+          <div class="she_pic col-12 col-xs-12  col-sm-12 col-md-12 col-lg-5 ">
+            <img src="images/she_safety.png" alt="img1" class="active img_height" data-aos="fade-right">
+            <img src="images/she_health.png" alt="img2" class="img_height" data-aos="fade-right">
+            <img src="images/she_environment.png" alt="img3" class="img_height" data-aos="fade-right">
           </div>
-          <div class="explain_wrapper">
-            <div class="explain">
-              <h2 data-aos="fade-left">"안전한 100년 제철소 구현"</h2>
-              <p data-aos="fade-left">안전이 회사 경영의 핵심가치임을 인식하고 경영층을 중심으로
+          <div class="explain_wrapper col-12 col-lg-6 pt-4">
+            <div class="explain ">
+              <h2 class="pb-lg-4" data-aos="fade-left">"안전한 100년 제철소 구현"</h2>
+              <p class="pb-lg-5" data-aos="fade-left">안전이 회사 경영의 핵심가치임을 인식하고 경영층을 중심으로
                 안전소통 및 현장점검을 통해 안전경영을 실천하고 있습니다.</p>
             </div>
-            <div id="tab_id" class="rumitab_box">
-              <div class="pager" data-aos="fade-left">
+            <div id="tab_id">
+              <div class="pager d-flex" data-aos="fade-left">
                 <a href="tab1" class="tab">S.</a>
                 <a href="tab2" class="tab">H.</a>
                 <a href="tab3" class="tab">E.</a>
-                <hr>
+                <!-- <hr class="hr"> -->
               </div>
-              <div class="details" data-aos="fade-left">
+              <div class="details pt-lg-3" data-aos="fade-left">
                 <div id="tab1" class="active tab_content">
-                  <h3>safety 안전</h3>
-                  <p> 안전하고 쾌적한 근무환경 조성과 지역사회 환경을 고려한 안전보건경영을 실천합니다.</p>
+                  <h3 class="mb-sm-4 mt-sm-2 mb-md-4 mb-xxl-1"> safety 안전</h3>
+                  <p class="pt-lg-5"> 안전하고 쾌적한 근무환경 조성과 지역사회 환경을 고려한 안전보건경영을 실천합니다.</p>
                 </div>
                 <div id="tab2" class="tab_content">
-                  <h3>health 보건</h3>
-                  <p>현대제철은 작업환경관리, 화학물질 관리등을 통해 직원들이 안전하고 건강하게 일할 수 있는 쾌적한
+                  <h3 class="mb-sm-4 mt-sm-2 mb-md-4 mb-xxl-1">health 보건</h3>
+                  <p class="pt-lg-5">현대제철은 작업환경관리, 화학물질 관리등을 통해 직원들이 안전하고 건강하게 일할 수 있는 쾌적한
                     근무 환경 조성에 최선의 노력을 다하고 있습니다. </p>
                 </div>
                 <div id="tab3" class="tab_content">
-                  <h3>Enviornment 환경</h3>
-                  <p> 현대제철은 지역사회의 환경영향까지 고려한 방침을 세워 실천하고 있습니다.</p>
+                  <h3 class="mb-sm-4 mt-sm-2 mb-md-4 mb-xxl-1">Enviornment 환경</h3>
+                  <p class="pt-lg-5"> 현대제철은 지역사회의 환경영향까지 고려한 방침을 세워 실천하고 있습니다.</p>
                 </div>
               </div>
             </div>
