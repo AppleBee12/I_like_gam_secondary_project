@@ -85,6 +85,7 @@
 	 }
 	 #tab_id, .explain_wrapper {
 		width: 560px;
+		
 	}
 	.section2 .explain_wrapper{
 		margin: 25px;
@@ -250,6 +251,10 @@
 	#tab_id .pager a{
 		font-size: var(--mo_big);
 	}
+	#tab_id{
+		display: flex;
+		justify-content: space-between;
+	}
 	.pager .hr{
 		display: none;
 	}
@@ -282,12 +287,15 @@
 .she_pic img{
 	display: none;
 }
+.she_pic{
+	width: 580px;
+}
 .she_pic img.active{
 	display: block;
 	animation: fadeInLeft 1s ease forwards;
 }
 .explain_wrapper{
-	margin-left: 81px;
+	/* margin-left: 81px; */
 	margin-top: 5px;
 }
 .explain{
