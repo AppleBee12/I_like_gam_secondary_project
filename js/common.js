@@ -24,13 +24,13 @@ if (window.innerWidth > 768) {
 }
 
 });
-topNav.addEventListener('mouseenter', () => {
-if (window.innerWidth > 330) {
-  topNav.style.backgroundColor = 'white';
-  topNav.style.borderBottom = '1px solid black';
-  topNav.style.height = '88px';
-}
-});
+// topNav.addEventListener('mouseenter', () => {
+// if (window.innerWidth < 330) {
+//   topNav.style.backgroundColor = 'white';
+//   topNav.style.borderBottom = '1px solid black';
+//   topNav.style.height = '88px';
+// }
+// });
 
 topNav.addEventListener('mouseleave', () => {
  if (window.innerWidth > 768) {
@@ -39,13 +39,13 @@ topNav.addEventListener('mouseleave', () => {
    topNav.style.height = '88px';
  }
 });
-topNav.addEventListener('mouseleave', () => {
- if (window.innerWidth > 330) {
-   topNav.style.backgroundColor = 'transparent';
-   topNav.style.borderBottom = '1px solid white';
-   topNav.style.height = '88px';
- }
-});
+// topNav.addEventListener('mouseleave', () => {
+//  if (window.innerWidth < 330) {
+//    topNav.style.backgroundColor = 'transparent';
+//    topNav.style.borderBottom = '1px solid white';
+//    topNav.style.height = '88px';
+//  }
+// });
 
 NavBtn.click(function(){
   $('.tb_menu').css({display:'block'});
