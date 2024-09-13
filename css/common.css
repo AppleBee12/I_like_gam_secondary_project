@@ -643,7 +643,46 @@ footer p{
   padding: 12px 32px;
   text-align: center;
 }
+dialog{
+	border:1px solid black;
+	background:red;
+	color:#fff;
+	
+}
+dialog span{
+	display:block;
+	cursor:pointer;
+}
+.modal fade{
+border-radius: 30px;
+}
 
+.modal-dialog{
+	max-width: 1700px;
+	height: 814px;	
+}
+.modal-body{
+	display:flex;
+	justify-content:space-between;
+}
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 1.5rem;
+    outline: 0;
+	  padding: 50px;
+		
+}
+.modal-content span{
+	position:absolute;
+	top: -7%;	
+}
 .popup{
 	display: none;
 }
@@ -670,42 +709,45 @@ footer p{
 		background: url(../images/footer/mobilelogo.svg) no-repeat;
 		display: block;
 		text-indent: -9999em;
+}	
+footer .ft-1{
+  position: static;
 }
-	.ft-1{
-		width: 100%;
-		position: relative;
+footer > div{
+  display: flex;
 }
-	/* .ft-1 address{
-		order:1;
-		display: block;
-	} */
+
 	.ft-1 > ul{
 		display: none !important;
 }
-	.ft-1 ul:nth-of-type(1){
-		order:-1;
-}
+
+
 	.ft-1 ul:nth-of-type(2) li a{
 		display: none;
 		/* text-indent: -239487em; */
 }
 		
 		
-	.ft-1  ul:nth-of-type(1){
-		display: flex;
-		justify-content: space-between;	
-		width: 100%;
-		font-size: var(--mo_sub_body);
-		position: absolute;	 
-		order: 2;
+.ft-1  ul:nth-of-type(1){
+	display: flex;
+	justify-content: space-between;
+	right: 12px;
+	width: 100%;
+	font-size: var(--mo_sub_body);
+	position: absolute;  
+	padding: 0 60px;
+	line-height: 1.5;
+	order: 2;
 }
-		.sns {
-      flex-direction: column;
-      align-items: end !important;
-      display: flex;
-      margin-bottom: 1rem;
-			gap: 20px;		
+.sns {
+	flex-direction: column;
+	align-items: end !important;
+	justify-content: end !important;
+	display: flex;
+	margin-bottom: 1rem;
+	gap: 20px;    
 }
+
 
 	.snsBtn {
     display: flex;
@@ -739,7 +781,7 @@ footer p{
 }		
 	.footer_left {
 		display: flex;	
-		gap: 50px; 
+		gap: 30px; 
 		width: 100%; 
 }
 	.footer_left h3 a{
@@ -758,14 +800,34 @@ footer p{
 
 /*  */
 	.snsBtn{
+		
 	display: none;
 }
+ .ft-1 ul:nth-of-type(1){
+    position: relative;
+    order:1;
+  }
+	.ft-1 ul:last-of-type {
+		gap: 10px;
+		right: 0px;
+	}
+  address {
+    order:2;
+  }
+  .sns{
+    position: absolute;
+    bottom: 100px;
+    flex-direction: row;
+    justify-content: center !important;
+  }
+
 
 	.container .familysite {
 		right: 0;
 		border: solid 1px #fff;
 		border-radius: 4px;
-		transform: translateX(-50%);
+		
+		transform:none;
 }
 	.container .familysite a{
 		display: flex;
@@ -774,5 +836,7 @@ footer p{
 		text-align: center;
 }
 }
+/* //모바일 반응형 */
+/* //footer */
 /* //모바일 반응형 */
 /* //footer */
