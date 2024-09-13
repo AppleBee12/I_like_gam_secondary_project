@@ -1,6 +1,4 @@
-const topNav=document.querySelector('.top_nav')
-NavBtn = $('.container button');
-tbNavBtn = $('.tb_navbar button');
+topNav=document.querySelector('.top_nav')
 toggleBtn = $('.hamburger_button');
 
 

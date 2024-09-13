@@ -1,3 +1,25 @@
+@font-face {
+	font-family: 'hdharmony';
+	font-style: light;
+  font-weight: 300;
+	src: url('../font/현대하모니+L.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'hdharmony';
+	font-style: medium;
+  font-weight: 500;
+	src: url('../font/현대하모니+B.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'hdharmony';
+	font-style: bold;
+  font-weight: 700;
+	src: url('../font/현대하모니+B.ttf') format('truetype');
+}
+
+
+
 :root {
 	/* color */
 	--primary: #0A2972;
@@ -447,7 +469,24 @@ header video {
 
 /* sm devices (phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-	
+	.container h2 {
+		font-size: var(--mo_title);
+		font-weight: 500;
+		/* font-family:hdharmony; */
+	}
+
+	.container h4 {
+		font-size: var(--mo_body);
+	}
+}
+
+/* md devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	.container {
+		width: 100%;
+	}
+
 	.container h2 {
 		font-size: var(--mo_title);
 		font-weight: 500;
@@ -651,10 +690,14 @@ header video {
 
 
 
+
+
+
 /* footer */
 footer{
 	position: relative; 
 	background-color: var(--primary);
+	height: 475px;
 	font-size: var(--pc_body);
 	width: 100%;	
 	padding-bottom: 60px;
