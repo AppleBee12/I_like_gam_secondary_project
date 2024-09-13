@@ -223,7 +223,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: 1s;
-	background-blend-mode:luminosity;
+	/* background-blend-mode:luminosity; */
 }
 
 .sec3_card.sec301 {
@@ -299,7 +299,7 @@
 }
 
 .section3 .sec3_card:hover {
-	background-blend-mode: normal;
+	/* background-blend-mode: normal; */
 
 	.sec3_cardtitle {
 		transform: translateY(0);
