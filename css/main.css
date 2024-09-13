@@ -246,7 +246,7 @@
 	position: relative;
 }
 
-.sec3_card.sec301:after,
+/* .sec3_card.sec301:after,
 .sec3_card.sec302:after,
 .sec3_card.sec303:after,
 .sec3_card.sec304:after{
@@ -258,7 +258,7 @@
 	left: 0;
 	background-image: 
 		linear-gradient(rgba(18,42,114,0.04) 10%, rgba(18,42,114,0.3) 50%)
-}
+} */
 
 
 .sec3_card.sec301:hover:before,
