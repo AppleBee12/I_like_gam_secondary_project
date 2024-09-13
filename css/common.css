@@ -181,6 +181,7 @@ header .logo a {
 	top: 110%;
 	z-index: 1;
 }
+/* 퀵메뉴 */
 .fixed-action-btn{
 	bottom:15%;
 }
@@ -194,13 +195,28 @@ header .logo a {
 	font-weight: 700;
 }
 
+/* top 버튼 */
+#top_btn{
+	border: none;
+	background:var(--primary);
+	border-radius: 50%;
+	color: #fff;
+	width: 56px;
+	height: 56px;
+	position: fixed;
+	bottom: 8%;
+	right: 23px;
+	font-size: 20px;
+	z-index: 999;
+}
+
 
 
 
 
 /* 지우지 마세요 반응형 넘어갈때 잔상 없애기용 입니다 */
 .tb_container {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	position: absolute;
 	top: 12%;
@@ -348,7 +364,9 @@ header video {
 		background-color: white;
 		width: 100vw;
 	}
-
+	.fixed-action-btn{
+		display: none;
+	}
 
 }
 
