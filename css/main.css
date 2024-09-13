@@ -1,101 +1,3 @@
-/* xs devices (less than 576px) */
-@media (max-width: 575.98px) {
-	/* 여기에 스타일 추가 */
-}
-
-/* sm devices (phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-	/* 여기에 스타일 추가 */
-
-}
-
-/* md devices (phones, 576px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-	/* 여기에 스타일 추가 */
-}
-
-/* lg devices (PC버전desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-	/* 여기에 스타일 추가 */
-	/* .section2{
-		text-align: center;
-	}
-	#she_wrapper{
-		flex-direction: column;
-		margin: 25px;
-	}
-	.she_title .s_tt_h2{
-		font-size: var(--mo_title);
-		margin-bottom: 15px;
-	}
-	.she_title .s_tt_mgm{
-		font-size: var(--mo_body);
-	}
-	.she_pic .img_height{
-		object-fit: cover;
-	 }
-	 .she_pic.col-5,
-	 .she_pic .img_height{
-		 width: 750px;
-		 height: 340px;
-	 }
-	 #tab_id, .explain_wrapper {
-		width: 560px;
-		
-	}
-	.section2 .explain_wrapper{
-		margin: 25px;
-	}
-	.explain .pb-4, 
-	.explain .pb-5{
-		display: none;
-	}
-	#tab_id .pager a{
-		font-size: var(--mo_big);
-	}
-	.pager .hr{
-		display: none;
-	}
-	.details h3{
-		font-size: var(--mo_subtitle);
-	}
-	.details {
-		width: 100%;
-		margin-top: -50px;
-	} */
-}
-
-/* xl devices (1200px and up) */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-	/* 여기에 스타일 추가 */
-	.explain_wrapper {
-		.explain h2{
-		font-size: 40px;
-		}
-		.explain p{
-			font-size: 24px;
-		}
-		.pager a{
-			font-size: 80px;
-		}
-	}
-	.she_pic img{
-		
-	}
-	.s2.container .she_title{
-		h2{
-			font-size: 38px;
-		}
-		h4{
-			font-size: var(--mo_body);
-		}
-	}
-}
-
-/*xxl devices (1400px and up)*/
-@media screen and (min-width: 1400px) {
-	/* 여기에 스타일 추가 */
-}
 
 
 
@@ -150,104 +52,7 @@
 }
 
 @media screen and (max-width: 768px) and (max-width: 991.98px){
-	/* BUTTON & PROGRESSBAR */
-	#controls {
-		position: absolute;
-		bottom: 23%;
-		left: 10%;
-		max-width: 1440px;
-		height: 50px;
-	}
 
-	.progress {
-		left: 10%;
-		right: 70%;
-		bottom: 20%;
-		height: 10px;
-		overflow: hidden;
-		background: rgba(255, 255, 255, 0.2);
-		position: absolute;
-		border-radius: 0;
-	}
-
-	.progress .bar {
-		position: absolute;
-		left: 0;
-		top: 0;
-		bottom: 0;
-		width: 0;
-		background: var(--tertiary);
-		transition: 0.5s;
-	}
-
-	.video_btn button {
-		border-radius: 50%;
-		position: absolute;
-		display: inline-block;
-		color: white;
-		border: 1px solid white;
-	}
-
-	.video_btn button:hover {
-		color: var(--tertiary);
-		border: 1px solid var(--tertiary);
-	}
-
-	/* S.H.E. */
-	.section2{
-		text-align: center;
-	}
-	#she_wrapper{
-		flex-direction: column;
-		/* margin: 25px; */
-	}
-	.she_title .s_tt_h2{
-		font-size: var(--mo_title);
-		/* margin-bottom: 20px; */
-	}
-	.she_title .s_tt_mgm{
-		font-size: var(--mo_body);
-	}
-	.she_pic .img_height{
-		object-fit: cover;
-	 }
-	 .she_pic.col-5,
-	 .she_pic .img_height{
-		 /* width: 621px; */
-		 height: 340px;
-	 }
-	 /* #tab_id, .explain_wrapper {
-		width: 560px;
-	} */
-	.section2 .explain_wrapper{
-		/* margin: 30px; */
-	}
-	.explain .pb-4, 
-	.explain .pb-5{
-		display: none;
-	}
-	#tab_id .pager a{
-		font-size: var(--mo_big);
-		display: inline-block;
-		/* line-height: 50px; */
-		height: 50px;
-	}
-	#tab_id{
-		display: flex;
-		justify-content: space-between;
-	}
-	.pager {
-		display: inline-block;
-		height: 50px;
-
-	}
-	.details h3{
-		font-size: var(--mo_subtitle);
-	}
-	.details {
-		width: 100%;
-		/* margin-top: -20px; */
-	}
 }
 
 .s2.container .she{
@@ -344,9 +149,6 @@
   }
 
 
-
-
-
 /* section3 홍수진*/
 .section3 {
 	background: url(../images/section3_global_bg.png);
@@ -434,3 +236,173 @@
 }
 
 /*// section3 홍수진*/
+
+@media (max-width: 574px){
+	.details div h3{
+		font-size: var(--mo_subtitle);
+	}
+	.details div p{
+		font-size: var(--mo_body);
+	}
+	.she_pic img{
+		object-fit: cover;
+		width: 100%;
+		height: 200px;
+	}
+}
+/* xs devices (less than 576px) */
+@media (max-width: 575.98px) {
+	/* 여기에 스타일 추가 */
+	.details div h3{
+		font-size: var(--mo_subtitle);
+	}
+	.details div p{
+		font-size: var(--mo_body);
+	}
+	.she_pic img{
+		object-fit: cover;
+		width: 100%;
+		height: 200px;
+	}
+}
+
+/* sm devices (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	/* 여기에 스타일 추가 */
+	.explain > *{
+		display: none;
+	}
+	.s2.container .she_title{
+		h2{
+			font-size: var(--mo_title);
+		}
+		h4{
+			font-size: var(--mo_body);
+		}
+	}
+	#tab_id .pager a{
+		font-size: var(--mo_big);
+	}
+	.details div h3{
+		font-size: var(--mo_mid_body);
+	}
+	.details div p{
+		font-size: var(--mo_subtitle);
+	}
+	.section2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.pager{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.she_pic img{
+		height: 340px;
+		display: none;
+	}
+}
+
+/* md devices (phones, 576px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	/* 여기에 스타일 추가 */
+	.explain > *{
+		display: none;
+	}
+	.s2.container .she_title{
+		h2{
+			font-size: var(--mo_title);
+		}
+		h4{
+			font-size: var(--mo_body);
+		}
+	}
+	#tab_id .pager a{
+		font-size: var(--mo_big);
+	}
+	.details div h3{
+		font-size: var(--mo_mid_body);
+	}
+	.details div p{
+		font-size: var(--mo_subtitle);
+	}
+	.section2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.pager{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	.she_pic img{
+		object-fit: cover;
+		width: 100%;
+		height: 340px;
+	}
+}
+
+/* lg devices (PC버전desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	/* 여기에 스타일 추가 */
+	.explain_wrapper {
+		.explain h2{
+		font-size: 40px;
+		}
+		.explain p{
+			font-size: 24px;
+		}
+		.pager a{
+			font-size: 80px;
+		}
+	}
+	.s2.container .she_title{
+		h2{
+			font-size: 45px;
+		}
+		h4{
+			font-size: var(--mo_body);
+		}
+	}
+	
+}
+
+/* xl devices (1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+	/* 여기에 스타일 추가 */
+	.explain_wrapper {
+		.explain h2{
+		font-size: 40px;
+		}
+		.explain p{
+			font-size: 24px;
+		}
+		.pager a{
+			font-size: 80px;
+		}
+	}
+	.s2.container .she_title{
+		h2{
+			font-size: var(--pc_title);
+		}
+		h4{
+			font-size: var(--pc_body);
+		}
+	}
+}
+
+/*xxl devices (1400px and up)*/
+@media screen and (min-width: 1400px) {
+	/* 여기에 스타일 추가 */
+}
