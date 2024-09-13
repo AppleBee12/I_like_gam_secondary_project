@@ -2,6 +2,7 @@ const topNav=document.querySelector('.top_nav')
 NavBtn = $('.container button');
 tbNavBtn = $('.tb_navbar button');
 toggleBtn = $('.hamburger_button');
+const tbNav = document.querySelector('.tb_navbar')
 //topNav = $('.top_nav');
 
 /*
@@ -41,6 +42,19 @@ toggleBtn.click(function(){
   toggleBtn.toggleClass('toggle');
   $('.tb_container').toggleClass('visible');
 })
+//퀵메뉴
+$('.fixed-action-btn').floatingActionButton({
+  hoverEnabled: false,
+});
+
+$('.fixed-action-btn a').click(function(){
+if($(this).find('i').text() === 'add'){
+  $(this).find('i').text('close') 
+}else{
+  $(this).find('i').text('add') 
+}
+})
+
 
 
 
