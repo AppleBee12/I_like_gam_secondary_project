@@ -754,11 +754,7 @@ footer p{
 display: flex;
 justify-content: space-between;
 		} */
-.ft-1 > ul:first-of-type {
-/* display: flex;
-flex-direction: column;
-gap: 10px; */
-}		
+
 /*  */
 .snsBtn{
 display: none;
@@ -771,6 +767,6 @@ text-align: center;
 align-items: center;
 transform: translateX(-50%);
 }
-
+}
 /* //모바일 반응형 */
 /* //footer */
