@@ -3,9 +3,9 @@ let video = $('#hdvideo');
 let playBtn = $('#play');
 let pauseBtn = $('#stop');
 let playPauseBtn = $('.video_btn button');
-let progressBar = $('#progress');
+let progressBar = $('#progress1');
 let vcontrols = $('#controls');
-let bar = $('.progress .bar');
+let bar = $('.progress1 .bar');
 
 playPauseBtn.click(function(){
   if(video.get(0).paused){

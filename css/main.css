@@ -7,7 +7,7 @@
 	height: 50px;
 }
 
-.progress {
+.progress1 {
 	left: 10%;
 	right: 70%;
 	bottom: 20%;
@@ -18,7 +18,7 @@
 	border-radius: 0;
 }
 
-.progress .bar {
+.progress1 .bar {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -34,6 +34,8 @@
 	display: inline-block;
 	color: white;
 	border: 1px solid white;
+	height: 45px;
+	width: 45px;
 }
 
 .video_btn button:hover {
@@ -346,7 +348,6 @@
 			font-size: var(--mo_body);
 		}
 	}
-	
 }
 
 /* xl devices (1200px and up) */
