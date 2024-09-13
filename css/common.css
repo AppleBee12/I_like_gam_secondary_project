@@ -23,7 +23,6 @@
 	--mo_big: 3.125rem;
 	--mo_title: 2rem;
 	--mo_body: 1rem;
-	--mo_subtitle: 1.25rem;
 	--mo_sub_body: 0.875rem;
 	--mo_mid_body: 1.75rem;
 }
@@ -42,10 +41,11 @@ header {
 header .logo a {
 	width: 168px;
 	height: 45px;
-	background: url(../images/footer/pclogo.svg) no-repeat;
+	background: url(../images/header_icon.svg) no-repeat;
 	display: block;
 	text-indent: -9999em;
 }
+
 .top_nav{
   position: absolute;
 	left: 0;
@@ -238,6 +238,7 @@ header video {
 		padding: 20px 0;
 		transition: 0.3s;
 		opacity: 0;
+		z-index: 999;
 	}
 
 	header video {
@@ -355,27 +356,35 @@ header video {
 
 	.container h4 {
 		font-size: var(--mo_body);
+		line-height: var(--mo_title);
 	}
 }
 
 /* sm devices (phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-	/* 여기에 스타일 추가 */
-}
-
-/* md devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-	.container {
-		width: 100%;
-	}
-
+	
 	.container h2 {
 		font-size: var(--mo_title);
 		font-weight: 500;
 		/* font-family:hdharmony; */
 	}
 
+
+	.container h4 {
+		font-size: var(--mo_body);
+		line-height: var(--mo_title);
+	}
+
+}
+
+/* md devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	.container h2 {
+		font-size: var(--mo_title);
+		font-weight: 500;
+		/* font-family:hdharmony; */
+	}
 
 	.container h4 {
 		font-size: var(--mo_body);
@@ -397,8 +406,8 @@ header video {
 @media (min-width: 992px) and (max-width: 1199.98px) {
 	.container h2 {
 		font-size: var(--pc_title);
-		/* font-family:hdharmony; */
 		line-height: var(--pc_title);
+		/* font-family:hdharmony; */
 	}
 
 	.container h4 {
@@ -411,8 +420,8 @@ header video {
 @media (min-width: 1200px) and (max-width: 1399.98px) {
 	.container h2 {
 		font-size: var(--pc_title);
-		/* font-family:hdharmony; */
 		line-height: var(--pc_title);
+		/* font-family:hdharmony; */
 	}
 
 	.container h4 {
@@ -423,10 +432,6 @@ header video {
 
 /*xxl devices (1400px and up)*/
 @media screen and (min-width: 1400px) {
-	.container {
-		margin: 0 auto;
-		width: 100%;
-	}
 
 	.container h2 {
 		font-size: var(--pc_title);

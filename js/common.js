@@ -2,6 +2,7 @@ const topNav=document.querySelector('.top_nav')
 NavBtn = $('.container button');
 tbNavBtn = $('.tb_navbar button');
 toggleBtn = $('.hamburger_button');
+const tbNav = document.querySelector('.tb_navbar')
 //topNav = $('.top_nav');
 
 /*
@@ -21,7 +22,16 @@ if (window.innerWidth > 768) {
   topNav.style.borderBottom = '1px solid black';
   topNav.style.height = '380px';
 }
+
 });
+// topNav.addEventListener('mouseenter', () => {
+// if (window.innerWidth < 330) {
+//   topNav.style.backgroundColor = 'white';
+//   topNav.style.borderBottom = '1px solid black';
+//   topNav.style.height = '88px';
+// }
+// });
+
 topNav.addEventListener('mouseleave', () => {
  if (window.innerWidth > 768) {
    topNav.style.backgroundColor = 'transparent';
@@ -29,6 +39,13 @@ topNav.addEventListener('mouseleave', () => {
    topNav.style.height = '88px';
  }
 });
+// topNav.addEventListener('mouseleave', () => {
+//  if (window.innerWidth < 330) {
+//    topNav.style.backgroundColor = 'transparent';
+//    topNav.style.borderBottom = '1px solid white';
+//    topNav.style.height = '88px';
+//  }
+// });
 
 NavBtn.click(function(){
   $('.tb_menu').css({display:'block'});
@@ -41,7 +58,6 @@ toggleBtn.click(function(){
   toggleBtn.toggleClass('toggle');
   $('.tb_container').toggleClass('visible');
 })
-
 //퀵메뉴
 $('.fixed-action-btn').floatingActionButton({
   hoverEnabled: false,
