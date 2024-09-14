@@ -57,15 +57,7 @@ if($(this).find('i').text() === 'add'){
 }
 })
 
-
-
-
-
-
-
-
-
-  // 모든 li 요소를 가져옴
+ // 모든 li 요소를 가져옴
   const navItems = document.querySelectorAll('.tb_nav ul > li > a');
 
   navItems.forEach(function(navItem) {
@@ -89,5 +81,17 @@ if($(this).find('i').text() === 'add'){
     });
   });
 
+  // top 버튼
+  topBtn = $('#top_btn');
+  $(window).scroll(function () {
+		if ($(this).scrollTop() > 200) {
+			$('#top_btn').fadeIn(200);
+		} else {
+			$('#top_btn').fadeOut(200);
+		}
+	});
+  topBtn.click(function(){
+    $('html, body').animate({ scrollTop: 0 }, 100)
+  })
 
 

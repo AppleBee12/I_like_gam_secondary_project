@@ -44,6 +44,16 @@ pagers.click(function(e){
   details.removeClass('active');
   details.eq(idx).addClass('active');
   $(this).addClass('focus');
+}); 
+pagers.mouseenter(function(e){
+  e.preventDefault();
+  let idx = $(this).index();
+  imgs.removeClass('active');
+  imgs.eq(idx).addClass('active');
+
+  details.removeClass('active');
+  details.eq(idx).addClass('active');
+  $(this).addClass('focus');
   $(this).css({'margin-bottom':'28px'});
 }); 
 
@@ -53,7 +63,7 @@ AOS.init({
 
 
 
-$(document).ready(function() {
+
   let currentIndex = 0;
   const tabs = $(".tab");
 
@@ -67,8 +77,7 @@ $(document).ready(function() {
 
   // 일정 시간 간격으로 탭 자동 변경
   setInterval(autoSwitchTab, 3000); // 3000ms = 3초
-});
-// //section2 조채림 끝
+
 
 //section3 홍수진
 
