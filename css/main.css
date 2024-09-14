@@ -328,10 +328,11 @@
 		font-size: var(--mo_big);
 	}
 	.details div h3{
-		font-size: 25px;
+		font-size: 22px;
 	}
 	.details div p{
-		font-size:22px;
+		font-size: 18px;
+		line-height: 22px;
 	}
 	.section2 {
 		display: flex;
@@ -366,10 +367,10 @@
 	}
 	.s2.container .she_title{
 		h2{
-			font-size: var(--mo_title);
+			font-size: var(--mo_big);
 		}
 		h4{
-			font-size: var(--mo_body);
+			font-size: 20px;
 		}
 	}
 	#tab_id .pager a{
@@ -380,6 +381,7 @@
 	}
 	.details div p{
 		font-size:22px;
+		line-height: 25px;
 	}
 	.section2 {
 		display: flex;
@@ -426,10 +428,10 @@
 	}
 	.s2.container .she_title{
 		h2{
-			font-size: var(--mo_title);
+			font-size: var(--mo_big);
 		}
 		h4{
-			font-size: var(--mo_body);
+			font-size: 20px;
 		}
 	}
 	#tab_id .pager a{
@@ -440,6 +442,10 @@
 	}
 	.details div p{
 		font-size: 22px;
+		line-height: 30px;
+	}
+	.next_line{
+		display: block;
 	}
 	.section2 {
 		display: flex;
@@ -468,7 +474,7 @@
 	  /* 여기에 스타일 추가 */
 	  .explain_wrapper {
 		.explain h2{
-		font-size: 40px;
+		font-size: 38px;
 		}
 		.explain p{
 			font-size: 22px;
@@ -479,10 +485,10 @@
 	}
 	.s2.container .she_title{
 		h2{
-			font-size: 45px;
+			font-size: var(--pc_title);
 		}
 		h4{
-			font-size: var(--mo_body);
+			font-size: 20px;
 		}
 	}
 	.she_pic img{
@@ -499,9 +505,9 @@
 			line-height: 28px;
 		}
 	}
-	.next_line{
+	/* .next_line{
 		display: block;
-	}
+	} */
   }
   
   /* xl devices (1200px and up) */
