@@ -697,7 +697,7 @@ header video {
 footer{
 	position: relative; 
 	background-color: var(--primary);
-	height: 475px;
+	
 	font-size: var(--pc_body);
 	width: 100%;	
 	padding-bottom: 60px;
