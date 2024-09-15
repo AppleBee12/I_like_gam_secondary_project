@@ -864,7 +864,7 @@ button:focus {
 	footer .logo a{
 		width: 207px;
 		height: 60px;
-		
+		margin-top: 80px;
 		background: url(../images/footer/mobilelogo.svg) no-repeat;
 		display: block;
 		text-indent: -9999em;
@@ -887,7 +887,6 @@ footer > div{
 }
 		
 		
-<<<<<<< Updated upstream
 .ft-1  ul:nth-of-type(1){
 	display: flex;
 	justify-content: space-between;
@@ -910,25 +909,6 @@ footer > div{
 	gap: 20px;    
 }
 
-=======
-	.ft-1  ul:nth-of-type(1){
-		display: flex;
-		justify-content: space-between;
-	
-		
-		font-size: var(--mo_sub_body);
-		position: absolute;	
-		order: 2;
-		}
-		.sns {
-      flex-direction: column;
-      align-items: end !important;
-      display: flex;
-      margin-bottom: 1rem;
-			gap: 20px;
-		
-  }
->>>>>>> Stashed changes
 
 	.snsBtn {
     display: flex;
@@ -984,7 +964,6 @@ footer > div{
 		
 	display: none;
 }
-<<<<<<< Updated upstream
  .ft-1 ul:nth-of-type(1){
     position: relative;
     order:1;
@@ -1016,15 +995,6 @@ footer > div{
 		color: #fff;
 		padding: 12px 32px;
 		text-align: center;
-=======
-.familysite a{
-top: 50%;
-left: 50%;
-/* position: absolute;  */
-text-align: center; 
-align-items: end;
-transform: translateX(-50%);
->>>>>>> Stashed changes
 }
 }
 /* //모바일 반응형 */
