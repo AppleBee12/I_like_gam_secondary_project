@@ -263,8 +263,23 @@
 
 /*// section3 홍수진*/
 
+/* section4 홍수진 */
+.section4 .sec4_card_wrap{
+  position:relative;
+}
+.section4 .sec4_card {
+  background: #E9ECEF;	
+}
 
+.section4 .sec4_card:before{
+  background: var(--primary);
+  position:absolute;
+  width: 100%;
+  top:-2em;
+  right:-2em;
+}
 
+/*// section4 홍수진 */
 
 
 
