@@ -65,7 +65,7 @@ header {
 header .logo a {
 	width: 168px;
 	height: 45px;
-	background: url(../images/header_icon.svg) no-repeat;
+	background:url(../images/header_icon2.svg) no-repeat;
 	display: block;
 	text-indent: -9999em;
 }
@@ -77,8 +77,8 @@ header .logo a {
 	left: 0;
 	right: 0;
 	top: 0;
-	border-bottom: 1px solid #fff;
-	background-color: transparent;
+	border-bottom: 1px solid #000;
+	background-color: #fff;
 	transition: 0.5s;
 	overflow: hidden;
 }
@@ -266,9 +266,11 @@ header .logo a {
 
 
 
-@media  screen and (max-width: 982px) {
 
-	/* header 승일 */
+/* header 승일 */
+
+
+@media  screen and (max-width: 768px) {
 	header .logo a {
 		width: 78px;
 		height: 21px;
