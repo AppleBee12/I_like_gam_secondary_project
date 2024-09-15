@@ -140,7 +140,7 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-blend-mode: multiply;
+	background-blend-mode: darken;
 }
 .section3 .sec3_title h2,
 .section3 .sec3_title h4{
@@ -151,8 +151,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-content: center;
-	gap: 5px;
+	align-items: center;
+	/* gap: 5px; */
 }
 
 .section3 .sec3_card {
@@ -191,20 +191,19 @@
 	background-image: url(../images/section3_kintex.jpg);
 	position: relative;
 }
+.sec3_card.sec301:hover{
+	background-image: url(../images/section3_lottetower.gif);
+}
+.sec3_card.sec302:hover{
+	background-image: url(../images/section3_antarctica.gif);
+}
+.sec3_card.sec303:hover{
+	background-image: url(../images/section3_songdo.gif);
+}
+.sec3_card.sec304:hover{
+	background-image: url(../images/section3_kintex.gif);
+}
 
-/* .sec3_card.sec301:after,
-.sec3_card.sec302:after,
-.sec3_card.sec303:after,
-.sec3_card.sec304:after{
-	content:'';
-	position: absolute;
-	top:0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	background-image: 
-		linear-gradient(rgba(18,42,114,0.04) 10%, rgba(18,42,114,0.3) 50%)
-} */
 
 
 .sec3_card.sec301:hover:before,
@@ -263,12 +262,6 @@
 }
 
 /*// section3 홍수진*/
-
-
-
-
-
-
 
 
 
