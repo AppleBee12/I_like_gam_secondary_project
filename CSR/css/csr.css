@@ -1,0 +1,124 @@
+header .logo a{
+  background:url(../images/header_icon2.svg) no-repeat;
+}
+.top_nav{
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+}
+.main_menu li a {
+	color: #000;
+}
+.sub_tt{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  gap: 60px;
+  background:url(../images/csr_bg.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sub_tt>h1{
+font-size: var(--pc_big);
+color: #fff;
+}
+.sub_tt>h2{
+font-size: var(--pc_sub_title);
+color: #fff;
+}
+.tab_menu{
+  width: 100%;
+  height: 116px;
+  border-bottom:1px solid rgba(0,0,0,.5);
+  margin-bottom: 110px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255,255,255,.5);
+}
+.tab_menu ul{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  font-size: var(--pc_sub_title);
+}
+.tab_menu ul li{
+  position: relative;
+}
+.tab_menu ul li:nth-child(4):after{
+  display: block;
+	content: '';
+	background-color: var(--primary);
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	bottom: -100%;
+	transition: 0.3s;
+	transform: scaleX(1);
+}
+.tab_menu ul li:nth-child(4) a{
+  color:var(--primary);
+}
+.tab_menu ul li a:hover{
+  color: var(--primary);
+}
+.tab_menu ul li:after{
+  display: block;
+	content: '';
+	background-color: var(--primary);
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	bottom: -100%;
+	transition: 0.3s;
+	transform: scaleX(0);
+}
+.tab_menu ul li:hover::after{
+  transform: scaleX(1);
+}
+
+
+@media screen and (max-width: 1035px){
+	.main_menu{
+		font-size: var(--pc_sub_body);
+		gap:30px;
+	}
+	.top_nav .nav_container{
+		gap: 30px;
+	}
+	.main_menu .sub_menu{
+		font-size: var(--mo_sub_body);
+	}
+}
+
+@media screen and (max-width: 1035px){
+  .tab_menu{
+    height: 80px;
+  }
+  .tab_menu ul{
+    font-size: var(--mo_body);
+  }
+  .tab_menu ul li:nth-child(4):after{
+    height: 3px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .logo a {
+    width: 78px;
+    height: 21px;
+    background: url(../images/header_icon_tb.svg) no-repeat; 
+  }
+}
+
+@media screen and (max-width: 680px){
+  .tab_menu ul{
+    gap: 50px;
+  }
+}
+
