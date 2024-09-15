@@ -33,12 +33,6 @@ topNav.addEventListener('mouseleave', () => {
  }
 });
 
-NavBtn.click(function(){
-  $('.tb_menu').css({display:'block'});
-})
-tbNavBtn.click(function(){
-  $('.tb_menu').css({display:'none'});
-})
 
 toggleBtn.click(function(){
   toggleBtn.toggleClass('toggle');
