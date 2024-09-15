@@ -5,7 +5,7 @@ toggleBtn = $('.hamburger_button');
 topNav.addEventListener('mouseenter', () => {
 if (window.innerWidth > 982) {
   topNav.style.backgroundColor = 'white';
-  topNav.style.borderBottom = '1px solid black';
+  topNav.style.borderBottom = '1px solid white';
   topNav.style.height = '380px';
 }
 
@@ -13,7 +13,7 @@ if (window.innerWidth > 982) {
 topNav.addEventListener('mouseenter', () => {
 if (window.innerWidth < 576) {
   topNav.style.backgroundColor = 'white';
-  topNav.style.borderBottom = '1px solid black';
+  topNav.style.borderBottom = '1px solid white';
   topNav.style.height = '88px';
 }
 });
