@@ -6,7 +6,7 @@ topNav.addEventListener('mouseenter', () => {
 if (window.innerWidth > 768) {
   topNav.style.backgroundColor = 'white';
   topNav.style.borderBottom = '1px solid black';
-  topNav.style.height = '380px';
+  topNav.style.height = '420px';
 }
 
 });
@@ -33,12 +33,7 @@ topNav.addEventListener('mouseleave', () => {
  }
 });
 
-NavBtn.click(function(){
-  $('.tb_menu').css({display:'block'});
-})
-tbNavBtn.click(function(){
-  $('.tb_menu').css({display:'none'});
-})
+
 
 toggleBtn.click(function(){
   toggleBtn.toggleClass('toggle');
