@@ -6,7 +6,7 @@ topNav.addEventListener('mouseenter', () => {
 if (window.innerWidth > 982) {
   topNav.style.backgroundColor = 'white';
   topNav.style.borderBottom = '1px solid white';
-  topNav.style.height = '380px';
+  topNav.style.height = '420px';
 }
 
 });
