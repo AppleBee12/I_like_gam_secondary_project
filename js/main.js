@@ -44,6 +44,16 @@ pagers.click(function(e){
   details.removeClass('active');
   details.eq(idx).addClass('active');
   $(this).addClass('focus');
+}); 
+pagers.mouseenter(function(e){
+  e.preventDefault();
+  let idx = $(this).index();
+  imgs.removeClass('active');
+  imgs.eq(idx).addClass('active');
+
+  details.removeClass('active');
+  details.eq(idx).addClass('active');
+  $(this).addClass('focus');
   $(this).css({'margin-bottom':'28px'});
 }); 
 
@@ -71,18 +81,18 @@ AOS.init({
 
 //section3 홍수진
 
-$('.sec3_card').mouseenter(
-  function () {
-    $(this).css('background-image', function (_, current) {
-      return current.replace('.jpg', '.gif');
-    });
-  });
-$('.sec3_card').mouseleave(
-  function () {
-    $(this).css('background-image', function (_, current) {
-      return current.replace('.gif', '.jpg');
-    });
-  }
-);
+// $('.sec3_card').mouseenter(
+//   function () {
+//     $(this).css('background-image', function (_, current) {
+//       return current.replace('.jpg', '.gif');
+//     });
+//   });
+// $('.sec3_card').mouseleave(
+//   function () {
+//     $(this).css('background-image', function (_, current) {
+//       return current.replace('.gif', '.jpg');
+//     });
+//   }
+// );
 
 //section3 홍수진 fin

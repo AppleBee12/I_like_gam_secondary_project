@@ -6,7 +6,7 @@ topNav.addEventListener('mouseenter', () => {
 if (window.innerWidth > 768) {
   topNav.style.backgroundColor = 'white';
   topNav.style.borderBottom = '1px solid black';
-  topNav.style.height = '380px';
+  topNav.style.height = '420px';
 }
 
 });
@@ -32,6 +32,7 @@ topNav.addEventListener('mouseleave', () => {
    topNav.style.height = '88px';
  }
 });
+
 
 
 toggleBtn.click(function(){
