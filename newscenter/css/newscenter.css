@@ -82,6 +82,24 @@ color: #fff;
   transform: scaleX(1);
 }
 
+.swiper {
+  width: 100%;
+  height: 448px;
+}
+
+.more_btn {
+  width: 93px;
+  height: 28px;
+  background: var(--tertiary);
+  position: absolute;
+  display: inline-block;
+}
+.more_btn p{
+  text-align: center;
+  color: #fff;
+}
+
+
 
 @media screen and (max-width: 1035px){
 	.main_menu{
