@@ -264,19 +264,43 @@
 /*// section3 홍수진*/
 
 /* section4 홍수진 */
-.section4 .sec4_card_wrap{
-  position:relative;
-}
+
 .section4 .sec4_card {
+  position:relative;
   background: #E9ECEF;	
+  height: 420px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:3em;
+ box-sizing: border-box;
 }
 
 .section4 .sec4_card:before{
-  background: var(--primary);
   position:absolute;
-  width: 100%;
-  top:-2em;
-  right:-2em;
+  content:'';
+  width: 0;
+  height: 0;
+  border-top: 8em solid var(--primary);
+  border-left: 25% solid transparent;
+ border-radius: 20px; 
+  top:-1em;
+  right:-1em;
+  z-index:-1;
+  box-sizing: border-box;
+}
+
+.sec4_cardtitle{
+  font-size: var(--pc_sub_title);
+  color:var(--primary);
+  padding-bottom:var(--pc_sub_title);
+}
+.sec4_carddesc{
+  border-top: 1px solid #000;
+  padding-top:var(--pc_sub_title);
+  font-size: var(--pc_sub_body);
+  line-height: var(--pc_sub_title);
 }
 
 /*// section4 홍수진 */
