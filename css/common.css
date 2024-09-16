@@ -697,7 +697,7 @@ header video {
 footer{
 	position: relative; 
 	background-color: var(--primary);
-	height: 475px;
+	
 	font-size: var(--pc_body);
 	width: 100%;	
 	padding-bottom: 60px;
@@ -719,6 +719,7 @@ footer .logo a{
 .ft-1 ul:last-of-type{
 	color: #fff;
 	gap: 50px;
+	
 }
 footer .ft-1 ul li a{
 	color: #fff;	
@@ -894,6 +895,10 @@ footer > div{
 	font-size: var(--mo_sub_body);
 	position: absolute;  
 	order: 2;
+}
+.ft-1 ul:last-of-type {
+	color: #fff;
+	padding: 0 50px;
 }
 .sns {
 	flex-direction: column;
