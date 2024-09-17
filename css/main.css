@@ -264,13 +264,14 @@
 /*// section3 홍수진*/
 
 /* section4 홍수진 */
-
+.section4 .sec4_card_wrap{
+	flex-wrap: wrap;
+}
 .section4 .sec4_card {
   position:relative;
   background: #E9ECEF;	
   height: 420px;
   display:flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -502,18 +503,9 @@
 	  /* section4 홍수진 */
 
 	  .section4 .sec4_card {	
-		clip-path: polygon(0% 0%, 75% 0%, 100% 30%, 100% 100%, 0% 100%);
-
-		nth-child(1){
-			height: 350px;
-		}
-		nth-child(2){
-			height: 350px;
-		}
-		nth-child(3){
-			height: 700px;
-		}
-		  
+		clip-path: polygon(0% 0%, 75% 0%, 100% 15%, 100% 100%, 0% 100%);
+	    height: 500px;
+		
 		
 	}
 
