@@ -258,11 +258,18 @@ section {
     }
     .swiper-tab img{
       filter: brightness(0.5);
+      position: relative;
     }
     .swiper-tab p{
       position: absolute;
-      color: #fff;
+      top: 0;
+      /* color: #fff; */
+      font-size: var(--pc_sub_title);
+      text-align: left;
+      vertical-align: top;
+
     }
+
   }
 
   }
