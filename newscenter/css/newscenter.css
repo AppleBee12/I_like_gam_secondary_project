@@ -99,7 +99,7 @@ header .logo a {
 /*SWIPER SLIDE*/
 .swiper {
   width: 100%;
-  height: 448px;
+  height: 425px;
 }
 
 .section3 h1 {
@@ -114,7 +114,7 @@ header .logo a {
 }
 
 .img_box img {
-  height: 448px;
+  height: 425px;
   width: 100%;
   object-fit: cover;
 }
@@ -200,7 +200,7 @@ section {
 
 .t1 {
   width: 80%;
-  height: 30%;
+  height: 33%;
   display: -webkit-box;
   /* display: -webkit-box; */
   /* -webkit-line-clamp: 3; */
@@ -209,6 +209,66 @@ section {
 }
 
 /*SWIPER SLIDE끝*/
+
+/*SWIPER TAB*/
+.tab-container {
+  .tab {
+    cursor: pointer;
+    font-size: var(--pc_sub_title);
+    width: 15%;
+    font-weight: 600;
+  }
+  .tabs{
+    padding-left: 140px;
+  }
+  .tab.active {
+    /* tab버튼 */
+    background-color: var(--primary);
+    width: 15%;
+    color: #fff;
+  }
+  .sports, .youtube{
+    border-left: 1px solid #e4e4e4;
+    padding:0  0.5rem;
+    /* width: 15%; */
+    width: 15%;
+
+  }
+
+  .tab-content{
+    padding-left:152px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .swiper-content{
+    display: none;
+    height: 100%;
+  }
+  .swiper-content-first {
+    display: block;
+  }
+  .swiper-tab-wrapper{
+    .swiper-tab, .swiper-tab img{
+      width: 400px;
+      height: 360px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-tab img{
+      filter: brightness(0.5);
+    }
+    .swiper-tab p{
+      position: absolute;
+      color: #fff;
+    }
+  }
+
+  }
+
+
+
 
 
 
