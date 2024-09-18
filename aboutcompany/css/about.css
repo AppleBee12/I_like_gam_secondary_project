@@ -50,7 +50,7 @@ color: #fff;
 .tab_menu ul li{
   position: relative;
 }
-.tab_menu ul li:nth-child(4):after{
+/* .tab_menu ul li:nth-child(4):after{
   display: block;
 	content: '';
 	background-color: var(--primary);
@@ -60,10 +60,10 @@ color: #fff;
 	bottom: -160%;
 	transition: 0.3s;
 	transform: scaleX(1);
-}
-.tab_menu ul li:nth-child(4) a{
+} */
+/* .tab_menu ul li:nth-child(4) a{
   color:var(--primary);
-}
+} */
 .tab_menu ul li a:hover{
   color: var(--primary);
 }
