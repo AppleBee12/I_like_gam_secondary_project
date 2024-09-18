@@ -168,7 +168,10 @@ header .logo a {
   display: inline-block;
   padding: 6px;
 }
-
+.more_btn:hover{
+  background: var(--secondary);
+  transition: .3s ease-in-out;
+}
 .more_btn p {
   display: flex;
   justify-content: center;
@@ -232,6 +235,8 @@ section {
     background-color: var(--primary);
     width: 15%;
     color: #fff;
+    transition-duration: .3s;
+
   }
 
   .sports,
@@ -240,16 +245,13 @@ section {
     padding: 0 0.5rem;
     /* width: 15%; */
     width: 15%;
+    transition: .3s;
   }
 
   .tab-content {
     padding-left: 90px;
     width: 100%;
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 1;
   }
 
   .swiper-content {
@@ -265,7 +267,7 @@ section {
 
     .swiper-tab,
     .tab_img {
-      width: 400px;
+      width: 373px;
       height: 360px;
       display: flex;
       justify-content: center;
@@ -277,38 +279,62 @@ section {
     .tab_img_1 {
       background: url(../images/news1.jpg)no-repeat;
     }
-
     .tab_img_2 {
       background: url(../images/news2.jpg)no-repeat;
     }
-
     .tab_img_3 {
       background: url(../images/news3.jpg)no-repeat;
     }
-
     .tab_img_4 {
       background: url(../images/news4.jpg)no-repeat;
     }
-
     .tab_img_5 {
       background: url(../images/news5.jpg)no-repeat;
     }
-
     .tab_img_6 {
       background: url(../images/news6.jpg)no-repeat;
     }
-
     .tab_img_7 {
       background: url(../images/news7.jpg)no-repeat;
     }
-
     .tab_img_8 {
       background: url(../images/news8.jpg)no-repeat;
     }
-
     .tab_img_9 {
       background: url(../images/news9.jpg)no-repeat;
     }
+    .tab_img_2_1 {
+      background: url(../images/sports2.jpg)no-repeat;
+    }
+    .tab_img_2_2 {
+      background: url(../images/sports3.jpg)no-repeat;
+    }
+    .tab_img_2_3 {
+      background: url(../images/sports4.jpg)no-repeat;
+    }
+    .tab_img_2_4 {
+      background: url(../images/sports5.jpg)no-repeat;
+    }
+    .tab_img_2_5 {
+      background: url(../images/sports6.jpg)no-repeat;
+    }
+    .tab_img_2_6 {
+      background: url(../images/sports7.jpg)no-repeat;
+    }
+    .tab_img_2_7 {
+      background: url(../images/sports8.jpg)no-repeat;
+    }
+    .tab_img_2_8 {
+      background: url(../images/sports9.jpg)no-repeat;
+    }
+    .tab_img_2_9 {
+      background: url(../images/sports1.jpg)no-repeat;
+    }
+    .tab_img_3_1 {
+      background: url(../images/youtube1.jpg)no-repeat;
+    }
+
+    
 
     .img-cover {
       background-color: rgba(0, 0, 0, .5);
@@ -356,7 +382,7 @@ section {
     }
   }
 }
-.btn-set-time{
+.btn-set2{
   display: none;
 }
 /* xs */

@@ -6,9 +6,10 @@ const prevBtn = $('.swiper-button-prev');
 const swiper = new Swiper('.swiper',{
     direction: 'horizontal',
     loop: true,
-    // autoplay: {
-    //     delay: 3000
-    // },
+    autoplay: {
+        delay: 4000
+        
+    },
 
     navigation: {
         nextEl:'.swiper-button-next',
@@ -43,5 +44,6 @@ $(function ($) {
       $(".tab-content").eq(idx).show();
       $('.tab.active').removeClass('active');
       $(this).addClass('active');
+
     });
   });
