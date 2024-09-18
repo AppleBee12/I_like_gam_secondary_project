@@ -784,7 +784,7 @@ footer p{
 }
 .btn-primary {
 	--bs-btn-color: #fff;
-	 --bs-btn-bg: transparent; 
+	--bs-btn-bg: transparent; 
 	--bs-btn-border-color: transparent;
 }
 dialog{
@@ -863,13 +863,13 @@ button:focus {
 	footer{
 		padding: 30px 0;
 		font-size: var(--mo_sub_body);
-}
+	}
 	footer h3{
 		margin-bottom: 0;
-}
+	}
 	address{
 		margin-bottom: 0;
-}
+	}
 	
 	footer .logo a{
 		width: 207px;
@@ -878,26 +878,26 @@ button:focus {
 		background: url(../images/footer/mobilelogo.svg) no-repeat;
 		display: block;
 		text-indent: -9999em;
-}	
-footer .ft-1{
+	}	
+	footer .ft-1{
   position: static;
-}
-footer > div{
+	}
+	footer > div{
   display: flex;
-}
+	}
 
 	.ft-1 > ul{
 		display: none !important;
-}
+	}
 
 
 	.ft-1 ul:nth-of-type(2) li a{
 		display: none;
 		/* text-indent: -239487em; */
-}
+	}
 		
 		
-.ft-1  ul:nth-of-type(1){
+	.ft-1  ul:nth-of-type(1){
 	display: flex;
 	justify-content: space-between;
 	right: 12px;
@@ -905,29 +905,29 @@ footer > div{
 	font-size: var(--mo_sub_body);
 	position: absolute;  
 	order: 2;
-}
-.ft-1 ul:last-of-type {
+	}
+	.ft-1 ul:last-of-type {
 	color: #fff;
 	padding: 0 50px;
-}
-.sns {
+	}
+	.sns {
 	flex-direction: column;
 	align-items: end !important;
 	justify-content: end !important;
 	display: flex;
 	margin-bottom: 1rem;
 	gap: 20px;    
-}
+	}
 
 
 	.snsBtn {
     display: flex;
     gap:20px;
-}
+	}
 	.snsBtn a img {
 	width: 24px;
 	height: auto; 
-}
+	}
 
 }
 /*/////////////////////////////////////////////태블릿반응형///////////////////*/
@@ -935,8 +935,38 @@ footer > div{
 /* 모바일반응형 */
 @media screen and (max-width: 576px){
 	footer{
-		font-size: var(--mo_sub_body);
+		font-size: var(--mo_sub_body);		
+	}
+	.container .familysite button {
+    width: 100%; 
+    color: #fff;
+    padding: 12px 32px;
+    text-align: center;
+    margin: 0;
+    display: block;
 }
+.container .familysite {
+	width: 100%; 
+	padding: 0; 
+	margin: 0; 
+	box-sizing: border-box; 
+}
+
+.container .familysite button {
+	width: 100%; 
+	color: #fff;
+	padding: 6px 32px;
+	text-align: center;
+	margin: 0 auto; 
+	border: solid 1px #fff;
+	border-radius: 4px;
+	display: block;
+	box-sizing: border-box; 
+}
+
+
+
+
 	footer .logo a{
 		width: 151px;
 		height: 40px;
@@ -944,52 +974,55 @@ footer > div{
 		background: url(../images/footer/mobilelogo.svg) no-repeat;
 		display: block;
 		text-indent: -9999em;
-}
+	}
 	.ft-1{
 		display: flex;
 		flex-direction: column !important;
 		gap: 10px;
-}		
+	}		
 	.footer_left {
 		display: flex;	
 		gap: 30px; 
 		width: 100%; 
-}
+	}	
 	.footer_left h3 a{
 		order: -1;
-}
+	}
 
 	.footer_left > ul li:first-of-type{
 		display: block;	
 		flex-direction: column !important;
-}
+	}
 	.footer_left ul{
 		display: flex !important;
 		flex-direction: column;
 		order: 2;
-}
+	}
 
 /*  */
 	.snsBtn{
 		
 	display: none;
-}
- .ft-1 ul:nth-of-type(1){
+	}
+	.ft-1 ul:nth-of-type(1){
     position: relative;
     order:1;
   }
 	.ft-1 ul:last-of-type {
 		gap: 10px;
 		right: 0px;
+		padding: 0;
 	}
   address {
     order:2;
   }
   .sns{
+		width: 80%;
     position: absolute;
     bottom: 100px;
     flex-direction: row;
     justify-content: center !important;
+		
   }
 
 
@@ -999,13 +1032,13 @@ footer > div{
 		border-radius: 4px;
 		
 		transform:none;
-}
+	}
 	.container .familysite a{
 		display: flex;
 		color: #fff;
 		padding: 12px 32px;
 		text-align: center;
-}
+	}
 }
 /* //모바일 반응형 */
 /* //footer */
