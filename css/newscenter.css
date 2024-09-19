@@ -20,7 +20,7 @@ header .logo a {
   align-items: center;
   text-align: center;
   gap: 60px;
-  background: url(../images/subnav_newscenter.jpg) no-repeat;
+  background: url(../images/newscenter/subnav_newscenter.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
