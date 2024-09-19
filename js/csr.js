@@ -7,7 +7,39 @@
   let slideWrapper = $('.slide_wrapper');
   let symbolOST=$('.symbol').offset().top;
   console.log(symbolOST);
-
+  topNav=document.querySelector('.top_nav')
+  
+  
+  topNav.addEventListener('mouseenter', () => {
+  if (window.innerWidth > 768) {
+    topNav.style.backgroundColor = 'white';
+    topNav.style.borderBottom = '1px solid black';
+    topNav.style.height = '420px';
+  }
+  
+  });
+  topNav.addEventListener('mouseenter', () => {
+  if (window.innerWidth < 576) {
+    topNav.style.backgroundColor = 'white';
+    topNav.style.borderBottom = '1px solid black';
+    topNav.style.height = '87px';
+  }
+  });
+  
+  topNav.addEventListener('mouseleave', () => {
+   if (window.innerWidth > 768) {
+     topNav.style.backgroundColor = 'white';
+     topNav.style.borderBottom = '1px solid black';
+     topNav.style.height = '87px';
+   }
+  });
+  topNav.addEventListener('mouseleave', () => {
+   if (window.innerWidth < 576) {
+     topNav.style.backgroundColor = 'white';
+     topNav.style.borderBottom = '1px solid white';
+     topNav.style.height = '87px';
+   }
+  });
 
   $slides.append($slideItems.clone());
 

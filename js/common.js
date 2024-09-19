@@ -14,7 +14,7 @@ topNav.addEventListener('mouseenter', () => {
 if (window.innerWidth < 576) {
   topNav.style.backgroundColor = 'white';
   topNav.style.borderBottom = '1px solid black';
-  topNav.style.height = '88px';
+  topNav.style.height = '87px';
 }
 });
 
@@ -22,14 +22,14 @@ topNav.addEventListener('mouseleave', () => {
  if (window.innerWidth > 768) {
    topNav.style.backgroundColor = 'transparent';
    topNav.style.borderBottom = '1px solid white';
-   topNav.style.height = '88px';
+   topNav.style.height = '87px';
  }
 });
 topNav.addEventListener('mouseleave', () => {
  if (window.innerWidth < 576) {
    topNav.style.backgroundColor = 'transparent';
    topNav.style.borderBottom = '1px solid white';
-   topNav.style.height = '88px';
+   topNav.style.height = '87px';
  }
 });
 

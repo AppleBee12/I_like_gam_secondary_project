@@ -16,7 +16,7 @@ header div.top_nav{
 }
 
 header .logo a{
-  background: url(../../images/header_icon2.svg) no-repeat;
+  background: url(../images/header_icon2.svg) no-repeat;
 }
 
 /* sub_nav 끝 */
@@ -24,7 +24,7 @@ header .logo a{
 /* 공통 부분 */
 
 #container{
-  background-image: url(../images/subnav_aboutcompany.jpg);
+  background-image: url(../images/product/subnav_aboutcompany.jpg);
 }
 
 /* 공통 부분 끝 */
