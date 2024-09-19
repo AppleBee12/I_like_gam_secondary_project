@@ -11,11 +11,17 @@ body {
   font-family: 'hdharmony';
 	font-style: medium;
   font-weight: 500;
+  font-size: 40px;
 }
 .section1 h4{
   font-family: 'hdharmony';
 	font-style: light;
   font-weight: 300;
+  font-size: 40px;
+  padding: 0 240px;
+}
+.section1 span{
+  color: var(--primary);
 }
 h2{
   font-size: var(--pc_title);
@@ -148,6 +154,7 @@ color: #fff;
 .partner{
   display: flex;
   justify-content: space-between;
+  gap: 50px;
 }
 .winwin{
   width: 100%;
@@ -155,6 +162,7 @@ color: #fff;
   flex-direction: column;  
   justify-content: flex-start; 
   text-align: left;
+  gap: 84px;
   }
 .winwin h2{
   font-family: 'hdharmony';
