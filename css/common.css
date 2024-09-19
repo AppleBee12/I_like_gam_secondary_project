@@ -18,7 +18,18 @@
 	font-weight: 700;
 	src: url('../font/현대하모니+B.ttf') format('truetype');
 }
-
+/* .tab_menu ul li:nth-child(4):after{
+  display: block;
+	content: '';
+	background-color: var(--primary);
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	bottom: -170%;
+	transition: 0.3s;
+	transform: scaleX(1);
+} 
+*/
 
 
 :root {
@@ -237,12 +248,12 @@ header .logo a {
 	font-size: 20px;
 	z-index: 999;
 	opacity: .5;
+	display: none;
 }
 
 #top_btn:hover {
 	opacity: 1;
 }
-
 
 
 
@@ -416,6 +427,10 @@ header video {
 	.fixed-action-btn {
 		display: none;
 	}
+	#top_btn{
+		width: 40px;
+		height: 40px;
+	}
 
 }
 
@@ -465,7 +480,13 @@ header video {
 	}
 }
 
-
+@media screen and (max-width: 375px){
+	#top_btn{
+		width: 40px;
+		height: 40px;
+		right: 5%;
+	}
+}
 
 
 
