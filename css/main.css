@@ -522,6 +522,22 @@
 	}
 
 	/*section2 조채림 끝*/
+		/* section03 홍수진 */
+	
+		.section3 .sec3_card {
+			height: 280px;
+	
+			.sec3_cardtitle {
+				font-size: var(--mo_sub_title);
+				font-weight: 700;
+				transform: translateY(80px);
+	
+			}
+	
+			.sec3_carddesc {
+				font-size: var(--mo_sub_body);
+			}
+		}
 	/* section4 홍수진 */
 
 	.section4 .sec4_card {
