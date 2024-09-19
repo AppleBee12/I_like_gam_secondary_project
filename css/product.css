@@ -1,5 +1,120 @@
 @charset "UTF-8";
 
+/* 공통 부분 */
+
+body {
+	font-family: 'SUIT Variable', sans-serif;
+}
+
+main h2{
+  font-size: 3.125rem;
+  font-family: 'hdharmony';
+  font-weight: 700;
+  line-height: 4.375rem;
+  }
+main h3{
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 3.5rem;
+  }
+main h4{
+  font-size: var(--pc_body);
+  }
+main h5{
+  font-size: var(--pc_sub_body);
+  }
+
+/* 공통 부분 끝 */
+
+/* header */
+header .logo a{
+  background:url(../images/header_icon2.svg) no-repeat;
+}
+.top_nav{
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+}
+.main_menu li a {
+	color: #000;
+}
+.sub_tt{
+  width: 100%;
+  height: 784px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  gap: 60px;
+  background-image:url(../images/product/subnav_product_technology.png);
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+}
+.sub_tt>h2{
+font-size: var(--pc_big);
+color: #fff;
+}
+.sub_tt>h4{
+font-size: var(--pc_sub_title);
+color: #fff;
+}
+.tab_menu{
+  width: 100%;
+  height: 87px;
+  border-bottom:1px solid rgba(0,0,0,.5);
+  position: sticky;
+  top: 0;
+  background-color: rgba(255,255,255,.5);
+  z-index: 9999;
+}
+.tab_menu ul{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  font-size: var(--pc_body);
+}
+.tab_menu ul li{
+  position: relative;
+}
+.tab_menu ul li:nth-child(1):after{
+  display: block;
+	content: '';
+	background-color: var(--primary);
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	bottom: -170%;
+	transition: 0.3s;
+	transform: scaleX(1);
+  z-index: 10;
+}
+.tab_menu ul li:nth-child(1) a{
+  color:var(--primary);
+}
+.tab_menu ul li a:hover{
+  color: var(--primary);
+}
+.tab_menu ul li:after{
+  display: block;
+	content: '';
+	background-color: var(--primary);
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	bottom: -170%;
+	transition: 0.3s;
+	transform: scaleX(0);
+}
+.tab_menu ul li:hover::after{
+  transform: scaleX(1);
+}
+/*  //header */
+
 /* sub_nav */
 header{
   height:auto;
@@ -21,16 +136,20 @@ header .logo a{
 
 /* sub_nav 끝 */
 
-/* 공통 부분 */
-
-#container{
-  background-image: url(../images/product/subnav_aboutcompany.jpg);
-}
-
-/* 공통 부분 끝 */
 
 
 /* section 01 */
+.section1{
+  color:#fff;
+  background-color: var(--primary);
+}
+
+.sec1_pager{
+  height: 56px;
+  padding: 20px 14px;
+}
+
+
 /* section 01끝 */
 
 
