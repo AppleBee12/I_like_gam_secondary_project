@@ -420,6 +420,7 @@ color: #fff;
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  gap:10px;
 }
 .ungc_exam strong{
   font-size: var(--pc_sub_title);
@@ -441,6 +442,7 @@ color: #fff;
   padding: 0 50px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 .sdgs_exam strong{
   font-size: var(--pc_sub_title);
@@ -449,14 +451,17 @@ color: #fff;
   font-size:var(--pc_sub_body);
 }
 .slide_wrapper{
+  width: 500px;
   position: absolute;
   bottom: 10%;
   left: 45%;
+  overflow: hidden;
 }
 .slides{
   display: flex;
   position: relative;
   left: 0;
+  gap: 10px;
 }
 
 
@@ -595,6 +600,7 @@ color: #fff;
 }
 .circles{
   flex-wrap: wrap ;
+  height: 500px;
 }
 .circle1,
 .circle2,
