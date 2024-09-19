@@ -59,7 +59,7 @@ header .logo a {
   position: relative;
 }
 
-.tab_menu ul li:nth-child(4):after {
+.tab_menu ul li:nth-child(1):after {
   display: block;
   content: '';
   background-color: var(--primary);
@@ -71,12 +71,14 @@ header .logo a {
   transform: scaleX(1);
 }
 
-.tab_menu ul li:nth-child(4) a {
+.tab_menu ul li:nth-child(1) a {
   color: var(--primary);
 }
-
-.tab_menu ul li a:hover {
+.tab_menu ul li a:hover{
   color: var(--primary);
+}
+.tab_menu ul li:hover::after{
+  transform: scaleX(1);
 }
 
 .tab_menu ul li:after {
@@ -91,9 +93,6 @@ header .logo a {
   transform: scaleX(0);
 }
 
-.tab_menu ul li:hover::after {
-  transform: scaleX(1);
-}
 
 
 /*SWIPER SLIDE*/
@@ -103,7 +102,7 @@ header .logo a {
 
 .swiper {
   width: 100%;
-  height: 425px;
+  height: 448px;
 }
 
 .section3 h1 {
@@ -114,18 +113,17 @@ header .logo a {
 
 .swiper-wrapper>* {
   background: var(--lilightgray);
-
 }
 
 .img_box img {
-  height: 425px;
+  height: 448px;
   width: 100%;
   object-fit: cover;
 }
 
 .txt_box {
   padding: 56px 84px;
-
+  background: #E9ECEF;
   .time_contents {
     justify-content: space-between;
 
@@ -251,7 +249,7 @@ section {
 
   .swiper-content {
     display: none;
-    height: 100%;
+    height: 448px;
   }
 
   .swiper-content-first {
@@ -272,79 +270,79 @@ section {
     }
 
     .tab_img_1 {
-      background: url(../images/news1.jpg)no-repeat;
+      background: url(../images/newscenter/news1.jpg)no-repeat;
     }
 
     .tab_img_2 {
-      background: url(../images/news2.jpg)no-repeat;
+      background: url(../images/newscenter/news2.jpg)no-repeat;
     }
 
     .tab_img_3 {
-      background: url(../images/news3.jpg)no-repeat;
+      background: url(../images/newscenter/news3.jpg)no-repeat;
     }
 
     .tab_img_4 {
-      background: url(../images/news4.jpg)no-repeat;
+      background: url(../images/newscenter/news4.jpg)no-repeat;
     }
 
     .tab_img_5 {
-      background: url(../images/news5.jpg)no-repeat;
+      background: url(../images/newscenter/news5.jpg)no-repeat;
     }
 
     .tab_img_6 {
-      background: url(../images/news6.jpg)no-repeat;
+      background: url(../imagesnewscenter//news6.jpg)no-repeat;
     }
 
     .tab_img_7 {
-      background: url(../images/news7.jpg)no-repeat;
+      background: url(../images/newscenter/news7.jpg)no-repeat;
     }
 
     .tab_img_8 {
-      background: url(../images/news8.jpg)no-repeat;
+      background: url(../images/newscenter/news8.jpg)no-repeat;
     }
 
     .tab_img_9 {
-      background: url(../images/news9.jpg)no-repeat;
+      background: url(../images/newscenter/news9.jpg)no-repeat;
     }
 
     .tab_img_2_1 {
-      background: url(../images/sports2.jpg)no-repeat;
+      background: url(../images/newscenter/sports2.jpg)no-repeat;
     }
 
     .tab_img_2_2 {
-      background: url(../images/sports3.jpg)no-repeat;
+      background: url(../images/newscenter/sports3.jpg)no-repeat;
     }
 
     .tab_img_2_3 {
-      background: url(../images/sports4.jpg)no-repeat;
+      background: url(../images/newscenter/sports4.jpg)no-repeat;
     }
 
     .tab_img_2_4 {
-      background: url(../images/sports5.jpg)no-repeat;
+      background: url(../images/newscenter/sports5.jpg)no-repeat;
     }
 
     .tab_img_2_5 {
-      background: url(../images/sports6.jpg)no-repeat;
+      background: url(../images/newscenter/sports6.jpg)no-repeat;
     }
 
     .tab_img_2_6 {
-      background: url(../images/sports7.jpg)no-repeat;
+      background: url(../images/newscenter/sports7.jpg)no-repeat;
     }
 
     .tab_img_2_7 {
-      background: url(../images/sports8.jpg)no-repeat;
+      background: url(../images/newscenter/sports8.jpg)no-repeat;
     }
 
     .tab_img_2_8 {
-      background: url(../images/sports9.jpg)no-repeat;
+      background: url(../images/newscenter/sports9.jpg)no-repeat;
     }
 
     .tab_img_2_9 {
-      background: url(../images/sports1.jpg)no-repeat;
+      background: url(../images/newscenter/sports1.jpg)no-repeat;
     }
 
     .tab_img_3_1 {
-      background: url(../images/youtube1.jpg)no-repeat;
+      background: url(../images/newscenter/youtube1.jpg)no-repeat;
     }
 
 
@@ -352,7 +350,7 @@ section {
     .img-cover {
       background-color: rgba(0, 0, 0, .5);
       width: 100%;
-      height: 100%;
+      height: 448px;
     }
 
     .img-cover:hover {
@@ -693,9 +691,6 @@ section {
       gap: 10px;
       font-size: var(--mo_sub_body);
     }
-
-    .swiper-slide {}
-
     .txt_box {
       bottom: 0;
       /* padding: 60px 60px; */
