@@ -76,7 +76,7 @@ color: #fff;
 	width: 100%;
 	height: 3px;
 	position: absolute;
-	bottom: -160%;
+	bottom: -170%;
 	transition: 0.3s;
 	transform: scaleX(0);
 }
