@@ -241,6 +241,7 @@ header .logo a {
 	font-size: 20px;
 	z-index: 999;
 	opacity: .5;
+	display: none;
 }
 #top_btn:hover{
 	opacity: 1;
