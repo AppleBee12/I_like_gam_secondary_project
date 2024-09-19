@@ -589,10 +589,12 @@ section {
 /* sm */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .section3 {
-
-    .t2 {
+    h1{
+      display: none;
+    }
+    h4.title {
       width: 80%;
-      height: 25%;
+      height: 35%;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -619,6 +621,7 @@ section {
       height: 320px;
       width: 470px;
       border-radius: 20px;
+      z-index: 0;
     }
 
     .txt_box {
@@ -630,19 +633,20 @@ section {
       width: 100%;
       display: flex;
       flex-direction: column;
-
+      
       .time_contents {
-        font-size: var(--mo_sub_body);
+        font-size: var(--mo_body);
         order: 1;
       }
 
       h4.title {
-        font-size: var(--mo_body);
+        font-size: var(--mo_sub_title);
+        width: 100%;
         left: 0;
       }
 
       .contents,
-      .t1 {
+      .desc {
         display: none;
       }
 
