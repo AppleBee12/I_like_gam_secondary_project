@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
   let $slides = $('.slides');
   let $slideItems = $('.slides li');
   let slideWidth = $slideItems.outerWidth(true); 
@@ -22,4 +22,11 @@ $(document).ready(function() {
   }
 
   infiniteSlide();
-});
+
+
+$slides.mouseenter(function(){
+  $(this).stop(stop);
+})
+$slides.mouseleave(function(){
+  infiniteSlide();
+})
