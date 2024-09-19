@@ -89,3 +89,47 @@ if($(this).find('i').text() === 'add'){
   })
 
 
+//고로 슬라이드
+
+document.addEventListener('DOMContentLoaded', function () {
+  let tabSliders = document.querySelectorAll('.gotab-content-slider');
+
+  tabSliders.forEach(function (slider, index) {
+    let mySwiper = new Swiper(slider, {
+      observer: true,
+      observeParents: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      centeredSlides: true, 
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next", 
+        prevEl: ".swiper-button-prev"
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      autoplay: {
+        delay: 3000, 
+        disableOnInteraction: false   
+      }
+    });
+  });
+
+  document.querySelectorAll('.tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelector('.tab.active').classList.remove('active');
+      this.classList.add('active');
+      let targetSliderId = this.getAttribute('data-tab');
+      tabSliders.forEach(function (slider) {
+        slider.style.display = slider.getAttribute('data-slider') === targetSliderId ? 'block' : 'none';
+        if (slider.style.display === 'block') {
+          slider.swiper.update(); // 현재 보여지는 슬라이드에 대해서만 업데이트
+        }
+      });
+    });
+  });
+});
+
+////고로슬라이드///////////////////////////////////////////////////////////////

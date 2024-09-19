@@ -31,9 +31,8 @@ color: #fff;
 }
 .tab_menu{
   width: 100%;
-  height: 116px;
-  border-bottom:1px solid rgba(0,0,0,.5);
-  margin-bottom: 110px;
+  height: 87px;
+  border-bottom:1px solid rgba(0,0,0,.5); 
   position: sticky;
   top: 0;
   background-color: rgba(255,255,255,.5);
@@ -42,13 +41,45 @@ color: #fff;
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 100px;
-  font-size: var(--pc_sub_title);
+  /* padding: 0 247px; */
+  font-size: var(--pc_body);
 }
 .tab_menu ul li{
   position: relative;
+}
+ .tab_menu ul li:nth-child(1):after{
+  display: block;
+	content: '';
+	background-color: var(--primary);
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	bottom: -170%;
+	transition: 0.3s;
+	transform: scaleX(1);
+} 
+
+.nav {
+  display: flex;
+  justify-content: space-around; /* 항목을 균등하게 배치 */
+  align-items: center; /* 수직으로 중앙 정렬 */
+}
+
+.nav-img {
+  width: 50px; /* 필요에 따라 조정 */
+  height: auto; /* 비율 유지 */
+  margin-right: 8px; /* 이미지와 텍스트 간의 간격 */
+}
+
+/* .nav-link {
+  text-decoration: none; 
+  color: #007bff; 
+} */
+
+.nav-link.active {
+  font-weight: bold; /* 활성 링크 강조 */
 }
 /* .tab_menu ul li:nth-child(4):after{
   display: block;
@@ -85,8 +116,14 @@ color: #fff;
   width: 100%;
   height: 100%;
 }
-.sec3_title{  
-  background:url(../images/productlist04_lightcar.png) no-repeat;
+
+.sec1_title{  
+  background-image:linear-gradient(rgba(225,225,225,.1) 50%,#fff 100%), url(../images/productlist04_lightcar.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 672px;
   position: relative;
   display: flex;
   flex-direction:column;
@@ -94,8 +131,6 @@ color: #fff;
   align-items:center;
   text-align: center;
   gap: 60px;
-  background-size: cover;
-  background-position: center;
   margin: 0 auto;
   padding: 0;
 }
@@ -115,9 +150,133 @@ color: #fff;
 .winwin p {
  line-height: 1.5em;
 }
+.fc{
+ display: flex;
+ flex-direction: column;
+ gap: 50px;
+}
+.fc_box{
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 244px; */
+}
+.fc img{
+  z-index: 3;
+}
+ .boxcontainer {
+    position: relative; /* 자식 요소에 대한 기준 설정 */
+    width: 100%; /* 컨테이너 너비 설정 */
+     /* 컨테이너 높이 설정 */
+    left: 0;
+  }
+  .box {
+    position: absolute; /* 절대 위치 지정 */
+     /* 박스 너비 */
+    height: 273px; /* 박스 높이 */
+    display: flex; /* 내용 중앙 정렬을 위한 flexbox */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    color: white; /* 텍스트 색상 */
+    font-size: 24px; /* 텍스트 크기 */
+     /* 둥근 모서리 */
+  }
+  .box1 {
+    background-color: var(--primary); /* 박스 1 색상 */
+    z-index: 1; /* 겹침 순서 설정 */
+    width: 990px;
+    height: 244px;
+    right:-0px
+  }
 
+  .box2 {
+    background-color: #E9ECEF; /* 박스 2 색상 */
+    top: 25px; /* 박스 2의 위쪽 위치 조정 */
+    height: 250px;
+    left: -10px;
+    z-index: 2; /* 겹침 순서 설정 */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 5px;
+    color: #000;
+    text-align: center;
+    font-family: var(--pc_sub_title);
+  }
+  .box2 p{
+    font-family: var(--pc_sub_body);
+  }
+  .fc-img {
+    margin: 0; 
+    padding: 0;
+  
+   
+  }
+  /* 고로 슬라이드 */
+  
+    body {
+      position: relative;
+      height: 100%;
+    }
 
+    body {    
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
 
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+/* 탭 스타일 */
+.gotab-container{
+  overflow:hidden;
+  height:100%
+}
+.gotab-content{
+  height:100%;
+  position:relative;
+}
+.gotabs {
+  display: flex;
+}
+.gotab {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  margin-right: 5px;
+  user-select: none;
+}
+.gotab.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* 슬라이드 스타일 */
+.gotab-content-slider {
+  display: none;
+  height: 100%;
+}
+
+.gotab-content-slider.first{
+  display: block;
+}
+
+/* 슬라이드 내용 스타일 */
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 고로슬라이드 /////////////////////////////////////////// */
+  
 
 
 
@@ -220,6 +379,12 @@ color: #fff;
 @media screen and (max-width: 680px){
   .tab_menu ul{
     gap: 50px;
+  }
+}
+@media screen and (max-width: 375px){
+  .tab_menu ul{
+    gap: 10px;
+    font-size: var(--mo_sub_body);
   }
 }
 
