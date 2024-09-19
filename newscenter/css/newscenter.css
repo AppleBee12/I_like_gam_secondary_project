@@ -133,11 +133,11 @@ header .logo a {
       color: var(--tertiary);
     }
 }
-    .time,
+    /* .time,
     .btn-set2 {
       font-size: var(--pc_sub_body);
       color: var(--silver);
-    }
+    } */
   
 
   h4 {
@@ -400,7 +400,7 @@ section {
       font-size: var(--mo_sub_title);
     }
    }
-   .img_box{
+   /* .img_box{
     display: none;
    }
    .swiper-slide,
@@ -418,15 +418,10 @@ section {
    .contents{
     display: none;
    }
-   .noshow{
-    display: none;
-   }
+
    .t1{
     display: none;
-   }
-   .title {
-    display: block;
-   }
+   } */
 }
 
 
