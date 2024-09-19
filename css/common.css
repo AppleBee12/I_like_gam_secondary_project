@@ -238,7 +238,6 @@ header .logo a {
 
 
 
-
 /* 지우지 마세요 반응형 넘어갈때 잔상 없애기용 입니다 */
 .tb_container {
 	width: 100%;
@@ -403,6 +402,10 @@ header video {
 	.fixed-action-btn{
 		display: none;
 	}
+	#top_btn{
+		width: 40px;
+		height: 40px;
+	}
 
 }
 
@@ -443,7 +446,13 @@ header video {
 	}
 }
 
-
+@media screen and (max-width: 375px){
+	#top_btn{
+		width: 40px;
+		height: 40px;
+		right: 5%;
+	}
+}
 
 
 
