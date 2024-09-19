@@ -376,6 +376,15 @@ color: #fff;
 /* section3 */
 .sec3_title{
   margin-bottom: 110px;
+  position: relative;
+  top:70px;
+  opacity: 0;
+  transition:0.5s;
+}
+.sec3_title.active{
+  margin-bottom: 110px;
+  opacity: 1;
+  top: 0;
 }
 .symbol{
   display: flex;
@@ -385,6 +394,26 @@ color: #fff;
 .symbol_img{
   padding-left: 20px;
 }
+.symbol_img img{
+  box-shadow: 0 1.85px 3.15px rgba(0,0,0,0.048),
+  0 8.15px 6.52px rgba(0,0,0,0.079),
+  0 20px 13px rgba(0,0,0,0.01),
+  0 39px 25px rgba(0,0,0,0.0121),
+  0 64px 47px rgba(0,0,0,0.0152),
+  0 100px 80px rgba(0,0,0,0.02);
+  animation-name: symbol;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+/* @keyframes symbol{
+  0%{box-shadow: none;}
+  100%{box-shadow: 0 1.85px 3.15px rgba(0,0,0,0.048),
+    0 8.15px 6.52px rgba(0,0,0,0.079),
+    0 20px 13px rgba(0,0,0,0.01),
+    0 39px 25px rgba(0,0,0,0.0121),
+    0 64px 47px rgba(0,0,0,0.0152),
+    0 100px 80px rgba(0,0,0,0.02);}
+} */
 .symbol_exam{
   display: flex;
   flex-direction: column;
@@ -396,6 +425,36 @@ color: #fff;
 }
 .symbol_exam p{
   font-size:var(--pc_sub_body);
+}
+.symbol_exam p:nth-child(1){
+  opacity: 0;
+  transition: 0.7s;
+  position: relative;
+  top:70px
+}
+.symbol_exam p.active:nth-child(1){
+  opacity: 1;
+  top:0px
+}
+.symbol_exam p:nth-child(2){
+  opacity: 0;
+  transition: 0.7s 0.2s;
+  position: relative;
+  top:70px
+}
+.symbol_exam p.active:nth-child(2){
+  opacity: 1;
+  top:0px
+}
+.symbol_exam p:nth-child(3){
+  opacity: 0;
+  transition: 0.7s 0.3s;
+  position: relative;
+  top:70px
+}
+.symbol_exam p.active:nth-child(3){
+  opacity: 1;
+  top:0px
 }
 /* //section3 */
 
