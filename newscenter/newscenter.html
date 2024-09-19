@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyundaejaechul 현대제철</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/newscenter.css">
+</head>
+
+
+<body>
+  <!--Header 나승일-->
+  <header>
+    <div class="top_nav">
+      <div class="nav_container">
+        <h1 class="logo"><a href="">hyundae</a></h1>
+        <a href="#" class="hamburger_button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="nav">
+          <ul class="main_menu">
+            <li id="main_list"><a href="">회사소개</a>
+              <ul class="sub_menu">
+                <li><a href="">사업소개</a></li>
+                <li><a href="">사업장</a></li>
+                <li><a href="">CEO인사말</a></li>
+                <li><a href="">경영이념</a></li>
+                <li><a href="">연혁</a></li>
+                <li><a href="">R&D연구소</a></li>
+              </ul>
+            </li>
+            <li id="main_list"><a href="">제품기술</a>
+              <ul class="sub_menu">
+                <li><a href="">제품목록</a></li>
+                <li><a href="">종합 카탈로그</a></li>
+                <li><a href="">생산공정</a></li>
+              </ul>
+            </li>
+            <li id="main_list"><a href="">투자정보</a>
+              <ul class="sub_menu">
+                <li><a href="">전자공고</a></li>
+                <li><a href="">요약재무제표</a></li>
+                <li><a href="">신용등급</a></li>
+                <li><a href="">사업보고서</a></li>
+                <li><a href="">경영정보</a></li>
+              </ul>
+            </li>
+            <li id="main_list"><a href="">지속가능경영</a>
+              <ul class="sub_menu">
+                <li><a href="">탄소중립 로드맵</a></li>
+                <li><a href="">지속가능 전략</a></li>
+                <li><a href="">통합보고서</a></li>
+                <li><a href="">사회공헌</a></li>
+              </ul>
+            </li>
+            <li id="main_list"><a href="">홍보센터</a>
+              <ul class="sub_menu">
+                <li><a href="">뉴스센터</a></li>
+                <li><a href="">youtube</a></li>
+                <li><a href="">소식지</a></li>
+                <li><a href="">스포츠단</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sub_tt">
+      <h1>뉴스센터</h1>
+      <h2>현대제철의 다양한 소식을 발빠르게 전해드립니다 </h2>
+    </div>
+  </header>
+  <!-- //header -->
+  <div class="tab_menu">
+    <ul>
+      <li><a href="">뉴스센터</a></li>
+      <li><a href="">홍보자료실</a></li>
+      <li><a href="">스포츠단</a></li>
+      <li><a href="">견학신청</a></li>
+    </ul>
+  </div>
+
+  <section class="section3 px-5 py-6">
+    <h1>최신 보도자료</h1>
+    <div class="phone">
+      <h2>News</h2>
+      <h3 class="pt-3">현대제철의 소식을 전해드립니다.</h3>
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper pt-4">
+        <div class="swiper-slide d-flex">
+          <div class="img_box col-6"><img src="images/latest_1.jpg" alt=""></div>
+          <div class="txt_box">
+            <div class="time_contents d-flex">
+              <div class="contents pb-mb-2">[NEWS]</div>
+              <time class="time" datetime="2024-05-14">2024.05.14</time>
+            </div>
+            <h4 class="title pt-5 pt-sm-2 pt-lg-4 pt-md-4 stringcut t2">&quot;업무 힙(HIP)하게 해봐요&quot; 현대제철, <br>신규 지식정보
+              플랫폼 &#39;HIP&#39; 오픈</h4>
+            <div class="desc data-text-overflow pt-4 stringcut t1 ">현대제철은 13일 임직원의 업무 효율성 향상을 위해 사내 신규 지식정보 플랫폼
+              &#39;HIP&#39;(Hyundai-steel Intelligence Platform)을 오픈한다. 이번 현대제철이 개발한 &#39;HIP&#39;은 &#39;사내문서검색&#39;과
+              &#39;경영지원챗봇&#39; 두 가지 형태의 서비스를 제공한다.
+            </div>
+            <div class="btnwrap pt-4">
+              <a href="https://www.hyundai-steel.com/kr/pressroom/newscenter/pressreleaseDet.hds?blcSn=12708&page=2"
+                target="_blank" class="more_btn">
+                <p class="btn-set">자세히 보기</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide d-flex">
+          <div class="img_box col-6"><img src="images/latest_2.jpg" alt=""></div>
+          <div class="txt_box">
+            <div class="time_contents d-flex">
+              <div class="contents">[NEWS]</div>
+              <time class="time" datetime="2024.05.14">2024.07.25</time>
+            </div>
+            <h4 class="title pt-5 pt-sm-2 pt-lg-4 pt-md-4 stringcut t2">현대제철, 2분기 영업이익 전분기 대비 <br>422억원 개선</h4>
+            <div class="desc data-text-overflow pt-4 stringcut t1">현대제철은 25일 공시를 통해 올해 2분기 연결기준 매출액 6조 414억원, 영업이익
+              980억원, 당기순이익 14억원을
+              기록했다고 밝혔다. 현대제철 발표에 따르면 2분기 매출액은 판매량 증가로 전분기 대비 936억원 증가했다고 설명했다.
+            </div>
+            <div class="btnwrap pt-4">
+              <a href="https://www.hyundai-steel.com/kr/pressroom/newscenter/pressreleaseDet.hds?blcSn=12736&page=1"
+                target="_blank" class="more_btn">
+                <p>자세히 보기</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide d-flex">
+          <div class="img_box col-6"><img src="images/latest_3.jpg" alt=""></div>
+          <div class="txt_box">
+            <div class="time_contents d-flex">
+              <div class="contents">[NEWS]</div>
+              <time class="time" datetime="2024-05-14">2023.12.20</time>
+            </div>
+            <h4 class="title pt-5 pt-sm-2 pt-md-4 stringcut t2">현대제철, 한미글로벌과‘철골조 아파트 활성화&rsquo; MOU 체결</h4>
+            <div class="desc data-text-overflow pt-4 stringcut t1">현대제철이 국내 1위 PM 전문기업인 한미글로벌과 고품질의 철골조 아파트 활성화를 위해 손을
+              잡았다.현대제철 이성수
+              전기로사업본부장과 한미글로벌 이국헌 기술총괄은 '철골조 아파트 활성화 업무협약'을 공동 기술개발에 나서기로 했다.
+            </div>
+            <div class="btnwrap pt-4">
+              <a href="https://www.hyundai-steel.com/kr/pressroom/newscenter/pressreleaseDet.hds?blcSn=12679&page=1"
+                target="_blank" class="more_btn">
+                <p>자세히 보기</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide_btn">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section3 px-5 py-6 pt-5">
+    <h1 class="eco_friendly_left">친환경 경영</h1>
+    <div class="swiper">
+      <div class="swiper-wrapper pt-4">
+        <div class="swiper-slide d-flex">
+          <div class="txt_box">
+            <div class="time_contents d-flex">
+              <div class="contents">[ECO-FRIENDLY]</div>
+              <time class="time" datetime="2024-04-30">2024.04.30</time>
+            </div>
+            <h4 class="title pt-5 pt-sm-2 pt-md-4 stringcut t2">현대제철, 1분기 영업이익 전분기 대비 <br> 2,849억원 개선, 흑자전환</h4>
+            <div class="desc data-text-overflow pt-4 stringcut t1">현대제철은 30일 공시를 통해 올해 1분기 연결기준 매출액 5조 9,478억원, 영업이익
+              558억원, 당기순이익 322억원을 기록하며 흑자전환 했다고 밝혔다. 현대제철 발표에 따르면 1분기 매출액은 전분기 대비 1,564억원 감소했으나 영업이익은 2,849억원 증가했다. 회사
+              측은 원가상승분에 대한 판매가격 반영 및 비용절감을 통해 수익성이 개선되었다고 설명했다.
+            </div>
+            <div class="btnwrap pt-4">
+              <a href="https://www.hyundai-steel.com/kr/pressroom/newscenter/pressreleaseDet.hds?blcSn=12707&page=1"
+                target="_blank" class="more_btn">
+                <p>자세히 보기</p>
+              </a>
+            </div>
+          </div>
+          <div class="img_box col-6"><img src="images/eco_friendly_1.jpg" alt=""></div>
+        </div>
+        <div class="swiper-slide d-flex">
+          <div class="txt_box">
+            <div class="time_contents d-flex">
+              <div class="contents">[ECO-FRIENDLY]</div>
+              <time class="time" datetime="2021-12-24">2021.12.24</time>
+            </div>
+            <h4 class="title pt-5 pt-sm-2 pt-md-4 stringcut t2">현대제철, 협력사와 함께 친환경 경영 나선다</h4>
+            <div class="desc data-text-overflow pt-4 stringcut t1">현대제철이 협력사를 대상으로 자체 친환경 인증제도인 에코파트너십(ECOpartnership)을
+              시행하며 친환경 경영의 영향력을 넓히고 있다. 현대제철은 이 제도와 관련해, 지난 23일친환경 우수 협력사로 선정한 2개업체에 에코파트너십 인증패와 현판을 수여했다.
+            </div>
+            <div class="btnwrap pt-4">
+              <a href="https://www.hyundai-steel.com/kr/pressroom/newscenter/pressreleaseDet.hds?blcSn=12421&page=1"
+                target="_blank" class="more_btn">
+                <p>자세히 보기</p>
+              </a>
+            </div>
+          </div>
+          <div class="img_box col-6"><img src="images/eco_friendly_2.jpg" alt=""></div>
+        </div>
+        <div class="swiper-slide d-flex">
+          <div class="txt_box">
+            <div class="time_contents d-flex">
+              <div class="contents">[ECO-FRIENDLY]</div>
+              <time class="time" datetime="2022-01-26">2022.01.26</time>
+            </div>
+            <h4 class="title pt-5 pt-sm-2 pt-md-4 stringcut t2">현대제철, 친환경 자동차용 1.5GPa <br>MS강판 개발</h4>
+            <div class="desc data-text-overflow pt-4 stringcut t1">현대제철이 최근 &#39;1.5GPa MS(Martensitic)강판&#39;의 개발을
+              완료했다고 밝혔다.
+              이번에 현대제철이 개발한 1.5GPa MS 강판은 기존에 개발된 동일 규격 강판 대비 평탄도 및 내균열성을 대폭 개선한 제품으로, 회사측은 기존 제품과의 차별화를 위해&#39;프리미엄
+              1.5GPa MS강판'으로 명명했다.
+            </div>
+            <div class="btnwrap pt-4">
+              <a href="https://www.hyundai-steel.com/kr/pressroom/newscenter/pressreleaseDet.hds?blcSn=12434&page=2"
+                target="_blank" class="more_btn">
+                <p>자세히 보기</p>
+              </a>
+            </div>
+          </div>
+          <div class="img_box col-6"><img src="images/eco_friendly_3.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="slide_btn">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section3 px-5 py-6 pt-5">
+    <h1 class="eco_friendly">캠페인</h1>
+    <div class="swiper">
+      <div class="swiper-wrapper pt-4">
+        <div class="swiper-slide d-flex">
+          <div class="img_box col-6"><img src="images/campaign_1.jpg" alt=""></div>
+          <div class="txt_box">
+            <div class="time_contents d-flex">
+              <div class="contents">[CAMPAIGN]</div>
+              <time class="time" datetime="2023-11-07">2023.11.07</time>
+            </div>
+            <h4 class="title pt-5 pt-sm-2 pt-md-4 stringcut t2">현대제철, &#39;철이 그린(Green) 세상&#39; <br>캠페인 전개</h4>
+            <div class="desc data-text-overflow pt-4 stringcut t1">현대제철이 &#39;철이 그린(Green) 세상&#39;이라는 새로운 캠페인을 시작한다.
+              '철이 그린(Green) 세상'은 철이 가진 순환의 속성과 그 가치를 대중에게 알리고, 자원순환에 대한 사회적 관심을 제고하기 위해 현대제철이 새롭게 추진하는 캠페인으로, '내일을
+              그린다'는 의미의 '그린'과 친환경 철강의 비전을 상징하는 &#39;Green&#39;의 의미를 중의적으로 담고 있다.
+            </div>
+            <div class="btnwrap pt-4">
+              <a href="https://www.hyundai-steel.com/kr/pressroom/newscenter/pressreleaseDet.hds?blcSn=12658&page=1"
+                target="_blank" class="more_btn">
+                <p>자세히 보기</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide d-flex">
+          <div class="img_box col-6"><img src="images/campaign_2.jpg" alt=""></div>
+          <div class="txt_box">
+            <div class="time_contents d-flex">
+              <div class="contents">[CAMPAIGN]</div>
+              <time class="time" datetime="2021-05-21">2021.05.21</time>
+            </div>
+            <h4 class="title pt-5 pt-sm-2 pt-md-4 stringcut t2">현대제철, 커피박 재자원화 홍보캠페인 진행</h4>
+            <div class="desc data-text-overflow pt-4 stringcut t1">현대제철이 친환경 사회공헌 사업인 '커피박재자원화 프로젝트'에대한 지역사회 인식제고를 위해
+              홍보 캠페인을 진행하고 있다. 이번 커피박 재자원화 프로젝트 홍보 캠페인은 지난 5월 17일부터 6월 16일까지한 달간 인천 시내버스 및 지하철 광고판을 통해 게시되며, 이 밖에도 현장
+              인증샷 SNS 이벤트 진행과 함께 커피박을 활용해 만든 다양한 친환경 상품들을 홍보할 예정이다.
+            </div>
+            <div class="btnwrap pt-4">
+              <a href="https://www.hyundai-steel.com/kr/pressroom/newscenter/pressreleaseDet.hds?blcSn=12381&page=1"
+                target="_blank" class="more_btn">
+                <p>자세히 보기</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide d-flex">
+          <div class="img_box col-6"><img src="images/campaign_3.jpg" alt=""></div>
+          <div class="txt_box">
+            <div class="time_contents d-flex">
+              <div class="contents">[CAMPAIGN]</div>
+              <time class="time" datetime="2023-06-02">2023.06.02</time>
+            </div>
+            <h4 class="title pt-5 pt-sm-2 pt-md-4 stringcut t2">현대제철,『70cm의 기적, 문샷 챌린지』걸음기부 캠페인 실시</h4>
+            <div class="desc data-text-overflow pt-4 stringcut t1">현대제철이 국내 1위 PM(Project Management, 건설사업관리) 전문기업인
+              한미글로벌과 고품질의 철골조
+              아파트 활성화를 위해 손을 잡았다.
+              지난 19일 현대제철 이성수 전기로사업본부장과 한미글로벌 이국헌 기술총괄은 현대제철 판교오피스에서'철골조 아파트 활성화 업무협약'을 체결하고 공동 기술개발에 나서기로 했다.
+            </div>
+            <div class="btnwrap pt-4">
+              <a href="https://www.hyundai-steel.com/kr/pressroom/newscenter/pressreleaseDet.hds?blcSn=12679&page=1"
+                target="_blank" class="more_btn">
+                <p>자세히 보기</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide_btn">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tab-container px-5 py-6 col-12">
+    <div class="tabs d-flex mb-3">
+      <div class="tab news active " data-tab="1">NEWS</div>
+      <div class="tab sports" data-tab="2">SPORTS</div>
+      <div class="tab youtube " data-tab="3">YOUTUBE</div>
+    </div>
+    <div class="tab-content swiper-content-first news" data-slider="1">
+      <div class="swiper-tab-wrapper d-flex align-content-end flex-wrap gap-4 ">
+        <div class="swiper-tab tab_img_1 col-1">
+          <div class="tab_title">
+            <p>현대제철, 리스크 관리<br> 국제 인증 'ISO 22301' 취득</p>
+            <em>2024.07.23</em>
+          </div>
+          <div class="img-cover"></div>
+        </div>
+        <div class="swiper-tab-wrapper gap-4">
+          <div class="swiper-tab tab_img_2 col-1">
+            <div class="tab_title">
+              <p>현대제철, KIRCHHOFF Automotive와 탄소저감 <br>강판판매 MOU 체결</p>
+              <em>2024.05.31</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-4">
+          <div class="swiper-tab tab_img_3 col-1">
+            <div class="tab_title">
+              <p>현대제철, 열연 및 후판제품 <br> 국내 EPD 인증 취득</p>
+              <em>2023.11.23</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_4 col-1">
+            <div class="tab_title">
+              <p>현대제철, DNV <br> &#39;신재생에너지 공장인증&#39; 취득</p>
+              <em>2023.08.30</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper  gap-2">
+          <div class="swiper-tab tab_img_5 col-1">
+            <div class="tab_title">
+              <p> HMG사내스타트업<br> &#39;3I솔루션&#39;과 산업용 중성자 성분분석기 개발</p>
+              <em>2023.08.16</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_6 col-1">
+            <div class="tab_title">
+              <p>현대제철, 송도 센트럴파크에 <br>철의 감성 더한다</p>
+              <em>2023.07.14</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_7 col-1">
+            <div class="tab_title">
+              <p>현대제철, 온라인 철강몰 <br> 'HCORE STORE' 론칭</p>
+              <em>2023.05.08</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper  gap-2">
+          <div class="swiper-tab tab_img_8 col-1">
+            <div class="tab_title">
+              <p>현대제철, 탄소중립 로드맵 공개</p>
+              <em>2023.04.26</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_9 col-1">
+            <div class="tab_title">
+              <p>현대제철, 450MPa급 <br>구조용 강관 KS인증 취득</p>
+              <em>2022.11.04</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content swiper-content sport" data-slider="2">
+      <div class="swiper-tab-wrapper d-flex align-content-end flex-wrap gap-4 ">
+        <div class="swiper-tab tab_img_2_1 col-1">
+          <div class="tab_title">
+            <p>현대제철, 리스크 관리<br> 국제 인증 'ISO 22301' 취득</p>
+            <em>2024.07.23</em>
+          </div>
+          <div class="img-cover"></div>
+        </div>
+        <div class="swiper-tab-wrapper gap-4">
+          <div class="swiper-tab tab_img_2_2 col-1">
+            <div class="tab_title">
+              <p>현대제철, KIRCHHOFF Automotive와 탄소저감 <br>강판판매 MOU 체결</p>
+              <em>2024.05.31</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-4">
+          <div class="swiper-tab tab_img_2_3 col-1">
+            <div class="tab_title">
+              <p>현대제철, 열연 및 후판제품 <br> 국내 EPD 인증 취득</p>
+              <em>2023.11.23</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_2_4 col-1">
+            <div class="tab_title">
+              <p>현대제철, DNV <br> &#39;신재생에너지 공장인증&#39; 취득</p>
+              <em>2023.08.30</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper  gap-2">
+          <div class="swiper-tab tab_img_2_5 col-1">
+            <div class="tab_title">
+              <p> HMG사내스타트업<br> &#39;3I솔루션&#39;과 산업용 중성자 성분분석기 개발</p>
+              <em>2023.08.16</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_2_6 col-1">
+            <div class="tab_title">
+              <p>현대제철, 송도 센트럴파크에 <br>철의 감성 더한다</p>
+              <em>2023.07.14</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_2_7 col-1">
+            <div class="tab_title">
+              <p>현대제철, 온라인 철강몰 <br> 'HCORE STORE' 론칭</p>
+              <em>2023.05.08</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper  gap-2">
+          <div class="swiper-tab tab_img_2_8 col-1">
+            <div class="tab_title">
+              <p>현대제철, 탄소중립 로드맵 공개</p>
+              <em>2023.04.26</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_2_9 col-1">
+            <div class="tab_title">
+              <p>현대제철, 450MPa급 <br>구조용 강관 KS인증 취득</p>
+              <em>2022.11.04</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content swiper-content sport" data-slider="3">
+      <div class="swiper-tab-wrapper d-flex align-content-end flex-wrap gap-4 ">
+        <div class="swiper-tab tab_img_3_1 col-1">
+          <div class="tab_title">
+            <p>현대제철, 리스크 관리<br> 국제 인증 'ISO 22301' 취득</p>
+            <em>2024.07.23</em>
+          </div>
+          <div class="img-cover"></div>
+        </div>
+        <div class="swiper-tab-wrapper gap-4">
+          <div class="swiper-tab tab_img_3_2 col-1">
+            <div class="tab_title">
+              <p>현대제철, KIRCHHOFF Automotive와 탄소저감 <br>강판판매 MOU 체결</p>
+              <em>2024.05.31</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-4">
+          <div class="swiper-tab tab_img_3_3 col-1">
+            <div class="tab_title">
+              <p>현대제철, 열연 및 후판제품 <br> 국내 EPD 인증 취득</p>
+              <em>2023.11.23</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_3_4 col-1">
+            <div class="tab_title">
+              <p>현대제철, DNV <br> &#39;신재생에너지 공장인증&#39; 취득</p>
+              <em>2023.08.30</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper  gap-2">
+          <div class="swiper-tab tab_img_3_5 col-1">
+            <div class="tab_title">
+              <p> HMG사내스타트업<br> &#39;3I솔루션&#39;과 산업용 중성자 성분분석기 개발</p>
+              <em>2023.08.16</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_3_6 col-1">
+            <div class="tab_title">
+              <p>현대제철, 송도 센트럴파크에 <br>철의 감성 더한다</p>
+              <em>2023.07.14</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_3_7 col-1">
+            <div class="tab_title">
+              <p>현대제철, 온라인 철강몰 <br> 'HCORE STORE' 론칭</p>
+              <em>2023.05.08</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper  gap-2">
+          <div class="swiper-tab tab_img_3_8 col-1">
+            <div class="tab_title">
+              <p>현대제철, 탄소중립 로드맵 공개</p>
+              <em>2023.04.26</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+        <div class="swiper-tab-wrapper gap-2">
+          <div class="swiper-tab tab_img_3_9 col-1">
+            <div class="tab_title">
+              <p>현대제철, 450MPa급 <br>구조용 강관 KS인증 취득</p>
+              <em>2022.11.04</em>
+            </div>
+            <div class="img-cover"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- tablet -->
+  <div class="tb_container">
+    <div class="tb_nav">
+      <ul>
+        <li><a href="">회사소개</a>
+          <ul class="tb_list">
+            <li><a href="">사업소개</a></li>
+            <li><a href="">사업창</a></li>
+            <li><a href="">CEO인사말</a></li>
+            <li><a href="">경영이념</a></li>
+            <li><a href="">연혁</a></li>
+            <li><a href="">R&D연구소</a></li>
+          </ul>
+        </li>
+        <li><a href="">제품기술</a>
+          <ul class="tb_list">
+            <li><a href="">제품목록</a></li>
+            <li><a href="">종합카탈로그</a></li>
+            <li><a href="">생산공정</a></li>
+          </ul>
+        </li>
+        <li><a href="">투자정보</a>
+          <ul class="tb_list">
+            <li><a href="">전자공고</a></li>
+            <li><a href="">요약재무제표</a></li>
+            <li><a href="">신용등급</a></li>
+            <li><a href="">사업보고서</a></li>
+            <li><a href="">경영정보</a></li>
+          </ul>
+        </li>
+        <li><a href="">지속가능경영</a>
+          <ul class="tb_list">
+            <li><a href="">탄소중립로드맵</a></li>
+            <li><a href="">지속가능전략</a></li>
+            <li><a href="">통합보고서</a></li>
+            <li><a href="">주요활동</a></li>
+          </ul>
+        </li>
+        <li><a href="">홍보센터</a>
+          <ul class="tb_list">
+            <li><a href="">뉴스센터</a></li>
+            <li><a href="">youtube</a></li>
+            <li><a href="">소식지</a></li>
+            <li><a href="">스포츠단</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 퀵메뉴 -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large  blue darken-4">
+      <i class="large material-icons">add</i>
+    </a>
+    <ul>
+      <li><a href="#" class="btn-floating  amber accent-4"><i class="material-icons">help</i></a>
+        <a href="#">제품문의</a>
+      </li>
+      <li><a href="#" class="btn-floating  cyan accent-4"><i class="material-icons">person_add</i></a>
+        <a href="#">인재채용</a>
+      </li>
+      <li><a href="#" class="btn-floating  light-green accent-4"><i class="material-icons">loop</i></a>
+        <a href="#">지속가능</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- TOP 버튼 -->
+  <button id="top_btn"><i class="fa-solid fa-angles-up"></i></button>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+<!--//Header 나승일-->

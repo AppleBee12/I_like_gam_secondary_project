@@ -220,6 +220,7 @@ header .logo a {
 #top_btn{
 	border: none;
 	background:var(--primary);
+	opacity: 0.8;
 	border-radius: 50%;
 	color: #fff;
 	width: 56px;
@@ -229,6 +230,10 @@ header .logo a {
 	right: 23px;
 	font-size: 20px;
 	z-index: 999;
+	transition: 0.3s;
+}
+#top_btn:hover{
+	opacity: 1;
 }
 
 
@@ -268,7 +273,13 @@ header video {
 
 /* tablet button */
 
-
+@media screen and (max-width: 1180px){
+	#top_btn{
+		width: 45px;
+		height: 45px;
+		font-size: 20px;
+	}
+}
 
 
 /* tablet */
@@ -282,6 +293,11 @@ header video {
 	}
 	.main_menu .sub_menu{
 		font-size: var(--mo_sub_body);
+	}
+	#top_btn{
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
 	}
 }
 
@@ -404,7 +420,7 @@ header video {
 		max-height: 0;
 		opacity: 0;
 		overflow: hidden;
-		transition: max-height 0.5s ease, opacity 0.8s ease;
+		transition: max-height 1s ease, opacity 0.8s ease;
 	}
 	.tb_nav>ul{
 		display: flex;
@@ -432,6 +448,14 @@ header video {
 	.tb_list.open {
 		max-height: 500px; /* 충분히 큰 값으로 설정, 메뉴 높이에 맞게 설정 */
 		opacity: 1;
+	}
+}
+@media (max-width:375px){
+	#top_btn{
+		width: 45px;
+		height: 45px;
+		font-size: 20px;
+		right: 0;
 	}
 }
 
