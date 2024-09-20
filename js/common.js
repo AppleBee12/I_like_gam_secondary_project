@@ -35,9 +35,11 @@ topNav.addEventListener('mouseleave', () => {
 
 
 
-toggleBtn.click(function(){
+toggleBtn.click(function(e){
+  e.preventDefault();
   toggleBtn.toggleClass('toggle');
   $('.tb_container').toggleClass('visible');
+  toggleBtn.toggleClass('visible');
 })
 //퀵메뉴
 $('.fixed-action-btn').floatingActionButton({
@@ -58,7 +60,7 @@ if($(this).find('i').text() === 'add'){
   navItems.forEach(function(navItem) {
     navItem.addEventListener('click', function(e) {
       e.preventDefault(); // 기본 링크 클릭 동작 방지
-
+      
       // 클릭한 요소의 부모(li)의 자식 ul(tb_list)를 찾음
       const subMenu = this.nextElementSibling;
 
@@ -75,6 +77,21 @@ if($(this).find('i').text() === 'add'){
       }
     });
   });
+
+
+  spanPlus= $('.tb_nav ul > li > a');
+
+  spanPlus.each(function(){
+      spanPlus.click(function(){
+      if(!$(this).hasClass('open')){
+        spanPlus.removeClass('open')
+        $(this).addClass('open')        
+      }else{
+        $(this).removeClass('open')
+      }
+    })    
+  })
+ 
 
   // top 버튼
   topBtn = $('#top_btn');
