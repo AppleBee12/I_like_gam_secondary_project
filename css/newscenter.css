@@ -656,7 +656,7 @@ section {
       }
     }
 
-    section.section3.px-5.py-6.pt-5 {
+    .section3{
       display: none;
     }
   }
