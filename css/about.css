@@ -278,11 +278,11 @@ color: #fff;
   flex-direction: column;
   gap: 50px;
   }
-.fc_box{
+.fc_box{ 
   display: flex;
   justify-content: space-between;
-  /* padding: 0 244px; */
   }
+ 
 .fc img{
   z-index: 3;
   }
@@ -305,7 +305,7 @@ color: #fff;
   z-index: 1; /* 겹침 순서 설정 */
   width: 990px;
   height: 244px;
-  right:50px
+  right:-25px
   }
 
 .box2 {
@@ -321,10 +321,13 @@ color: #fff;
   color: #000;
   text-align: center;
   font-family: var(--pc_sub_title);
+  padding: 0 30px;
   }
 .box2 p{
   font-family: var(--pc_sub_body);
+  margin: 10px 0;
   }
+  
 .fc-img {
   margin: 0; 
   padding: 0;   
