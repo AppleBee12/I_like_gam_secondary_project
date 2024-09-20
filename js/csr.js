@@ -10,21 +10,7 @@
   topNav=document.querySelector('.top_nav')
   
   
-  topNav.addEventListener('mouseenter', () => {
-  if (window.innerWidth > 768) {
-    topNav.style.backgroundColor = 'white';
-    topNav.style.borderBottom = '1px solid black';
-    topNav.style.height = '420px';
-  }
-  
-  });
-  topNav.addEventListener('mouseenter', () => {
-  if (window.innerWidth < 576) {
-    topNav.style.backgroundColor = 'white';
-    topNav.style.borderBottom = '1px solid black';
-    topNav.style.height = '87px';
-  }
-  });
+
   
   topNav.addEventListener('mouseleave', () => {
    if (window.innerWidth > 768) {
@@ -45,7 +31,7 @@
 
 
   function infiniteSlide() {
-      $slides.animate({ left: `-${slideWidth * slideCount+(gap*slideCount-1)}px` }, 10000, 'linear', function() {
+      $slides.animate({ left: `-${slideWidth * slideCount+(gap*slideCount-1)}px` }, 3000, 'linear', function() {
 
           $slides.css('left', '0');
 
@@ -79,14 +65,14 @@ $(window).scroll(function(){
   }
 })
 $(window).scroll(function(){
-  if($(this).scrollTop()>$('.symbol_exam p:nth-child(2)').offset().top-900){
+  if($(this).scrollTop()>$('.symbol_exam p:nth-child(1)').offset().top-900){
     $('.symbol_exam p:nth-child(2)').addClass('active')
   }else{
     $('.symbol_exam p:nth-child(2)').removeClass('active');
   }
 })
 $(window).scroll(function(){
-  if($(this).scrollTop()>$('.symbol_exam p:nth-child(3)').offset().top-900){
+  if($(this).scrollTop()>$('.symbol_exam p:nth-child(1)').offset().top-900){
     $('.symbol_exam p:nth-child(3)').addClass('active')
   }else{
     $('.symbol_exam p:nth-child(3)').removeClass('active');
