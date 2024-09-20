@@ -455,7 +455,7 @@ section {
 
   .t3 {
     width: 90%;
-    height: 35%;
+    height: 33%;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -470,7 +470,7 @@ section {
     }
 
     h4.title {
-      height: 39%;
+      height: 35%;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -479,7 +479,7 @@ section {
 
     .t3 {
       width: 90%;
-      height: 37%;
+      height: 34%;
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
@@ -493,7 +493,7 @@ section {
 
 @media (min-width: 992px) and (max-width: 1035.98px) {
   .section3 .stringcut.t1 {
-    height: 33%;
+    height: 37%;
   }
 }
 
@@ -506,24 +506,25 @@ section {
     }
 
     h4.title {
-      width: 90%;
-      height: 39%;
+      width: 100%;
+      height: 30%;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       font-size: 24px;
+      line-height: 30px;
     }
 
     .t3 {
       height: 40%;
       overflow: hidden;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
     }
 
     .t1 {
-      height: 38%;
+      height: 39%;
     }
 
     .swiper {
@@ -531,7 +532,9 @@ section {
     }
   }
 }
+@media (min-width: 766px) and (max-width: 1035px){
 
+}
 @media screen and (max-width: 1035px) {
   .main_menu {
     font-size: var(--pc_sub_body);
@@ -552,7 +555,7 @@ section {
     }
 
     h4.title {
-      height: 24%;
+      height: 29%;
       -webkit-line-clamp: 1;
 
     }
@@ -560,9 +563,8 @@ section {
     .t3 {
       height: 37%;
     }
-
-    .swiper {
-      /* height: 420px; */
+    .swiper-slide{
+      /* height: 370px; */
     }
 
     .txt_box {
