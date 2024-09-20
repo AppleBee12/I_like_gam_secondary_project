@@ -38,6 +38,7 @@ header .logo a{
 	color: #000;
 }
 .sub_tt{
+  
    /*  display: flex;
   flex-direction:column;
   justify-content: center;
@@ -51,7 +52,7 @@ header .logo a{
   background-position: center; */
 }
 .parallax-window {
-  min-height: 300px;
+  min-height: 400px;
   background: transparent;
 }
 
