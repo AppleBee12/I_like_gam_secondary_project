@@ -175,70 +175,65 @@ color: #fff;
 
 
 /* section3 tab menu*/
-/* .wrap{padding:15px; letter-spacing:-0.5px;}
-.tab_menu2{position:relative;}
-.tab_menu2 .list{overflow:hidden;}
-.tab_menu2 .list li{float:left; margin-right:14px;}
-.tab_menu2 .list .btn{font-size:13px;}
-.tab_menu2 .list .cont{display:none; position:absolute; top:25px; left:0; background:#555; color:#fff; text-align:center; width:250px; height:100px; line-height:100px;}
-.tab_menu2 .list li.is_on .btn{font-weight:bold; color:green;}
-.tab_menu2 .list li.is_on .cont{display:block;}
-#tab1{
+.tab-wrapper {  
+  margin:0 auto;
+  }
+.tab-menu {
+  padding-left:0;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.wrap p{
-  color:black;
-} */
-
-.tab_menu2 {
-  position: relative;
-}
-
-.tab_menu2 .list {
-  overflow: hidden;
-}
-
-.tab_menu2 .list li {
+  justify-content: space-between;
+  }
+.tab-menu li {  
+  list-style:none;
   
-  margin-right: 14px;
-}
 
-.tab_menu2 .list .btn {
-  font-size: 20px;
 }
-
-.tab_menu2 .list .cont {
-  display: none;    
-  color: #fff;
-  text-align: center; 
-  /* height: 100px; */
-  line-height: 100px;
-  justify-content: flex-start;
-}
-
-.tab_menu2 .list li.is_on .btn {
-  font-weight: bold;
-  color: green;
-}
-
-.tab_menu2 .list li.is_on .cont {
+.tab-menu:after{
+  content:'';
+  display:block;
+  clear:both;
+  }
+.tab-menu li a{
+  font-weight: 600;
+  line-height:28px; 
+  font-family: 'hdharmony';
+  font-size: 28px;  
+  text-decoration:none; 
+  padding:0 170px; 
+  
+  
+  }
+ 
+#tab-content > div {
+  display: none;
+  }
+#tab-content > div.active{
   display: block;
-}
-.tab_menu2 img{
-  width: 474px;
-}
-#tab1 {
+  }
+.tab-menu li.ui-state-active a{
+  background: #000;
+  color: #fff;
+  }
+
+#tab-content {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top:80px; 
 }
-.cont p {
-  display: inline-block; /* 또는 inline-block */
-  margin: 0; /* 기본 마진 제거 */
-  line-height: normal; /* 줄 간격 조정 */
-  color:black;
+
+#tab-content h2 {
+  position: relative; /* 위치 조정할 수 있도록 설정 */
+  margin-bottom: 82px; /* 이미지와의 간격 조정 */
+  
+}
+
+#tab-content img {
+  margin-right: 20px; 
+  height: auto; 
+}
+
+#tab-content p {
+  flex: 1; 
 }
 
 /* section3 tab menu/////////////////////////////////////////*/
@@ -249,6 +244,7 @@ color: #fff;
   display: flex;
   justify-content: space-between;
   gap: 90px;
+  margin-bottom: 140px;
   }
 .winwin{ 
   display: flex;
@@ -258,23 +254,23 @@ color: #fff;
   gap: 55px;
   }
   .winwin h2 {
-    font-family: 'hdharmony';
-    font-style: medium;
-    font-weight: 500;
-    color: var(--secondary);
-    position: relative; /* 상대 위치 설정 */
+  font-family: 'hdharmony';
+  font-style: medium;
+  font-weight: 500;
+  color: var(--secondary);
+  position: relative; /* 상대 위치 설정 */
   }
 .winwin{
   padding: 60px 0;
-}
+  }
 .winwin p {
- line-height: 42px;
- font-size: 30px;
+  line-height: 42px;
+  font-size: 30px;
   }
 .fc{
- display: flex;
- flex-direction: column;
- gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   }
 .fc_box{
   display: flex;
@@ -285,48 +281,47 @@ color: #fff;
   z-index: 3;
   }
  .boxcontainer {
-    position: relative; 
-    width: 100%; 
-    
-    left: 0;
+  position: relative; 
+  width: 100%;   
+  left: 0;
   }
 .box {
-    position: absolute;     
-    height: 273px;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    color: white; 
-    font-size: 24px;    
-    }
+  position: absolute;     
+  height: 273px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  color: white; 
+  font-size: 24px;    
+  }
 .box1 {
-    background-color: var(--primary); /* 박스 1 색상 */
-    z-index: 1; /* 겹침 순서 설정 */
-    width: 990px;
-    height: 244px;
-    right:50px
-    }
+  background-color: var(--primary); /* 박스 1 색상 */
+  z-index: 1; /* 겹침 순서 설정 */
+  width: 990px;
+  height: 244px;
+  right:50px
+  }
 
 .box2 {
-    background-color: #E9ECEF; /* 박스 2 색상 */
-    top: 25px; /* 박스 2의 위쪽 위치 조정 */
-    height: 250px;
-    left: -10px;
-    z-index: 2; /* 겹침 순서 설정 */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-shadow: 5px;
-    color: #000;
-    text-align: center;
-    font-family: var(--pc_sub_title);
+  background-color: #E9ECEF; /* 박스 2 색상 */
+  top: 25px; /* 박스 2의 위쪽 위치 조정 */
+  height: 250px;
+  left: -10px;
+  z-index: 2; /* 겹침 순서 설정 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 5px;
+  color: #000;
+  text-align: center;
+  font-family: var(--pc_sub_title);
   }
 .box2 p{
-    font-family: var(--pc_sub_body);
+  font-family: var(--pc_sub_body);
   }
 .fc-img {
-    margin: 0; 
-    padding: 0;   
+  margin: 0; 
+  padding: 0;   
   }
   
 
