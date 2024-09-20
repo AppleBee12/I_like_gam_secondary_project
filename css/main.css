@@ -408,6 +408,7 @@
   padding: 0 70px;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .section5 .sec5_btn:hover{
