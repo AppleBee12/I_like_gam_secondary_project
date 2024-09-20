@@ -77,7 +77,9 @@
   display: block;
   animation: fadeInLeft 1s ease forwards;
 }
-
+.explain_wrapper{
+  height: 250px;
+}
 .explain {
   display: inline-block;
 
@@ -99,13 +101,13 @@
     color: var(--lightgray);
   }
 
-  a:hover {
+  /* a:hover {
     color: var(--secondary);
     transition: 0.3s;
     margin-top: -28px;
-  }
+  } */
 
-  a:focus {
+  a.focus {
     color: var(--secondary);
     transition: 0.3s;
   }
