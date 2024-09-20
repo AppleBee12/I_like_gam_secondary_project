@@ -182,6 +182,7 @@ color: #fff;
   padding-left:0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
   }
 .tab-menu li {  
   list-style:none;
@@ -199,11 +200,8 @@ color: #fff;
   font-family: 'hdharmony';
   font-size: 28px;  
   text-decoration:none; 
-  padding:0 170px; 
-  
-  
-  }
- 
+  padding:0 170px;   
+  } 
 #tab-content > div {
   display: none;
   }
@@ -214,26 +212,34 @@ color: #fff;
   background: #000;
   color: #fff;
   }
-
 #tab-content {
   display: flex;
   align-items: flex-start;
-  margin-top:80px; 
+  margin-bottom:80px; 
 }
-
 #tab-content h2 {
   position: relative; /* 위치 조정할 수 있도록 설정 */
-  margin-bottom: 82px; /* 이미지와의 간격 조정 */
-  
+  margin-bottom: 82px; /* 이미지와의 간격 조정 */  
 }
-
 #tab-content img {
   margin-right: 20px; 
   height: auto; 
 }
+.gorotab{
+  display: flex;
+  justify-content: space-between;
+  gap: 111px;
+}
 
-#tab-content p {
-  flex: 1; 
+.gorotab-content {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  gap:100px;
+  font-size: 20px;
+  padding:19px 31px 0 37px;
+}
+..gorotab-content p{
+  line-height: 42px;
 }
 
 /* section3 tab menu/////////////////////////////////////////*/
