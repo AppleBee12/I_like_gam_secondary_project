@@ -110,23 +110,21 @@ if($(this).find('i').text() === 'add'){
 
 
 /* tab_menu2*/
+const tabMenu = $('.tab-menu a');
+const tabContents = $('#tab-content > div');
 
-/*// tab_menu2*/
+tabMenu.click(function(e){
+	e.preventDefault();
+	tabMenu.removeClass('active');
+	$(this).addClass('active');
 
-  const tabList = document.querySelectorAll('.tab_menu2 .list li');
-  
-  for (let i = 0; i < tabList.length; i++) {
-    tabList[i].querySelector('.btn').addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      // 모든 탭에서 'is_on' 클래스 제거
-      for (let j = 0; j < tabList.length; j++) {
-        tabList[j].classList.remove('is_on');
-        tabList[j].querySelector('.cont').style.display = 'none'; // 내용 숨기기
-      }
-      
-      // 현재 클릭한 탭에 'is_on' 클래스 추가
-      this.parentNode.classList.add('is_on');
-      this.parentNode.querySelector('.cont').style.display = 'block'; // 내용 보이기
-    });
-  }
+	tabContents.removeClass('active');
+
+	let target = $(this).attr('href'); 
+	console.log(target);
+
+	$(target).addClass('active');
+
+});
+
+/*// tab_menu2*/  
