@@ -590,7 +590,11 @@ section {
   /* .section_wrapper:not(:first-child){
     display: none;
   } */
-  h1{
+  .section3.hidden1, h1{
+    display: none;
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
     display: none;
   }
   h4.title {
