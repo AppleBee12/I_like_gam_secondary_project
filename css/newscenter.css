@@ -587,16 +587,13 @@ section {
 
 /* sm */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* .section_wrapper:not(:first-child){
-    display: none;
-  } */
-  .section3.hidden1, h1{
-    display: none;
-  }
+
+  .section3.hidden1, h1,
   .swiper-button-prev,
   .swiper-button-next{
     display: none;
   }
+
   h4.title {
     font-size: var(--mo_sub_title);
     line-height: var(--mo_sub_title);
@@ -619,16 +616,7 @@ section {
   .swiper-slide,
   img {
     height: 320px;
-    /* width: 470px; */
     border-radius: 20px;
-    /* background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 10%,
-      rgba(0, 0, 0, 0.1) 25%,
-      rgba(0, 0, 0, 0.2) 50%,
-      rgba(0, 0, 0, 0.3) 75%,
-      rgba(0, 0, 0, 0.4) 100%
-      ); */
   }
 
   .txt_box {
@@ -661,11 +649,14 @@ section {
     .more_btn {
       right: 50px;
       bottom: 40px;
+      border-radius: 20px;
+      background: transparent;
+      border: 1px solid white;
     }
-  }
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: var(--lightgray);
+    /* 임시 호버-> 클릭 효과 예정 */
+    .more_btn:hover{  
+      background: var(--tertiary);
+    }
   }
 }
 
