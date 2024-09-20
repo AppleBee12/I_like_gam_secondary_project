@@ -112,6 +112,18 @@ color: #fff;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .nav {
   display: flex;
   justify-content: space-around; /* 항목을 균등하게 배치 */
@@ -133,6 +145,10 @@ color: #fff;
   font-weight: bold; /* 활성 링크 강조 */
 }
 
+
+
+/* section1 */
+
 .section1{  
   background-image:linear-gradient(rgba(225,225,225,.1) 50%,#fff 100%), url(../images/about/productlist04_lightcar.png) ;
   background-repeat: no-repeat;
@@ -149,10 +165,92 @@ color: #fff;
   margin: 0 auto;
   padding: 0;
   }
+
+/* section1 ////////////////////////////////// */
+
+
+
+
+
+
+
+/* section3 tab menu*/
+.tab-wrapper {  
+  margin:0 auto;
+  }
+.tab-menu {
+  padding-left:0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  }
+.tab-menu li {  
+  list-style:none;
+  
+
+}
+.tab-menu:after{
+  content:'';
+  display:block;
+  clear:both;
+  }
+.tab-menu li a{
+  font-weight: 600;
+  line-height:28px; 
+  font-family: 'hdharmony';
+  font-size: 28px;  
+  text-decoration:none; 
+  padding:0 170px;   
+  } 
+#tab-content > div {
+  display: none;
+  }
+#tab-content > div.active{
+  display: block;
+  }
+.tab-menu li.ui-state-active a{
+  background: #000;
+  color: #fff;
+  }
+#tab-content {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom:80px; 
+}
+#tab-content h2 {
+  position: relative; /* 위치 조정할 수 있도록 설정 */
+  margin-bottom: 82px; /* 이미지와의 간격 조정 */  
+}
+#tab-content img {
+  margin-right: 20px; 
+  height: auto; 
+}
+.gorotab{
+  display: flex;
+  justify-content: space-between;
+  gap: 111px;
+}
+
+.gorotab-content {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  gap:100px;
+  font-size: 20px;
+  padding:19px 31px 0 37px;
+}
+..gorotab-content p{
+  line-height: 42px;
+}
+
+/* section3 tab menu/////////////////////////////////////////*/
+
+
+/*section 4*/
 .partner{
   display: flex;
   justify-content: space-between;
   gap: 90px;
+  margin-bottom: 140px;
   }
 .winwin{ 
   display: flex;
@@ -162,15 +260,15 @@ color: #fff;
   gap: 55px;
   }
   .winwin h2 {
-    font-family: 'hdharmony';
-    font-style: medium;
-    font-weight: 500;
-    color: var(--secondary);
-    position: relative; /* 상대 위치 설정 */
+  font-family: 'hdharmony';
+  font-style: medium;
+  font-weight: 500;
+  color: var(--secondary);
+  position: relative; /* 상대 위치 설정 */
   }
 .winwin{
   padding: 60px 0;
-}
+  }
 .winwin p {
   line-height: 42px;
   font-size: 30px;
@@ -180,15 +278,15 @@ color: #fff;
   flex-direction: column;
   gap: 50px;
   }
-.fc_box{
+.fc_box{ 
   display: flex;
   justify-content: space-between;
-  /* padding: 0 244px; */
   }
+ 
 .fc img{
   z-index: 3;
   }
-.boxcontainer {
+ .boxcontainer {
     position: relative; 
     width: 100%; 
     
@@ -202,110 +300,44 @@ color: #fff;
     justify-content: center; 
     color: white; 
     font-size: 24px;    
-  }
+    }
 .box1 {
-    background-color: var(--primary); /* 박스 1 색상 */
-    z-index: 1; /* 겹침 순서 설정 */
-    width: 990px;
-    height: 244px;
-    right:50px
+  background-color: var(--primary); /* 박스 1 색상 */
+  z-index: 1; /* 겹침 순서 설정 */
+  width: 990px;
+  height: 244px;
+  right:-25px
   }
 
 .box2 {
-    background-color: #E9ECEF; /* 박스 2 색상 */
-    top: 25px; /* 박스 2의 위쪽 위치 조정 */
-    height: 250px;
-    left: -10px;
-    z-index: 2; /* 겹침 순서 설정 */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-shadow: 5px;
-    color: #000;
-    text-align: center;
-    font-family: var(--pc_sub_title);
+  background-color: #E9ECEF; /* 박스 2 색상 */
+  top: 25px; /* 박스 2의 위쪽 위치 조정 */
+  height: 250px;
+  left: -10px;
+  z-index: 2; /* 겹침 순서 설정 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 5px;
+  color: #000;
+  text-align: center;
+  font-family: var(--pc_sub_title);
+  padding: 0 30px;
   }
 .box2 p{
-    font-family: var(--pc_sub_body);
+  font-family: var(--pc_sub_body);
+  margin: 10px 0;
   }
+  
 .fc-img {
-    margin: 0; 
-    padding: 0;   
+  margin: 0; 
+  padding: 0;   
   }
-  /* 고로 슬라이드 */
-  
-body {
-      position: relative;
-      height: 100%;
-  }
-
-body {    
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-  }
-
-.swiper {
-      width: 100%;
-      height: 100%;
-  }
-
-/* 탭 스타일 */
-.gotab-container{
-  overflow:hidden;
-  height:100%
-  }
-.gotab-content{
-  height:100%;
-  position:relative;
-  }
-.gotabs {
-  display: flex;
-  }
-.gotab {
-  cursor: pointer;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  background-color: #f0f0f0;
-  margin-right: 5px;
-  user-select: none;
-  }
-.gotab.active {
-  background-color: #007bff;
-  color: #fff;
-  }
-
-/* 슬라이드 스타일 */
-.gotab-content-slider {
-  display: none;
-  height: 100%;
-  }
-
-.gotab-content-slider.first{
-  display: block;
-  }
-
-/* 슬라이드 내용 스타일 */
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-/* 고로슬라이드 /////////////////////////////////////////// */
   
 
 
 
-
-
-
-
-
+/*section 4/////////////////////////////////*/
 
 
 
