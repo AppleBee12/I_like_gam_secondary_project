@@ -38,20 +38,23 @@ header .logo a{
 	color: #000;
 }
 .sub_tt{
-  width: 100%;
-  height: 784px;
-  display: flex;
+   /*  display: flex;
   flex-direction:column;
   justify-content: center;
   align-items:center;
   text-align: center;
-  gap: 60px;
-  background-image:url(../images/product/subnav_product_technology.png);
-  background-repeat: no-repeat;
+  gap: 60px; */
+  /* background-image:url(../images/product/subnav_product_technology.png); */
+  /* background-repeat: no-repeat;
   background-color: #000;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
+.parallax-window {
+  min-height: 300px;
+  background: transparent;
+}
+
 .sub_tt>h2{
 font-size: var(--pc_big);
 color: #fff;
