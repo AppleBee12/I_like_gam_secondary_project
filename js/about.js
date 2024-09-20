@@ -1,3 +1,23 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const tabList = document.querySelectorAll('.tab_menu2 .list li');
+  
+  for (let i = 0; i < tabList.length; i++) {
+    tabList[i].querySelector('.btn').addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // 모든 탭에서 'is_on' 클래스 제거
+      for (let j = 0; j < tabList.length; j++) {
+        tabList[j].classList.remove('is_on');
+        tabList[j].querySelector('.cont').style.display = 'none'; // 내용 숨기기
+      }
+      
+      // 현재 클릭한 탭에 'is_on' 클래스 추가
+      this.parentNode.classList.add('is_on');
+      this.parentNode.querySelector('.cont').style.display = 'block'; // 내용 보이기
+    });
+  }
+});
+
 topNav=document.querySelector('.top_nav')
 toggleBtn = $('.hamburger_button');
 
@@ -89,47 +109,22 @@ if($(this).find('i').text() === 'add'){
   })
 
 
-//고로 슬라이드
+/* tab_menu2*/
+const tabMenu = $('.tab-menu a');
+const tabContents = $('#tab-content > div');
 
-document.addEventListener('DOMContentLoaded', function () {
-  let tabSliders = document.querySelectorAll('.gotab-content-slider');
+tabMenu.click(function(e){
+	e.preventDefault();
+	tabMenu.removeClass('active');
+	$(this).addClass('active');
 
-  tabSliders.forEach(function (slider, index) {
-    let mySwiper = new Swiper(slider, {
-      observer: true,
-      observeParents: true,
-      slidesPerView: 1,
-      spaceBetween: 20,
-      centeredSlides: true, 
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next", 
-        prevEl: ".swiper-button-prev"
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },
-      autoplay: {
-        delay: 3000, 
-        disableOnInteraction: false   
-      }
-    });
-  });
+	tabContents.removeClass('active');
 
-  document.querySelectorAll('.tab').forEach(function (tab) {
-    tab.addEventListener('click', function () {
-      document.querySelector('.tab.active').classList.remove('active');
-      this.classList.add('active');
-      let targetSliderId = this.getAttribute('data-tab');
-      tabSliders.forEach(function (slider) {
-        slider.style.display = slider.getAttribute('data-slider') === targetSliderId ? 'block' : 'none';
-        if (slider.style.display === 'block') {
-          slider.swiper.update(); // 현재 보여지는 슬라이드에 대해서만 업데이트
-        }
-      });
-    });
-  });
+	let target = $(this).attr('href'); 
+	console.log(target);
+
+	$(target).addClass('active');
+
 });
 
-////고로슬라이드///////////////////////////////////////////////////////////////
+/*// tab_menu2*/  
