@@ -288,10 +288,11 @@
 
 .section4 .sec4_card_wrap>div {
   position: relative;
+  cursor: pointer;
 }
 
 .section4 .sec4_card {
-  height: 420px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,32 +310,35 @@
 .section4 .sec4_arr {
   position: absolute;
   z-index: -1;
-  right: 1.5rem; left: 2rem;bottom: 1rem;top: 0.5rem;
+  right: 1.5rem;
+  left: 1rem;
+  bottom: 1rem;
+  top: 0.5rem;
   border-radius: 25px;
   background-color: var(--primary);
-  /* background:  url(../images/section4_arrow.svg) 95% 10px / 55px no-repeat; */
   box-sizing: border-box;
-
-  /* clip-path: inset(5% 20% 15% 10% round 5%); */
-  .sec4_arrow {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 1em;
-  }
+  transition: all 0.5s ease-in-out;
 }
 
-/* .section4 .sec4_card:before {
-  content: '';
+.section4 .sec4_arr .sec4_arrow {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #E9ECEF;
-  border-radius: 20px;
-  padding: 3em;
-  box-sizing: border-box;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 0% 100%);
-} */
+  right: 0;
+  top: 0;
+  margin: 1em;
+}
+
+
+.section4 .sec4_arr #arrow {
+  fill: #E9ECEF;
+}
+
+.section4 .sec4_arr #arrow-line {
+  display: none;
+  transition-delay: 0.5s;
+  transition: all 0.5s ease-in-out;
+  transform: translate(-3rem, 3rem);
+}
+
 .sec4_cardtitle {
   font-size: var(--pc_sub_title);
   color: var(--primary);
@@ -347,6 +351,22 @@
   font-size: var(--pc_sub_body);
   line-height: var(--pc_sub_title);
 }
+
+
+.sec4_card_wrap>div:hover .sec4_arr {
+  transform: translate(1.5rem, -1rem);
+}
+
+.sec4_card_wrap>div:hover #arrow-lefttop {
+  fill: #fff;
+}
+
+.sec4_card_wrap>div:hover #arrow-line {
+  display: block;
+  transform: translate(0);
+  fill: #fff;
+}
+
 
 /*// section4 홍수진 */
 /* gap사이즈 지정 */
@@ -447,6 +467,7 @@
   .section4 .sec4_card {
     padding: 3em 2em;
     height: auto;
+    clip-path: polygon(70% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
 
     .sec4_cardtitle {
       font-size: var(--mo_sub_title);
@@ -458,10 +479,15 @@
     }
   }
 
-  .section4 div.sec4_card:before {
-    /* background: var(--primary) url(../images/section4_arrow.svg) 96% 8px / 40px no-repeat; */
-    margin: 0.5em;
-    right: 0em;
+  .section4 .sec4_arr {
+    right: 1.5em;
+  }
+  .sec4_card_wrap>div:hover .sec4_arr {
+    transform: translate(1.2rem, -1rem);
+  }
+  .section4 .sec4_arr .sec4_arrow {
+    width: 40px;
+    height: auto;
   }
 
   /* section4 홍수진 끝 */
@@ -547,23 +573,35 @@
 
   .section4 .sec4_card {
     padding: 2em;
+    margin-right: 1em;
     height: 300px;
-
-    .sec4_cardtitle {
-      font-size: var(--mo_sub_title);
-      font-weight: 700;
-    }
-
-    .sec4_carddesc {
-      font-size: var(--mo_sub_body);
-    }
+    clip-path: polygon(85% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
   }
 
-  .section4 .sec4_card:before {
-    /* background: var(--primary) url(../images/section4_arrow.svg) 97% 8px / 45px no-repeat; */
+  .sec4_cardtitle {
+    font-size: var(--mo_sub_title);
+    font-weight: 700;
   }
 
+  .sec4_carddesc {
+    font-size: var(--mo_sub_body);
+  }
+
+
+  .section4 .sec4_arr {
+    right: 2rem;
+  }
+
+  .section4 .sec4_arr .sec4_arrow {
+    width: 40px;
+    height: auto;
+  }
+
+  .sec4_card_wrap>div:hover .sec4_arr {
+    transform: translate(0.8rem, -1rem);
+  }
   /* section4 홍수진 끝 */
+
 }
 
 /* md devices (tablet, 768px and up) */
@@ -663,9 +701,19 @@
     }
   }
 
-  /* .section4 .sec4_card:after {
-    clip-path: polygon(70% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
-  } */
+  .sec4_card_wrap>div:hover .sec4_arr {
+    transform: translate(1.5rem, -1rem);
+  }
+
+  .section4 .sec4_card {
+    clip-path: polygon(60% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+  }
+
+  .section4 .sec4_arr .sec4_arrow {
+    width: 25px;
+    margin: 0.8em;
+    height: auto;
+  }
 
 
   /* section4 홍수진 끝 */
@@ -717,8 +765,15 @@
   }
 
   /* section4 홍수진 */
-  .section4 .sec4_card:before {
-    /* background: var(--primary) url(../images/section4_arrow.svg) 95% 10px / 45px no-repeat; */
+
+  .section4 .sec4_card {
+    clip-path: polygon(0% 0%, 70% 0%, 100% 20%, 100% 100%, 0% 100%);
+    height: 480px;
+  }
+
+  .section4 .sec4_arr .sec4_arrow {
+    width: 40px;
+    height: auto;
   }
 
   /* section4 홍수진 끝 */
@@ -751,10 +806,19 @@
   }
 
   /* section4 홍수진 */
+
+  .section4 .sec4_card {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 0% 100%);
+  }
   /* section4 홍수진 끝 */
 }
 
 /*xxl devices (1400px and up)*/
 @media screen and (min-width: 1400px) {
   /* 여기에 스타일 추가 */
+
+  /* section4 홍수진 */
+  .section4 .sec4_card {
+    clip-path: polygon(0% 0%, 80% 0%, 100% 25%, 100% 100%, 0% 100%);
+  }
 }
