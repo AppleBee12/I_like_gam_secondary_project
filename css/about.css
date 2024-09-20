@@ -112,6 +112,18 @@ color: #fff;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .nav {
   display: flex;
   justify-content: space-around; /* 항목을 균등하게 배치 */
@@ -133,6 +145,10 @@ color: #fff;
   font-weight: bold; /* 활성 링크 강조 */
 }
 
+
+
+/* section1 */
+
 .section1{  
   background-image:linear-gradient(rgba(225,225,225,.1) 50%,#fff 100%), url(../images/about/productlist04_lightcar.png) ;
   background-repeat: no-repeat;
@@ -149,6 +165,86 @@ color: #fff;
   margin: 0 auto;
   padding: 0;
   }
+
+/* section1 ////////////////////////////////// */
+
+
+
+
+
+
+
+/* section3 tab menu*/
+/* .wrap{padding:15px; letter-spacing:-0.5px;}
+.tab_menu2{position:relative;}
+.tab_menu2 .list{overflow:hidden;}
+.tab_menu2 .list li{float:left; margin-right:14px;}
+.tab_menu2 .list .btn{font-size:13px;}
+.tab_menu2 .list .cont{display:none; position:absolute; top:25px; left:0; background:#555; color:#fff; text-align:center; width:250px; height:100px; line-height:100px;}
+.tab_menu2 .list li.is_on .btn{font-weight:bold; color:green;}
+.tab_menu2 .list li.is_on .cont{display:block;}
+#tab1{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.wrap p{
+  color:black;
+} */
+
+.tab_menu2 {
+  position: relative;
+}
+
+.tab_menu2 .list {
+  overflow: hidden;
+}
+
+.tab_menu2 .list li {
+  
+  margin-right: 14px;
+}
+
+.tab_menu2 .list .btn {
+  font-size: 20px;
+}
+
+.tab_menu2 .list .cont {
+  display: none;    
+  color: #fff;
+  text-align: center; 
+  /* height: 100px; */
+  line-height: 100px;
+  justify-content: flex-start;
+}
+
+.tab_menu2 .list li.is_on .btn {
+  font-weight: bold;
+  color: green;
+}
+
+.tab_menu2 .list li.is_on .cont {
+  display: block;
+}
+.tab_menu2 img{
+  width: 474px;
+}
+#tab1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.cont p {
+  display: inline-block; /* 또는 inline-block */
+  margin: 0; /* 기본 마진 제거 */
+  line-height: normal; /* 줄 간격 조정 */
+  color:black;
+}
+
+/* section3 tab menu/////////////////////////////////////////*/
+
+
+/*section 4*/
 .partner{
   display: flex;
   justify-content: space-between;
@@ -232,80 +328,11 @@ color: #fff;
     margin: 0; 
     padding: 0;   
   }
-  /* 고로 슬라이드 */
-  
-body {
-      position: relative;
-      height: 100%;
-  }
-
-body {    
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-  }
-
-.swiper {
-      width: 100%;
-      height: 100%;
-  }
-
-/* 탭 스타일 */
-.gotab-container{
-  overflow:hidden;
-  height:100%
-  }
-.gotab-content{
-  height:100%;
-  position:relative;
-  }
-.gotabs {
-  display: flex;
-  }
-.gotab {
-  cursor: pointer;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  background-color: #f0f0f0;
-  margin-right: 5px;
-  user-select: none;
-  }
-.gotab.active {
-  background-color: #007bff;
-  color: #fff;
-  }
-
-/* 슬라이드 스타일 */
-.gotab-content-slider {
-  display: none;
-  height: 100%;
-  }
-
-.gotab-content-slider.first{
-  display: block;
-  }
-
-/* 슬라이드 내용 스타일 */
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-/* 고로슬라이드 /////////////////////////////////////////// */
   
 
 
 
-
-
-
-
-
+/*section 4/////////////////////////////////*/
 
 
 
