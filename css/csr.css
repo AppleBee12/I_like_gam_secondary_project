@@ -571,6 +571,13 @@ color: #fff;
   gap: 50px;
 }
 }
+@media screen and (max-width: 1360px){
+  .slide_wrapper{
+    width: 500px;
+    bottom: -1%;
+    left: 43%;
+  }
+}
 
 @media screen and (max-width: 1265px){
 .circle1,
@@ -589,8 +596,13 @@ color: #fff;
   position: relative;
   left: 20%; 
 }
-
-
+}
+@media screen and (max-width: 1123px){
+  .slide_wrapper{
+    width: 400px;
+    bottom: 0%;
+    left: 50%;
+  }
 }
 
 @media screen and (max-width: 1035px){
@@ -621,7 +633,13 @@ color: #fff;
 .tab_menu ul li:nth-child(4):after{
   height: 3px;
 }
-
+}
+@media screen and (max-width: 1025px){
+  .slide_wrapper{
+    width: 350px;
+    bottom: 0%;
+    left: 53%;
+  }
 }
 
 @media screen and (max-width: 945px){
@@ -702,7 +720,7 @@ color: #fff;
 .slide_wrapper{
   position: absolute;
   bottom: 0%;
-  left: 40%;
+  left: 47%;
 }
 }
 @media screen and (max-width: 869px){
