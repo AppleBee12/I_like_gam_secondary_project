@@ -5,7 +5,7 @@ toggleBtn = $('.hamburger_button');
 topNav.addEventListener('mouseenter', () => {
 if (window.innerWidth > 768) {
   topNav.style.backgroundColor = 'white';
-  topNav.style.borderBottom = '1px solid black';
+  topNav.style.borderBottom = '1px solid white';
   topNav.style.height = '420px';
 }
 
@@ -32,6 +32,11 @@ topNav.addEventListener('mouseleave', () => {
    topNav.style.height = '87px';
  }
 });
+topNav.addEventListener('mouseleave', () => {
+  if (topNav.classList.contains('bbb')) {
+    topNav.style.borderBottom = '1px solid black';
+  }
+ });
 
 
 
@@ -41,18 +46,14 @@ toggleBtn.click(function(e){
   $('.tb_container').toggleClass('visible');
   toggleBtn.toggleClass('visible');
 })
-//퀵메뉴
-$('.fixed-action-btn').floatingActionButton({
-  hoverEnabled: false,
-});
+  // 퀵메뉴 버튼 클릭 이벤트
+  $('.quick-menu-btn').click(function() {
+    $('.quick-menu-list').slideToggle(300); // 메뉴 슬라이드 토글
+    $('.quick-menu-list a+a').toggleClass('active')
+    $('.quick-menu-btn').toggleClass('active')
+  });
 
-$('.fixed-action-btn>a').click(function(){
-if($(this).find('i').text() === 'add'){
-  $(this).find('i').text('close') 
-}else{
-  $(this).find('i').text('add') 
-}
-})
+
 
  // 모든 li 요소를 가져옴
   const navItems = document.querySelectorAll('.tb_nav ul > li > a');
