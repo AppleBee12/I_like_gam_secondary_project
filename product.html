@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>subpage</title>
+  <title>Product technology</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
@@ -31,6 +31,7 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/product.css">
@@ -192,37 +193,40 @@
       <!-- //서브메뉴 -->
 
       <!-- section 01 -->
-      <section class="section1 px-md-5 py-6 parallax-element">
-        <div class="sec1_wrap">
-          <div class="sec1_title">
-            <h2 class="pb-3">현대제철은 ‘철 그 이상의 가치창조’를 목표로<br>
-              고객의 기대를 넘어서는 차별화된 제품 개발에 주력하고 있습니다.</h2>
-            <div class="sec1_pager">
+      <section class="section1 py-6">
+        <div class="sec1_title pt-5">
+          <h3 class="px-md-5">현대제철은 ‘철 그 이상의 가치창조’를 목표로<br>
+            고객의 기대를 넘어서는 차별화된 제품 개발에 주력하고 있습니다.</h3>
+        </div>
+        <div class="sec1_wrap swiper" autoplay-disable-on-interaction="false">
+          <div class="sec1_title pt-5">
+            <div class="sec1_pager swiper-pagination">
               <div>
-                <h5 class="pb-5">프리미엄 건설용 강재 H CORE</h5>
+                <h5 class="pager 01 pb-5">프리미엄 건설용 강재 H CORE</h5>
               </div>
               <div>
-                <h5 class="pb-5">자동차 솔루션 H-SOLUTION</h5>
+                <h5 class="pager02 pb-5">자동차 솔루션 H-SOLUTION</h5>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="sec1_desc">
-          <div class="sec1_slide01">
-            <img src="images/product/sec1_hcore_brickwell.png" alt="작은 바람에도 예민한 초고층 빌딩, 수만 명을 지탱하는 초대형 복합몰도 안심하고 설계 할 수 있도록
-            안정적인 강재를 넘어 안전한 건설을 생각하는 현대제철의 프리미엄 강재 H CORE">
-            <h3>안전을 심은 철, 안심 H CORE</h3>
-            <p>작은 바람에도 예민한 초고층 빌딩, 수만 명을 지탱하는 초대형 복합몰도 안심하고 설계 할 수 있도록<br>
-              안정적인 강재를 넘어 안전한 건설을 생각하는 현대제철의 프리미엄 강재 H CORE</p>
+
+          <div class="sec1_desc swiper-wrapper">
+            <div class="sec1_slide01 swiper-slide">
+              <img src="images/product/sec1_hcore_brickwell.jpg"
+                alt="안전한 건설을 생각하는 현대제철의 프리미엄 강재 H CORE를 사용해서 건설한 브릭웰 건물입니다.">
+              <h3>안전을 심은 철, 안심 H CORE</h3>
+              <p>작은 바람에도 예민한 초고층 빌딩, 수만 명을 지탱하는 초대형 복합몰도 안심하고 설계 할 수 있도록<br>
+                안정적인 강재를 넘어 안전한 건설을 생각하는 현대제철의 프리미엄 강재 H CORE</p>
+            </div>
+            <div class="sec1_slide02 swiper-slide">
+              <img src="images/product/sec1_hsolution.jpg" alt="H solution">
+              <h3>고객 맞춤형 자동차 솔루션 H SOLUTION</h3>
+              <p>자동차 소재기술과 응용기술을 적용한 ‘고객 맞춤형 솔루션’ H Solution은
+                기획·설계부터 생산·판매까지의 모든 프로세스에서 차별화된 자동차 응용기술을 개발하여 제공합니다</p>
+            </div>
           </div>
-          <div class="sec1_slide01">
-            <img src="images/product/sec1_hcore_brickwell.png" alt="작은 바람에도 예민한 초고층 빌딩, 수만 명을 지탱하는 초대형 복합몰도 안심하고 설계 할 수 있도록
-            안정적인 강재를 넘어 안전한 건설을 생각하는 현대제철의 프리미엄 강재 H CORE">
-            <h3>안전을 심은 철, 안심 H CORE</h3>
-            <p>작은 바람에도 예민한 초고층 빌딩, 수만 명을 지탱하는 초대형 복합몰도 안심하고 설계 할 수 있도록<br>
-              안정적인 강재를 넘어 안전한 건설을 생각하는 현대제철의 프리미엄 강재 H CORE</p>
-          </div>
+
         </div>
       </section>
       <!-- //section 01끝 -->

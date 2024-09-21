@@ -128,50 +128,71 @@ header .logo a {
 
 
 
-/* 통합부분에서 수정할 부분 */
+
+
+/* section 01 */
+.section1 {
+  color: #fff;
+  background-color: var(--primary);
+}
+
+.sec1_pager {
+  height: 56px;
+  padding: 20px 14px;
+}
+
+.swiper {
+  width: 100%;
+  height: 700px;
+}
+
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img{
+  width: 100%;
+  height: auto;
+}
+
+.sec1_pager h5{
+  border: 1px solid #fff;
+  padding: 14px 20px;
+  font-size: var(--pc_sub_body);
+  color: #fff;
+  
+}
+
+
+
+/* section 01 끝*/
+
+
+
+/* section 02 */
+/* section 02끝 */
+
+/* 반응형 */
+
+
 /* xs devices (less than 576px) */
 @media (max-width: 575.98px) {
   /* 여기에 스타일 추가 */
-  .sub_tt {
-    height: 300px;
-  }
-  h2.sub_prx_txt {
-    font-size: var(--mo_sub_title);
-
-  }
-  
-  h4.sub_prx_txt {
-    font-family: 'SUIT Variable', sans-serif;
-    font-size: var(--mo_sub_body);
-  }
 }
 
 /* sm devices (phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* 여기에 스타일 추가 */
-  h2.sub_prx_txt {
-    font-size: var(--mo_big);
-  }
-
-  h4.sub_prx_txt {
-    font-family: 'SUIT Variable', sans-serif;
-    font-size: var(--mo_sub_title);
-  }
 }
 
 /* md devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
   /* 여기에 스타일 추가 */
-  h2.sub_prx_txt {
-    font-size: var(--mo_big);
-  }
-
-  h4.sub_prx_txt {
-    font-family: 'SUIT Variable', sans-serif;
-    font-size: var(--mo_sub_title);
-  }
-
 }
 
 /* lg devices (PC버전desktops, 992px and up) */
@@ -189,25 +210,5 @@ header .logo a {
   /* 여기에 스타일 추가 */
 }
 
-/* //통합부분에서 수정할 부분*/
 
-/*  //header */
-
-
-/* section 01 */
-.section1 {
-  color: #fff;
-  background-color: var(--primary);
-}
-
-.sec1_pager {
-  height: 56px;
-  padding: 20px 14px;
-}
-
-
-/* section 01끝 */
-
-
-/* section 02 */
-/* section 02끝 */
+/* 반응형 끝 */
