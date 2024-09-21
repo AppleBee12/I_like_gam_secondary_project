@@ -3,77 +3,79 @@
 /* 공통 부분 */
 
 body {
-	font-family: 'SUIT Variable', sans-serif;
+  font-family: 'SUIT Variable', sans-serif;
 }
 
-main h2{
+main h2 {
   font-size: 3.125rem;
   font-family: 'hdharmony';
   font-weight: 700;
   line-height: 4.375rem;
-  }
-main h3{
+}
+
+main h3 {
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 3.5rem;
-  }
-main h4{
+}
+
+main h4 {
   font-size: var(--pc_body);
-  }
-main h5{
+}
+
+main h5 {
   font-size: var(--pc_sub_body);
-  }
+}
 
 /* 공통 부분 끝 */
 
 /* header */
-header .logo a{
-  background:url(../images/header_icon2.svg) no-repeat;
+header .logo a {
+  background: url(../images/header_icon2.svg) no-repeat;
 }
-.top_nav{
+
+.top_nav {
   background-color: #fff;
   border-bottom: 1px solid #000;
 }
+
 .main_menu li a {
-	color: #000;
-}
-.sub_tt{
-  
-   /*  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items:center;
-  text-align: center;
-  gap: 60px; */
-  /* background-image:url(../images/product/subnav_product_technology.png); */
-  /* background-repeat: no-repeat;
-  background-color: #000;
-  background-size: cover;
-  background-position: center; */
-}
-.parallax-window {
-  min-height: 400px;
-  background: transparent;
+  color: #000;
 }
 
-.sub_tt>h2{
-font-size: var(--pc_big);
-color: #fff;
+
+
+header {
+  height: auto;
 }
-.sub_tt>h4{
-font-size: var(--pc_sub_title);
-color: #fff;
+
+header div.top_nav {
+  border-bottom: 1px solid #000;
+  background-color: #fff;
 }
-.tab_menu{
+
+
+.main_menu li a {
+  color: #000;
+}
+
+header .logo a {
+  background: url(../images/header_icon2.svg) no-repeat;
+}
+
+
+
+.tab_menu {
   width: 100%;
   height: 87px;
-  border-bottom:1px solid rgba(0,0,0,.5);
+  border-bottom: 1px solid rgba(0, 0, 0, .5);
   position: sticky;
   top: 0;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255, 255, 255, .5);
   z-index: 9999;
 }
-.tab_menu ul{
+
+.tab_menu ul {
   display: flex;
   width: 100%;
   height: 100%;
@@ -82,73 +84,123 @@ color: #fff;
   gap: 100px;
   font-size: var(--pc_body);
 }
-.tab_menu ul li{
+
+.tab_menu ul li {
   position: relative;
 }
-.tab_menu ul li:nth-child(1):after{
+
+.tab_menu ul li:nth-child(1):after {
   display: block;
-	content: '';
-	background-color: var(--primary);
-	width: 100%;
-	height: 3px;
-	position: absolute;
-	bottom: -170%;
-	transition: 0.3s;
-	transform: scaleX(1);
+  content: '';
+  background-color: var(--primary);
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: -170%;
+  transition: 0.3s;
+  transform: scaleX(1);
   z-index: 10;
 }
-.tab_menu ul li:nth-child(1) a{
-  color:var(--primary);
-}
-.tab_menu ul li a:hover{
+
+.tab_menu ul li:nth-child(1) a {
   color: var(--primary);
 }
-.tab_menu ul li:after{
-  display: block;
-	content: '';
-	background-color: var(--primary);
-	width: 100%;
-	height: 3px;
-	position: absolute;
-	bottom: -170%;
-	transition: 0.3s;
-	transform: scaleX(0);
+
+.tab_menu ul li a:hover {
+  color: var(--primary);
 }
-.tab_menu ul li:hover::after{
+
+.tab_menu ul li:after {
+  display: block;
+  content: '';
+  background-color: var(--primary);
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: -170%;
+  transition: 0.3s;
+  transform: scaleX(0);
+}
+
+.tab_menu ul li:hover::after {
   transform: scaleX(1);
 }
+
+
+
+/* 통합부분에서 수정할 부분 */
+/* xs devices (less than 576px) */
+@media (max-width: 575.98px) {
+  /* 여기에 스타일 추가 */
+  .sub_tt {
+    height: 300px;
+  }
+  h2.sub_prx_txt {
+    font-size: var(--mo_sub_title);
+
+  }
+  
+  h4.sub_prx_txt {
+    font-family: 'SUIT Variable', sans-serif;
+    font-size: var(--mo_sub_body);
+  }
+}
+
+/* sm devices (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* 여기에 스타일 추가 */
+  h2.sub_prx_txt {
+    font-size: var(--mo_big);
+  }
+
+  h4.sub_prx_txt {
+    font-family: 'SUIT Variable', sans-serif;
+    font-size: var(--mo_sub_title);
+  }
+}
+
+/* md devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* 여기에 스타일 추가 */
+  h2.sub_prx_txt {
+    font-size: var(--mo_big);
+  }
+
+  h4.sub_prx_txt {
+    font-family: 'SUIT Variable', sans-serif;
+    font-size: var(--mo_sub_title);
+  }
+
+}
+
+/* lg devices (PC버전desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* 여기에 스타일 추가 */
+}
+
+/* xl devices (1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* 여기에 스타일 추가 */
+}
+
+/*xxl devices (1400px and up)*/
+@media screen and (min-width: 1400px) {
+  /* 여기에 스타일 추가 */
+}
+
+/* //통합부분에서 수정할 부분*/
+
 /*  //header */
-
-/* sub_nav */
-header{
-  height:auto;
-}
-
-header div.top_nav{
-  border-bottom: 1px solid #000;
-  background-color: #fff;
-}
-
-
-.main_menu li a{
-  color:#000;
-}
-
-header .logo a{
-  background: url(../images/header_icon2.svg) no-repeat;
-}
-
-/* sub_nav 끝 */
-
 
 
 /* section 01 */
-.section1{
-  color:#fff;
+.section1 {
+  color: #fff;
   background-color: var(--primary);
 }
 
-.sec1_pager{
+.sec1_pager {
   height: 56px;
   padding: 20px 14px;
 }
@@ -159,4 +211,3 @@ header .logo a{
 
 /* section 02 */
 /* section 02끝 */
-

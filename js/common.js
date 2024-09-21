@@ -90,3 +90,16 @@ if($(this).find('i').text() === 'add'){
   })
 
 
+
+
+//subpage-상단 BG 텍스트 parallax효과 추가 홍수진
+
+$(window).on('scroll', function () {
+  let value = $(window).scrollTop();
+
+  $('.sub_prx_txt').each(function () {
+    $(this).css('margin-top', value * 1.5 + 'px');
+  });
+});
+
+//subpage-상단 BG 텍스트 parallax효과 추가 홍수진 끝
