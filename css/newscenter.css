@@ -107,7 +107,6 @@ header .logo a {
 
 .swiper {
   width: 100%;
-  height: 448px;
 }
 
 .section3 h1 {
@@ -125,6 +124,7 @@ header .logo a {
   height: 448px;
   width: 100%;
   object-fit: cover;
+  background-size: cover;
 }
 
 .txt_box {
@@ -295,7 +295,7 @@ section {
     }
 
     .tab_img_6 {
-      background: url(../imagesnewscenter//news6.jpg)no-repeat;
+      background: url(../images/newscenter/news6.jpg)no-repeat;
     }
 
     .tab_img_7 {
@@ -348,6 +348,30 @@ section {
 
     .tab_img_3_1 {
       background: url(../images/newscenter/youtube1.jpg)no-repeat;
+    }
+    .tab_img_3_2 {
+      background: url(../images/newscenter/youtube2.jpg)no-repeat;
+    }
+    .tab_img_3_3 {
+      background: url(../images/newscenter/youtube3.jpg)no-repeat;
+    }
+    .tab_img_3_4 {
+      background: url(../images/newscenter/youtube4.jpg)no-repeat;
+    }
+    .tab_img_3_5 {
+      background: url(../images/newscenter/youtube5.jpg)no-repeat;
+    }
+    .tab_img_3_6 {
+      background: url(../images/newscenter/youtube6.jpg)no-repeat;
+    }
+    .tab_img_3_7 {
+      background: url(../images/newscenter/youtube7.jpg)no-repeat;
+    }
+    .tab_img_3_8 {
+      background: url(../images/newscenter/youtube8.jpg)no-repeat;
+    }
+    .tab_img_3_9 {
+      background: url(../images/newscenter/youtube9.jpg)no-repeat;
     }
 
     .img-cover {
@@ -402,273 +426,10 @@ section {
   display: none;
 }
 
-/* xs */
+/* xs devices (less than 576px) */
 @media (max-width: 575.98px) {
-  .section3 h1 {
-    text-indent: -9999em;
-  }
-
-  .all_news {
-    display: block;
-    text-align: center;
-
-    h2 {
-      font-size: var(--mo_title);
-    }
-
-    h3 {
-      font-size: var(--mo_sub_title);
-    }
-  }
-
-  .img_box {
-    position: relative;
-    width: 100%;
-  }
-
-  .txt_box {
-    position: absolute;
-    z-index: 10;
-    color: #fff;
-  }
-
-  .txt_box h4 .title {
-    font-size: var(--mo_sub_body);
-  }
-
-  .contents {
-    display: none;
-  }
-
-  .t1 {
-    display: none;
-  }
-}
-@media (min-width: 1400px) and (max-width: 1600px) {
-  h4.title {
-    height: 35%;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    font-size: var(--pc_sub_title);
-  }
-
-  .t3 {
-    width: 90%;
-    height: 35%;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-}
-
-/* xl devices (1200px and up) */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  .section3 {
-    h1 {
-      font-size: 48px;
-    }
-
-    h4.title {
-      height: 39%;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      font-size: var(--pc_sub_title);
-    }
-
-    .t3 {
-      width: 90%;
-      height: 37%;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-    }
-
-    .swiper {
-      height: 420px;
-    }
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1035.98px) {
-  .section3 .stringcut.t1 {
-    height: 33%;
-  }
-}
-
-
-/* lg devices (PC버전desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .section3 {
-    h1 {
-      font-size: 48px;
-    }
-
-    h4.title {
-      width: 90%;
-      height: 39%;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      font-size: 24px;
-    }
-
-    .t3 {
-      height: 40%;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-    }
-
-    .t1 {
-      height: 38%;
-    }
-
-    .swiper {
-      height: 400px;
-    }
-  }
-}
-
-@media screen and (max-width: 1035px) {
-  .main_menu {
-    font-size: var(--pc_sub_body);
-    gap: 30px;
-  }
-
-  .top_nav .nav_container {
-    gap: 30px;
-  }
-
-  .main_menu .sub_menu {
-    font-size: var(--mo_sub_body);
-  }
-
-  .section3 {
-    h1 {
-      font-size: 42px;
-    }
-
-    h4.title {
-      height: 24%;
-      -webkit-line-clamp: 1;
-
-    }
-
-    .t3 {
-      height: 37%;
-    }
-
-    .swiper {
-      height: 420px;
-    }
-
-    .txt_box {
-      padding: 48px 50px;
-    }
-  }
-}
-
-@media screen and (max-width: 1035px) {
-  .tab_menu {
-    height: 80px;
-  }
-
-  .tab_menu ul {
-    font-size: var(--mo_body);
-  }
-
-  .tab_menu ul li:nth-child(4):after {
-    height: 3px;
-  }
-}
-
-/* sm */
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-  .section3.hidden1, h1,
-  .swiper-button-prev,
-  .swiper-button-next{
-    display: none;
-  }
-
-  h4.title {
-    font-size: var(--mo_sub_title);
-    line-height: var(--mo_sub_title);
-  }
-
-  .all_news {
-    display: block;
-    text-align: center;
-
-    h2 {
-      font-size: var(--mo_title);
-    }
- 
-    h3 {
-      font-size: var(--mo_sub_title);
-    }
-  }
-  .section3 
-  .swiper,
-  .swiper-slide,
-  img {
-    height: 320px;
-    border-radius: 20px;
-  }
-
-  .txt_box {
-    /* padding: 48px 50px; */
-    position: absolute;
-    z-index: 10;
-    color: #fff;
-    bottom: 7%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: transparent;
-    
-    .time_contents {
-      font-size: var(--mo_body);
-      order: 1;
-    }
-
-    h4.title {
-      font-size: var(--mo_sub_title);
-      width: 100%;
-      /* left: 0; */
-    }
-
-    .contents,
-    .desc {
-      display: none;
-    }
-
-    .more_btn {
-      right: 50px;
-      bottom: 40px;
-      border-radius: 20px;
-      background: transparent;
-      border: 1px solid white;
-    }
-    /* 임시 호버-> 클릭 효과 예정 */
-    .more_btn:hover{  
-      background: var(--tertiary);
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  header .logo a {
-    width: 78px;
-    height: 21px;
-    background: url(../images/header_icon_tb.svg) no-repeat;
-  }
 
 }
-
 /* md devices (tablet, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .section3 {
@@ -703,12 +464,12 @@ section {
 
     }
 
-    .swiper {
+    .swiper-slide {
       height: 320px;
     }
 
     .txt_box {
-      padding: 48px 50px;
+      padding: 40px 42px;
 
       .contents {
         font-size: var(--mo_body);
@@ -729,11 +490,261 @@ section {
   }
 }
 
+/* lg devices (PC버전desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .section3 {
+    h1 {
+      font-size: 48px;
+    }
+
+    h4.title {
+      width: 100%;
+      height: 30%;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .t3 {
+      height: 40%;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    .t1 {
+      height: 35%;
+    }
+
+    .swiper {
+      height: 400px;
+    }
+  }
+}
+@media (min-width: 1035px) and (max-width: 1199px){
+  .section3{
+    .txt_box{
+      padding: 50px 50px;
+    }
+    .t1{
+      height: 37%;
+    }
+    h4.title{
+      height: 29%;
+    }
+  }
+    
+}
+/* xl devices (1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .section3 {
+    h1 {
+      font-size: 48px;
+    }
+
+    h4.title {
+      height: 35%;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      font-size: var(--pc_sub_title);
+    }
+
+    .t3 {
+      width: 90%;
+      height: 34%;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+  h4.title {
+    height: 35%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: var(--pc_sub_title);
+  }
+
+  .t3 {
+    width: 90%;
+    height: 33%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .main_menu {
+    font-size: var(--pc_sub_body);
+    gap: 30px;
+  }
+
+  .top_nav .nav_container {
+    gap: 30px;
+  }
+
+  .main_menu .sub_menu {
+    font-size: var(--mo_sub_body);
+  }
+
+  .section3 {
+    h1 {
+      font-size: 42px;
+    }
+
+    h4.title {
+      height: 26%;
+      -webkit-line-clamp: 1;
+
+    }
+
+    .t3 {
+      height: 37%;
+    }
+
+    .txt_box {
+      padding: 36px 38px;
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .tab_menu {
+    height: 80px;
+  }
+
+  .tab_menu ul {
+    font-size: var(--mo_body);
+  }
+
+  .tab_menu ul li:nth-child(4):after {
+    height: 3px;
+  }
+}
+
+/* sm */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .img_box{
+    position: relative;
+  }
+  .img_box img{
+    border-radius: 20px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .img_box::after{
+    content: '';
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0));
+    border-radius: 20px;
+  }
+
+  .section3.hidden1, h1,
+  .swiper-button-prev,
+  .swiper-button-next{
+    display: none;
+  }
+
+  h4.title {
+    font-size: var(--mo_sub_title);
+    line-height: var(--mo_sub_title);
+  }
+
+  .all_news {
+    display: block;
+    text-align: center;
+
+    h2 {
+      font-size: var(--mo_title);
+    }
+ 
+    h3 {
+      font-size: var(--mo_sub_title);
+    }
+  }
+  .txt_box {
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    bottom: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border-radius: 20px;
+
+    
+    .time_contents {
+      font-size: var(--mo_body);
+      order: 1;
+    }
+
+    h4.title {
+      font-size: var(--mo_sub_title);
+      width: 100%;
+      /* left: 0; */
+    }
+
+    .contents,
+    .desc {
+      display: none;
+    }
+
+    .more_btn {
+      right: 50px;
+      bottom: 28px;
+      border-radius: 20px;
+      background: transparent;
+      border: 1px solid white;
+    }
+    /* 임시 호버-> 클릭 효과 예정 */
+    .more_btn:hover{  
+      background: var(--tertiary);
+    }
+  }
+  .swiper-wrapper{
+    border-radius: 20px;
+  }
+  .section_wrapper{
+    /* display: none; */
+    height: 30%;
+    width: 100%;
+    background: #F0F3FA;
+  }
+  .tab-container .tabs{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .logo a {
+    width: 78px;
+    height: 21px;
+    background: url(../images/header_icon_tb.svg) no-repeat;
+  }
+
+}
+
+
+
 @media screen and (max-width: 680px) {
   .tab_menu ul {
     gap: 50px;
   }
-
 }
 
 @media screen and (max-width: 375px) {

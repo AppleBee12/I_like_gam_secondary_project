@@ -77,7 +77,9 @@
   display: block;
   animation: fadeInLeft 1s ease forwards;
 }
-
+.explain_wrapper{
+  height: 250px;
+}
 .explain {
   display: inline-block;
 
@@ -99,13 +101,13 @@
     color: var(--lightgray);
   }
 
-  a:hover {
+  /* a:hover {
     color: var(--secondary);
     transition: 0.3s;
     margin-top: -28px;
-  }
+  } */
 
-  a:focus {
+  a.focus {
     color: var(--secondary);
     transition: 0.3s;
   }
@@ -328,11 +330,11 @@
 }
 
 
-.section4 .sec4_arr #arrow {
+.section4 .sec4_arr .arrow {
   fill: #E9ECEF;
 }
 
-.section4 .sec4_arr #arrow-line {
+.section4 .sec4_arr .arrow-line {
   display: none;
   transition-delay: 0.5s;
   transition: all 0.5s ease-in-out;
@@ -357,18 +359,66 @@
   transform: translate(1.5rem, -1rem);
 }
 
-.sec4_card_wrap>div:hover #arrow-lefttop {
+.sec4_card_wrap>div:hover .arrow-lefttop {
   fill: #fff;
 }
 
-.sec4_card_wrap>div:hover #arrow-line {
+.sec4_card_wrap>div:hover .arrow-line {
   display: block;
   transform: translate(0);
   fill: #fff;
 }
 
-
 /*// section4 홍수진 */
+
+/* section5 홍수진 */
+.section5 {
+  background: url(../images/section5_bg.png) center left / cover no-repeat;
+  height: 252px;
+  
+  .container{
+    width: 100%;
+    height: 100%;
+
+    >div{
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+    }
+  }
+  
+  h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    color: #fff;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: #fff;
+  }
+}
+
+.section5 .sec5_btn{
+  border:1px solid #fff;
+  color: #fff;
+  line-height: 3.5rem;
+  padding: 0 70px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.section5 .sec5_btn:hover{
+  background: #fff;
+  color:#000;
+}
+
+
+/* // section5 홍수진 */
+
 /* gap사이즈 지정 */
 .py-6 {
   padding-top: 7rem !important;
@@ -482,15 +532,46 @@
   .section4 .sec4_arr {
     right: 1.5em;
   }
-  .sec4_card_wrap>div:hover .sec4_arr {
-    transform: translate(1.2rem, -1rem);
-  }
+
   .section4 .sec4_arr .sec4_arrow {
     width: 40px;
     height: auto;
   }
 
+  .sec4_card_wrap>div:hover .sec4_arr {
+    transform: translate(1.2rem, -1rem);
+  }
+
   /* section4 홍수진 끝 */
+  /* section5 홍수진 */
+
+  .section5{
+    height: 180px;
+  }
+
+  .section5 h3 {
+    font-size: var(--mo_sub_title);
+    line-height: 2.5rem;
+  }
+  
+  .section5 p {
+    display: none;
+  }
+
+  .section5 .sec5_btn{
+    font-size: var(--mo_sub_body);
+    line-height: 1.25rem;
+    padding: 15px 53px;
+  }
+
+  .section5 .container > div{
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+  }
+  
+  /* section5 홍수진 끝 */
+
 }
 
 /* sm devices (phones, 576px and up) */
@@ -600,7 +681,39 @@
   .sec4_card_wrap>div:hover .sec4_arr {
     transform: translate(0.8rem, -1rem);
   }
+
   /* section4 홍수진 끝 */
+    /* section5 홍수진 */
+
+    .section5{
+      height: 200px;
+    }
+  
+    .section5 h3 {
+      font-size: var(--mo_sub_title);
+      line-height: 1.5rem;
+    }
+    
+    .section5 p {
+      font-size: var(--mo_sub_body);
+      line-height: 1.25rem;
+      padding-bottom: 1rem;
+    }
+  
+    .section5 .sec5_btn{
+      font-size: var(--mo_sub_body);
+      line-height: 1.25rem;
+      padding: 15px 53px;
+    }
+
+    .section5 .container > div{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content:center;
+    }
+    
+    /* section5 홍수진 끝 */
 
 }
 
@@ -717,6 +830,28 @@
 
 
   /* section4 홍수진 끝 */
+    /* section5 홍수진 */
+
+    .section5{
+      height: 240px;
+    }
+  
+    .section5 h3 {
+      font-size: var(--pc_sub_title);
+      line-height: 2.5rem;
+    }
+    
+    .section5 p {
+      font-size: var(--mo_sub_body);
+      line-height: 1.25rem;
+    }
+  
+    .section5 .sec5_btn{
+      line-height: 3.5rem;
+      padding: 7px 53px;
+    }
+    
+    /* section5 홍수진 끝 */
 }
 
 /* lg devices (PC버전desktops, 992px and up) */
@@ -810,6 +945,7 @@
   .section4 .sec4_card {
     clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 0% 100%);
   }
+
   /* section4 홍수진 끝 */
 }
 
