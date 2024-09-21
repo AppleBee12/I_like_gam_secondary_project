@@ -697,9 +697,18 @@ h4.sub_prx_txt {
 
 /* xs devices (less than 576px) */
 @media (max-width: 575.98px) {
+	
+	
+	/* sub_tt 홍수진 */
+	.container h2,
 	#main_container .sub_tt h2 {
 		font-size: var(--mo_title);
 		font-weight: 500;
+	}
+
+	.container h4{
+		font-size: var(--mo_body);
+		line-height: var(--mo_title);		
 	}
 
 	#main_container .sub_tt h4 {
@@ -721,19 +730,23 @@ h4.sub_prx_txt {
 			padding-top: 0.5rem;
 		}
 	}
+	/* sub_tt 홍수진 끝*/
 }
 
 /* sm devices (phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	/* sub_tt 홍수진 */
 	.sub_tt{
 		height: 300px;
 	}
 
+	.container h2,
 	#main_container .sub_tt h2 {
 		font-size: var(--mo_title);
 		font-weight: 500;
 	}
 
+	.container h4,
 	#main_container .sub_tt h4 {
 		font-size: var(--mo_body);
 	}
@@ -745,20 +758,26 @@ h4.sub_prx_txt {
 	h4.sub_prx_txt {
 		transform: translateY(50%);
 	}
+
+	/* sub_tt 홍수진 끝*/
 }
 
 /* md devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-	.sub_tt{
-		height: 350px;
+	
+	/* main + sub_tt 홍수진 */
+
+	.container {
+		width: 100%;
 	}
 
+	.container h2, 
 	#main_container .sub_tt h2 {
 		font-size: var(--mo_title);
 		font-weight: 500;
 	}
 
-
+	.container h4,
 	#main_container .sub_tt h4 {
 		font-size: var(--mo_body);
 		line-height: var(--mo_title);
@@ -772,65 +791,75 @@ h4.sub_prx_txt {
 		transform: translateY(50%);
 	}
 
-}
-
-/* md devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-	#main_container .sub_tt h2 {
-		font-size: var(--mo_title);
-		font-weight: 500;
-	}
-
-	#main_container .sub_tt h4 {
-		font-size: var(--mo_body);
-		line-height: var(--mo_title);
-	}
-
+	/* main + sub_tt 홍수진 끝*/
 
 
 
 }
+
 
 /* lg devices (PC버전desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+	/* sub_tt 홍수진 */
+
+	.container h2,
 	#main_container .sub_tt h2 {
 		font-size: var(--pc_title);
 		line-height: var(--pc_title);
+		/* font-family:hdharmony; */
 	}
 
-	#main_container .sub_tt h4 {
-		font-size: var(--pc_body);
-		line-height: var(--sub_title);
-	}
-}
-
-/* xl devices (1200px and up) */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-	#main_container .sub_tt h2 {
-		font-size: var(--pc_title);
-		line-height: var(--pc_title);
-	}
-
-	#main_container .sub_tt h4 {
-		font-size: var(--pc_body);
-		line-height: var(--sub_title);
-	}
-}
-
-/*xxl devices (1400px and up)*/
-@media screen and (min-width: 1400px) {
-
-	#main_container .sub_tt h2 {
-		font-size: var(--pc_title);
-		line-height: var(--pc_title);
-	}
-
+	.container h4,
 	#main_container .sub_tt h4 {
 		font-size: var(--pc_body);
 		line-height: var(--sub_title);
 	}
 	
+	/* sub_tt 홍수진 끝*/
+}
+
+
+/* xl devices (1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+	/* sub_tt 홍수진 */
+
+	.container h2,
+	#main_container .sub_tt h2 {
+		font-size: var(--pc_title);
+		line-height: var(--pc_title);
+		/* font-family:hdharmony; */
+	}
+
+	.container h4,
+	#main_container .sub_tt h4 {
+		font-size: var(--pc_body);
+		line-height: var(--sub_title);
+	}
+
+	
+	/* sub_tt 홍수진 끝*/
+}
+
+/*xxl devices (1400px and up)*/
+@media screen and (min-width: 1400px) {
+
+	/* sub_tt 홍수진 */
+	
+	.container h2,
+	#main_container .sub_tt h2 {
+		font-size: var(--pc_title);
+		line-height: var(--pc_title);
+	}
+
+	.container h4,
+	#main_container .sub_tt h4 {
+		font-size: var(--pc_body);
+		line-height: var(--sub_title);
+	}
+	
+	/* sub_tt 홍수진 끝*/
 }
 
 

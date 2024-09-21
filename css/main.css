@@ -242,7 +242,7 @@
     linear-gradient(rgba(18, 42, 114, 0.16) 10%, rgba(18, 42, 114, 0.8) 70%);
 }
 
-.section3 .sec3_cardtitle {
+.section3 .sec3_cardtitle h2{
   font-size: 40px;
   font-family: 'hdharmony';
   font-weight: 500;
