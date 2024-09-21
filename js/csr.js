@@ -1,67 +1,42 @@
 
-  let $slides = $('.slides');
-  let $slideItems = $('.slides li');
-  let slideWidth = $slideItems.outerWidth(true); 
-  let slideCount = $slideItems.length;
+  let slides = $('.slides');
+  let slideItems = $('.slides li');
+  let slideWidth = slideItems.outerWidth(true); 
+  let slideCount = slideItems.length;
   let gap=10;
   let slideWrapper = $('.slide_wrapper');
   let symbolOST=$('.symbol').offset().top;
   console.log(symbolOST);
-  topNav=document.querySelector('.top_nav')
+  let totalSlideWidth = slideWidth * slideCount + (gap * (slideCount));
+  let currentLeft = 0; // 현재 슬라이드의 left 값
+  let slideSpeed = 1; // 슬라이드 속도 (값을 조정하여 속도를 설정)
   
+
   
-  topNav.addEventListener('mouseenter', () => {
-  if (window.innerWidth > 768) {
-    topNav.style.backgroundColor = 'white';
-    topNav.style.borderBottom = '1px solid black';
-    topNav.style.height = '420px';
+
+   slides.append(slideItems.clone());
+
+
+function slideMove() {
+  currentLeft -= slideSpeed; // 슬라이드를 왼쪽으로 이동
+  if (Math.abs(currentLeft) >= totalSlideWidth) {
+      currentLeft = 0; // 모든 슬라이드가 지나가면 처음으로 리셋
   }
-  
-  });
-  topNav.addEventListener('mouseenter', () => {
-  if (window.innerWidth < 576) {
-    topNav.style.backgroundColor = 'white';
-    topNav.style.borderBottom = '1px solid black';
-    topNav.style.height = '87px';
-  }
-  });
-  
-  topNav.addEventListener('mouseleave', () => {
-   if (window.innerWidth > 768) {
-     topNav.style.backgroundColor = 'white';
-     topNav.style.borderBottom = '1px solid black';
-     topNav.style.height = '87px';
-   }
-  });
-  topNav.addEventListener('mouseleave', () => {
-   if (window.innerWidth < 576) {
-     topNav.style.backgroundColor = 'white';
-     topNav.style.borderBottom = '1px solid white';
-     topNav.style.height = '87px';
-   }
-  });
+  slides.css('left', `${currentLeft}px`); // 슬라이드 위치 설정
+}
 
-  $slides.append($slideItems.clone());
+// 일정 시간마다 slideMove 실행
+let slideInterval = setInterval(slideMove, 15); // 10ms마다 슬라이드 이동
 
-
-  function infiniteSlide() {
-      $slides.animate({ left: `-${slideWidth * slideCount+(gap*slideCount-1)}px` }, 10000, 'linear', function() {
-
-          $slides.css('left', '0');
-
-          infiniteSlide();
-      });
-  }
-
-  infiniteSlide();
-
-
-$slides.mouseenter(function(){
-  $(this).stop(stop);
+// 슬라이드에 마우스를 올리면 슬라이드를 멈추고, 벗어나면 다시 시작
+slides.mouseenter(function(){
+  clearInterval(slideInterval);// 슬라이드 멈춤
 })
-$slides.mouseleave(function(){
-  infiniteSlide();
+slides.mouseleave(function(){
+  slideInterval = setInterval(slideMove, 15); // 슬라이드 재시작
 })
+
+
 
 $(window).scroll(function(){
   if($(this).scrollTop()>symbolOST-1000){
@@ -79,16 +54,17 @@ $(window).scroll(function(){
   }
 })
 $(window).scroll(function(){
-  if($(this).scrollTop()>$('.symbol_exam p:nth-child(2)').offset().top-900){
+  if($(this).scrollTop()>$('.symbol_exam p:nth-child(1)').offset().top-900){
     $('.symbol_exam p:nth-child(2)').addClass('active')
   }else{
     $('.symbol_exam p:nth-child(2)').removeClass('active');
   }
 })
 $(window).scroll(function(){
-  if($(this).scrollTop()>$('.symbol_exam p:nth-child(3)').offset().top-900){
+  if($(this).scrollTop()>$('.symbol_exam p:nth-child(1)').offset().top-900){
     $('.symbol_exam p:nth-child(3)').addClass('active')
   }else{
     $('.symbol_exam p:nth-child(3)').removeClass('active');
   }
 })
+
