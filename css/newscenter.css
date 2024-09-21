@@ -349,6 +349,30 @@ section {
     .tab_img_3_1 {
       background: url(../images/newscenter/youtube1.jpg)no-repeat;
     }
+    .tab_img_3_2 {
+      background: url(../images/newscenter/youtube2.jpg)no-repeat;
+    }
+    .tab_img_3_3 {
+      background: url(../images/newscenter/youtube3.jpg)no-repeat;
+    }
+    .tab_img_3_4 {
+      background: url(../images/newscenter/youtube4.jpg)no-repeat;
+    }
+    .tab_img_3_5 {
+      background: url(../images/newscenter/youtube5.jpg)no-repeat;
+    }
+    .tab_img_3_6 {
+      background: url(../images/newscenter/youtube6.jpg)no-repeat;
+    }
+    .tab_img_3_7 {
+      background: url(../images/newscenter/youtube7.jpg)no-repeat;
+    }
+    .tab_img_3_8 {
+      background: url(../images/newscenter/youtube8.jpg)no-repeat;
+    }
+    .tab_img_3_9 {
+      background: url(../images/newscenter/youtube9.jpg)no-repeat;
+    }
 
     .img-cover {
       background-color: rgba(0, 0, 0, .5);
@@ -627,7 +651,6 @@ section {
     position: absolute;
     background: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0));
     border-radius: 20px;
-
   }
 
   .section3.hidden1, h1,
@@ -702,6 +725,9 @@ section {
     width: 100%;
     background: #F0F3FA;
   }
+  .tab-container .tabs{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -719,7 +745,6 @@ section {
   .tab_menu ul {
     gap: 50px;
   }
-
 }
 
 @media screen and (max-width: 375px) {
