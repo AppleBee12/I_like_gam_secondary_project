@@ -82,7 +82,6 @@ header .logo a {
 	background-color: transparent;
 	transition: 0.5s;
 	overflow: hidden;
-	z-index: 500;
 }
 
 .top_nav .nav_container {
@@ -363,6 +362,7 @@ header .logo a {
 
 
 .tb_nav {
+	display: none;
   width: 100%; 
   height: 100%; 
   background-color: var(--primary); 
@@ -428,6 +428,9 @@ header video {
 		transition-timing-function: ease-out;
 		opacity: 0;
 	} 
+	.tb_nav{
+		display: block;
+	}
 	.tb_nav>ul>li{
 		color: #fff;
 		font-size: var(--mo_sub_title);
