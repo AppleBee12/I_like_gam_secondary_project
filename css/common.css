@@ -621,8 +621,6 @@ header video {
 
 
 
-
-
 /* sub_intro Background & title 홍수진 */
 
 .sub_tt {
@@ -638,7 +636,7 @@ header video {
 	gap: 20px;
 	font-family: 'hdharmony';
 	color: #fff;
-	background-image: url(../images/product/subnav_product_technology.png);
+	
 	background-repeat: no-repeat;
 	background-color: #000;
 	background-size: cover;
