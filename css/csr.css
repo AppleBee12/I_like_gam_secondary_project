@@ -55,7 +55,7 @@ header .logo a{
 .tab_menu ul li{
   position: relative;
 }
-/* 이 부분 잘라서 본인 css 가져가신 다음에 차일드 부분 숫자만 본인꺼에 맞춰서 바꿔주세요 */
+/* 이 부분 차일드 부분 숫자만 본인꺼에 맞춰서 바꿔주세요 */
 .tab_menu ul li:nth-child(4):after{
   display: block;
 	content: '';
@@ -67,7 +67,7 @@ header .logo a{
 	transition: 0.3s;
 	transform: scaleX(1);
 }
-/* //이 부분 잘라서 본인 css 가져가신 다음에 차일드 부분 숫자만 본인꺼에 맞춰서 바꿔주세요 */
+/* //이 부분 차일드 부분 숫자만 본인꺼에 맞춰서 바꿔주세요 */
 .tab_menu ul li:nth-child(4) a{
   color:var(--primary);
 }
