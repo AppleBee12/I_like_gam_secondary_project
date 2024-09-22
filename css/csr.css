@@ -1,3 +1,4 @@
+
 main h2 {
   font-size: 3.125rem;
   font-family: 'hdharmony';
@@ -90,6 +91,18 @@ header .logo a{
 }
 
 /*  //header */
+
+/* progress_bar */
+#progress_bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background-color: var(--primary);
+  width: 0%;
+  z-index: 9999;
+}
+/* //progress_bar */
 
 /* section1 */
 .sec1_title>h4{
