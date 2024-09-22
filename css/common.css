@@ -336,7 +336,7 @@ header .logo a {
 	bottom: 20px;
 	right: 23px;
 	font-size: 20px;
-	z-index: 999;
+	z-index: 99;
 	opacity: .5;
 	display: none;
 	box-shadow: inset 1px 1px 2px 1px rgba(255,255,255),
