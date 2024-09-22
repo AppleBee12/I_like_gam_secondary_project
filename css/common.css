@@ -481,8 +481,7 @@ header video {
 		background-color: white;
 		width: 100vw;
 	}
-
-	.quick-menu-btn {
+	.quick-menu{
 		display: none;
 	}
 
