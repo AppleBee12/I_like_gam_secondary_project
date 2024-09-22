@@ -238,9 +238,11 @@ header .logo a {
 	opacity: 0.5;
 	box-shadow: inset 1px 1px 2px 1px rgba(255,255,255),
 	inset -1px -1px 2px 1px rgba(255,255,255);
+	transition: 0.3s;
 }
 .quick-menu-btn:hover{
 	opacity:1;
+	transform: scale(1.1);
 }
 .quick-menu-btn.active{
 	opacity: 1;
@@ -261,6 +263,7 @@ header .logo a {
   right: 0;
 }
 
+
 .quick-menu-list li {
   margin-bottom: 30px;
   width: 50px;
@@ -280,7 +283,9 @@ header .logo a {
   color: white;
   text-decoration: none;
   border-radius:50% ;
+	transition: 0.3s;
 }
+
 .quick-menu-list li:nth-child(1) a{
   background-color: var(--yellow);
 }
@@ -336,10 +341,12 @@ header .logo a {
 	display: none;
 	box-shadow: inset 1px 1px 2px 1px rgba(255,255,255),
 	inset -1px -1px 2px 1px rgba(255,255,255);
+	transition: 0.3s;
 }
 
 #top_btn:hover {
 	opacity: 1;
+	transform: scale(1.1);
 }
 
 
