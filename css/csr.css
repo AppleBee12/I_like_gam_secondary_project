@@ -55,6 +55,7 @@ header .logo a{
 .tab_menu ul li{
   position: relative;
 }
+/* 이 부분에서 차일드 부분 숫자만 본인꺼에 맞춰서 바꿔주세요 */
 .tab_menu ul li:nth-child(4):after{
   display: block;
 	content: '';
