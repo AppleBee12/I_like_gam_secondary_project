@@ -56,7 +56,7 @@ toggleBtn.click(function(e){
 
 
  // 모든 li 요소를 가져옴
-  const navItems = document.querySelectorAll('.tb_nav ul > li > a');
+  const navItems = document.querySelectorAll('.tb_nav ul > li > p');
 
   navItems.forEach(function(navItem) {
     navItem.addEventListener('click', function(e) {
@@ -80,7 +80,7 @@ toggleBtn.click(function(e){
   });
 
 
-  spanPlus= $('.tb_nav ul > li > a');
+  spanPlus= $('.tb_nav ul > li > p');
 
   spanPlus.each(function(){
       spanPlus.click(function(){
