@@ -68,3 +68,10 @@ $(window).scroll(function(){
   }
 })
 
+
+$(window).scroll(function(){
+  winScroll = $(this).scrollTop();
+  height = $(document).height() - $(window).height();
+  scrolled = (winScroll / height) * 100;
+  $('#progress_bar').css('width', scrolled + '%');
+})
