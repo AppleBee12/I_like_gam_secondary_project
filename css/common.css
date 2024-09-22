@@ -348,25 +348,19 @@ header .logo a {
 	transform: scale(1.1);
 }
 
-
-
-/* 지우지 마세요 반응형 넘어갈때 잔상 없애기용 입니다 */
 .tb_container {
 	position: absolute;
-	top: 100%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	opacity: 0;
+	background-color: var(--primary); 
+	bottom: 100%;
 }
 
 
-.tb_nav {
+.tb_nav {		
+	margin: 87px 0;
+}
+
+.tb_nav>ul>li{
 	display: none;
-  width: 100%; 
-  height: 100%; 
-  background-color: var(--primary); 
-	padding: 87px 0;
 }
 
 /* video */
@@ -418,17 +412,15 @@ header video {
 		background: url(../images/header_icon_tb.svg) no-repeat;
 	}
 
-	 .tb_container {
-		position: absolute;
+	.tb_container.visible {
+		position: fixed;
 		top:0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		transition: 0.3s;
-		transition-timing-function: ease-out;
-		opacity: 0;
-	} 
-	.tb_nav{
+		z-index: 999;
+	}
+	.tb_container.visible .tb_nav>ul>li{
 		display: block;
 	}
 	.tb_nav>ul>li{
@@ -444,15 +436,6 @@ header video {
 	}
 
 
-	.tb_container.visible {
-		position: fixed;
-		top:0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		opacity: 1;
-		z-index: 999;
-	}
 	.hamburger_button {
 		display: block;
 	}
