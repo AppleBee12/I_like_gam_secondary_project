@@ -353,15 +353,10 @@ header .logo a {
 	background-color: var(--primary); 
 	bottom: 100%;
 }
-
-
 .tb_nav {		
 	margin: 87px 0;
 }
 
-.tb_nav>ul>li{
-	display: none;
-}
 
 /* video */
 header video {
@@ -420,9 +415,7 @@ header video {
 		bottom: 0;
 		z-index: 999;
 	}
-	.tb_container.visible .tb_nav>ul>li{
-		display: block;
-	}
+	
 	.tb_nav>ul>li{
 		color: #fff;
 		font-size: var(--mo_sub_title);
@@ -502,11 +495,13 @@ header video {
 	}
 
 }
-@media   (max-width: 622px){
+@media   (max-width: 668px){
 	.tb_nav>ul{
 		gap:10%;
+		margin-left: 30px;
 	}
 }
+
 @media screen and (max-width: 576px){
 	
 	
