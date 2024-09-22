@@ -231,16 +231,16 @@ header .logo a {
 .sec1_slide02 h3,
 .sec1_slide02 p {
   position: absolute;
-  left: 50%;
+  left: 45%;
 }
 
 .sec1_desc h3 {
-  top: 50%;
+  top: 60%;
 }
 
 .sec1_desc p {
   line-height: 28px;
-  bottom: 28%;
+  bottom: 18%;
 }
 
 
@@ -512,7 +512,7 @@ header .logo a {
   .sec1_slide01 p,
   .sec1_slide02 h3,
   .sec1_slide02 p {
-    left: 45%;
+    left: 40%;
   }
 
   .section1 h3 {
@@ -521,7 +521,7 @@ header .logo a {
   }
 
   .sec1_desc h3 {
-    bottom: 40%;
+    top:50%;
   }
 
   .sec1_desc p {
@@ -550,7 +550,7 @@ header .logo a {
   .sec1_slide01 p,
   .sec1_slide02 h3,
   .sec1_slide02 p {
-    left: 45%;
+    left: 40%;
   }
 
   .section1 h3 {
@@ -563,7 +563,7 @@ header .logo a {
 
   .sec1_desc p {
     line-height: 28px;
-    bottom: 25%;
+    bottom: 16%;
   }
 
   /* section 01 끝*/
