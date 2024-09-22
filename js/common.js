@@ -52,6 +52,9 @@ toggleBtn.click(function(e){
     $('.quick-menu-list a+a').toggleClass('active')
     $('.quick-menu-btn').toggleClass('active')
   });
+ 
+
+
 
 
 
