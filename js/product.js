@@ -1,5 +1,5 @@
 //swiper library
-const bullet = ['프리미엄 건설용 강재 H CORE', '자동차 솔루션 H-SOLUTION'];
+const bullet = ['프리미엄 건설용 강재 <i>H CORE</i>', '자동차 솔루션 <i>H SOLUTION</i>'];
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',

@@ -154,6 +154,9 @@ header .logo a {
   padding-bottom: 5.25rem;
 }
 
+.sec1_title h3.sec_mo {
+  display: none;
+}
 
 .sec1_pager {
   width: 100%;
@@ -256,24 +259,254 @@ header .logo a {
 
 /* xs devices (less than 576px) */
 @media (max-width: 575.98px) {
-  /* 여기에 스타일 추가 */
+
+  /* section 01 */
+
+  .sec1_wrapper {
+    width: 100%;
+    padding: 5rem 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .sec1_title {
+    padding: 0 1rem;
+  }
+
+  .sec1_title h3.sec_pc {
+    display: none;
+  }
+
+  .sec1_title h3.sec_mo {
+    padding-bottom: 3rem;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+  }
+
+  .sec1_pager span i {
+    display: block;
+  }
+  .sec1_pager h5{
+    width: 100%;
+    line-height: 18px;
+    font-size: 13px;
+    padding:3px 0;
+  }
+
+  .sec1_img_wrapper{
+    height: 500px;
+  }
+
+  .sec1_slide01 h3,
+  .sec1_slide01 p,
+  .sec1_slide02 h3,
+  .sec1_slide02 p {
+    right: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  .section1 h3 {
+    font-size: var(--mo_sub_title);
+    line-height: 45px;
+  }
+
+  .sec1_desc h3 {
+    bottom: 55%;
+  }
+
+  .sec1_slide02 h3 {
+    bottom: 40%;
+    line-height: 30px;
+  }
+
+  .sec1_slide02 h3 span {
+    display: block;
+  }
+
+  .sec1_desc p {
+    font-size: var(--mo_sub_body);
+    line-height: 25px;
+    bottom: 13%;
+    white-space : pre-line;
+  }
+  .sec1_desc p br {
+    display: none;
+  }
+  /* section 01 끝*/
 }
 
 /* sm devices (phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* 여기에 스타일 추가 */
+  /* section 01 */
+
+  .sec1_wrapper {
+    width: 100%;
+    padding: 8rem 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .sec1_title {
+    padding: 0 1rem;
+  }
+  .sec1_title h3 {
+    padding-bottom: 4rem;
+  }
+  .sec1_title h3.sec_pc {
+    display: none;
+  }
+
+  .sec1_title h3.sec_mo {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .sec1_pager span i {
+    display: block;
+  }
+  .sec1_pager h5{
+    width: 100%;
+    line-height: 20px;
+  }
+  .sec1_img_wrapper{
+    height: 400px;
+  }
+
+  .sec1_slide01 h3,
+  .sec1_slide01 p,
+  .sec1_slide02 h3,
+  .sec1_slide02 p {
+    right: 0;
+    left: 0;
+    width: 95%;
+    text-align: center;
+    padding-left: 3rem;
+  }
+
+  .section1 h3 {
+    font-size: var(--mo_title);
+    line-height: 45px;
+  }
+
+  .sec1_desc h3 {
+    top: 30%
+  }
+
+  .sec1_slide02 h3 {
+    top: 25%
+  }
+
+  .sec1_slide02 h3 span {
+    display: block;
+  }
+
+  .sec1_desc p {
+    font-size: var(--mo_body);
+    line-height: 28px;
+    bottom: 16%;
+    white-space : pre-line;
+  }
+  .sec1_desc p br {
+    display: none;
+  }
+  /* section 01 끝*/
+
 }
 
 /* md devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
-  /* 여기에 스타일 추가 */
+  /* section 01 */
+
+  .sec1_wrapper {
+    width: 100%;
+    padding: 8rem 0;
+  }
+
+  .sec1_title {
+    padding: 0 3rem;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+
+
+  .sec1_title h3 {
+    padding-bottom: 4.5rem;
+  }
+
+
+  .sec1_slide01 h3,
+  .sec1_slide01 p,
+  .sec1_slide02 h3,
+  .sec1_slide02 p {
+    right: 0;
+    left: 0;
+    width: 95%;
+    text-align: left;
+    padding-left: 3rem;
+  }
+
+  .section1 h3 {
+    font-size: var(--mo_title);
+    line-height: 45px;
+  }
+
+  .sec1_desc h3 {
+    top: 40%
+  }
+
+  .sec1_slide02 h3 {
+    top: 30%
+  }
+
+  .sec1_slide02 h3 span {
+    display: block;
+  }
+
+  .sec1_desc p {
+    font-size: var(--mo_body);
+    line-height: 28px;
+    bottom: 16%;
+
+    span {
+      display: block;
+    }
+  }
+
+  /* section 01 끝*/
 }
 
 /* lg devices (PC버전desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
   /* section 01 */
+  .sec1_wrapper {
+    padding: 8rem 3rem;
+  }
+
+  .sec1_title h3 {
+    padding-bottom: 3.5rem;
+  }
 
   .sec1_slide01 h3,
   .sec1_slide01 p,
@@ -282,9 +515,11 @@ header .logo a {
     left: 45%;
   }
 
-  .section1 h3{ 
+  .section1 h3 {
     font-size: 30px;
+    line-height: 45px;
   }
+
   .sec1_desc h3 {
     bottom: 40%;
   }
@@ -293,7 +528,8 @@ header .logo a {
 
     line-height: 28px;
     bottom: 16%;
-    span{
+
+    span {
       display: block;
     }
   }
@@ -317,9 +553,10 @@ header .logo a {
     left: 45%;
   }
 
-  .section1 h3{ 
+  .section1 h3 {
     font-size: 35px;
   }
+
   .sec1_desc h3 {
     bottom: 40%;
   }
@@ -339,6 +576,7 @@ header .logo a {
   /* section 01 */
   .sec1_wrapper {
     width: 1440px;
+    padding: 10.5rem 3rem;
   }
 
   /* section 01 끝*/
