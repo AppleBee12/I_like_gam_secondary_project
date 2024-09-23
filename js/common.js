@@ -45,6 +45,7 @@ toggleBtn.click(function(e){
   toggleBtn.toggleClass('toggle');
   $('.tb_container').toggleClass('visible');
   toggleBtn.toggleClass('visible');
+  $('body').toggleClass('visible');
 })
 
   // 퀵메뉴 버튼 클릭 이벤트
