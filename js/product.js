@@ -1,6 +1,6 @@
-//swiper library
+//section01 swiper
 const bullet = ['프리미엄 건설용 강재 <i>H CORE</i>', '자동차 솔루션 <i>H SOLUTION</i>'];
-const swiper = new Swiper('.swiper', {
+const primarySwiper = new Swiper('.sec1_swiper', {
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: 1,
@@ -46,6 +46,47 @@ const swiper = new Swiper('.swiper', {
     //   }
   });
 
-//swiper library fin
+//section01 swiper fin
+
+
+//section02 swiper
+
+const secondarySwiper = new Swiper('.sec2_swiper01', {
+    // Optional parameters
+    direction: 'vertical',
+    slidesPerView: 3,
+    spaceBetween: 30,
+    speed: 1000, 
+    loop: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+
+});
+
+const tertiarySwiper = new Swiper('.sec2_swiper02', {
+    // Optional parameters
+    direction: 'vertical',
+    slidesPerView: 3,
+    spaceBetween: 30,
+    speed: 1000, 
+    loop: true,
+    reverseDirection: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+
+});
+
+
+
+
+
+
+//section02 swiper fin
 
 
