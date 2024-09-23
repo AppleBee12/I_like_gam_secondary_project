@@ -73,7 +73,7 @@ const tertiarySwiper = new Swiper('.sec2_swiper02', {
     spaceBetween: 30,
     speed: 1000, 
     loop: true,
-    reverseDirection: true,
+    // reverseDirection: true,
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,
