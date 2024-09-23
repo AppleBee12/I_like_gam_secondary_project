@@ -32,6 +32,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/newscenter.css">
@@ -52,46 +53,46 @@
         </a>
         <div class="nav">
           <ul class="main_menu">
-            <li class="main_list"><a href="">회사소개</a>
+            <li class="main_list"><a href="aboutcompany.html">회사소개</a>
               <ul class="sub_menu">
-                <li><a href="">사업소개</a></li>
-                <li><a href="">사업장</a></li>
-                <li><a href="">CEO인사말</a></li>
-                <li><a href="">경영이념</a></li>
-                <li><a href="">연혁</a></li>
-                <li><a href="">R&D연구소</a></li>
+                <li><a href="aboutcompany.html">사업소개</a></li>
+                <li><a href="aboutcompany.html">사업장</a></li>
+                <li><a href="aboutcompany.html">CEO인사말</a></li>
+                <li><a href="aboutcompany.html">경영이념</a></li>
+                <li><a href="aboutcompany.html">연혁</a></li>
+                <li><a href="aboutcompany.html">R&D연구소</a></li>
               </ul>
             </li>
-            <li class="main_list"><a href="">제품기술</a>
+            <li class="main_list"><a href="product.html">제품기술</a>
               <ul class="sub_menu">
-                <li><a href="">제품목록</a></li>
-                <li><a href="">종합 카탈로그</a></li>
-                <li><a href="">생산공정</a></li>
+                <li><a href="product.html">제품목록</a></li>
+                <li><a href="product.html">종합 카탈로그</a></li>
+                <li><a href="product.html">생산공정</a></li>
               </ul>
             </li>
-            <li class="main_list"><a href="">투자정보</a>
+            <li class="main_list"><a href="#">투자정보</a>
               <ul class="sub_menu">
-                <li><a href="">전자공고</a></li>
-                <li><a href="">요약재무제표</a></li>
-                <li><a href="">신용등급</a></li>
-                <li><a href="">사업보고서</a></li>
-                <li><a href="">경영정보</a></li>
+                <li><a href="#">전자공고</a></li>
+                <li><a href="#">요약재무제표</a></li>
+                <li><a href="#">신용등급</a></li>
+                <li><a href="#">사업보고서</a></li>
+                <li><a href="#">경영정보</a></li>
               </ul>
             </li>
-            <li class="main_list"><a href="">지속가능경영</a>
+            <li class="main_list"><a href="csr.html">지속가능경영</a>
               <ul class="sub_menu">
-                <li><a href="">탄소중립 로드맵</a></li>
-                <li><a href="">지속가능 전략</a></li>
-                <li><a href="">통합보고서</a></li>
-                <li><a href="">사회공헌</a></li>
+                <li><a href="csr.html">탄소중립 로드맵</a></li>
+                <li><a href="csr.html">지속가능 전략</a></li>
+                <li><a href="csr.html">통합보고서</a></li>
+                <li><a href="csr.html">사회공헌</a></li>
               </ul>
             </li>
-            <li class="main_list"><a href="">홍보센터</a>
+            <li class="main_list"><a href="newscenter.html">홍보센터</a>
               <ul class="sub_menu">
-                <li><a href="">뉴스센터</a></li>
-                <li><a href="">youtube</a></li>
-                <li><a href="">소식지</a></li>
-                <li><a href="">스포츠단</a></li>
+                <li><a href="newscenter.html">뉴스센터</a></li>
+                <li><a href="newscenter.html">youtube</a></li>
+                <li><a href="newscenter.html">소식지</a></li>
+                <li><a href="newscenter.html">스포츠단</a></li>
               </ul>
             </li>
           </ul>
@@ -357,15 +358,15 @@
           </div>
         </section>
       </div>
-      <div class="tab-container px-5 py-6 col-12 container pt-5 mt-5 mb-5">
-        <div class="tabs d-flex mb-3">
+      <div class="tab-container  swiper-container px-5 py-6 col-12 container pt-5 mt-5 mb-5">
+        <div class="tabs tab-header swiper-wrapper d-flex mb-3">
           <div class="tab news active" data-tab="1">NEWS</div>
           <div class="tab sports" data-tab="2">SPORTS</div>
           <div class="tab youtube" data-tab="3">YOUTUBE</div>
         </div>
         <div class="tab-content swiper-content-first news mb-5 pb-5" data-slider="1">
           <div class="tab-wrapper d-flex align-content-end flex-wrap gap-3 gap-lg-5">
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_1 ">
                 <div class="tab_title">
                   <p>현대제철, 리스크 관리<br> 국제 인증 'ISO 22301' 취득</p>
@@ -374,7 +375,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_2">
                 <div class="tab_title">
                   <p>현대제철, KIRCHHOFF Automotive와 탄소저감 <br>강판판매 MOU 체결</p>
@@ -383,7 +384,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_3">
                 <div class="tab_title">
                   <p>현대제철, 열연 및 후판제품 <br> 국내 EPD 인증 취득</p>
@@ -392,7 +393,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_4">
                 <div class="tab_title">
                   <p>현대제철, DNV <br> &#39;신재생에너지 공장인증&#39; 취득</p>
@@ -401,7 +402,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_5 ">
                 <div class="tab_title">
                   <p> HMG사내스타트업<br> &#39;3I솔루션&#39;과 산업용 중성자 성분분석기 개발</p>
@@ -410,7 +411,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_6">
                 <div class="tab_title">
                   <p>현대제철, 송도 센트럴파크에 <br>철의 감성 더한다</p>
@@ -419,7 +420,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_7">
                 <div class="tab_title">
                   <p>현대제철, 온라인 철강몰 <br> 'HCORE STORE' 론칭</p>
@@ -428,7 +429,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_8">
                 <div class="tab_title">
                   <p>현대제철, 탄소중립 로드맵 공개</p>
@@ -437,7 +438,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper last col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper last col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_9">
                 <div class="tab_title">
                   <p>현대제철, 450MPa급 <br>구조용 강관 KS인증 취득</p>
@@ -449,8 +450,8 @@
           </div>
         </div>
         <div class="tab-content swiper-content sport" mb-5 data-slider="2">
-          <div class="swiper-tab-wrapper d-flex align-content-end flex-wrap gap-3 gap-lg-5">
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+          <div class="tab-wrapper d-flex align-content-end flex-wrap gap-3 gap-lg-5">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_2_1">
                 <div class="tab_title">
                   <p>현대제철, 어린이 양궁 꿈나무 양성 나선다</p>
@@ -459,7 +460,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_2_2">
                 <div class="tab_title">
                   <p>현대제철 레드엔젤스, 2023 시즌 새 유니폼 공개</p>
@@ -468,8 +469,8 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_2_3">
                 <div class="tab_title">
                   <p>현대제철 레드엔젤스, 2024 시즌 순항 닻 올렸다</p>
@@ -478,7 +479,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_2_4 ">
                 <div class="tab_title">
                   <p> 현대제철, 인천 지역 여자축구 저변 확대 나선다</p>
@@ -487,16 +488,16 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_2_5 ">
                 <div class="tab_title">
-                  <p>현대제철 여자축구선수단, 홈그라운드에서 특별한 팬사인회 가져</p>
+                  <p>현대제철 여자축구선수단, <br>홈그라운드에서 특별한 <br>팬사인회 가져</p>
                   <em>2015.06.29</em>
                 </div>
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_2_6 ">
                 <div class="tab_title">
                   <p>현대제철 오진혁, MVP를 쏘다!</p>
@@ -505,7 +506,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_2_7 ">
                 <div class="tab_title">
                   <p>당진시 초등학생들, 여자축구단 '레드엔젤스'와 명랑운동회 개최</p>
@@ -514,7 +515,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_2_8 ">
                 <div class="tab_title">
                   <p>현대제철, 중국 유소녀 축구단 한국 초청</p>
@@ -523,7 +524,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper last col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper last col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_2_9 ">
                 <div class="tab_title">
                   <p>현대제철, 중국 유소녀 축구단 한국 초청</p>
@@ -535,8 +536,8 @@
           </div>
         </div>
         <div class="tab-content swiper-content sport" mb-5 data-slider="3">
-          <div class="swiper-tab-wrapper d-flex align-content-end flex-wrap gap-3 gap-lg-5 ">
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+          <div class="tab-wrapper d-flex align-content-end flex-wrap gap-3 gap-lg-5 ">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_3_1">
                 <div class="tab_title">
                   <p>'빠더너스 문쌤'이 알려주는 현대제철 입사 '꿀팁'</p>
@@ -545,7 +546,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_3_2 ">
                 <div class="tab_title">
                   <p>개그맨 김용명이 웃음으로 전하는 현대제철의 ESG</p>
@@ -554,7 +555,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_3_3 ">
                 <div class="tab_title">
                   <p>현대제철, 친환경 미래상 담은 새 홍보영상 공개</p>
@@ -563,7 +564,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_3_4 ">
                 <div class="tab_title">
                   <p>"수소사회 함께 해요 현대제철 수소 비전‘ 모션그래픽 ’영상 공개</p>
@@ -572,7 +573,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_3_5 ">
                 <div class="tab_title">
                   <p>현대제철, '2020 방구석 드림톡콘' 개최</p>
@@ -581,7 +582,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_3_6 ">
                 <div class="tab_title">
                   <p>현대제철, 친환경 담은 ‘모션그래픽’ 공개</p>
@@ -590,7 +591,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_3_7 ">
                 <div class="tab_title">
                   <p>현대제철, 온라인 철강몰 <br> 'HCORE STORE' 론칭</p>
@@ -599,7 +600,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_3_8 ">
                 <div class="tab_title">
                   <p>현대제철, YG '크렁크'와 콜라보 댄스 영상 공개</p>
@@ -608,7 +609,7 @@
                 <div class="img-cover"></div>
               </div>
             </div>
-            <div class="swiper-tab-wrapper last col-sm-12 col-md-5 col-lg-3 flex-fill">
+            <div class="tab-wrapper last col-sm-12 col-md-5 col-lg-3 flex-fill">
               <div class="swiper-tab tab_img_3_9 ">
                 <div class="tab_title">
                   <p>현대제철, 온라인 철강몰 'HCORE STORE' 그랜드 오픈</p>
@@ -620,30 +621,6 @@
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -833,6 +810,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/newscenter.js"></script>
 </body>
