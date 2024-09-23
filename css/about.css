@@ -2,7 +2,9 @@
 body {
 	font-family: 'SUIT Variable', sans-serif;
 }
-
+video{
+  object-fit: cover;
+}
 .section1 h2{
   font-family: 'hdharmony';
   font-weight: 500;
