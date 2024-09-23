@@ -28,7 +28,7 @@ const primarySwiper = new Swiper('.sec1_swiper', {
 //section01 swiper fin
 
 
-//section02 swiper
+//section02 swiper01
 
 const secondarySwiper = new Swiper('.sec2_swiper01', {
   direction: 'vertical',
@@ -53,18 +53,9 @@ $('.sec2_swiper01').mouseleave(function () {
   secondarySwiper.autoplay.start();
 });
 
-// const originalSpeed = secondarySwiper.params.speed;
-
-// // hover 시 속도를 0으로 설정하고 즉시 멈추기
-// $('.sec2_productlist01 .swiper-slide').hover(function() {
-//     secondarySwiper.setTransition(0); // 속도 0으로 설정
-//     secondarySwiper.autoplay.stop(); // 즉시 멈춤
-// }, function() {
-//     secondarySwiper.setTransition(originalSpeed); // 원래 속도로 복원
-//     secondarySwiper.autoplay.start(); // 다시 시작
-// });
 
 
+//section02 swiper02
 
 const tertiarySwiper = new Swiper('.sec2_swiper02', {
   direction: 'vertical',
@@ -97,33 +88,73 @@ $('.sec2_swiper02').mouseleave(function () {
 
 //section03 swiper
 
-const quaternarySwiper = new Swiper('.sec3_swiper', {
+const quaternarySwiper = new Swiper('.sec3swiper', {
   direction: 'horizontal',
   slidesPerView: 5,
   spaceBetween: 30,
-  speed: 2000,
-  loop: false,
+  loop: true,
+  observer: true,
+  observeParents: true,
+  pagination: {
+    el: '.sec3_pager',
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
 
-  // aria-current="true"
   //반응형
+  breakpoints: {
+    // >= 576px
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
 
-  // breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 20
-  //   },
-  //   // when window width is >= 480px
-  //   480: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 30
-  //   },
-  //   // when window width is >= 640px
-  //   640: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 40
-  //   }
-  // }
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      
+
+    },
+    1400: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+      autoplay: false,
+      
+    }
+  },
 });
 
 //section03 swiper fin
