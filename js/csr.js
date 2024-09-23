@@ -35,6 +35,8 @@ slides.mouseenter(function(){
 slides.mouseleave(function(){
   slideInterval = setInterval(slideMove, 15); // 슬라이드 재시작
 })
+
+
 slideMove();
 
 
