@@ -19,7 +19,6 @@ body {
 	font-style: light;
   font-weight: 300;
   font-size: 40px;
- 
 }
 .section1 span{
   color: var(--primary);
@@ -37,27 +36,6 @@ header .logo a{
 .main_menu li a {
 	color: #000;
 }
-.sub_tt{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items:center;
-  text-align: center;
-  gap: 60px;
-  background:url(../images/about/subnav_aboutcompany.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.sub_tt>h1{
-font-size: var(--pc_big);
-color: #fff;
-}
-.sub_tt>h2{
-font-size: var(--pc_sub_title);
-color: #fff;
-}
 .tab_menu{
   width: 100%;
   height: 87px;
@@ -65,7 +43,7 @@ color: #fff;
   position: sticky;
   top: 0;
   background-color: rgba(255,255,255,.5);
-  z-index: 9999;
+  z-index: 997;
 }
 .tab_menu ul{
   display: flex;
@@ -238,7 +216,7 @@ color: #fff;
   font-size: 20px;
   padding:19px 31px 0 37px;
 }
-..gorotab-content p{
+.gorotab-content p{
   line-height: 42px;
 }
 
@@ -278,34 +256,39 @@ color: #fff;
   flex-direction: column;
   gap: 50px;
   }
-.fc_box{
+.fc_box{ 
   display: flex;
   justify-content: space-between;
-  /* padding: 0 244px; */
+  transition: box-shadow 0.3s ease; 
   }
+  .fc_box:hover {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3); 
+  }
+ 
 .fc img{
   z-index: 3;
   }
  .boxcontainer {
-  position: relative; 
-  width: 100%;   
-  left: 0;
+    position: relative; 
+    width: 100%; 
+    
+    left: 0;
   }
 .box {
-  position: absolute;     
-  height: 273px;
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  color: white; 
-  font-size: 24px;    
-  }
+    position: absolute;     
+    height: 273px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    font-size: 24px;    
+    }
 .box1 {
   background-color: var(--primary); /* 박스 1 색상 */
   z-index: 1; /* 겹침 순서 설정 */
   width: 990px;
   height: 244px;
-  right:50px
+  right:-25px
   }
 
 .box2 {
@@ -321,10 +304,17 @@ color: #fff;
   color: #000;
   text-align: center;
   font-family: var(--pc_sub_title);
+  padding: 0 30px;
   }
 .box2 p{
   font-family: var(--pc_sub_body);
+  margin: 10px 0;
   }
+.fc_box:hover .box1,
+.fc_box:hover .box2 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+  
 .fc-img {
   margin: 0; 
   padding: 0;   
@@ -348,7 +338,32 @@ color: #fff;
 
 
 
+/*section 5*/
+/*section 5/////////////////////////////*/
 
+
+
+
+
+
+
+
+
+
+
+/*section6*/
+.section6{
+  background-image: url(/images/about/cjfrmdltkddmlrkclckdwh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+  height: 867px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+}
+/*section6/////////////////////////////////////////////////////*/
 
 
 

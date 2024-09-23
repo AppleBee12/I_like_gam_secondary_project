@@ -11,34 +11,6 @@ header .logo a {
   color: #000;
 }
 
-.sub_tt {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 60px;
-  background: url(../images/newscenter/subnav_newscenter.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.sub_tt>h1 {
-  font-size: var(--pc_big);
-  color: #fff;
-  font-family: 'hdharmony';
-	font-weight: 300;
-}
-
-.sub_tt>h2 {
-  font-size: var(--pc_sub_title);
-  color: #fff;
-  font-family: 'hdharmony';
-	font-weight: 300;
-}
-
 .tab_menu {
   width: 100%;
   height: 87px;
@@ -271,107 +243,134 @@ section {
       padding: 0;
     }
 
-    .mg_wrapper .tab-content{
+    .tab-content{
       margin: 0 auto;
     }
     .tab_img_1 {
       background: url(../images/newscenter/news1.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_2 {
       background: url(../images/newscenter/news2.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_3 {
       background: url(../images/newscenter/news3.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_4 {
       background: url(../images/newscenter/news4.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_5 {
       background: url(../images/newscenter/news5.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_6 {
       background: url(../images/newscenter/news6.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_7 {
       background: url(../images/newscenter/news7.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_8 {
       background: url(../images/newscenter/news8.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_9 {
       background: url(../images/newscenter/news9.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_2_1 {
-      background: url(../images/newscenter/sports2.jpg)no-repeat;
+      background: url(../images/newscenter/sports1.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_2_2 {
-      background: url(../images/newscenter/sports3.jpg)no-repeat;
+      background: url(../images/newscenter/sports2.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_2_3 {
-      background: url(../images/newscenter/sports4.jpg)no-repeat;
+      background: url(../images/newscenter/sports3.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_2_4 {
-      background: url(../images/newscenter/sports5.jpg)no-repeat;
+      background: url(../images/newscenter/sports4.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_2_5 {
-      background: url(../images/newscenter/sports6.jpg)no-repeat;
+      background: url(../images/newscenter/sports5.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_2_6 {
-      background: url(../images/newscenter/sports7.jpg)no-repeat;
+      background: url(../images/newscenter/sports6.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_2_7 {
-      background: url(../images/newscenter/sports8.jpg)no-repeat;
+      background: url(../images/newscenter/sports7.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_2_8 {
-      background: url(../images/newscenter/sports9.jpg)no-repeat;
+      background: url(../images/newscenter/sports8.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_2_9 {
-      background: url(../images/newscenter/sports1.jpg)no-repeat;
+      background: url(../images/newscenter/sports9.jpg)no-repeat;
+      background-size: cover;
     }
 
     .tab_img_3_1 {
       background: url(../images/newscenter/youtube1.jpg)no-repeat;
+      background-size: cover;
     }
     .tab_img_3_2 {
       background: url(../images/newscenter/youtube2.jpg)no-repeat;
+      background-size: cover;
     }
     .tab_img_3_3 {
       background: url(../images/newscenter/youtube3.jpg)no-repeat;
+      background-size: cover;
     }
     .tab_img_3_4 {
       background: url(../images/newscenter/youtube4.jpg)no-repeat;
+      background-size: cover;
     }
     .tab_img_3_5 {
       background: url(../images/newscenter/youtube5.jpg)no-repeat;
+      background-size: cover;
     }
     .tab_img_3_6 {
       background: url(../images/newscenter/youtube6.jpg)no-repeat;
+      background-size: cover;
     }
     .tab_img_3_7 {
       background: url(../images/newscenter/youtube7.jpg)no-repeat;
+      background-size: cover;
     }
     .tab_img_3_8 {
       background: url(../images/newscenter/youtube8.jpg)no-repeat;
+      background-size: cover;
     }
     .tab_img_3_9 {
       background: url(../images/newscenter/youtube9.jpg)no-repeat;
+      background-size: cover;
     }
 
     .img-cover {
@@ -479,6 +478,9 @@ section {
         font-size: 14px;
       }
     }
+    .tab-content.swiper-content {
+      display: none;
+    }
   }
 
   .swiper-button-prev,
@@ -488,6 +490,10 @@ section {
     color: var(--lightgray);
     top: calc(50% + 22px)
   }
+  .last{
+    display: none;
+  }
+  
 }
 
 /* lg devices (PC버전desktops, 992px and up) */
@@ -522,6 +528,9 @@ section {
     .swiper {
       height: 400px;
     }
+  }
+  .swiper-tab-wrapper{
+    /* height: 300px; */
   }
 }
 @media (min-width: 1035px) and (max-width: 1199px){
