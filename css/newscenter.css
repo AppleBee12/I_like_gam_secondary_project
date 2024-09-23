@@ -490,6 +490,10 @@ section {
     color: var(--lightgray);
     top: calc(50% + 22px)
   }
+  .last{
+    display: none;
+  }
+  
 }
 
 /* lg devices (PC버전desktops, 992px and up) */

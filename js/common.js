@@ -46,12 +46,16 @@ toggleBtn.click(function(e){
   $('.tb_container').toggleClass('visible');
   toggleBtn.toggleClass('visible');
 })
+
   // 퀵메뉴 버튼 클릭 이벤트
   $('.quick-menu-btn').click(function() {
     $('.quick-menu-list').slideToggle(300); // 메뉴 슬라이드 토글
     $('.quick-menu-list a+a').toggleClass('active')
     $('.quick-menu-btn').toggleClass('active')
   });
+ 
+
+
 
 
 
@@ -121,3 +125,11 @@ $(window).on('scroll', function () {
 });
 
 //subpage-상단 BG 텍스트 parallax효과 추가 홍수진 끝
+
+
+$(window).scroll(function(){
+  winScroll = $(this).scrollTop();
+  height = $(document).height() - $(window).height();
+  scrolled = (winScroll / height) * 100;
+  $('#progress_bar').css('width', scrolled + '%');
+})
