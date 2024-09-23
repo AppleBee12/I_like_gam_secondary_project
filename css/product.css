@@ -73,7 +73,7 @@ header .logo a {
   position: sticky;
   top: 0;
   background-color: rgba(255, 255, 255, .5);
-  z-index: 9999;
+  z-index: 997;
 }
 
 .tab_menu ul {
@@ -144,7 +144,7 @@ header .logo a {
   padding: 10.5rem 0;
 }
 
-.swiper {
+.sec1_swiper {
   max-width: 100%;
   height: 100%;
   overflow: visible;
@@ -183,23 +183,23 @@ header .logo a {
 
 }
 
-.swiper-pagination-bullet {
+.section1 .swiper-pagination-bullet {
   background: none;
   opacity: 1;
 }
 
-.swiper-pagination-bullet.on {
+.section1 .swiper-pagination-bullet.on {
   background-color: rgba(255, 255, 255, .3);
 }
 
 
-.swiper-slide {
+.section1 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.swiper-slide img {
+.section1 .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -255,6 +255,8 @@ header .logo a {
 	background-position: left center;
   background-blend-mode: multiply;
   color: #fff;
+  height: 1092px;
+  overflow: hidden;
 }
 .sec2_wrap{
   width: 100%;
@@ -271,6 +273,79 @@ header .logo a {
   padding-bottom: 573px;
 
 }
+.sec2_productlist01{
+  width: 275px;
+}
+.sec2_swiper01, 
+.sec2_swiper02{
+  width: 275px;
+  height: 1092px;
+}
+
+.sec2_swiper01{
+  padding-left: 50%;
+}
+.sec2_swiper02{
+  padding-left: 75%;
+}
+
+.sec2_list_plate{
+  background-image: url(../images/product/sec2_list_plate.jpg);
+}
+
+.sec2_list_hot{
+  background-image: url(../images/product/sec2_list_hotroll.jpg);
+}
+.sec2_list_cold{
+  background-image: url(../images/product/sec2_list_coldroll.jpg);
+}
+.sec2_list_car{
+  background-image: url(../images/product/sec2_list_lightcar.png);
+}
+.sec2_list_steel{
+  background-image: url(../images/product/sec2_list_steel.jpg);
+}
+.sec2_list_hbeam{
+  background-image: url(../images/product/sec2_list_beams.jpg);
+}
+.sec2_list_speacial{
+  background-image: url(../images/product/sec2_list_special.jpg);
+}
+.sec2_list_caterpillar{
+  background-image: url(../images/product/sec2_list_cat.jpg);
+}
+
+.sec2_desc .swiper-slide{
+  position: relative;
+  padding: 83px 37px;
+  width: 275px;
+  height: 364px;
+  background-repeat: no-repeat;
+	background-color: rgba(0,0,0,.5);
+	/* background-color: rgba(10,41,114,.7); */
+	background-size: cover;
+	background-position: center center;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;  
+}
+
+.sec2_desc .swiper-slide h4{
+  text-align: left;
+}
+
+.sec2_desc .swiper-slide:after{
+  position: absolute;
+  content: '+';
+  top: 3px;
+  right: 3px;
+}
+
+
+
 
 
 /* section 02끝 */

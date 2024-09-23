@@ -41,7 +41,7 @@
 <body>
   <!--Header 나승일-->
   <header>
-    <div class="top_nav">
+    <div class="top_nav white bbb">
       <div class="nav_container">
         <h1 class="logo"><a href="">hyundae</a></h1>
         <a href="#" class="hamburger_button">
@@ -52,7 +52,7 @@
         </a>
         <div class="nav">
           <ul class="main_menu">
-            <li id="main_list"><a href="">회사소개</a>
+            <li class="main_list"><a href="">회사소개</a>
               <ul class="sub_menu">
                 <li><a href="">사업소개</a></li>
                 <li><a href="">사업장</a></li>
@@ -62,14 +62,14 @@
                 <li><a href="">R&D연구소</a></li>
               </ul>
             </li>
-            <li id="main_list"><a href="">제품기술</a>
+            <li class="main_list"><a href="">제품기술</a>
               <ul class="sub_menu">
                 <li><a href="">제품목록</a></li>
                 <li><a href="">종합 카탈로그</a></li>
                 <li><a href="">생산공정</a></li>
               </ul>
             </li>
-            <li id="main_list"><a href="">투자정보</a>
+            <li class="main_list"><a href="">투자정보</a>
               <ul class="sub_menu">
                 <li><a href="">전자공고</a></li>
                 <li><a href="">요약재무제표</a></li>
@@ -78,7 +78,7 @@
                 <li><a href="">경영정보</a></li>
               </ul>
             </li>
-            <li id="main_list"><a href="">지속가능경영</a>
+            <li class="main_list"><a href="">지속가능경영</a>
               <ul class="sub_menu">
                 <li><a href="">탄소중립 로드맵</a></li>
                 <li><a href="">지속가능 전략</a></li>
@@ -86,7 +86,7 @@
                 <li><a href="">사회공헌</a></li>
               </ul>
             </li>
-            <li id="main_list"><a href="">홍보센터</a>
+            <li class="main_list"><a href="">홍보센터</a>
               <ul class="sub_menu">
                 <li><a href="">뉴스센터</a></li>
                 <li><a href="">youtube</a></li>
@@ -98,6 +98,7 @@
         </div>
       </div>
     </div>
+    <div id="progress_bar"></div>
   </header>
   <!-- //header -->
   <main>
@@ -696,21 +697,23 @@
           </ul>
         </div>
       </div>
-
+      <div class="progress_bar"></div>
       <!-- 퀵메뉴 -->
-      <div class="fixed-action-btn">
-        <a class="btn-floating btn-large  blue darken-4">
-          <i class="large material-icons">add</i>
-        </a>
-        <ul>
-          <li><a href="#" class="btn-floating  amber accent-4"><i class="material-icons">help</i></a>
-            <a href="#">제품문의</a>
+      <div class="quick-menu">
+        <div class="quick-menu-btn">
+          <span>+</span>
+        </div>
+        <ul class="quick-menu-list">
+          <li><a href="#"><i class="fa-solid fa-question"></i></a>
+            <a href="">제품문의</a>
           </li>
-          <li><a href="#" class="btn-floating  cyan accent-4"><i class="material-icons">person_add</i></a>
-            <a href="#">인재채용</a>
           </li>
-          <li><a href="#" class="btn-floating  light-green accent-4"><i class="material-icons">loop</i></a>
-            <a href="#">지속가능</a>
+          <li><a href="#"><i class="fa-solid fa-user-plus"></i></a>
+            <a href="">인재채용</a>
+          </li>
+          </li>
+          <li><a href="#"><i class="fa-solid fa-rotate"></i></a>
+            <a href="">지속가능</a>
           </li>
         </ul>
       </div>

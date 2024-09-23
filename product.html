@@ -41,7 +41,7 @@
 <body>
   <!--Header 나승일-->
   <header>
-    <div class="top_nav">
+    <div class="top_nav white bbb">
       <div class="nav_container">
         <h1 class="logo"><a href="">hyundae</a></h1>
         <a href="" class="hamburger_button">
@@ -52,7 +52,7 @@
         </a>
         <div class="nav">
           <ul class="main_menu">
-            <li id="main_list"><a href="">회사소개</a>
+            <li class="main_list"><a href="">회사소개</a>
               <ul class="sub_menu">
                 <li><a href="">사업소개</a></li>
                 <li><a href="">사업장</a></li>
@@ -62,14 +62,14 @@
                 <li><a href="">R&D연구소</a></li>
               </ul>
             </li>
-            <li id="main_list"><a href="">제품기술</a>
+            <li class="main_list"><a href="">제품기술</a>
               <ul class="sub_menu">
                 <li><a href="">제품목록</a></li>
                 <li><a href="">종합 카탈로그</a></li>
                 <li><a href="">생산공정</a></li>
               </ul>
             </li>
-            <li id="main_list"><a href="">투자정보</a>
+            <li class="main_list"><a href="">투자정보</a>
               <ul class="sub_menu">
                 <li><a href="">전자공고</a></li>
                 <li><a href="">요약재무제표</a></li>
@@ -78,7 +78,7 @@
                 <li><a href="">경영정보</a></li>
               </ul>
             </li>
-            <li id="main_list"><a href="">지속가능경영</a>
+            <li class="main_list"><a href="">지속가능경영</a>
               <ul class="sub_menu">
                 <li><a href="">탄소중립 로드맵</a></li>
                 <li><a href="">지속가능 전략</a></li>
@@ -86,7 +86,7 @@
                 <li><a href="">사회공헌</a></li>
               </ul>
             </li>
-            <li id="main_list"><a href="">홍보센터</a>
+            <li class="main_list"><a href="">홍보센터</a>
               <ul class="sub_menu">
                 <li><a href="">뉴스센터</a></li>
                 <li><a href="">youtube</a></li>
@@ -150,24 +150,29 @@
       </div>
     </div>
     <!-- 퀵메뉴 -->
-    <div class="fixed-action-btn">
-      <a class="btn-floating btn-large  blue darken-4">
-        <i class="large material-icons">add</i>
-      </a>
-      <ul>
-        <li><a href="#" class="btn-floating  amber accent-4"><i class="material-icons">help</i></a>
-          <a href="#">제품문의</a>
+    <div class="quick-menu">
+      <div class="quick-menu-btn">
+        <span>+</span>
+      </div>
+      <ul class="quick-menu-list">
+        <li><a href="#"><i class="fa-solid fa-question"></i></a>
+          <a href="">제품문의</a>
         </li>
-        <li><a href="#" class="btn-floating  cyan accent-4"><i class="material-icons">person_add</i></a>
-          <a href="#">인재채용</a>
         </li>
-        <li><a href="#" class="btn-floating  light-green accent-4"><i class="material-icons">loop</i></a>
-          <a href="#">지속가능</a>
+        <li><a href="#"><i class="fa-solid fa-user-plus"></i></a>
+          <a href="">인재채용</a>
+        </li>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-rotate"></i></a>
+          <a href="">지속가능</a>
         </li>
       </ul>
     </div>
+
     <!-- TOP 버튼 -->
     <button id="top_btn"><i class="fa-solid fa-angles-up"></i></button>
+    <!-- progress bar -->
+    <div id="progress_bar"></div>
   </header>
   <!--//Header 나승일-->
 
@@ -195,7 +200,7 @@
       <!-- section 01 -->
       <section class="section1">
         <div class="sec1_wrapper">
-          <div class="sec1_wrap swiper">
+          <div class="sec1_wrap sec1_swiper">
             <div class="sec1_title">
               <h3 class="sec_pc">현대제철은 ‘철 그 이상의 가치창조’를 목표로<br>
                 고객의 기대를 넘어서는 차별화된 제품 개발에 주력하고 있습니다.</h3>
@@ -251,48 +256,88 @@
           </div>
 
           <div class="sec2_desc">
-            <ul class="sec2_productlist01">
-              <li class="sec2_list_plate">
-                <h4>후판</h4>
-                <p>두께 6mm이상의 두꺼운 강판으로 반제품 슬래브에 후속공정을 거쳐 제작됩니다.</p>
-              </li>
-              <li class="sec2_list_hot">
-                <h4>열연</h4>
-                <p>열연은 반제품인 슬래브를 가열해 압연 후
-                  코일 형태로 감은 열연 강판입니다.</p>
-              </li>
-              <li class="sec2_list_cold">
-                <h4>냉연</h4>
-                <p>열연을 상온에서 압연한 강판으로 까다로운 생산과정탓에 ’철강제품의 꽃’이라 불립니다.</p>
-              </li>
-              <li class="sec2_list_car">
-                <h4>자동차 경량화 부품</h4>
-                <p>자동차의 연비를 개선하고 동시에 안전향상까지 가능한 첨단 제품입니다.</p>
-              </li>
-            </ul>
-            <ul class="sec2_productlist02">
-              <li class="sec2_list_steel">
-                <h4>철근</h4>
-                <p>축 방향의 돌기와 횡 방향으로 일정한 마디가
-                  콘크리트 부착력을 더욱 높인 제품입니다.</p>
-              </li>
-              <li class="sec2_list01_hbeam">
-                <h4>형강</h4>
-                <p>단면의 형태가 일정하도록 압연해 만든
-                  제품으로 건축물에 핵심으로 사용됩니다.</p>
-              </li>
-              <li class="sec2_list01_speacial">
-                <h4>특수강</h4>
-                <p>크랭크샤프트, 콘로드 및 각종 기어류 등
-                  핵심 부품에 사용되는 특수강입니다.</p>
-              </li>
-              <li class="sec2_list01_caterpillar">
-                <h4>중기계</h4>
-                <p>무한궤도는 굴삭기 바닥 접지력을 높여주며
-                  굴삭기 성능을 결정짓는 중요 부품입니다.</p>
-              </li>
-            </ul>
-            <p></p>
+            <div class="sec2_list01 sec2_swiper01">
+              <ul class="sec2_productlist01 swiper-wrapper">
+                <li class="sec2_list_plate swiper-slide">
+                  <h4>후판</h4>
+                  <p>두께 6mm이상의 두꺼운 강판으로 반제품 슬래브에 후속공정을 거쳐 제작됩니다.</p>
+                </li>
+                <li class="sec2_list_hot swiper-slide">
+                  <h4>열연</h4>
+                  <p>열연은 반제품인 슬래브를 가열해 압연 후
+                    코일 형태로 감은 열연 강판입니다.</p>
+                </li>
+                <li class="sec2_list_cold swiper-slide">
+                  <h4>냉연</h4>
+                  <p>열연을 상온에서 압연한 강판으로 까다로운 생산과정탓에 ’철강제품의 꽃’이라 불립니다.</p>
+                </li>
+                <li class="sec2_list_car swiper-slide">
+                  <h4>자동차 경량화 부품</h4>
+                  <p>자동차의 연비를 개선하고 동시에 안전향상까지 가능한 첨단 제품입니다.</p>
+                </li>
+                <li class="sec2_list_steel swiper-slide">
+                  <h4>철근</h4>
+                  <p>축 방향의 돌기와 횡 방향으로 일정한 마디가
+                    콘크리트 부착력을 더욱 높인 제품입니다.</p>
+                </li>
+                <li class="sec2_list_hbeam swiper-slide">
+                  <h4>형강</h4>
+                  <p>단면의 형태가 일정하도록 압연해 만든
+                    제품으로 건축물에 핵심으로 사용됩니다.</p>
+                </li>
+                <li class="sec2_list_speacial swiper-slide">
+                  <h4>특수강</h4>
+                  <p>크랭크샤프트, 콘로드 및 각종 기어류 등
+                    핵심 부품에 사용되는 특수강입니다.</p>
+                </li>
+                <li class="sec2_list_caterpillar swiper-slide">
+                  <h4>중기계</h4>
+                  <p>무한궤도는 굴삭기 바닥 접지력을 높여주며
+                    굴삭기 성능을 결정짓는 중요 부품입니다.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="sec2_list02 sec2_swiper02">
+              <ul class="sec2_productlist02 swiper-wrapper">
+                <li class="sec2_list_steel swiper-slide">
+                  <h4>철근</h4>
+                  <p>축 방향의 돌기와 횡 방향으로 일정한 마디가
+                    콘크리트 부착력을 더욱 높인 제품입니다.</p>
+                </li>
+                <li class="sec2_list_hbeam swiper-slide">
+                  <h4>형강</h4>
+                  <p>단면의 형태가 일정하도록 압연해 만든
+                    제품으로 건축물에 핵심으로 사용됩니다.</p>
+                </li>
+                <li class="sec2_list_speacial swiper-slide">
+                  <h4>특수강</h4>
+                  <p>크랭크샤프트, 콘로드 및 각종 기어류 등
+                    핵심 부품에 사용되는 특수강입니다.</p>
+                </li>
+                <li class="sec2_list_caterpillar swiper-slide">
+                  <h4>중기계</h4>
+                  <p>무한궤도는 굴삭기 바닥 접지력을 높여주며
+                    굴삭기 성능을 결정짓는 중요 부품입니다.</p>
+                </li>
+                <li class="sec2_list_plate swiper-slide">
+                  <h4>후판</h4>
+                  <p>두께 6mm이상의 두꺼운 강판으로 반제품 슬래브에 후속공정을 거쳐 제작됩니다.</p>
+                </li>
+                <li class="sec2_list_hot swiper-slide">
+                  <h4>열연</h4>
+                  <p>열연은 반제품인 슬래브를 가열해 압연 후
+                    코일 형태로 감은 열연 강판입니다.</p>
+                </li>
+                <li class="sec2_list_cold swiper-slide">
+                  <h4>냉연</h4>
+                  <p>열연을 상온에서 압연한 강판으로 까다로운 생산과정탓에 ’철강제품의 꽃’이라 불립니다.</p>
+                </li>
+                <li class="sec2_list_car swiper-slide">
+                  <h4>자동차 경량화 부품</h4>
+                  <p>자동차의 연비를 개선하고 동시에 안전향상까지 가능한 첨단 제품입니다.</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
