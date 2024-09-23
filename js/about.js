@@ -19,21 +19,32 @@ tabMenu.click(function(e){
 /*// tab_menu2*/  
 
 /*winwin */
- let lastScrollTop = 0; // 마지막 스크롤 위치
+let lastScrollTop = 0; // 마지막 스크롤 위치
 
-        window.addEventListener('scroll', function() {
-            const h2 = document.querySelector('.winwin h2');
-            const h2Position = h2.getBoundingClientRect().top;
+window.addEventListener('scroll', function() {
+    const h2 = document.querySelector('.winwin h2');
+    const box1 = document.querySelector('.box1');
+    const boxContainer = document.querySelector('.boxcontainer');
+    const h2Position = h2.getBoundingClientRect().top;
+    const boxPosition = boxContainer.getBoundingClientRect().top;
 
-            // 스크롤을 내릴 때 h2가 뷰포트 상단에 도달했을 때
-            if (window.scrollY > lastScrollTop && h2Position <= window.innerHeight) {
-                h2.classList.add('active');
-            } else if (window.scrollY < lastScrollTop) {
-                h2.classList.remove('active');
-            }
+    // 스크롤을 내릴 때 h2와 boxContainer가 뷰포트 상단에 도달했을 때
+    if (window.scrollY > lastScrollTop) {
+        if (h2Position <= window.innerHeight) {
+            h2.classList.add('active');
+        }
+        if (boxPosition <= window.innerHeight) {
+            box1.classList.add('active');
+            boxContainer.classList.add('active');
+        }
+    } else if (window.scrollY < lastScrollTop) {
+        h2.classList.remove('active');
+        box1.classList.remove('active');
+        boxContainer.classList.remove('active');
+    }
 
-            lastScrollTop = window.scrollY; // 현재 스크롤 위치 업데이트
-        });
+    lastScrollTop = window.scrollY;
+});
 /*winwin /////////////////////////////////////////////*/
 
 /*연혁 슬라이드 */
