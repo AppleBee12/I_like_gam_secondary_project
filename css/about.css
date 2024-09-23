@@ -181,7 +181,7 @@ header .logo a{
   opacity: 0; 
   transition: opacity 0.5s; 
   }
-.tab-menu a:hover::after {
+.tab-menu a:hover::after{
   content: ""; 
   display: block; 
   height: 2px; 
@@ -372,14 +372,22 @@ header .logo a{
   font-weight: 400;
   }
 
-.fc_box:hover .box1, .fc_box:hover .boxcontainer, .fc_box:hover img{
+.fc_box:hover .box1, .fc_box:hover .boxcontainer, .fc_box:hover img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
   animation: slide-in-left  1s forwards;  
   }
+.vision > p{
+  animation: slide-in-left  1s forwards;  
+}
   
 .fc-img {
   margin: 0; 
   padding: 0;   
+  }
+  .vision > p{
+  padding: 32px 0 0 0;
+  font-family: var(--pc_sub_title);
+  font-weight: 800;
   }
   
 
@@ -483,79 +491,51 @@ header .logo a{
 
 
 
+/*태블릿 반응형*/
 
 
 
+@media screen and (max-width: 992px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1035px){
-	.main_menu{
-		font-size: var(--pc_sub_body);
-		gap:30px;
-	}
-	.top_nav .nav_container{
-		gap: 30px;
-	}
-	.main_menu .sub_menu{
-		font-size: var(--mo_sub_body);
-	}
 }
 
-@media screen and (max-width: 1035px){
-  .tab_menu{
-    height: 80px;
-  }
-  .tab_menu ul{
-    font-size: var(--mo_body);
-  }
-  .tab_menu ul li:nth-child(4):after{
-    height: 3px;
-  }
+
+
+/*태블릿 반응형//////////////////////////*/
+
+
+
+
+
+
+
+
+/*모바일반응형*/
+
+
+
+
+@media screen and (max-width: 700px) {
+
 }
 
-@media screen and (max-width: 768px) {
-  header .logo a {
-    width: 78px;
-    height: 21px;
-    background: url(../images/about/header_icon_tb.svg) no-repeat; 
-  }
-}
 
-@media screen and (max-width: 680px){
-  .tab_menu ul{
-    gap: 50px;
-  }
-}
-@media screen and (max-width: 375px){
-  .tab_menu ul{
-    gap: 10px;
-    font-size: var(--mo_sub_body);
-  }
-}
+
+
+
+
+
+
+/*모바일반응형/////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
 
