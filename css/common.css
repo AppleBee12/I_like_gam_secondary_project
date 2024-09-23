@@ -321,7 +321,17 @@ header .logo a {
   background-color: #fff;
   top: 210px;
 }
-
+/* progress_bar */
+#progress_bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background-color: var(--primary);
+  width: 0%;
+  z-index: 9999;
+}
+/* //progress_bar */
 
 /* top 버튼 */
 #top_btn {

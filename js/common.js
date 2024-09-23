@@ -125,3 +125,11 @@ $(window).on('scroll', function () {
 });
 
 //subpage-상단 BG 텍스트 parallax효과 추가 홍수진 끝
+
+
+$(window).scroll(function(){
+  winScroll = $(this).scrollTop();
+  height = $(document).height() - $(window).height();
+  scrolled = (winScroll / height) * 100;
+  $('#progress_bar').css('width', scrolled + '%');
+})
