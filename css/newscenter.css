@@ -388,7 +388,7 @@ section {
       height: 360px;
     }
 
-    .swiper-tab:hover .tab_title>* {
+    .swiper-tab:hover .tab_title>p {
       color: #000;
       transition: 0.3s;
     }
