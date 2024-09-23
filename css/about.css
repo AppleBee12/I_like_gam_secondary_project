@@ -291,7 +291,16 @@ header .logo a{
   color: var(--secondary);
   position: relative; /* 상대 위치 설정 */
   }
-  
+  .item {
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+    padding-top: 75px;
+    /* background: #ccc; */
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+  }
 
   
  
@@ -317,100 +326,92 @@ header .logo a{
   line-height: 42px;
   font-size: 30px;
   }
-.fc{
+
+.fc {
   display: flex;
   flex-direction: column;
   gap: 50px;
   margin-bottom: 84px;
   }
-.fc_box{ 
-  display: flex;
-  justify-content: space-between;
-  transition: box-shadow 0.3s ease; 
-  }
   
- 
-.fc img{
-  z-index: 3;
+  /* fc_box의 이미지와 컨테이너 간 정렬 */
+  .fc_box { 
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    transition: box-shadow 0.3s ease;
+  } 
+  .fc_box img {
+    z-index: 3;
+    max-width: 100%;
+    height: auto;
+  }  
+  .boxcontainer {
+    position: relative; 
+    width: 100%;
+    display: flex; 
+    justify-content: flex-end;
+    left: 0;
+  }   
+  .box {
+    position: absolute;     
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    font-size: 24px;
+    transition: box-shadow 0.3s ease;
   }
- .boxcontainer {
-  position: relative; 
-  width: 100%;     
-  left: 0;
+  .box1 {
+    background-color: var(--primary);
+    z-index: 1;
+    width: 990px;
+    height: 244px;
+    right: -25px;
   }
-.box {
-  position: absolute;     
-  height: 273px;
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  color: white; 
-  font-size: 24px;    
+  .box2 {
+    background-color: #E9ECEF;
+    top: 25px;
+    height: 250px;
+    left: -10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 5px;
+    color: #000;
+    text-align: center;
+    font-family: var(--pc_sub_title);
+    padding: 0 30px;
+  } 
+  .box2 p {
+    font-family: var(--pc_sub_body);
+    margin: 10px 0;
+  }  
+  .box2 p:first-child {
+    font-family: var(--pc_sub_title);
+    font-weight: 700;
+  }  
+  .box2 p:last-child {
+    font-family: var(--pc_sub_title);
+    font-weight: 400;
+  }  
+  .fc_box .box1, .fc_box .boxcontainer, .fc_box img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }   
+  .vision > p {
+    padding: 32px 0 0 0;
+    font-family: var(--pc_sub_title);
+    font-weight: 800;
+    position: absolute;
+    left: 20%;
+    margin-top: 2.5%;
+    transform: translateY(-25%);
+    color: black;
   }
-.box1 {
-  background-color: var(--primary); /* 박스 1 색상 */
-  z-index: 1; /* 겹침 순서 설정 */
-  width: 990px;
-  height: 244px;
-  right:-25px
-  }
-
-.box2 {
-  background-color: #E9ECEF; /* 박스 2 색상 */
-  top: 25px; /* 박스 2의 위쪽 위치 조정 */
-  height: 250px;
-  left: -10px;
-  z-index: 2; /* 겹침 순서 설정 */
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  box-shadow: 5px;
-  color: #000;
-  text-align: center;
-  font-family: var(--pc_sub_title);
-  padding: 0 30px;
-  }
-.box2 p{
-  font-family: var(--pc_sub_body);
-  margin: 10px 0;
-  }
-.box2 p:first-child{
-  font-family: var(--pc_sub_title);
-  font-weight: 700;
-  }
-.box2 p:last-child{
-  font-family: var(--pc_sub_title);
-  font-weight: 400;
-  }
-
-.fc_box:hover .box1, .fc_box:hover .boxcontainer, .fc_box:hover img {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
-  animation: slide-in-left  1s forwards;  
-  }
-.vision > p{
-  animation: slide-in-left  1s forwards;  
-}
-  
-.fc-img {
-  margin: 0; 
-  padding: 0;   
-  }
-  .vision{
-    position: relative;
-  }
-  .vision > p{
-  padding: 32px 0 0 0;
-  font-family: var(--pc_sub_title);
-  font-weight: 800;
-  position: absolute;
-  right: calc(100% - 250px);
-  top: calc(100% - 15px);
-  transform: translateY(-25%);  
-  }
-  
 
  /* underline  */
- .hvr-underline-from-center {
+.hvr-underline-from-center {
   display: inline-block;
   vertical-align: middle;
   /* -webkit-transform: perspective(1px) translateZ(0); */
