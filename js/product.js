@@ -52,38 +52,52 @@ const primarySwiper = new Swiper('.sec1_swiper', {
 //section02 swiper
 
 const secondarySwiper = new Swiper('.sec2_swiper01', {
-    // Optional parameters
     direction: 'vertical',
     slidesPerView: 3,
     spaceBetween: 30,
-    speed: 1000, 
+    speed: 4000, 
     loop: true,
     autoplay: {
-        delay: 3500,
+        delay: 1000,
         disableOnInteraction: false,
-        pauseOnMouseEnter: true,
+        pauseOnMouseEnter: false,
       },
 
 });
+
+
+
+$('.sec2_swiper01').hover(function(){
+  console.log('hover');
+  secondarySwiper.pause(); 
+}, function(){
+  secondarySwiper.resume();
+  
+});
+
 
 const tertiarySwiper = new Swiper('.sec2_swiper02', {
-    // Optional parameters
     direction: 'vertical',
     slidesPerView: 3,
     spaceBetween: 30,
-    speed: 1000, 
+    speed: 4000, 
     loop: true,
-    // reverseDirection: true,
+    
     autoplay: {
-        delay: 4000,
+        reverseDirection: true,
+        delay: 0,
         disableOnInteraction: false,
-        pauseOnMouseEnter: true,
+        pauseOnMouseEnter: false,
       },
 
 });
 
-
-
+$('.sec2_swiper02 .swiper-slide').hover(function(){
+  tertiarySwiper.autoplay.stop(); 
+}, function(){
+  tertiarySwiper.autoplay.start();
+  
+});
 
 
 
