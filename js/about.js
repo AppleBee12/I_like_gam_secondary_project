@@ -1,3 +1,7 @@
+
+
+
+
 /* tab_menu2*/
 const tabMenu = $('.tab-menu a');
 const tabContents = $('#tab-content > div');
@@ -17,6 +21,10 @@ tabMenu.click(function(e){
 });
 
 /*// tab_menu2*/  
+
+
+
+
 
 /*winwin */
 let lastScrollTop = 0; // 마지막 스크롤 위치
@@ -60,3 +68,8 @@ let swiper = new Swiper(".mySwiper", {
 });
 
 /*연혁 슬라이드/////////////////////////////////////////////////*/
+
+
+AOS.init({
+  duration: 1200,
+})
