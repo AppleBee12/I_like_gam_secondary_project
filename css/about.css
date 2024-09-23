@@ -384,10 +384,17 @@ header .logo a{
   margin: 0; 
   padding: 0;   
   }
+  .vision{
+    position: relative;
+  }
   .vision > p{
   padding: 32px 0 0 0;
   font-family: var(--pc_sub_title);
   font-weight: 800;
+  position: absolute;
+  right: calc(100% - 250px);
+  top: calc(100% - 15px);
+  transform: translateY(-25%);  
   }
   
 
