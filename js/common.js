@@ -5,7 +5,7 @@ toggleBtn = $('.hamburger_button');
 topNav.addEventListener('mouseenter', () => {
 if (window.innerWidth > 768) {
   topNav.style.backgroundColor = 'white';
-  topNav.style.borderBottom = '1px solid black';
+  topNav.style.borderBottom = '1px solid white';
   topNav.style.height = '420px';
 }
 
@@ -32,33 +32,36 @@ topNav.addEventListener('mouseleave', () => {
    topNav.style.height = '87px';
  }
 });
+topNav.addEventListener('mouseleave', () => {
+  if (topNav.classList.contains('bbb')) {
+    topNav.style.borderBottom = '1px solid black';
+  }
+ });
 
 
 
-toggleBtn.click(function(){
+toggleBtn.click(function(e){
+  e.preventDefault();
   toggleBtn.toggleClass('toggle');
   $('.tb_container').toggleClass('visible');
+  toggleBtn.toggleClass('visible');
 })
-//퀵메뉴
-$('.fixed-action-btn').floatingActionButton({
-  hoverEnabled: false,
-});
+  // 퀵메뉴 버튼 클릭 이벤트
+  $('.quick-menu-btn').click(function() {
+    $('.quick-menu-list').slideToggle(300); // 메뉴 슬라이드 토글
+    $('.quick-menu-list a+a').toggleClass('active')
+    $('.quick-menu-btn').toggleClass('active')
+  });
 
-$('.fixed-action-btn>a').click(function(){
-if($(this).find('i').text() === 'add'){
-  $(this).find('i').text('close') 
-}else{
-  $(this).find('i').text('add') 
-}
-})
+
 
  // 모든 li 요소를 가져옴
-  const navItems = document.querySelectorAll('.tb_nav ul > li > a');
+  const navItems = document.querySelectorAll('.tb_nav ul > li > p');
 
   navItems.forEach(function(navItem) {
     navItem.addEventListener('click', function(e) {
       e.preventDefault(); // 기본 링크 클릭 동작 방지
-
+      
       // 클릭한 요소의 부모(li)의 자식 ul(tb_list)를 찾음
       const subMenu = this.nextElementSibling;
 
@@ -76,6 +79,21 @@ if($(this).find('i').text() === 'add'){
     });
   });
 
+
+  spanPlus= $('.tb_nav ul > li > p');
+
+  spanPlus.each(function(){
+      spanPlus.click(function(){
+      if(!$(this).hasClass('open')){
+        spanPlus.removeClass('open')
+        $(this).addClass('open')        
+      }else{
+        $(this).removeClass('open')
+      }
+    })    
+  })
+ 
+
   // top 버튼
   topBtn = $('#top_btn');
   $(window).scroll(function () {
@@ -90,3 +108,16 @@ if($(this).find('i').text() === 'add'){
   })
 
 
+
+
+//subpage-상단 BG 텍스트 parallax효과 추가 홍수진
+
+$(window).on('scroll', function () {
+  let value = $(window).scrollTop();
+
+  $('.sub_prx_txt').each(function () {
+    $(this).css('margin-top', value * 1.5 + 'px');
+  });
+});
+
+//subpage-상단 BG 텍스트 parallax효과 추가 홍수진 끝

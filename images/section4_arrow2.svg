@@ -1,0 +1,15 @@
+<svg width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow">
+<g id="arrow-line">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M139.043 31.058L139.061 30.1894C139.252 20.8025 131.798 13.3481 122.411 13.5394L121.662 13.5547L36.538 98.679C30.565 104.652 29.6365 113.375 34.4603 118.199C39.2841 123.022 48.007 122.094 53.98 116.121L139.043 31.058Z" fill="white"/>
+</g>
+<g id="arrow-lefttop" clip-path="url(#clip0_1_30)">
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M138.826 1.46034C145.65 1.44884 151.183 6.98121 151.171 13.806L151.226 13.8059L151.079 101.163C151.067 107.988 145.516 113.539 138.691 113.55C132.334 113.561 127.098 108.762 126.42 102.588L126.42 26.21H49.604C43.6436 25.3374 39.0707 20.2005 39.0812 13.995C39.0927 7.17024 44.6438 1.61918 51.4685 1.60767L138.826 1.46034Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_30">
+<rect width="148" height="198" fill="white" transform="translate(104.007 -56) rotate(45)"/>
+</clipPath>
+</defs>
+</svg>
