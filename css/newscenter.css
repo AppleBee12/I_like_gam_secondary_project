@@ -399,41 +399,53 @@ section {
       transition: 0.3s;
     }
 
-    .tab_title>* {
-      padding: 40px;
-      position: absolute;
-      text-align: left;
-    }
-
-    p {
-      top: 0;
-      color: #fff;
-      font-size: var(--pc_sub_title);
-      vertical-align: top;
-      font-family: 'hdharmony';
-      font-weight: 300;
-      line-height: 32px;
-    }
-
-    em {
-      bottom: 0;
-      color: #acacac;
-    }
-
-    em:before {
-      display: block;
-      margin-bottom: 14px;
-      width: 35px;
-      height: 2px;
-      background: #acacac;
-      content: "";
-    }
   }
 }
 
-/* .swiper-tab-wrapper:hover{
-  display: none;
-} */
+.tab_title {
+  padding: 40px;
+  position: absolute;
+  text-align: left;
+  margin-top: 0;
+  padding: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+}
+
+.tab_title p {
+  top: 0;
+  color: #fff;
+  font-size: var(--pc_sub_title);
+  vertical-align: top;
+  font-family: 'hdharmony';
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.tab_title span {
+  display: block;
+}
+
+.tab_title em {
+  color: #acacac;
+  position: absolute;
+  display: block;
+  bottom: 40px;
+  left: 40px;
+  font-size: 17px;
+}
+
+.tab_title em:before {
+  display: block;
+  margin-bottom: 14px;
+  width: 35px;
+  height: 2px;
+  background: #acacac;
+  content: "";
+}
 
 .btn-set2 {
   display: none;
@@ -768,12 +780,68 @@ section {
     height: 21px;
     background: url(../images/header_icon_tb.svg) no-repeat;
   }
-  .tab-wrapper{
+
+  .tab-wrapper {
     display: block !important;
+    border-radius: 10px;
   }
-  .swiper-content{
+
+  .tab-wrapper p {
+    color: #000;
+    font-size: var(--mo_sub_title);
+  }
+
+  .tab_title span {
+    display: inline-block;
+  }
+
+  .swiper-content {
     display: block !important;
+    margin-top: 50px;
   }
+  .swiper-tab{
+    height: 300px;
+  }
+
+  button.slick-prev,
+  button.slick-next {
+    display: none !important;
+  }
+
+  .tab-header.swiper-wrapper {
+    display: none !important;
+  }
+
+  .img-cover,
+  .swiper-tab {
+    border-radius: 20px;
+  }
+
+  .tab_title em {
+    color: var(--tertiary);
+  }
+
+  .tab_title em:before {
+    background: var(--lightgray);
+    width: 430%;
+    height: 1px;
+  }
+
+  .tab_title {
+    width: 100%;
+    height: 50%;
+    margin-top: 37.9% !important;
+    background: #ffffff;
+    border: 1px solid var(--lightgray);
+    border-radius: 0 0 20px 20px;
+  }
+
+
+
+  /*   
+  em::before {
+    width: 1000px;
+  } */
 }
 
 
