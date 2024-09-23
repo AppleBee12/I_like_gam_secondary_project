@@ -43,7 +43,7 @@ header .logo a{
   position: sticky;
   top: 0;
   background-color: rgba(255,255,255,.5);
-  z-index: 9999;
+  z-index: 997;
 }
 .tab_menu ul{
   display: flex;
