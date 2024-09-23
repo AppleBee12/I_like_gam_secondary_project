@@ -70,7 +70,6 @@ body {
 /* header */
 header {
 	width: 100%;
-	height: 100vh;
 	position: relative;
 }
 
@@ -785,6 +784,7 @@ footer .logo a {
 
 footer .ft-1 ul li a {
 	color: #fff;
+	font-size: 18px;
 }
 
 footer h3 {
@@ -933,7 +933,7 @@ button:focus {
 /* //PC footer///////////////////////////////////////////////////////// */
 
 /*태블릿반응형*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 	footer {
 		padding: 30px 0;
 		font-size: var(--mo_sub_body);
@@ -945,12 +945,13 @@ button:focus {
 
 	address {
 		margin-bottom: 0;
+		width: 250px;
 	}
 
 	footer .logo a {
 		width: 207px;
 		height: 60px;
-		margin-top: 80px;
+		margin-top: 25px;
 		background: url(../images/footer/mobilelogo.svg) no-repeat;
 		display: block;
 		text-indent: -9999em;
@@ -979,7 +980,7 @@ button:focus {
 		display: flex;
 		justify-content: space-between;
 		right: 12px;
-		width: 100%;
+		width: 97.5%;
 		font-size: var(--mo_sub_body);
 		position: absolute;
 		order: 2;
@@ -1015,7 +1016,7 @@ button:focus {
 /*/////////////////////////////////////////////태블릿반응형///////////////////*/
 
 /* 모바일반응형 */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 700px) {
 	footer {
 		font-size: var(--mo_sub_body);
 	}
@@ -1034,7 +1035,7 @@ button:focus {
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
-		margin-bottom: -33px;
+		margin-bottom: 20px;
 	}
 
 	.container .familysite button {
@@ -1048,6 +1049,10 @@ button:focus {
 		display: block;
 		box-sizing: border-box;
 	}
+	.footer_left address{
+		margin-top: 50px;
+		order: 2;
+	}
 
 
 
@@ -1055,7 +1060,7 @@ button:focus {
 	footer .logo a {
 		width: 151px;
 		height: 40px;
-		margin-top: 80px;
+		margin-top: 25px;
 		background: url(../images/footer/mobilelogo.svg) no-repeat;
 		display: block;
 		text-indent: -9999em;
@@ -1086,6 +1091,7 @@ button:focus {
 		display: flex !important;
 		flex-direction: column;
 		order: 2;
+		font-size: 18px;
 	}
 
 	/*  */
@@ -1103,14 +1109,13 @@ button:focus {
 		gap: 10px;
 		right: 0px;
 		padding: 0;
+		font-size: 18px;
 	}
 
-	address {
-		order: 2;
-	}
+	
 
 	.sns {
-		width: 80%;
+		width: 95%;
 		position: absolute;
 		bottom: 100px;
 		flex-direction: row;
