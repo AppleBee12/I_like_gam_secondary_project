@@ -50,9 +50,20 @@ $(function ($) {
 
   $(window).resize(function(){
     if($(window).width()<768){
-        $('.tab-wrapper').slick();
+        $('.tab-wrapper').slick({
+            slidesToShow: 1,        
+            slidesToScroll: 1,      
+            // autoplay: true,         
+            // autoplaySpeed: 4000,    
+            infinite: true 
+        });
     } else{
         $('.tab-wrapper').slick('unslick');            
     }
-})
+});
 $(window).trigger('resize');
+
+if ('ontouchstart' in window || navigator.maxTouchPoints) {
+    // 터치 장치인 경우 호버 관련 클래스를 제거하여 호버 기능 비활성화
+    $('.swiper-tab').off('mouseenter mouseleave');
+}
