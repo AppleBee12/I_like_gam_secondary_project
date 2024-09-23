@@ -379,20 +379,14 @@ section {
       height: 360px;
     }
 
-     /* .img-cover:hover {
-      background-color: #fff;
-      border: 3px solid var(--tertiary);
-      transition: 0.3s;
-    } */
-
-    .swiper-tab:hover .tab_title>* {
-      color: #000;
-      transition: 0.3s;
-    } 
-    .swiper-tab:hover .img-cover{
-      background-color: #fff;
-      border: 3px solid var(--tertiary);
-      transition: 0.3s;
+      .swiper-tab:hover .tab_title>* {
+        color: #000;
+        transition: 0.3s;
+      } 
+      .swiper-tab:hover .img-cover{
+        background-color: #fff;
+        border: 3px solid var(--tertiary);
+        transition: 0.3s;
     }
   
     .tab_title>* {
