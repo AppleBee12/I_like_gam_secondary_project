@@ -35,3 +35,17 @@ tabMenu.click(function(e){
             lastScrollTop = window.scrollY; // 현재 스크롤 위치 업데이트
         });
 /*winwin /////////////////////////////////////////////*/
+
+/*연혁 슬라이드 */
+let swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+/*연혁 슬라이드/////////////////////////////////////////////////*/

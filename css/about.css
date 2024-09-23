@@ -168,19 +168,19 @@ header .logo a{
  border-right: 1px solid;
  height: 60px; 
  padding-top: 15px;
-}
+  }
 .tab-menu li:last-child {  
   list-style:none;
  border:none;
-}
+  }
 .tab-menu a { 
   position: relative; 
   padding: 5px 0; 
-}
+  }
 .tab-menu a::after {
   opacity: 0; 
   transition: opacity 0.5s; 
-}
+  }
 .tab-menu a:hover::after {
   content: ""; 
   display: block; 
@@ -192,7 +192,7 @@ header .logo a{
   transform: translateX(50%);
   transition: opacity 0.5s; 
   opacity: 1;
-}
+  }
 .tab-menu li a{
   font-weight: 600;
   line-height:28px; 
@@ -215,25 +215,25 @@ header .logo a{
   display: flex;
   align-items: flex-start;
   margin-bottom:80px; 
-}
+  }
 #tab-content h2 {
   position: relative; /* 위치 조정할 수 있도록 설정 */
   margin-bottom: 82px; /* 이미지와의 간격 조정 */  
-}
+  }
 #tab-content img {
   margin-right: 20px; 
   height: auto;   
-}
+  }
 .gorotab img {
   max-width: 100%; 
   height: auto; 
   
-}
+  }
 .gorotab{
   display: flex;
   justify-content: space-between;
  
-}
+  }
 
 .gorotab-content {
   display: flex;
@@ -245,16 +245,16 @@ header .logo a{
 
 .gorotab-content p{
   line-height: 35px;
-}
+  }
 .highlight{
   color: var(--primary);
-}
+  }
 .bold{
   font-weight: 700;
-}
+  }
 .tertiary{
   color: var(--tertiary);
-}
+  } 
 /* section3 tab menu/////////////////////////////////////////*/
 
 
@@ -323,19 +323,19 @@ header .logo a{
   z-index: 3;
   }
  .boxcontainer {
-    position: relative; 
-    width: 100%;     
-    left: 0;
+  position: relative; 
+  width: 100%;     
+  left: 0;
   }
 .box {
-    position: absolute;     
-    height: 273px;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    color: white; 
-    font-size: 24px;    
-    }
+  position: absolute;     
+  height: 273px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  color: white; 
+  font-size: 24px;    
+  }
 .box1 {
   background-color: var(--primary); /* 박스 1 색상 */
   z-index: 1; /* 겹침 순서 설정 */
@@ -364,20 +364,18 @@ header .logo a{
   margin: 10px 0;
   }
 .box2 p:first-child{
-font-family: var(--pc_sub_title);
-font-weight: 700;
-}
+  font-family: var(--pc_sub_title);
+  font-weight: 700;
+  }
 .box2 p:last-child{
-font-family: var(--pc_sub_title);
-font-weight: 400;
-}
+  font-family: var(--pc_sub_title);
+  font-weight: 400;
+  }
 
-.fc_box:hover .box1, .fc_box:hover .boxcontainer, .fc_box:hover img
-{
+.fc_box:hover .box1, .fc_box:hover .boxcontainer, .fc_box:hover img{
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
-  animation: slide-in-left  1s forwards;
-  
-}
+  animation: slide-in-left  1s forwards;  
+  }
   
 .fc-img {
   margin: 0; 
@@ -417,10 +415,32 @@ font-weight: 400;
 
 
 
-/*section 4/////////////////////////////////*/
+/*section 5 연혁/////////////////////////////////*/
+.yh h2{
+  margin-bottom: 85px;
+}
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
 
 
 
