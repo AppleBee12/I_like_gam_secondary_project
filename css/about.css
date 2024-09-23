@@ -216,9 +216,25 @@ header .logo a{
 #tab-content {
   display: flex;
   align-items: flex-start;
-  margin-bottom:80px; 
-  animation: fade-in 1s forwards; 
+  margin-bottom:80px;  
   }
+  .gorotab{
+  display: flex;
+  justify-content: space-between;
+  transition: opacity 1s ease-in-out;
+  animation: fade-in 1s forwards;
+  opacity: 0;
+  }
+.gorotab.active {
+  opacity: 1; /* 탭 활성화 시 */
+}
+.gorotab img {
+  max-width: 100%; 
+  height: auto;   
+  transition: box-shadow 1s ease-in-out;  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+  }
+ 
 #tab-content h2 {
   position: relative; /* 위치 조정할 수 있도록 설정 */
   margin-bottom: 82px; /* 이미지와의 간격 조정 */  
@@ -227,16 +243,8 @@ header .logo a{
   margin-right: 20px; 
   height: auto;   
   }
-.gorotab img {
-  max-width: 100%; 
-  height: auto; 
-  
-  }
-.gorotab{
-  display: flex;
-  justify-content: space-between;
- 
-  }
+
+
 
 .gorotab-content {
   display: flex;
