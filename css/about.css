@@ -416,6 +416,7 @@ header .logo a{
 
 
 /*section 5 연혁/////////////////////////////////*/
+
 .yh h2{
   margin-bottom: 85px;
 }
@@ -452,7 +453,7 @@ header .logo a{
 
 
 
-/*section 5*/
+
 /*section 5/////////////////////////////*/
 
 
@@ -467,15 +468,7 @@ header .logo a{
 
 /*section6*/
 .section6{
-  background-image: url(/images/about/cjfrmdltkddmlrkclckdwh.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;  
-  height: 867px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-
+  padding:0 !important;
 }
 /*section6/////////////////////////////////////////////////////*/
 
