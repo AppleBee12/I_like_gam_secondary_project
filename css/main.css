@@ -382,7 +382,7 @@ header {
 }
 
 .section4 .sec4_arr .arrow-line {
-  display: none;
+  /* display: none; */
   transition-delay: 0.5s;
   transition: all 0.5s ease-in-out;
   transform: translate(-3rem, 3rem);

@@ -20,6 +20,7 @@
 }
 
 
+
 :root {
 	/* color */
 	--primary: #0A2972;
@@ -53,6 +54,9 @@
 
 body {
 	font-family: 'SUIT Variable', sans-serif;
+}
+body.visible{
+	overflow: hidden;
 }
 
 /* header */
@@ -450,6 +454,9 @@ header video {
 		flex-wrap: wrap;
 		padding: 0 40px;
 	}
+	.tb_nav>ul>li {
+		margin-bottom: 60px;
+	}
 
 	.tb_nav>ul>li>p {
 		font-size: var(--mo_sub_title);
@@ -457,8 +464,8 @@ header video {
 		padding: 6px 12px;
 	}
 
-	.tb_nav>ul>li {
-		margin-bottom: 60px;
+	.tb_nav>ul>li>p>span{
+		display: none;
 	}
 
 	.tb_nav ul li ul {
@@ -542,10 +549,10 @@ header video {
 		width: 200px;
 		display:inline-block;
 	}
-	.tb_nav>ul>li span{
+	.tb_nav>ul>li>p>span{
 		margin-left: 20px;
-		display: inline-block;	
-		transition: 0.1s;	
+		display: inline-block;
+		transition: 0.2s;
 	}
 
 	.tb_nav>ul>li>p.open{
@@ -1040,7 +1047,7 @@ button:focus {
 /*태블릿반응형*/
 @media screen and (max-width: 992px) {
 	footer {
-		padding: 30px 0;
+		padding: 40px 0;
 		font-size: var(--mo_sub_body);
 	}
 
@@ -1093,7 +1100,8 @@ button:focus {
 
 	.ft-1 ul:last-of-type {
 		color: #fff;
-		padding: 0 50px;
+		padding: 0 6px;
+		top:25px;
 	}
 
 	.sns {
@@ -1121,6 +1129,7 @@ button:focus {
 /*/////////////////////////////////////////////태블릿반응형///////////////////*/
 
 /* 모바일반응형 */
+
 @media screen and (max-width: 700px) {
 	footer {
 		font-size: var(--mo_sub_body);
