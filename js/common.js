@@ -134,3 +134,42 @@ $(window).scroll(function(){
   scrolled = (winScroll / height) * 100;
   $('#progress_bar').css('width', scrolled + '%');
 })
+
+
+
+$(document).ready(function() {
+  // 페이지 로드 시 쿠키 확인하고 모달 보이기/숨기기
+  if (getCookie('hideModal') !== 'true') {
+      $('#popupModal').fadeIn(); // 쿠키가 없으면 모달 표시
+  }
+
+  // "오늘 하루 안보기" 버튼 클릭 시
+  $('.cookie_btn').on('click', function() {
+      setCookie('hideModal', 'true', 1); // 1일 동안 쿠키 설정
+      $('#popupModal').fadeOut();
+  });
+
+  // "닫기" 버튼 클릭 시
+  $('.close_btn').on('click', function() {
+      $('#popupModal').fadeOut();
+  });
+
+  // 쿠키 설정 함수
+  function setCookie(name, value, days) {
+      let date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // 쿠키 유효기간 설정
+      let expires = "expires=" + date.toUTCString();
+      document.cookie = name + "=" + value + ";" + expires + ";path=/"; // 쿠키 저장
+  }
+
+  // 쿠키 가져오기 함수
+  function getCookie(name) {
+      let nameEQ = name + "=";
+      let ca = document.cookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+          let c = ca[i].trim();
+          if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+  }
+});
