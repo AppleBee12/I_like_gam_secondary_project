@@ -6,7 +6,7 @@ header {
 #controls {
   position: absolute;
   bottom: 23%;
-  left: 10%;
+  left: 11%;
   max-width: 1440px;
   height: 50px;
 }
@@ -77,7 +77,7 @@ header {
 
 }
 .glightbox_video .play{
-  fill: var(--primary);
+  fill: rgba(0, 0, 0, 0.7);
 }
 .glightbox_video:hover .play {
   fill: white;
