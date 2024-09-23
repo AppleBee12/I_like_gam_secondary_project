@@ -243,16 +243,45 @@ header .logo a {
   bottom: 18%;
 }
 
-
-
-
-
 /* section 01 끝*/
 
-
-
 /* section 02 */
+
+.section2{
+  background-image: url(../images/product/sec2_bg.jpg);
+  background-repeat: no-repeat;
+	background-color: rgba(10,41,114,.7);
+	background-size: cover;
+	background-position: left center;
+  background-blend-mode: multiply;
+  color: #fff;
+}
+.sec2_wrap{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sec2_title{
+  font-family: 'hdharmony';
+  font-weight: 500;
+  font-size: var(--mo_big);
+  line-height: 70px;
+  white-space : pre-line;
+  padding-top: 169px;
+  padding-bottom: 573px;
+
+}
+
+
 /* section 02끝 */
+
+
+/* section 03 */
+
+
+
+
+/* section 03끝 */
 
 /* 반응형 */
 
@@ -567,19 +596,27 @@ header .logo a {
   }
 
   /* section 01 끝*/
-
+  /* section 02 */
+  /* section 02 끝 */
 }
 
 /*xxl devices (1400px and up)*/
 @media screen and (min-width: 1400px) {
 
   /* section 01 */
-  .sec1_wrapper {
+  .sec1_wrapper{
     width: 1440px;
     padding: 10.5rem 3rem;
   }
-
   /* section 01 끝*/
+  
+  /* section 02 */
+  
+  .sec2_wrap{
+    width: 1440px;
+  }
+
+  /* section 02 끝 */
 
 }
 

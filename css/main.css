@@ -289,7 +289,7 @@ header {
     linear-gradient(rgba(18, 42, 114, 0.16) 10%, rgba(18, 42, 114, 0.8) 70%);
 }
 
-.section3 .sec3_cardtitle h2 {
+.section3 .sec3_cardtitle{
   font-size: 40px;
   font-family: 'hdharmony';
   font-weight: 500;
@@ -687,8 +687,9 @@ header {
     height: 280px;
 
     .sec3_cardtitle {
-      font-size: var(--mo_sub_title);
-      font-weight: 700;
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: 1px;
       transform: translateY(80px);
     }
 
@@ -836,8 +837,9 @@ header {
     height: 300px;
 
     .sec3_cardtitle {
-      font-size: var(--mo_sub_title);
+      font-size: 30px;
       font-weight: 700;
+      letter-spacing: 1px;
     }
 
     .sec3_carddesc {
