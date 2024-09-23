@@ -35,7 +35,7 @@ slides.mouseenter(function(){
 slides.mouseleave(function(){
   slideInterval = setInterval(slideMove, 15); // 슬라이드 재시작
 })
-
+slideMove();
 
 
 $(window).scroll(function(){
@@ -68,3 +68,10 @@ $(window).scroll(function(){
   }
 })
 
+
+$(window).scroll(function(){
+  winScroll = $(this).scrollTop();
+  height = $(document).height() - $(window).height();
+  scrolled = (winScroll / height) * 100;
+  $('#progress_bar').css('width', scrolled + '%');
+})
