@@ -476,7 +476,13 @@ section {
 .three{
   background: #ae3032;
 }
-
+.d-none {
+  display: none;
+}
+.search-wrapper{
+  width: 25%;
+  margin-left: 30%;
+}
 /* xs devices (less than 576px) */
 @media (max-width: 575.98px) {}
 
@@ -607,7 +613,10 @@ section {
       height: 29%;
     }
   }
-
+  .search-wrapper{
+    width: 25%;
+    margin-left: 17%;
+  }
 }
 
 /* xl devices (1200px and up) */
@@ -633,6 +642,7 @@ section {
       -webkit-box-orient: vertical;
     }
   }
+
 }
 
 @media (min-width: 1400px) and (max-width: 1600px) {
