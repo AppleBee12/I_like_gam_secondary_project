@@ -83,7 +83,6 @@ header .logo a {
 	background-color: transparent;
 	transition: 0.5s;
 	overflow: hidden;
-	z-index: 500;
 }
 
 .top_nav .nav_container {
@@ -239,9 +238,11 @@ header .logo a {
 	opacity: 0.5;
 	box-shadow: inset 1px 1px 2px 1px rgba(255,255,255),
 	inset -1px -1px 2px 1px rgba(255,255,255);
+	transition: 0.3s;
 }
 .quick-menu-btn:hover{
 	opacity:1;
+	transform: scale(1.1);
 }
 .quick-menu-btn.active{
 	opacity: 1;
@@ -262,6 +263,7 @@ header .logo a {
   right: 0;
 }
 
+
 .quick-menu-list li {
   margin-bottom: 30px;
   width: 50px;
@@ -281,7 +283,9 @@ header .logo a {
   color: white;
   text-decoration: none;
   border-radius:50% ;
+	transition: 0.3s;
 }
+
 .quick-menu-list li:nth-child(1) a{
   background-color: var(--yellow);
 }
@@ -332,38 +336,28 @@ header .logo a {
 	bottom: 20px;
 	right: 23px;
 	font-size: 20px;
-	z-index: 999;
+	z-index: 99;
 	opacity: .5;
 	display: none;
 	box-shadow: inset 1px 1px 2px 1px rgba(255,255,255),
 	inset -1px -1px 2px 1px rgba(255,255,255);
+	transition: 0.3s;
 }
 
 #top_btn:hover {
 	opacity: 1;
+	transform: scale(1.1);
 }
 
-
-
-
-
-/* 지우지 마세요 반응형 넘어갈때 잔상 없애기용 입니다 */
 .tb_container {
 	position: absolute;
-	top: 100%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	opacity: 0;
+	background-color: var(--primary); 
+	bottom: 100%;
+}
+.tb_nav {		
+	margin: 87px 0;
 }
 
-
-.tb_nav {
-  width: 100%; 
-  height: 100%; 
-  background-color: var(--primary); 
-	padding: 87px 0;
-}
 
 /* video */
 header video {
@@ -414,16 +408,15 @@ header video {
 		background: url(../images/header_icon_tb.svg) no-repeat;
 	}
 
-	 .tb_container {
-		position: absolute;
+	.tb_container.visible {
+		position: fixed;
 		top:0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		transition: 0.3s;
-		transition-timing-function: ease-out;
-		opacity: 0;
-	} 
+		z-index: 999;
+	}
+	
 	.tb_nav>ul>li{
 		color: #fff;
 		font-size: var(--mo_sub_title);
@@ -437,15 +430,6 @@ header video {
 	}
 
 
-	.tb_container.visible {
-		position: fixed;
-		top:0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		opacity: 1;
-		z-index: 999;
-	}
 	.hamburger_button {
 		display: block;
 	}
@@ -498,8 +482,7 @@ header video {
 		background-color: white;
 		width: 100vw;
 	}
-
-	.quick-menu-btn {
+	.quick-menu{
 		display: none;
 	}
 
@@ -512,11 +495,13 @@ header video {
 	}
 
 }
-@media   (max-width: 622px){
+@media   (max-width: 668px){
 	.tb_nav>ul{
 		gap:10%;
+		margin-left: 30px;
 	}
 }
+
 @media screen and (max-width: 576px){
 	
 	
@@ -894,6 +879,7 @@ footer .logo a {
 
 footer .ft-1 ul li a {
 	color: #fff;
+	font-size: 18px;
 }
 
 footer h3 {
@@ -1042,7 +1028,7 @@ button:focus {
 /* //PC footer///////////////////////////////////////////////////////// */
 
 /*태블릿반응형*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 	footer {
 		padding: 30px 0;
 		font-size: var(--mo_sub_body);
@@ -1054,12 +1040,13 @@ button:focus {
 
 	address {
 		margin-bottom: 0;
+		width: 250px;
 	}
 
 	footer .logo a {
 		width: 207px;
 		height: 60px;
-		margin-top: 80px;
+		margin-top: 25px;
 		background: url(../images/footer/mobilelogo.svg) no-repeat;
 		display: block;
 		text-indent: -9999em;
@@ -1088,7 +1075,7 @@ button:focus {
 		display: flex;
 		justify-content: space-between;
 		right: 12px;
-		width: 100%;
+		width: 97.5%;
 		font-size: var(--mo_sub_body);
 		position: absolute;
 		order: 2;
@@ -1124,7 +1111,7 @@ button:focus {
 /*/////////////////////////////////////////////태블릿반응형///////////////////*/
 
 /* 모바일반응형 */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 700px) {
 	footer {
 		font-size: var(--mo_sub_body);
 	}
@@ -1143,6 +1130,7 @@ button:focus {
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
+		margin-bottom: 20px;
 	}
 
 	.container .familysite button {
@@ -1156,6 +1144,10 @@ button:focus {
 		display: block;
 		box-sizing: border-box;
 	}
+	.footer_left address{
+		margin-top: 50px;
+		order: 2;
+	}
 
 
 
@@ -1163,7 +1155,7 @@ button:focus {
 	footer .logo a {
 		width: 151px;
 		height: 40px;
-		margin-top: 80px;
+		margin-top: 25px;
 		background: url(../images/footer/mobilelogo.svg) no-repeat;
 		display: block;
 		text-indent: -9999em;
@@ -1194,6 +1186,7 @@ button:focus {
 		display: flex !important;
 		flex-direction: column;
 		order: 2;
+		font-size: 18px;
 	}
 
 	/*  */
@@ -1211,14 +1204,13 @@ button:focus {
 		gap: 10px;
 		right: 0px;
 		padding: 0;
+		font-size: 18px;
 	}
 
-	address {
-		order: 2;
-	}
+	
 
 	.sns {
-		width: 80%;
+		width: 95%;
 		position: absolute;
 		bottom: 100px;
 		flex-direction: row;
