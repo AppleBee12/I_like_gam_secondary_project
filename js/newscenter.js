@@ -58,7 +58,7 @@ $(window).resize(function () {
             infinite: true
         });
     } else {
-        $('.tab-wrapper').slick('unslick');            
+        // $('.tab-wrapper').slick('unslick');            
     }
 });
 $(window).trigger('resize');
