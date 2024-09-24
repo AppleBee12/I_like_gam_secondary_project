@@ -31,10 +31,6 @@ main h5 {
 /* 공통 부분 끝 */
 
 /* header */
-header .logo a {
-  background: url(../images/header_icon2.svg) no-repeat;
-}
-
 .top_nav {
   background-color: #fff;
   border-bottom: 1px solid #000;
@@ -44,12 +40,12 @@ header .logo a {
   color: #000;
 }
 
-
-
 header {
   height: auto;
 }
-
+header .logo a{
+  background:url(../images/header_icon2.svg) no-repeat;
+}
 header div.top_nav {
   border-bottom: 1px solid #000;
   background-color: #fff;
@@ -59,11 +55,6 @@ header div.top_nav {
 .main_menu li a {
   color: #000;
 }
-
-header .logo a {
-  background: url(../images/header_icon2.svg) no-repeat;
-}
-
 
 
 .tab_menu {
@@ -603,6 +594,14 @@ bottom: 50px;
 
   /* section 03 */
 
+}
+@media (max-width: 767.98px){
+
+  header .logo a {
+    width: 78px;
+    height: 21px;
+    background: url(../images/header_icon_tb.svg) no-repeat;
+  }
 }
 
 /* sm devices (phones, 576px and up) */
