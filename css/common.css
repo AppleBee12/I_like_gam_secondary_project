@@ -126,6 +126,7 @@ header .logo a {
 	top: 0;
 	transition: 0.3s;
 }
+
 .hamburger_button.visible span{
 	background: #fff;
 }
