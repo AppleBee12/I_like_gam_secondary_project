@@ -74,19 +74,4 @@ AOS.init({
   duration: 1200,
 })
 
-/*푸터 모달*/
-// slideUp()
-// slideDown()
-// slideToggle()
 
-const dt = $('dt');
-const dd = $('dd');
-dt.click(function(){
-  if ($(window).width() <= 768) {
-    $(this).next().slideToggle();
-    $(this).next().sibling(dt).slideUp();
-  }
-});
-
-
-/*푸터 모달///////////////////////////////*/
