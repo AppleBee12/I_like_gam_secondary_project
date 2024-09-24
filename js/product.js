@@ -98,6 +98,7 @@ const quaternarySwiper = new Swiper('.sec3swiper', {
   pagination: {
     el: '.sec3_pager',
   },
+
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
@@ -110,41 +111,25 @@ const quaternarySwiper = new Swiper('.sec3swiper', {
     576: {
       slidesPerView: 1,
       spaceBetween: 10,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
+
 
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 10,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
+
 
     },
     992: {
       slidesPerView: 3,
       spaceBetween: 10,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
+
 
     },
     1200: {
       slidesPerView: 4,
       spaceBetween: 20,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
+
       
 
     },
