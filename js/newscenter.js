@@ -67,6 +67,10 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
     $('.swiper-tab').off('mouseenter mouseleave');
 }
 
+AOS.init({
+    duration: 2000
+});
+
 const searchInput = $('input[type="search"]');
 const tabList = $('.tab-wrapper');
 const tabListItem = $('.swiper-tab');
@@ -83,8 +87,6 @@ captions.each(function () {
         text: $(this).text()  // jQuery의 .text() 메서드를 사용하여 텍스트를 가져옴
     });
 });
-console.log(captionArr);
-
 
 searchInput.on('input', function () {
     let keywords = $(this).val();
@@ -92,7 +94,6 @@ searchInput.on('input', function () {
     tabListItem.addClass(dnone);
 
     let filteredArr = captionArr.filter(caption => caption.text.includes(keywords));
-    console.log(filteredArr);
 
     filteredArr.forEach(function (item) {
         $(tabListItem[item.id]).removeClass(dnone);
