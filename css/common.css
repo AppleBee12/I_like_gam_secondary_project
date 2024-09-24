@@ -1025,16 +1025,6 @@ dialog span {
   margin-bottom: 30px; 
   color:var(--silver);
 }
-.modal-body .tit{
-  font-family: 'hdharmony';
-  font-size: 35px;
-	font-style: bold;
-	font-weight: 700;  
-  padding: 0;
-  color: var(--primary);
-  font-weight: 700;
- 
-}
 .modal-content {
   width: 100%;
   max-width: 100%;
@@ -1042,6 +1032,19 @@ dialog span {
 }
 .modal-body dl {
   margin: 0; 
+}
+.tit{
+	font-family: 'hdharmony';
+  font-size: 35px;
+	color: var(--primary);
+  font-weight: 700;	
+	padding-left: 50px;
+}
+.modal-content button{
+	position: absolute;
+	margin-right: 20px;
+	font-size: 30px;
+
 }
 
 
