@@ -102,3 +102,13 @@ AOS.init({
 // );
 
 //section3 홍수진 fin
+
+$(window).resize(function(){
+  if($(window).width()<768){
+    $('.tab-wrapper').slick();
+  } else{
+    $('.tab-wrapper').slick('unslick');
+  }
+
+})
+$(window).trigger('resize');
