@@ -234,8 +234,6 @@ header .logo a{
 .circle2>span,
 .circle3>span,
 .circle4>span{
-  width: 120px;
-  height: 30px;
   background-color: #fff; 
   position: relative;
   top:0;
