@@ -70,19 +70,6 @@ AOS.init({
 
 
 
-  let currentIndex = 0;
-  const tabs = $(".tab");
-
-  function autoSwitchTab() {
-      currentIndex = (currentIndex + 1) % tabs.length;
-      switchTab(currentIndex);
-  }
-
-  // 초기화: 첫 번째 탭 활성화
-  switchTab(currentIndex);
-
-  // 일정 시간 간격으로 탭 자동 변경
-  setInterval(autoSwitchTab, 3000); // 3000ms = 3초
 
 
 //section3 홍수진
