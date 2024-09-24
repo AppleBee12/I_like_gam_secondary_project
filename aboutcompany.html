@@ -46,7 +46,7 @@
 <body>
   <!--Header 나승일-->
   <header>
-    <div class="top_nav">
+    <div class="top_nav white">
       <div class="nav_container">
         <h1 class="logo"><a href="index.html">hyundae</a></h1>
         <a href="#" class="hamburger_button">
@@ -103,87 +103,80 @@
         </div>
       </div>
     </div>   
-  </header>
-  <!-- //header -->
-  <div class="tab_menu">
-    <ul>
-      <li><a href="#">기업소개</a></li>
-      <li><a href="#">사업소개</a></li>
-      <li><a href="#">비전2025</a></li>
-      <li><a href="#">연혁</a></li>
-    </ul>
-  </div>
-
-  <!-- tablet -->
-  <div class="tb_container">
-    <div class="tb_nav">
+    <!-- tablet -->
+    <div class="tb_container">
+      <div class="tb_nav">
+        <ul>
+          <li><a href="aboutcompany.html">회사소개</a>
+            <ul class="tb_list">
+              <li><a href="aboutcompany.html">사업소개</a></li>
+              <li><a href="aboutcompany.html">사업창</a></li>
+              <li><a href="aboutcompany.html">CEO인사말</a></li>
+              <li><a href="aboutcompany.html">경영이념</a></li>
+              <li><a href="aboutcompany.html">연혁</a></li>
+              <li><a href="aboutcompany.html">R&D연구소</a></li>
+            </ul>
+          </li>
+          <li><a href="product.html">제품기술</a>
+            <ul class="tb_list">
+              <li><a href="product.html">제품목록</a></li>
+              <li><a href="product.html">종합카탈로그</a></li>
+              <li><a href="product.html">생산공정</a></li>
+            </ul>
+          </li>
+          <li><a href="#">투자정보</a>
+            <ul class="tb_list">
+              <li><a href="#">전자공고</a></li>
+              <li><a href="#">요약재무제표</a></li>
+              <li><a href="#">신용등급</a></li>
+              <li><a href="#">사업보고서</a></li>
+              <li><a href="#">경영정보</a></li>
+            </ul>
+          </li>
+          <li><a href="csr.html">지속가능경영</a>
+            <ul class="tb_list">
+              <li><a href="csr.html">탄소중립로드맵</a></li>
+              <li><a href="csr.html">지속가능전략</a></li>
+              <li><a href="csr.html">통합보고서</a></li>
+              <li><a href="csr.html">사회공헌</a></li>
+            </ul>
+          </li>
+          <li><a href="newscenter.html">홍보센터</a>
+            <ul class="tb_list">
+              <li><a href="newscenter.html">뉴스센터</a></li>
+              <li><a href="newscenter.html">youtube</a></li>
+              <li><a href="newscenter.html">소식지</a></li>
+              <li><a href="newscenter.html">스포츠단</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- 퀵메뉴 -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large  blue darken-4">
+        <i class="large material-icons">add</i>
+      </a>
       <ul>
-        <li><a href="aboutcompany.html">회사소개</a>
-          <ul class="tb_list">
-            <li><a href="aboutcompany.html">사업소개</a></li>
-            <li><a href="aboutcompany.html">사업창</a></li>
-            <li><a href="aboutcompany.html">CEO인사말</a></li>
-            <li><a href="aboutcompany.html">경영이념</a></li>
-            <li><a href="aboutcompany.html">연혁</a></li>
-            <li><a href="aboutcompany.html">R&D연구소</a></li>
-          </ul>
+        <li><a href="#" class="btn-floating  amber accent-4"><i class="material-icons">help</i></a>
+          <a href="#">제품문의</a>
         </li>
-        <li><a href="product.html">제품기술</a>
-          <ul class="tb_list">
-            <li><a href="product.html">제품목록</a></li>
-            <li><a href="product.html">종합카탈로그</a></li>
-            <li><a href="product.html">생산공정</a></li>
-          </ul>
+        <li><a href="#" class="btn-floating  cyan accent-4"><i class="material-icons">person_add</i></a>
+          <a href="#">인재채용</a>
         </li>
-        <li><a href="#">투자정보</a>
-          <ul class="tb_list">
-            <li><a href="#">전자공고</a></li>
-            <li><a href="#">요약재무제표</a></li>
-            <li><a href="#">신용등급</a></li>
-            <li><a href="#">사업보고서</a></li>
-            <li><a href="#">경영정보</a></li>
-          </ul>
-        </li>
-        <li><a href="csr.html">지속가능경영</a>
-          <ul class="tb_list">
-            <li><a href="csr.html">탄소중립로드맵</a></li>
-            <li><a href="csr.html">지속가능전략</a></li>
-            <li><a href="csr.html">통합보고서</a></li>
-            <li><a href="csr.html">사회공헌</a></li>
-          </ul>
-        </li>
-        <li><a href="newscenter.html">홍보센터</a>
-          <ul class="tb_list">
-            <li><a href="newscenter.html">뉴스센터</a></li>
-            <li><a href="newscenter.html">youtube</a></li>
-            <li><a href="newscenter.html">소식지</a></li>
-            <li><a href="newscenter.html">스포츠단</a></li>
-          </ul>
+        <li><a href="#" class="btn-floating  light-green accent-4"><i class="material-icons">loop</i></a>
+          <a href="#">지속가능</a>
         </li>
       </ul>
     </div>
-  </div>
+  
+    <!-- TOP 버튼 -->
+    <button id="top_btn"><i class="fa-solid fa-angles-up"></i></button>
+  </header>
+  <!-- //header -->
+  
 
-  <!-- 퀵메뉴 -->
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large  blue darken-4">
-      <i class="large material-icons">add</i>
-    </a>
-    <ul>
-      <li><a href="#" class="btn-floating  amber accent-4"><i class="material-icons">help</i></a>
-        <a href="#">제품문의</a>
-      </li>
-      <li><a href="#" class="btn-floating  cyan accent-4"><i class="material-icons">person_add</i></a>
-        <a href="#">인재채용</a>
-      </li>
-      <li><a href="#" class="btn-floating  light-green accent-4"><i class="material-icons">loop</i></a>
-        <a href="#">지속가능</a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- TOP 버튼 -->
-  <button id="top_btn"><i class="fa-solid fa-angles-up"></i></button>
 
 <main>
 <div id="main_container">
@@ -192,7 +185,14 @@
     <h2 class="sub_prx_txt">회사 소개</h2>
     <h4 class="sub_prx_txt">'철 그 이상의 가치 창조' 라는 비전을 갖고 더 큰 미래를 준비해 나갑니다.</h4>
   </div>
-  
+  <div class="tab_menu">
+    <ul>
+      <li><a href="#">기업소개</a></li>
+      <li><a href="#">사업소개</a></li>
+      <li><a href="#">비전2025</a></li>
+      <li><a href="#">연혁</a></li>
+    </ul>
+  </div>
   <!-- section 1 -->
   <section class="section1">
     <div class="str">

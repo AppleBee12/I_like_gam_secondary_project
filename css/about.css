@@ -27,8 +27,8 @@ video{
 h2{
   font-size: var(--pc_title);
 }
-header .logo a{
-  background:url(../images/about/header_icon2.svg) no-repeat;
+header .logo a {
+  background: url(../images/header_icon2.svg) no-repeat;
 }
 .top_nav{
   background-color: #fff;
@@ -358,7 +358,8 @@ header .logo a{
     background-color: #E9ECEF;
     top: 25px;
     height: 250px;
-    left: -10px;
+    right: 0;
+    left: 0;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -388,9 +389,8 @@ header .logo a{
     padding: 32px 0 0 0;
     font-family: var(--pc_sub_title);
     font-weight: 800;
-    position: absolute;
-    left: 20%;
-    margin-top: 2.5%;
+    text-align: left;
+    margin-left: 12.5%;
     transform: translateY(-25%);
     color: black;
   }
@@ -744,16 +744,17 @@ font-family: var(--mo_sub_title);
   font-family: var(--mo_sub_title);
   font-size: 20px;
   font-weight: 500;
-  position: absolute;
-  left: 20%;
+  text-align: left;
+  margin-left: 12.5%;
   transform: translateY(-25%);
   color: black;
 }
 .box2 {
-   background-color: #E9ECEF;
+  background-color: #E9ECEF;
   top: 25px;
   height: 150px;
-  left: 0px;
+  left: 0;
+  right: 0;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -784,7 +785,13 @@ font-family: var(--mo_sub_title);
 /*태블릿 반응형//////////////////////////*/
 
 
-
+@media screen and (max-width: 768px) {
+  header .logo a {
+    width: 78px;
+    height: 21px;
+    background: url(../images/header_icon_tb.svg) no-repeat; 
+  }
+}
 
 
 
@@ -986,8 +993,8 @@ font-family: var(--mo_sub_title);
   font-family: var(--mo_sub_title);
   font-size: 20px;
   font-weight: 500;
-  position: absolute;
-  left: 20%;
+  text-align: left;
+  margin-left: 12.5%;
   transform: translateY(-25%);
   color: black;
 }
