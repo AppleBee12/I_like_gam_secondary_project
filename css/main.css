@@ -88,7 +88,7 @@ header video {
 }
 .play_btn span {
 	background-color: #fff;
-	width: 70%;
+	width: 50%;
 	height: 2px;
 	position: absolute;
 
@@ -104,8 +104,8 @@ header video {
 }
 
 .play_btn span:nth-child(1) {
-	top: 43%;
-	left: 41%;
+	top: 46%;
+	left: 43%;
 
 	transform: rotate(30deg)translate(-50%, -50%);
 	-webkit-transform: rotate(30deg)translate(-50%, -50%);
@@ -123,8 +123,8 @@ header video {
 }
 
 .play_btn span:nth-child(2) {
-	top: 60%;
-	left: 11%;
+	top: 58%;
+	left: 22%;
 
 	transform: rotate(90deg)translate(-50%, -50%);
 	-webkit-transform: rotate(90deg)translate(-50%, -50%);
@@ -145,8 +145,8 @@ header video {
 }
 
 .play_btn span:nth-child(3) {
-	top: 79%;
-	left: 40%;
+	top: 70%;
+	left: 43%;
 
 	transform: rotate(-30deg)translate(-50%, -50%);
 	-webkit-transform: rotate(-30deg)translate(-50%, -50%);
@@ -595,6 +595,9 @@ header video {
 @media (max-width: 575.98px) {
 
   /*section2 조채림*/
+  header{
+    height: 44vh;
+  }
   .explain>* {
     display: none;
   }
@@ -639,7 +642,7 @@ header video {
   }
 
   .she_pic img {
-    height: 340px;
+    height: 240px;
     display: none;
   }
 
@@ -740,6 +743,9 @@ header video {
 @media (min-width: 576px) and (max-width: 767.98px) {
 
   /*section2 조채림*/
+  header{
+    height: 44vh;
+  }
   .explain>* {
     display: none;
   }
@@ -888,6 +894,9 @@ header video {
 @media (min-width: 768px) and (max-width: 991.98px) {
 
   /*section2 조채림*/
+  header{
+    height: 56vh;
+  }
   .explain>* {
     display: none;
   }
