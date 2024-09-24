@@ -800,6 +800,16 @@ font-family: var(--mo_sub_title);
     height: 21px;
     background: url(../images/header_icon_tb.svg) no-repeat; 
   }
+  #popup .modal-body{
+      flex-direction: column;  
+    }
+  #popup .modal-body dl dd{
+      /* display: none; */
+    }
+    #popup .modal-body dl dt{
+      border-bottom: 1px solid;
+     margin-bottom: 20px;  
+    }
 
 
 
@@ -890,7 +900,7 @@ font-family: var(--mo_sub_title);
   margin-bottom: 60px; 
 }  
 .partner img {
-  width: 250px;
+  width: 100%;
   height: 417px;
 }
 .winwin {
@@ -899,15 +909,15 @@ font-family: var(--mo_sub_title);
 }
 
  
-  .winwin h2 {
-   font-family: var(--mo_title);
-  }
+.winwin h2 {
+  font-family: var(--mo_title);
+}
 
  
-  .winwin p {
-    font-size: 1.125rem; 
-    line-height: 1.6; 
-  }
+.winwin p {
+  font-size: 1.125rem; 
+  line-height: 1.6; 
+}
 /*partner ///////////////////////////*/
 
 
@@ -929,8 +939,8 @@ font-family: var(--mo_sub_title);
   }
 .tab-menu li:last-child {  
   list-style:none;
- border:none;
-  }
+  border:none;
+}
 .tab-menu li a{
   padding:0 10px;
 }
@@ -949,7 +959,7 @@ font-family: var(--mo_sub_title);
 }
 
 .gorotab img {
-  max-width: 80%;
+  width: 100%;
   height: 80%;
   margin-right: 20px; 
 }
@@ -968,7 +978,7 @@ font-family: var(--mo_sub_title);
 
 .fc_box img {
   z-index: 3;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }  
 
