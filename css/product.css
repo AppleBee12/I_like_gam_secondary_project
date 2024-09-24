@@ -148,9 +148,13 @@ header div.top_nav {
 .sec1_title h3.sec_mo {
   display: none;
 }
+.sec1_progress-box{
+  width: 100%;
+  height: 100%;
+}
 
 .sec1_pager {
-  width: 100%;
+  width: auto;
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -171,7 +175,7 @@ header div.top_nav {
       color: #fff;
     }
   }
-
+d
 }
 
 .section1 .swiper-pagination-bullet {
@@ -182,6 +186,34 @@ header div.top_nav {
 .section1 .swiper-pagination-bullet.on {
   background-color: rgba(255, 255, 255, .3);
 }
+.autoplay-progress{
+  position: relative;
+  width: 100%;
+  height: 5px;
+}
+.autoplay-progress svg {
+	--progress: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+  width: 100%;
+  height: 100%;
+	z-index: 10;
+	
+	stroke: #fff;
+	fill: none;
+	/* stroke-dashoffset: calc(100 * (1 - var(--progress)));
+	stroke-dasharray: 100; */
+}
+.autoplay-progress svg line{
+  stroke-width: 4px;
+  stroke: #fff;
+  stroke-dashoffset: calc(464 * (1 - var(--progress))); 
+  stroke-dasharray: 464;  
+  width: 100%;
+}
+
+
 
 
 .section1 .swiper-slide {
@@ -319,7 +351,10 @@ header div.top_nav {
 }
 
 .sec2_list_car {
-  background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), linear-gradient(rgba(255, 255, 255, .0), rgba(0, 0, 0, .8) 75%, rgba(0, 0, 0, .2) 100%), url(../images/product/sec2_list_lightcar.png);
+  background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)),
+   linear-gradient(rgba(255, 255, 255, .0),
+    rgba(0, 0, 0, .8) 75%, rgba(0, 0, 0, .2) 100%),
+     url(../images/product/sec2_list_lightcar.png);
 }
 
 .sec2_list_car:hover {
@@ -502,7 +537,7 @@ header div.top_nav {
   display: flex;
   align-items: center;
   position: absolute;
-  width: 500px;
+  width: 129px;
   height: 10px;
   bottom: 30px;
   left: 50%;
@@ -519,7 +554,6 @@ header div.top_nav {
 .sec3_pager {
   width: 10px;
   height: 10px;
-  background: var(--color-primary);
   border-radius: 50%;
   /* transform: scale(.75); */
 }

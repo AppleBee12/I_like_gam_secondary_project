@@ -1,5 +1,6 @@
 //section01 swiper
 const bullet = ['프리미엄 건설용 강재 <i>H CORE</i>', '자동차 솔루션 <i>H SOLUTION</i>'];
+const progressLine = document.querySelector(".autoplay-progress svg");
 const primarySwiper = new Swiper('.sec1_swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -11,6 +12,11 @@ const primarySwiper = new Swiper('.sec1_swiper', {
     delay: 5000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
+  },
+  on: {
+    autoplayTimeLeft(s, time, progress) {
+      progressLine.style.setProperty("--progress", 1 - progress);
+    }
   },
 
   // pagination
@@ -44,7 +50,7 @@ const secondarySwiper = new Swiper('.sec2_swiper01', {
   },
 });
 
-
+console.log(document.querySelector('line').getTotalLength());
 
 $('.sec2_swiper01').mouseenter(function () {
   secondarySwiper.autoplay.stop();
@@ -82,9 +88,8 @@ $('.sec2_swiper02').mouseleave(function () {
 });
 
 
-
-
 //section02 swiper fin
+
 
 //section03 swiper
 
@@ -95,8 +100,10 @@ const quaternarySwiper = new Swiper('.sec3swiper', {
   loop: true,
   observer: true,
   observeParents: true,
+  
   pagination: {
     el: '.sec3_pager',
+    clickable: true,
   },
 
   autoplay: {
@@ -105,6 +112,8 @@ const quaternarySwiper = new Swiper('.sec3swiper', {
     pauseOnMouseEnter: true,
   },
 
+
+
   //반응형
   breakpoints: {
     // >= 576px
@@ -112,32 +121,27 @@ const quaternarySwiper = new Swiper('.sec3swiper', {
       slidesPerView: 1,
       spaceBetween: 10,
 
-
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 10,
-
 
     },
     992: {
       slidesPerView: 3,
       spaceBetween: 10,
 
-
     },
     1200: {
       slidesPerView: 4,
       spaceBetween: 20,
-
-      
 
     },
     1400: {
       slidesPerView: 5,
       spaceBetween: 20,
       autoplay: false,
-      
+
     }
   },
 });
