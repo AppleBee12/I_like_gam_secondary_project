@@ -224,7 +224,7 @@ header .logo a {
 /* 퀵메뉴 */
 .quick-menu {
   position: fixed;
-  bottom: 200px;
+  bottom: 230px;
   right: 24px;
   z-index: 1000;
 }
