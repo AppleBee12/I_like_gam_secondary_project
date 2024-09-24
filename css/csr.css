@@ -813,9 +813,7 @@ margin-left: 60px;
 }
 
 @media screen and (max-width: 680px){
-  .tab_menu ul{
-    gap: 50px;
-  }
+  
   .symbol_exam{
     padding-left:80px;
   }
@@ -827,15 +825,19 @@ margin-left: 60px;
     padding: 0 50px;
   }
 }
-@media screen and (max-width: 567px){
+@media screen and (max-width: 615px){
   
   .symbol_exam{
     padding-left:50px;
   }
+  .tab_menu ul{
+    gap:30px;
+    font-size: var(--mo_sub_body)
+  }
 }
 
 
-@media (max-width: 375px){
+@media (max-width: 400px){
   
   .tab_menu ul{
     gap:10px;
@@ -861,13 +863,13 @@ margin-left: 60px;
 .esn2,
 .esn3{
   gap:10px;
-  width: 180px;
+  width: 200px;
   height: 80px;
 }
 .exam1,
 .exam2,
 .exam3{
-  width: 240px;
+  width: 280px;
   height: 303px;
   gap:15px;
 }
