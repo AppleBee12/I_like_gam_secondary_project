@@ -1,5 +1,7 @@
 //section01 swiper
 const bullet = ['프리미엄 건설용 강재 <i>H CORE</i>', '자동차 솔루션 <i>H SOLUTION</i>'];
+const progressLine = document.querySelector(".autoplay-progress svg");
+const progressButtlet = document.querySelector(".sec1_progress-box");
 const primarySwiper = new Swiper('.sec1_swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -10,8 +12,15 @@ const primarySwiper = new Swiper('.sec1_swiper', {
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
-    pauseOnMouseEnter: true,
+    pauseOnMouseEnter: false,
   },
+  on: {
+    autoplayTimeLeft(s, time, progress) {
+      progressLine.style.setProperty("--progress", 1 - progress);
+      progressButtlet.style.setProperty("--progress", 1 - progress);
+    }
+  },
+
 
   // pagination
   pagination: {
@@ -44,7 +53,7 @@ const secondarySwiper = new Swiper('.sec2_swiper01', {
   },
 });
 
-
+console.log(document.querySelector('line').getTotalLength());
 
 $('.sec2_swiper01').mouseenter(function () {
   secondarySwiper.autoplay.stop();
@@ -82,9 +91,8 @@ $('.sec2_swiper02').mouseleave(function () {
 });
 
 
-
-
 //section02 swiper fin
+
 
 //section03 swiper
 
@@ -95,14 +103,19 @@ const quaternarySwiper = new Swiper('.sec3swiper', {
   loop: true,
   observer: true,
   observeParents: true,
+  
   pagination: {
     el: '.sec3_pager',
+    clickable: true,
   },
+
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
+
+
 
   //반응형
   breakpoints: {
@@ -110,49 +123,28 @@ const quaternarySwiper = new Swiper('.sec3swiper', {
     576: {
       slidesPerView: 1,
       spaceBetween: 10,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
 
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 10,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
 
     },
     992: {
       slidesPerView: 3,
       spaceBetween: 10,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
 
     },
     1200: {
       slidesPerView: 4,
       spaceBetween: 20,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
-      
 
     },
     1400: {
       slidesPerView: 5,
       spaceBetween: 20,
       autoplay: false,
-      
+
     }
   },
 });

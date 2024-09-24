@@ -509,17 +509,14 @@ section {
       font-size: var(--mo_sub_body);
       -webkit-line-clamp: 3;
       line-height: 18px;
-      height: 39%;
+      height: 30%;
     }
 
     .t1 {
       font-size: var(--mo_sub_body);
       -webkit-line-clamp: 3;
       line-height: 18px;
-
     }
-
-
 
     .txt_box {
       padding: 40px 42px;
@@ -560,6 +557,9 @@ section {
   }
   .tabs.tab-header{
     width: 88%;
+  }
+  .swiper-slide{
+    height: 300px;
   }
 }
 
@@ -609,7 +609,7 @@ section {
     }
 
     h4.title {
-      height: 29%;
+      height: 33%;
     }
   }
   .search-wrapper{

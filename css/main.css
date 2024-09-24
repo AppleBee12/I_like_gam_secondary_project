@@ -12,12 +12,28 @@ header video {
 	top: 0;
 	left: 0;
 }
+header .vwrapper::after{
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgb(3 7 39 / 20%);
+  z-index: 2;
+  display: block;
+} 
+.top_nav{
+  z-index: 100;
+}
+
 #controls {
   position: absolute;
   bottom: 22%;
   left: 10%;
   max-width: 1440px;
   height: 50px;
+  z-index: 50;
 }
 
 .progress1 {
@@ -27,8 +43,9 @@ header video {
   height: 7px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.2);
+  /* background: #fff; */
   position: absolute;
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .progress1 .bar {
@@ -37,7 +54,7 @@ header video {
   top: 0;
   bottom: 0;
   width: 0;
-  background: var(--tertiary);
+  background: white;
   transition: 0.5s;
 }
 
@@ -88,7 +105,7 @@ header video {
 }
 .play_btn span {
 	background-color: #fff;
-	width: 70%;
+	width: 50%;
 	height: 2px;
 	position: absolute;
 
@@ -104,8 +121,8 @@ header video {
 }
 
 .play_btn span:nth-child(1) {
-	top: 43%;
-	left: 41%;
+	top: 46%;
+	left: 43%;
 
 	transform: rotate(30deg)translate(-50%, -50%);
 	-webkit-transform: rotate(30deg)translate(-50%, -50%);
@@ -123,8 +140,8 @@ header video {
 }
 
 .play_btn span:nth-child(2) {
-	top: 60%;
-	left: 11%;
+	top: 58%;
+	left: 22%;
 
 	transform: rotate(90deg)translate(-50%, -50%);
 	-webkit-transform: rotate(90deg)translate(-50%, -50%);
@@ -145,8 +162,8 @@ header video {
 }
 
 .play_btn span:nth-child(3) {
-	top: 79%;
-	left: 40%;
+	top: 70%;
+	left: 43%;
 
 	transform: rotate(-30deg)translate(-50%, -50%);
 	-webkit-transform: rotate(-30deg)translate(-50%, -50%);
@@ -595,6 +612,9 @@ header video {
 @media (max-width: 575.98px) {
 
   /*section2 조채림*/
+  header{
+    height: 44vh;
+  }
   .explain>* {
     display: none;
   }
@@ -639,7 +659,7 @@ header video {
   }
 
   .she_pic img {
-    height: 340px;
+    height: 240px;
     display: none;
   }
 
@@ -740,6 +760,9 @@ header video {
 @media (min-width: 576px) and (max-width: 767.98px) {
 
   /*section2 조채림*/
+  header{
+    height: 44vh;
+  }
   .explain>* {
     display: none;
   }
@@ -888,6 +911,9 @@ header video {
 @media (min-width: 768px) and (max-width: 991.98px) {
 
   /*section2 조채림*/
+  header{
+    height: 56vh;
+  }
   .explain>* {
     display: none;
   }
