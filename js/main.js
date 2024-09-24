@@ -2,7 +2,7 @@
 let video = $('#hdvideo');
 let playBtn = $('#play');
 let pauseBtn = $('#stop');
-let playPauseBtn = $('.glightbox_video');
+let playPauseBtn = $('.play_btn');
 let progressBar = $('#progress1');
 let vcontrols = $('#controls');
 let bar = $('.progress1 .bar');
@@ -16,6 +16,11 @@ playPauseBtn.click(function(){
     // playPauseBtn.html('<i class="fa-solid fa-play fa-2x"></i>');
   }
 });
+
+  $(".play_btn").click(function(){
+    $(".play_contain").toggleClass("trigger");
+  });
+
 let timer = setInterval(()=>{
   const duration = video.get(0).duration;
 
@@ -70,19 +75,6 @@ AOS.init({
 
 
 
-  let currentIndex = 0;
-  const tabs = $(".tab");
-
-  function autoSwitchTab() {
-      currentIndex = (currentIndex + 1) % tabs.length;
-      switchTab(currentIndex);
-  }
-
-  // 초기화: 첫 번째 탭 활성화
-  switchTab(currentIndex);
-
-  // 일정 시간 간격으로 탭 자동 변경
-  setInterval(autoSwitchTab, 3000); // 3000ms = 3초
 
 
 //section3 홍수진
