@@ -980,21 +980,20 @@ dialog span {
 }
 
 /*text*/
-.modal.show {
+/* .modal.show {
 	display: block;
-}
+} */
 
-.modal-dialog {
+/* .modal-dialog {
 	max-width: 1700px;
 	height: 814px;
-}
+} */
 
 /*text*/
 .modal-body {
 	padding: 50px;
 	display: flex;
 	justify-content: space-between;
-	transform: translateY(50%);
 }
 
 .modal-content {
@@ -1004,17 +1003,50 @@ dialog span {
 	width: 100%;
 	pointer-events: auto;
 	background-color: #fff;
-	background-clip: padding-box;
+	/* background-clip: padding-box;
 	border: 1px solid rgba(0, 0, 0, .2);
-	border-radius: 1.5rem;
+	border-radius: 1.5rem; */
 	outline: 0;
 
 }
-
-.modal-content span {
-	position: absolute;
-	top: -40%;
+.modal-dialog{
+	margin:0;
+	margin-left: 0;
+	margin-right: 0;
+	max-width:100%;
 }
+.modal-body dl dt{
+  font-family: 'hdharmony';
+  font-size: 25px;
+	font-style: bold;
+  margin-bottom: 30px;
+}
+.modal-body dl dd {
+  margin-bottom: 30px; 
+  color:var(--silver);
+}
+.modal-content {
+  width: 100%;
+  max-width: 100%;
+  height: 100%; 
+}
+.modal-body dl {
+  margin: 0; 
+}
+.tit{
+	font-family: 'hdharmony';
+  font-size: 35px;
+	color: var(--primary);
+  font-weight: 700;	
+	padding-left: 50px;
+}
+.modal-content button{
+	position: absolute;
+	margin-right: 20px;
+	font-size: 30px;
+	right: 0;
+}
+
 
 button:focus {
 	background: transparent;
