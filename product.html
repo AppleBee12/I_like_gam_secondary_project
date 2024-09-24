@@ -104,8 +104,8 @@
     <div class="tb_container">
       <div class="tb_nav">
         <ul>
-          <li><a href="aboutcompany.html">회사소개</a>
-            <ul>
+          <li><p>회사소개 <span>+</span></p>
+            <ul class="tb_list">
               <li><a href="aboutcompany.html">사업소개</a></li>
               <li><a href="aboutcompany.html">사업창</a></li>
               <li><a href="aboutcompany.html">CEO인사말</a></li>
@@ -114,15 +114,15 @@
               <li><a href="aboutcompany.html">R&D연구소</a></li>
             </ul>
           </li>
-          <li><a href="product.html">제품기술</a>
-            <ul>
+          <li><p>제품기술 <span>+</span></p>
+            <ul class="tb_list">
               <li><a href="product.html">제품목록</a></li>
               <li><a href="product.html">종합카탈로그</a></li>
               <li><a href="product.html">생산공정</a></li>
             </ul>
           </li>
-          <li><a href="#">투자정보</a>
-            <ul>
+          <li><p>투자정보 <span>+</span></p>
+            <ul class="tb_list">
               <li><a href="#">전자공고</a></li>
               <li><a href="#">요약재무제표</a></li>
               <li><a href="#">신용등급</a></li>
@@ -130,16 +130,16 @@
               <li><a href="#">경영정보</a></li>
             </ul>
           </li>
-          <li><a href="csr.html">지속가능경영</a>
-            <ul>
+          <li><p>지속가능경영 <span>+</span></p>
+            <ul class="tb_list">
               <li><a href="csr.html">탄소중립로드맵</a></li>
               <li><a href="csr.html">지속가능전략</a></li>
               <li><a href="csr.html">통합보고서</a></li>
               <li><a href="csr.html">주요활동</a></li>
             </ul>
           </li>
-          <li><a href="newscenter.html">홍보센터</a>
-            <ul>
+          <li><p>홍보센터 <span>+</span></p>
+            <ul class="tb_list">
               <li><a href="newscenter.html">뉴스센터</a></li>
               <li><a href="newscenter.html">youtube</a></li>
               <li><a href="newscenter.html">소식지</a></li>
@@ -205,10 +205,15 @@
               <h3 class="sec_mo">현대제철은 자동차소재 전문 제철소로<br>
                 강도가 높으면서도 더 가벼운<br>
                 차세대 강판 개발에 주력하고 있습니다.</h3>
-              <div class="sec1_pager"></div>
+              <div class="sec1_progress-box">
+                <div class="sec1_pager"></div>  
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 464 10">
+                        <line x1="0" y1="5" x2="464" y2="5">
+                    </svg>
+                </div>
             </div>
-            <!-- <div
-              class="sec1_slide_wrapper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"> -->
+            </div>
             <div class="sec1_desc swiper-wrapper">
               <div class="sec1_slide01 swiper-slide">
                 <div class="sec1_img_wrapper">
@@ -235,8 +240,6 @@
                 </p>
               </div>
             </div>
-            <!-- </div> -->
-
           </div>
         </div>
       </section>
@@ -388,7 +391,7 @@
               </a>
             </div>
           </div>
-          <div class=".sec3_pager swiper-pagination"></div>
+          <div class="sec3_pager swiper-pagination"></div>
         </div>
       </section>
       <!-- //section 03끝 -->
