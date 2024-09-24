@@ -976,26 +976,15 @@ dialog span {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	outline: 0;
-	/*test*/
+	outline: 0;	
 }
 
-/*text*/
-.modal.show {
-	display: block;
-}
 
-.modal-dialog {
-	max-width: 1700px;
-	height: 814px;
-}
-
-/*text*/
+/*footer modal*/
 .modal-body {
 	padding: 50px;
 	display: flex;
 	justify-content: space-between;
-	transform: translateY(50%);
 }
 
 .modal-content {
@@ -1005,17 +994,50 @@ dialog span {
 	width: 100%;
 	pointer-events: auto;
 	background-color: #fff;
-	background-clip: padding-box;
+	/* background-clip: padding-box;
 	border: 1px solid rgba(0, 0, 0, .2);
-	border-radius: 1.5rem;
+	border-radius: 1.5rem; */
 	outline: 0;
 
 }
-
-.modal-content span {
-	position: absolute;
-	top: -40%;
+.modal-dialog{
+	margin:0;
+	margin-left: 0;
+	margin-right: 0;
+	max-width:100%;
 }
+.modal-body dl dt{
+  font-family: 'hdharmony';
+  font-size: 25px;
+	font-style: bold;
+  margin-bottom: 30px;
+}
+.modal-body dl dd {
+  margin-bottom: 30px; 
+  color:var(--silver);
+}
+.modal-content {
+  width: 100%;
+  max-width: 100%;
+  height: 100%; 
+}
+.modal-body dl {
+  margin: 0; 
+}
+.tit{
+	font-family: 'hdharmony';
+  font-size: 35px;
+	color: var(--primary);
+  font-weight: 700;	
+	padding-left: 50px;
+}
+.modal-content button{
+	position: absolute;
+	margin-right: 20px;
+	font-size: 30px;
+	right: 0;
+}
+
 
 button:focus {
 	background: transparent;
@@ -1024,7 +1046,7 @@ button:focus {
 .popup {
 	display: none;
 }
-
+/*footer modal///////////////////////////////////*/
 /* //PC footer///////////////////////////////////////////////////////// */
 
 /*태블릿반응형*/
@@ -1111,9 +1133,21 @@ button:focus {
 
 /*/////////////////////////////////////////////태블릿반응형///////////////////*/
 
-/* 모바일반응형 */
 
-@media screen and (max-width: 700px) {
+
+/*pc에서는 못건들게 설정 한것*/
+@media (min-width: 769px) {
+	dd {
+			display: block; /* PC에서는 dd 보이도록 설정 */
+	}
+	dt {
+			cursor: default; /* PC에서는 클릭할 수 없도록 설정 */
+	}
+}
+
+
+/* 모바일반응형 */
+@media screen and (max-width: 700px){
 	footer {
 		font-size: var(--mo_sub_body);
 	}
@@ -1235,12 +1269,16 @@ button:focus {
 		padding: 12px 32px;
 		text-align: center;
 	}
+
+/*footer 모바일 모달 */
+.modal-body dl dd{
+	display: none;
 }
 
-/* //모바일 반응형 */
-/* //footer */
-/* //모바일 반응형 */
-/* //footer */
+
+}
+/*footer 모바일 ///////////////////////////////*/
+
 #popupModal{
 	position: fixed;
 	top: 0;
