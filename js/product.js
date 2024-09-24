@@ -101,8 +101,8 @@ const quaternarySwiper = new Swiper('.sec3swiper', {
   slidesPerView: 5,
   spaceBetween: 30,
   loop: true,
-  observer: true,
-  observeParents: true,
+  // observer: true,
+  // observeParents: true,
   
   pagination: {
     el: '.sec3_pager',
