@@ -221,8 +221,6 @@ header div.top_nav {
 }
 
 
-
-
 .section1 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -249,7 +247,6 @@ header div.top_nav {
   top: 0;
   bottom: 0;
 }
-
 
 .sec1_slide01,
 .sec1_slide02 {
@@ -304,7 +301,7 @@ header div.top_nav {
   white-space: pre-line;
   padding-top: 169px;
   padding-bottom: 573px;
-  margin-right: 20%;
+  margin-right: 18%;
 }
 
 .sec2_desc {
@@ -877,6 +874,38 @@ header div.top_nav {
   }
 
   /* section 01 끝*/
+
+    /* section 02 */
+    .sec2_wrap {
+      padding: 8rem 3rem;
+    }
+    .sec2_title {
+      font-size: var(--mo_title);
+      line-height: var(--mo_big);
+      white-space: pre-line;
+      padding-top: 169px;
+      padding-bottom: 573px;
+    }
+    
+    /* .sec2_swiper01,
+    .sec2_swiper02 {
+      width: 275px;
+      height: 1092px;
+    } */
+    
+    .sec2_swiper01 {
+      margin-left: 0;
+    }
+    
+    .sec2_swiper02 {
+      margin-right: 10%;
+      margin-top: -192px;
+    }
+    
+    /* section 02 끝 */
+
+
+
 }
 
 /* xl devices (1200px and up) */
@@ -910,7 +939,36 @@ header div.top_nav {
 
   /* section 01 끝*/
   /* section 02 */
+  .sec2_wrap {
+    padding: 8rem 3rem;
+  }
+  .sec2_title {
+    font-weight: 500;
+    font-size: var(--mo_title);
+    line-height: var(--mo_big);
+    white-space: pre-line;
+    padding-top: 169px;
+    padding-bottom: 573px;
+    margin-right: 15%;
+  }
+  
+  /* .sec2_swiper01,
+  .sec2_swiper02 {
+    width: 275px;
+    height: 1092px;
+  } */
+  
+  .sec2_swiper01 {
+    margin-left: 0;
+  }
+  
+  .sec2_swiper02 {
+    margin-left: 10%;
+    margin-top: -192px;
+  }
+  
   /* section 02 끝 */
+
 }
 
 /*xxl devices (1400px and up)*/
