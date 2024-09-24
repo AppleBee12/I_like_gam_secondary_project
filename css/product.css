@@ -183,32 +183,40 @@ header div.top_nav {
 }
 
 .section1 .swiper-pagination-bullet.on {
-  background-color: rgba(255, 255, 255, .3);
+  /* background-color: rgba(255, 255, 255, .3); */
+  position: relative;
+  z-index:1;
 }
+.section1 .swiper-pagination-bullet.on:after{
+  content:'';
+  position: absolute;
+  left: 0;top: 0;
+  bottom: 0;
+  width: calc(var(--progress) * 100%);
+  z-index:-1;
+  background:rgba(255, 255, 255, .5);
+}
+
 .autoplay-progress{
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   height: 5px;
 }
-.autoplay-progress svg {
+/* .autoplay-progress svg {
 	--progress: 0;
 	position: absolute;
 	left: 0;
 	top: 0;
-  width: 100%;
   height: 100%;
 	z-index: 10;
-	
 	stroke: #fff;
 	fill: none;
-	/* stroke-dashoffset: calc(100 * (1 - var(--progress)));
-	stroke-dasharray: 100; */
-}
+} */
 .autoplay-progress svg line{
   stroke-width: 4px;
   stroke: #fff;
-  stroke-dashoffset: calc(464 * (1 - var(--progress))); 
-  stroke-dasharray: 464;  
+  stroke-dashoffset: calc(950 * (1 - var(--progress))); 
+  stroke-dasharray: 950;  
   width: 100%;
 }
 
