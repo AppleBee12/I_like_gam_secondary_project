@@ -173,3 +173,14 @@ $(document).ready(function() {
       return null;
   }
 });
+
+const dt = $('#popup dt');
+
+
+dt.click(function(){
+  if ($(window).width() <= 768) {
+    $(this).siblings('dd').slideToggle();
+    $(this).parent().siblings('dl').find('dd').slideUp();
+    // $(this).next().sibling('').slideUp();
+  }
+});

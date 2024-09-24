@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
@@ -20,6 +20,8 @@
   <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="images/favicon/android-icon-144x144.png">
+
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -29,7 +31,7 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" >
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
@@ -39,15 +41,15 @@
 <body>
   <!--Header 나승일-->
   <header>
+    <a href="#" class="hamburger_button">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
     <div class="top_nav">
       <div class="nav_container">
-        <h1 class="logo"><a href="">hyundae</a></h1>
-        <a href="#" class="hamburger_button">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
+        <h1 class="logo"><a href="index.html">hyundae</a></h1>
         <div class="nav">
           <ul class="main_menu">
             <li class="main_list"><a href="aboutcompany.html">회사소개</a>
@@ -104,14 +106,13 @@
       </div>
       <div id="controls">
         <div class="video_btn">
-          <!-- <button id="stop" class="btn" onclick="pausevid()"><i class="fa-solid fa-pause fa-2x"></i></button> -->
-          <a href="#" class="glightbox_video"> 
-            <svg width="45" height="45" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="inner-circle" d="M65 21C40.1488 21 20 41.1488 20 66C20 90.8512 40.1488 111 65 111C89.8512 111 110 90.8512 110 66C110 41.1488 89.8512 21 65 21Z" fill="white"></path>
-                <circle class="outer_circle" cx="65.5" cy="65.5" r="64" stroke="white"></circle>
-                <path class="play" fill-rule="esvenodd" clip-rule="evenodd" d="M60 76V57L77 66.7774L60 76Z" fill="#BF2428"></path>
-            </svg>
-            </a>
+          <div class="play_contain">
+            <div class="play_btn" title="Play">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -119,46 +120,51 @@
     <div class="tb_container">
       <div class="tb_nav">
         <ul>
-          <li><p>회사소개 <span>+</span></p>
+          <li>
+            <p>회사소개 <span>+</span></p>
             <ul class="tb_list">
-              <li><a href="">사업소개</a></li>
-              <li><a href="">사업창</a></li>
-              <li><a href="">CEO인사말</a></li>
-              <li><a href="">경영이념</a></li>
-              <li><a href="">연혁</a></li>
-              <li><a href="">R&D연구소</a></li>
+              <li><a href="aboutcompany.html">사업소개</a></li>
+              <li><a href="aboutcompany.html">사업창</a></li>
+              <li><a href="aboutcompany.html">CEO인사말</a></li>
+              <li><a href="aboutcompany.html">경영이념</a></li>
+              <li><a href="aboutcompany.html">연혁</a></li>
+              <li><a href="aboutcompany.html">R&D연구소</a></li>
             </ul>
           </li>
-          <li><p>제품기술 <span>+</span></p>
+          <li>
+            <p>제품기술 <span>+</span></p>
             <ul class="tb_list">
-              <li><a href="">제품목록</a></li>
-              <li><a href="">종합카탈로그</a></li>
-              <li><a href="">생산공정</a></li>
+              <li><a href="product.html">제품목록</a></li>
+              <li><a href="product.html">종합카탈로그</a></li>
+              <li><a href="product.html">생산공정</a></li>
             </ul>
           </li>
-          <li><p>투자정보 <span>+</span></p>
+          <li>
+            <p>투자정보 <span>+</span></p>
             <ul class="tb_list">
-              <li><a href="">전자공고</a></li>
-              <li><a href="">요약재무제표</a></li>
-              <li><a href="">신용등급</a></li>
-              <li><a href="">사업보고서</a></li>
-              <li><a href="">경영정보</a></li>
+              <li><a href="#">전자공고</a></li>
+              <li><a href="#">요약재무제표</a></li>
+              <li><a href="#">신용등급</a></li>
+              <li><a href="#">사업보고서</a></li>
+              <li><a href="#">경영정보</a></li>
             </ul>
           </li>
-          <li><p>지속가능경영 <span>+</span></p>
+          <li>
+            <p>지속가능경영 <span>+</span></p>
             <ul class="tb_list">
-              <li><a href="">탄소중립로드맵</a></li>
-              <li><a href="">지속가능전략</a></li>
-              <li><a href="">통합보고서</a></li>
-              <li><a href="">주요활동</a></li>
+              <li><a href="csr.html">탄소중립로드맵</a></li>
+              <li><a href="csr.html">지속가능전략</a></li>
+              <li><a href="csr.html">통합보고서</a></li>
+              <li><a href="csr.html">주요활동</a></li>
             </ul>
           </li>
-          <li><p>홍보센터 <span>+</span></p>
+          <li>
+            <p>홍보센터 <span>+</span></p>
             <ul class="tb_list">
-              <li><a href="">뉴스센터</a></li>
-              <li><a href="">youtube</a></li>
-              <li><a href="">소식지</a></li>
-              <li><a href="">스포츠단</a></li>
+              <li><a href="newscenter.html">뉴스센터</a></li>
+              <li><a href="newscenter.html">youtube</a></li>
+              <li><a href="newscenter.html">소식지</a></li>
+              <li><a href="newscenter.html">스포츠단</a></li>
             </ul>
           </li>
         </ul>
@@ -171,11 +177,14 @@
       </div>
       <ul class="quick-menu-list">
         <li><a href="#"><i class="fa-solid fa-question"></i></a>
-          <a href="">제품문의</a></li></li>
+          <a href="">제품문의</a>
+        </li>
         <li><a href="#"><i class="fa-solid fa-user-plus"></i></a>
-          <a href="">인재채용</a></li></li>
+          <a href="">인재채용</a>
+        </li>
         <li><a href="#"><i class="fa-solid fa-rotate"></i></a>
-          <a href="">지속가능</a></li>
+          <a href="">지속가능</a>
+        </li>
       </ul>
     </div>
     <!-- TOP 버튼 -->
@@ -188,21 +197,21 @@
         <div class="modal_wrapper">
           <div><img src="images/header_icon2.svg" alt="현대제철 로고"></div>
           <p>본 사이트는 <em>구직용 포트폴리오 웹사이트</em>이며,<br>
-          실제로 운영되는 사이트가 아닙니다.</p>
+            실제로 운영되는 사이트가 아닙니다.</p>
           <hr>
           <p><em>감2조아 : </em>홍수진(팀장),나승일,장지훈,조채림</p>
           <p><em>제작기간 : </em>2024.09.07 ~ 2024.09.26</p>
-          <p><em>기획서 : </em><a href="">Figma</a> <em>버전관리:</em><a href="">Github</a></p>
+          <p><em>기획서 : </em><a href="https://www.figma.com/design/YVIKik5wpUOhad1C7pNKnu/Untitled?node-id=1-2&t=HV8Lk0AkFPPCNbbw-1" target="blank">Figma</a> , <a href=" https://www.figma.com/board/R0YKPV4o9anaore6Qpqzku/Untitled?node-id=0-1&t=6RWqC2db3HP2GkKy-1" target="blank">Figjam</a> <em>버전관리:</em><a href="https://github.com/AppleBee12/I_like_gam_secondary_project.git" target="blank">Github</a></p>
           <p><em>개발환경 : </em>HTML5,CSS,Jqiery,Javascript</p>
           <hr>
           <p><em>업무분장</em></p>
           <p><em>기획 : </em>팀원 전체</p>
           <p><em>디자인 : </em>구현 담당자</p>
           <p><em>&#8211; 구현 완료 페이지 &#8211;</em></p>
-          <p><strong>홍수진 : main section2, <a href="">sub product</a></strong></p>        
-          <p><strong>나승일 : header, <a href="">sub csr</a></strong></p>        
-          <p><strong>장지훈 : footer, <a href="">sub aboutcompany</a></strong></p>        
-          <p><strong>조채림 : main section1, <a href="">sub newscenter</a></strong></p>        
+          <p><strong>홍수진 : main section2, <a href="product.html" target="blank">sub product</a></strong></p>        
+          <p><strong>나승일 : header, <a href="csr.html" target="blank">sub csr</a></strong></p>        
+          <p><strong>장지훈 : footer, <a href="aboutcompany.html" target="blank">sub aboutcompany</a></strong></p>        
+          <p><strong>조채림 : main section1, <a href="newscenter.html" target="blank">sub newscenter</a></strong></p>        
         </div>
         <div class="day_btn">
           <span class="cookie_btn">오늘하루 안보기</span>
@@ -216,7 +225,7 @@
       <div class="s2 container">
         <div class="she_title col-md-12 column-gap-5">
           <h2 class="s_tt_h2 pb-2 pb-sm-3" data-aos="fade-right">S.H.E.</h2>
-          <h4 class="s_tt_mgm pb-5" data-aos="fade-right" >S.H.E. MANAGEMENT</h4>
+          <h4 class="s_tt_mgm pb-5" data-aos="fade-right">S.H.E. MANAGEMENT</h4>
         </div>
         <div id="she_wrapper" class="column-gap-5 row ">
           <div class="she_pic col-12 col-xs-12  col-sm-12 col-md-12 col-lg-5 ">
@@ -347,9 +356,9 @@
               <p class="sec4_cardtitle">사회공헌</p>
               <p class="sec4_carddesc">We Do in Sustainable H-ways 라는 지속가능경영 슬로건 하에 환경, 안전과 보호, 미래세대 분야를 중점으로 사회공헌 활동을
                 추진하고 있습니다. 지역사회 참여 프레임워크를 기반으로 기업의 사회적 책임을 다하기 위해 노력하고 있습니다.<br></p>
-              </div>
-              <div class="sec4_arr">
-                <svg class="sec4_arrow" width="50" height="50" viewBox="0 0 152 152" fill="none"
+            </div>
+            <div class="sec4_arr">
+              <svg class="sec4_arrow" width="50" height="50" viewBox="0 0 152 152" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g class="arrow">
                   <g class="arrow-line">
@@ -364,7 +373,7 @@
                   </g>
                 </g>
               </svg>
-              </div>
+            </div>
           </div>
           <div class="col-sm-12 col-md-4 row-gap-4 flex-fill">
             <div class="sec4_card sec403">
@@ -410,115 +419,121 @@
     </section>
   </main>
   <!-- //section5 홍수진 -->
-  <!--Footer 장지훈 -->
-  <footer class="px-md-5">
-    <div class="container">
-      <div class="ft-1 d-flex justify-content-between align-items-end mb-3">
-        <div class="footer_left d-flex flex-column">
-          <h3 class="logo"><a href="">logo</a></h3>
-          <address>경기도 성남시 분당구 분당내곡로 117,<br>
-            그레이츠 판교(GREITS PANGYO) 9층 </address>
-          <ul class="d-flex justify-content-between">
-            <li><a href=""><strong>사이트 안내</strong></a></li>
-            <li><a href="">개인정보 취급방침</a></li>
-            <li><a href="">개인정보 처리방침</a></li>
-            <li><a href="">사이버 감사실</a></li>
-            <li><a href="">이용약관</a></li>
-          </ul>
-        </div>
+  <!--푸터-->
+
+
+ <!--Footer 장지훈 -->
+ <footer class="px-md-5">
+  <div class="container">
+    <div class="ft-1 d-flex justify-content-between align-items-end mb-3">
+      <div class="footer_left d-flex flex-column">
+        <h3 class="logo"><a href="">logo</a></h3>
+        <address>경기도 성남시 분당구 분당내곡로 117,<br>
+          그레이츠 판교(GREITS PANGYO) 9층 </address>
         <ul class="d-flex justify-content-between">
-          <li><a href="">제품 문의</a></li>
-          <li><a href="">인재 채용</a></li>
-          <li><a href="">지속 가능</a></li>
+          <li><a href=""><strong>사이트 안내</strong></a></li>
+          <li><a href="">개인정보 취급방침</a></li>
+          <li><a href="">개인정보 처리방침</a></li>
+          <li><a href="">사이버 감사실</a></li>
+          <li><a href="">이용약관</a></li>
         </ul>
       </div>
-      <div class="sns d-flex justify-content-between align-items-center">
-        <div class="snsBtn">
-          <a href="#" target="_blank"><img src="images/footer/insta.svg" alt="현대제철 인스타그램 SNS"></a>
-          <a href="#" target="_blank"><img src="images/footer/facebook.svg" alt="현대제철 페이스북 SNS"></a>
-          <a href="#" target="_blank"><img src="images/footer/youtube.svg" alt="현대제철 유튜브 SNS"></a>
-        </div>
-        <div class="familysite">         
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup">
-            Family site <span>+</span>
-          </button>
+      <ul class="d-flex justify-content-between">
+        <li><a href="">제품 문의</a></li>
+        <li><a href="">인재 채용</a></li>
+        <li><a href="">지속 가능</a></li>
+      </ul>
+    </div>
+    <div class="sns d-flex justify-content-between align-items-center">
+      <div class="snsBtn">
+        <a href="#" target="_blank"><img src="images/footer/insta.svg" alt="현대제철 인스타그램 SNS"></a>
+        <a href="#" target="_blank"><img src="images/footer/facebook.svg" alt="현대제철 페이스북 SNS"></a>
+        <a href="#" target="_blank"><img src="images/footer/youtube.svg" alt="현대제철 유튜브 SNS"></a>
+      </div>
+      <div class="familysite">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup">
+          Family site <span>+</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <p class="copyright">© Copyright 2024. All Rights Reserved.</p>
+
+
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="popup" tabindex="-1"  aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="tit">FAMILY SITE</span>
+          <dl>
+            <dt><strong>현대자동차그룹</strong></dt>
+            <dd><a href="#">현대자동차그룹</a></dd>
+            <dd><a href="#">현대차 정몽구 재단</a></dd>
+            <dd><a href="#">현대차 미소금융재단</a></dd>
+            <dd><a href="#">현대·기아차 동반성장</a></dd>
+            <dd><a href="#">글로벌경영연구소</a></dd>
+            <dd><a href="#">해피무브 글로벌 청년봉사단</a></dd>
+          </dl>
+          <dl>
+            <dt><strong>완성차</strong></dt>
+            <dd><a href="#" target="_blank">현대자동차</a></dd>
+            <dd><a href="#" target="_blank">기아자동차</a></dd>
+            <dd><a href="#" target="_blank">제네시스</a></dd>
+          </dl>
+          <dl>
+            <dt><strong>철강</strong></dt>
+            <dd><a href="#" target="_blank">현대제철</a></dd>
+            <dd><a href="#" target="_blank">현대비앤지스틸</a></dd>
+            <dd><a href="#" target="_blank">현대종합특수강</a></dd>
+          </dl>
+          <dl>
+            <dt><strong>건설</strong></dt>
+            <dd><a href="#" target="_blank">현대건설</a></dd>
+            <dd><a href="#" target="_blank">현대엔지니어링</a></dd>
+            <dd><a href="#" target="_blank">현대스틸산업</a></dd>
+            <dd><a href="#" target="_blank">현대종합설계</a></dd>
+            <dd><a href="#" target="_blank">현대도시개발</a></dd>
+          </dl>
+          <dl>
+            <dt><strong>부품</strong></dt>
+            <dd><a href="#" target="_blank">현대모비스</a></dd>
+            <dd><a href="#" target="_blank">현대트랜시스</a></dd>
+            <dd><a href="#" target="_blank">현대위아</a></dd>
+            <dd><a href="#" target="_blank">현대케피코</a></dd>
+            <dd><a href="#" target="_blank">현대엠시트</a></dd>
+            <dd><a href="#" target="_blank">현대아이에이치엘</a></dd>
+            <dd><a href="#" target="_blank">현대파텍스</a></dd>
+          </dl>
+          <dl>
+            <dt><strong>금융</strong></dt>
+            <dd><a href="#" target="_blank">현대캐피탈</a></dd>
+            <dd><a href="#" target="_blank">현대카드</a></dd>
+            <dd><a href="#" target="_blank">현대커머셜</a></dd>
+            <dd><a href="#" target="_blank">현대차증권</a></dd>
+            <dd><a href="#" target="_blank">현대라이프</a></dd>
+          </dl>
+          <dl>
+            <dt><strong>기타</strong></dt>
+            <dd><a href="#" target="_blank">현대글로비스</a></dd>
+            <dd><a href="#" target="_blank">현대로템</a></dd>
+            <dd><a href="#" target="_blank">이노션 월드와이드</a></dd>
+            <dd><a href="#" target="_blank">해비치호텔&amp;리조트</a></dd>
+            <dd><a href="#" target="_blank">현대엔지비</a></dd>
+            <dd><a href="#" target="_blank">현대서산농장</a></dd>
+            <dd><a href="#" target="_blank">지아이티</a></dd>
+            <dd><a href="#" target="_blank">지마린서비스</a></dd>
+          </dl>
         </div>
       </div>
     </div>
-    <p class="copyright">© Copyright 2024. All Rights Reserved.</p>
+  </div>
+</footer>
 
 
-    <!-- Button trigger modal -->
-<!-- Modal -->
-<div class="modal fade" id="popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-				<span class="tit">FAMILY SITE</span>
-        <dl>
-          <dt><strong>현대자동차그룹</strong></dt>
-          <dd><a href="#">현대자동차그룹</a></dd>
-          <dd><a href="#">현대차 정몽구 재단</a></dd>
-          <dd><a href="#">현대차 미소금융재단</a></dd>
-          <dd><a href="#">현대·기아차 동반성장</a></dd>
-          <dd><a href="#">글로벌경영연구소</a></dd>
-          <dd><a href="#">해피무브 글로벌 청년봉사단</a></dd>
-        </dl>
-        <dl>
-          <dt><strong>완성차</strong></dt>
-          <dd><a href="#" target="_blank">현대자동차</a></dd>
-          <dd><a href="#" target="_blank">기아자동차</a></dd>
-          <dd><a href="#" target="_blank">제네시스</a></dd>
-        </dl>
-        <dl>
-          <dt><strong>철강</strong></dt>
-          <dd><a href="#" target="_blank">현대제철</a></dd>
-          <dd><a href="#" target="_blank">현대비앤지스틸</a></dd>
-          <dd><a href="#" target="_blank">현대종합특수강</a></dd>
-        </dl>
-        <dl>
-          <dt><strong>건설</strong></dt>
-          <dd><a href="#" target="_blank">현대건설</a></dd>
-          <dd><a href="#" target="_blank">현대엔지니어링</a></dd>
-          <dd><a href="#" target="_blank">현대스틸산업</a></dd>
-          <dd><a href="#" target="_blank">현대종합설계</a></dd>
-          <dd><a href="#" target="_blank">현대도시개발</a></dd>
-        </dl>
-        <dl>
-          <dt><strong>부품</strong></dt>
-          <dd><a href="#" target="_blank">현대모비스</a></dd>
-          <dd><a href="#" target="_blank">현대트랜시스</a></dd>
-          <dd><a href="#" target="_blank">현대위아</a></dd>
-          <dd><a href="#" target="_blank">현대케피코</a></dd>
-          <dd><a href="#" target="_blank">현대엠시트</a></dd>
-          <dd><a href="#" target="_blank">현대아이에이치엘</a></dd>
-          <dd><a href="#" target="_blank">현대파텍스</a></dd>
-        </dl>
-        <dl>
-          <dt><strong>금융</strong></dt>
-          <dd><a href="#" target="_blank">현대캐피탈</a></dd>
-          <dd><a href="#" target="_blank">현대카드</a></dd>
-          <dd><a href="#" target="_blank">현대커머셜</a></dd>
-          <dd><a href="#" target="_blank">현대차증권</a></dd>
-          <dd><a href="#" target="_blank">현대라이프</a></dd>
-        </dl>
-        <dl>
-          <dt><strong>기타</strong></dt>
-          <dd><a href="#" target="_blank">현대글로비스</a></dd>
-          <dd><a href="#" target="_blank">현대로템</a></dd>
-          <dd><a href="#" target="_blank">이노션 월드와이드</a></dd>
-          <dd><a href="#" target="_blank">해비치호텔&amp;리조트</a></dd>
-          <dd><a href="#" target="_blank">현대엔지비</a></dd>
-          <dd><a href="#" target="_blank">현대서산농장</a></dd>
-          <dd><a href="#" target="_blank">지아이티</a></dd>
-          <dd><a href="#" target="_blank">지마린서비스</a></dd>
-        </dl>
-      </div>
-    </div>
-  </footer>
+<!--//Footer 장지훈 -->
 
-
-  <!--//Footer 장지훈 -->
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

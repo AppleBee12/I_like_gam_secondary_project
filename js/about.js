@@ -73,3 +73,5 @@ let swiper = new Swiper(".mySwiper", {
 AOS.init({
   duration: 1200,
 })
+
+
