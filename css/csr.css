@@ -230,22 +230,20 @@ header .logo a{
   margin-bottom: -50px;
 }
 
+.circle1>span,
+.circle2>span,
+.circle3>span,
+.circle4>span{
+  background-color: #fff; 
+  position: relative;
+  top:0;
+  font-size: var(--mo_sub_title);
+  font-weight: 700;
+}
 .circle1>h3,
 .circle2>h3,
 .circle3>h3,
 .circle4>h3{
-  width: 120px;
-  height: 30px;
-  background-color: #fff; 
-  position: relative;
-  left: 25%; 
-  top: -5%;
-  font-size: var(--mo_sub_title);
-}
-.circle1>h1,
-.circle2>h1,
-.circle3>h1,
-.circle4>h1{
   width: 120px;
   height: 40px;
   display: flex;
@@ -274,38 +272,38 @@ header .logo a{
 .circle1{
   border: 3px solid var(--green);
 }
-.circle1>h3{
+.circle1>span{
   color: var(--green);
 }
-.circle1>h1{
+.circle1>h3{
   background-color: var(--green);
 }
 
 .circle2{
   border: 3px solid var(--yellow);
 }
-.circle2>h3{
+.circle2>span{
   color: var(--yellow);
 }
-.circle2>h1{
+.circle2>h3{
   background-color: var(--yellow);
 }
 .circle3{
   border: 3px solid var(--secondary);
 }
-.circle3>h3{
+.circle3>span{
   color:var(--secondary);
 }
-.circle3>h1{
+.circle3>h3{
   background-color: var(--secondary);
 }
 .circle4{
   border: 3px solid var(--tertiary);
 }
-.circle4>h3{
+.circle4>span{
   color:var(--tertiary)
 }
-.circle4>h1{
+.circle4>h3{
   background-color: var(--tertiary);
 }
 
@@ -596,14 +594,13 @@ header .logo a{
   width: 200px;
   height: 200px;
 }
-.circle1>h3,
-.circle2>h3,
-.circle3>h3,
-.circle4>h3{
+.circle1>span,
+.circle2>span,
+.circle3>span,
+.circle4>span{
   width: 120px;
   height: 30px;
   position: relative;
-  left: 20%; 
 }
 }
 @media screen and (max-width: 1123px){
@@ -884,8 +881,8 @@ margin-left: 10px;
   width: 200px;
   height: 200px;
 }
-.circle1>h3,
-.circle2>h3{
+.circle1>span,
+.circle2>span{
   left: 19.5%;
 }
 .ungc_exam{
