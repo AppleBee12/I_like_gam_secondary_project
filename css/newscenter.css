@@ -402,7 +402,9 @@ section {
 
   }
 }
-
+.sub_prx_txt{
+  display: block;
+}
 .tab_title {
   padding: 40px;
   position: absolute;
@@ -534,7 +536,10 @@ section {
       display: none;
     }
   }
-
+  .tab_title p{
+    font-size: 22px;
+    line-height: 22px;
+  }
   .swiper-button-prev,
   .swiper-button-next {
     width: 20px;
@@ -547,19 +552,25 @@ section {
     display: none;
   }
   .tab.news{
-    width: 40px;
+    width: 30px;
+    font-size: var(--mo_sub_title);
   }
   .tab.sports{
     width: 70px;
+    font-size: var(--mo_sub_title);
   }
   .tab.youtube{
     width: 70px;
+    font-size: var(--mo_sub_title);
   }
   .tabs.tab-header{
     width: 88%;
   }
   .swiper-slide{
     height: 300px;
+  }
+  .search-wrapper{
+    display: none;
   }
 }
 
@@ -902,7 +913,6 @@ section {
 .label{
   display: block;
 }
-
 }
 
 @media screen and (max-width: 680px) {
