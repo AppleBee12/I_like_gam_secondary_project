@@ -1,7 +1,7 @@
 🎉Welcome to I like gam project  
  감2조아팀의 '현대제철'홈페이지 리뉴얼 프로젝트에 오신 것을 환영합니다.
  
-사이트: https://applebee12.github.io/I_like_gam_secondary_project/
+- 사이트: https://applebee12.github.io/I_like_gam_secondary_project/
 ---
 감2조아 팀소개
 -
