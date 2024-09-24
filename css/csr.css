@@ -26,10 +26,6 @@ main h5 {
 header .logo a{
   background:url(../images/header_icon2.svg) no-repeat;
 }
-.top_nav{
-  background-color: #fff;
-  border-bottom: 1px solid #000;
-}
 .main_menu li a {
 	color: #000;
 }
@@ -198,7 +194,7 @@ header .logo a{
 
 /* section2 */
 .sec2_title{
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .circles{
   display: flex;
@@ -236,7 +232,7 @@ header .logo a{
 .circle4>span{
   background-color: #fff; 
   position: relative;
-  top:0;
+  top:-5px;
   font-size: var(--mo_sub_title);
   font-weight: 700;
 }
@@ -733,6 +729,9 @@ header .logo a{
   .slide_wrapper{
     display: none;
   }
+  .sdgs_exam{
+    padding-top: 50px;
+  }
 } 
 
 
@@ -829,10 +828,7 @@ margin-left: 60px;
   }
 }
 @media screen and (max-width: 567px){
-  .circles{
-    height: 800px;
-    margin-bottom: 110px;
-  }
+  
   .symbol_exam{
     padding-left:50px;
   }
@@ -852,6 +848,10 @@ margin-left: 60px;
   .csr_slogan>.slg_2,
   .csr_mission>.ms_2{
     display: none;
+}
+.circles{
+  height: 800px;
+  margin-bottom: 110px;
 }
 .mo_ms{
   display: block;
@@ -876,17 +876,21 @@ margin-left: 60px;
 .exam3>div{
 margin-left: 10px;
 }
-.circle1,
-.circle2{
-  width: 200px;
-  height: 200px;
+.symbol_exam,
+.ungc_exam,
+.sdgs_exam{
+  padding: 0 0;
 }
-.circle1>span,
-.circle2>span{
-  left: 19.5%;
+.sec3_title.active{
+  margin-bottom: 50px;
 }
-.ungc_exam{
-  padding: 0 50px;
-  gap: 10px;
+.sec1_title>h4,
+.sec2_title,
+.csr_slogan,
+.csr_mission,
+.sec3_title.active,
+.sec4_title,
+.sec5_title{
+  margin-bottom: 0;
 }
 }
