@@ -1,6 +1,7 @@
 //section01 swiper
 const bullet = ['프리미엄 건설용 강재 <i>H CORE</i>', '자동차 솔루션 <i>H SOLUTION</i>'];
 const progressLine = document.querySelector(".autoplay-progress svg");
+const progressButtlet = document.querySelector(".sec1_progress-box");
 const primarySwiper = new Swiper('.sec1_swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -11,13 +12,15 @@ const primarySwiper = new Swiper('.sec1_swiper', {
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
-    pauseOnMouseEnter: true,
+    pauseOnMouseEnter: false,
   },
   on: {
     autoplayTimeLeft(s, time, progress) {
       progressLine.style.setProperty("--progress", 1 - progress);
+      progressButtlet.style.setProperty("--progress", 1 - progress);
     }
   },
+
 
   // pagination
   pagination: {

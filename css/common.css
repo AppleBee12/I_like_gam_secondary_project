@@ -975,21 +975,11 @@ dialog span {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	outline: 0;
-	/*test*/
+	outline: 0;	
 }
 
-/*text*/
-/* .modal.show {
-	display: block;
-} */
 
-/* .modal-dialog {
-	max-width: 1700px;
-	height: 814px;
-} */
-
-/*text*/
+/*footer modal*/
 .modal-body {
 	padding: 50px;
 	display: flex;
@@ -1055,7 +1045,7 @@ button:focus {
 .popup {
 	display: none;
 }
-
+/*footer modal///////////////////////////////////*/
 /* //PC footer///////////////////////////////////////////////////////// */
 
 /*태블릿반응형*/
@@ -1142,9 +1132,21 @@ button:focus {
 
 /*/////////////////////////////////////////////태블릿반응형///////////////////*/
 
-/* 모바일반응형 */
 
-@media screen and (max-width: 700px) {
+
+/*pc에서는 못건들게 설정 한것*/
+@media (min-width: 769px) {
+	dd {
+			display: block; /* PC에서는 dd 보이도록 설정 */
+	}
+	dt {
+			cursor: default; /* PC에서는 클릭할 수 없도록 설정 */
+	}
+}
+
+
+/* 모바일반응형 */
+@media screen and (max-width: 700px){
 	footer {
 		font-size: var(--mo_sub_body);
 	}
@@ -1266,12 +1268,16 @@ button:focus {
 		padding: 12px 32px;
 		text-align: center;
 	}
+
+/*footer 모바일 모달 */
+.modal-body dl dd{
+	display: none;
 }
 
-/* //모바일 반응형 */
-/* //footer */
-/* //모바일 반응형 */
-/* //footer */
+
+}
+/*footer 모바일 ///////////////////////////////*/
+
 #popupModal{
 	position: fixed;
 	top: 0;
