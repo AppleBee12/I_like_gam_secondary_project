@@ -824,8 +824,12 @@ margin-left: 60px;
   .sdgs_exam{
     padding: 0 50px;
   }
+}@media screen and (max-width: 632px){
+  .tab_menu ul{
+    gap:50px;
+  }
 }
-@media screen and (max-width: 615px){
+@media screen and (max-width: 618px){
   
   .symbol_exam{
     padding-left:50px;
@@ -837,7 +841,7 @@ margin-left: 60px;
 }
 
 
-@media (max-width: 400px){
+@media (max-width: 460px){
   
   .tab_menu ul{
     gap:10px;
