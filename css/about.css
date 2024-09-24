@@ -19,7 +19,7 @@ video{
   font-family: 'hdharmony';
 	font-style: light;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 30px;
 }
 .section1 span{
   color: var(--primary);
@@ -211,7 +211,7 @@ header .logo a {
   }
 .gorotab.active {
   opacity: 1; /* 탭 활성화 시 */
-}
+  }
 .gorotab img {
   max-width: 100%; 
   height: auto;   
@@ -261,11 +261,15 @@ header .logo a {
   gap: 90px;
   margin-bottom: 140px;
   }
+.partner img{
+  width: 550px;
+  height: 550;
+}
 .winwin{ 
   display: flex;
   flex-direction: column;  
   justify-content: flex-start; 
-  text-align: left;
+  text-align: left;  
   gap: 55px;
    padding: 60px 0;
   }
@@ -309,7 +313,7 @@ header .logo a {
 
 .winwin p {
   line-height: 42px;
-  font-size: 30px;
+  font-size: 20px;
   }
 
 .fc {
