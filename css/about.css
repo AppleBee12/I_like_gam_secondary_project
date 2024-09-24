@@ -178,22 +178,7 @@ header .logo a{
   position: relative; 
   padding: 5px 0; 
   }
-/* .tab-menu a::after {
-  opacity: 0; 
-  transition: opacity 0.5s; 
-  }
-.tab-menu a:hover::after{
-  content: ""; 
-  display: block; 
-  height: 2px; 
-  background-color: var(--secondary); 
-  width: 50%; 
-  position: absolute; 
-  bottom: -20px; 
-  transform: translateX(50%);
-  transition: opacity 0.5s; 
-  opacity: 1;
-  } */
+
 .tab-menu li a{
   font-weight: 600;
   line-height:28px; 
@@ -251,7 +236,8 @@ header .logo a{
   gap:20px;
   font-size: 20px;
   font-weight: 500;
-  padding:19px 31px 0 37px;}
+  padding:19px 31px 0 37px;
+  }
 
 .gorotab-content p{
   line-height: 35px;
@@ -705,7 +691,13 @@ header .logo a{
   height: 357px;
   margin-right: 20px; 
 }
-
+.spans {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center; 
+  margin-top: 10px; 
+}
 .gorotab-content {
   flex: 1; 
 }
