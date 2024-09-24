@@ -413,7 +413,6 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #fff;
 }
 
 .tab_title p {
@@ -483,15 +482,15 @@ section {
   width: 25%;
   margin-left: 30%;
 }
-/* xs devices (less than 576px) */
-@media (max-width: 575.98px) {}
-
 /* md devices (tablet, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .section3 {
     h1 {
       font-size: var(--mo_title);
     }
+    /* .tab_title p{
+      font-size: var(--mo_sub_title);
+    } */
 
     h4.title {
       height: 30%;
