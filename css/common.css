@@ -1256,15 +1256,15 @@ button:focus {
 }
 .popup_wrapper{
 	background-color: white;
-	width: 350px;
+	width: 430px;
 	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	border:3px solid var(--primary);
 }
-.modal_wrapper{
-	padding: 20px;
+.modal_wrapper{	
+	padding: 50px;
 }
 .modal_wrapper p{
 	color: #000;
@@ -1274,6 +1274,7 @@ button:focus {
 	font-weight: 700;
 }
 .modal_wrapper strong{
+	color: var(--tertiary);
 	font-weight: 700;
 }
 .modal_wrapper a{
@@ -1290,8 +1291,8 @@ button:focus {
 .day_btn{
 	display:flex;
 	justify-content: space-between;
-	padding: 0 20px;
-	padding-bottom: 30px;
+	padding: 0 50px;
+	padding-bottom: 50px;
 }
 .close_btn,
 .cookie_btn{
