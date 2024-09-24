@@ -1132,8 +1132,20 @@ button:focus {
 
 /*/////////////////////////////////////////////태블릿반응형///////////////////*/
 
-/* 모바일반응형 */
 
+
+/*pc에서는 못건들게 설정 한것*/
+@media (min-width: 769px) {
+	dd {
+			display: block; /* PC에서는 dd 보이도록 설정 */
+	}
+	dt {
+			cursor: default; /* PC에서는 클릭할 수 없도록 설정 */
+	}
+}
+
+
+/* 모바일반응형 */
 @media screen and (max-width: 700px){
 	footer {
 		font-size: var(--mo_sub_body);
@@ -1258,8 +1270,13 @@ button:focus {
 	}
 
 /*footer 모바일 모달 */
+.modal-body dl dd{
+	display: none;
+}
 
-/*footer 모바일 //*/
+
+}
+/*footer 모바일 ///////////////////////////////*/
 
 #popupModal{
 	position: fixed;
