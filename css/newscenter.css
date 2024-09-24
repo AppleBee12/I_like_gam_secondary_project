@@ -81,7 +81,7 @@ header .logo a {
   width: 100%;
 }
 
-.section3 h1 {
+.section3 h2 {
   font-size: var(--pc_title);
   color: var(--secondary);
   font-weight: 500;
@@ -485,7 +485,7 @@ section {
 /* md devices (tablet, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .section3 {
-    h1 {
+    h2 {
       font-size: var(--mo_title);
     }
     /* .tab_title p{
@@ -566,7 +566,7 @@ section {
 /* lg devices (PC버전desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .section3 {
-    h1 {
+    h2 {
       font-size: 48px;
     }
 
@@ -621,7 +621,7 @@ section {
 /* xl devices (1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .section3 {
-    h1 {
+    h2 {
       font-size: 48px;
     }
 
@@ -677,7 +677,7 @@ section {
   }
 
   .section3 {
-    h1 {
+    h2 {
       font-size: 42px;
     }
 
@@ -808,7 +808,7 @@ section {
   }
 
   .section3.hidden1,
-  h1,
+  h2,
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
@@ -826,11 +826,11 @@ section {
     display: block;
     text-align: center;
 
-    h2 {
+    h3 {
       font-size: var(--mo_title);
     }
 
-    h3 {
+    h4 {
       font-size: var(--mo_sub_title);
     }
   }
