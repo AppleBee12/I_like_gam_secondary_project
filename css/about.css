@@ -805,10 +805,11 @@ font-family: var(--mo_sub_title);
     }
   #popup .modal-body dl dd{
       /* display: none; */
+      
     }
-    #popup .modal-body dl dt{
-      border-bottom: 1px solid;
-     margin-bottom: 20px;  
+  #popup .modal-body dl dt{
+    border-bottom: 1px solid;
+    margin-bottom: 20px;  
     }
 
 
