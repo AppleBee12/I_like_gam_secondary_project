@@ -2,7 +2,7 @@
 let video = $('#hdvideo');
 let playBtn = $('#play');
 let pauseBtn = $('#stop');
-let playPauseBtn = $('.glightbox_video');
+let playPauseBtn = $('.play_btn');
 let progressBar = $('#progress1');
 let vcontrols = $('#controls');
 let bar = $('.progress1 .bar');
@@ -16,6 +16,11 @@ playPauseBtn.click(function(){
     // playPauseBtn.html('<i class="fa-solid fa-play fa-2x"></i>');
   }
 });
+
+  $(".play_btn").click(function(){
+    $(".play_contain").toggleClass("trigger");
+  });
+
 let timer = setInterval(()=>{
   const duration = video.get(0).duration;
 
