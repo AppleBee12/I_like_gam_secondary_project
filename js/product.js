@@ -117,8 +117,8 @@ const quaternarySwiper = new Swiper('.sec3swiper', {
   slidesPerView: 5,
   spaceBetween: 30,
   loop: true,
-  // observer: true,
-  // observeParents: true,
+  observer: true,
+  observeParents: true,
   
   pagination: {
     el: '.sec3_pager',
@@ -159,10 +159,32 @@ const quaternarySwiper = new Swiper('.sec3swiper', {
     1400: {
       slidesPerView: 5,
       spaceBetween: 20,
-      autoplay: false,
+      //autoplay: false, false로 진행시 
+      //멈춰서 브라우저 사이즈가 조절되어도 다시 실행이 안되는 오류 발생
 
     }
   },
 });
+
+
+
+quaternarySwiper.on('resize', function() {
+
+
+  if ($(window).width() > 1400) {  
+    console.log('stop');
+    quaternarySwiper.autoplay.stop();  
+
+
+  } else {
+    console.log('resume');
+    quaternarySwiper.autoplay.start();  
+  }
+
+
+ });
+
+
+ quaternarySwiper.autoplay.stop();  
 
 //section03 swiper fin

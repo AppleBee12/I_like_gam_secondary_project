@@ -50,7 +50,7 @@ toggleBtn.click(function(e){
 
   // 퀵메뉴 버튼 클릭 이벤트
   $('.quick-menu-btn').click(function() {
-    $('.quick-menu-list').slideToggle(300); // 메뉴 슬라이드 토글
+    $('.quick-menu-list').stop().slideToggle(300); // 메뉴 슬라이드 토글
     $('.quick-menu-list a+a').toggleClass('active')
     $('.quick-menu-btn').toggleClass('active')
   });
