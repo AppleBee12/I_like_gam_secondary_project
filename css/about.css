@@ -35,7 +35,7 @@ header .logo a {
   background-color: #fff;
   border-bottom: 1px solid #000;
 }
-.main_menu li a {
+.main_menu>li>a {
 	color: #000;
 }
 .tab_menu{
@@ -44,7 +44,7 @@ header .logo a {
   border-bottom:1px solid rgba(0,0,0,.5);
   position: sticky;
   top: 0;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255,255,255,.85);
   z-index: 997;
 }
 .tab_menu ul{
@@ -59,7 +59,7 @@ header .logo a {
 .tab_menu ul li{
   position: relative;
 }
-.tab_menu ul li:nth-child(1):after{
+/* .tab_menu ul li:nth-child(1):after{
   display: block;
 	content: '';
 	background-color: var(--primary);
@@ -69,7 +69,7 @@ header .logo a {
 	bottom: -170%;
 	transition: 0.3s;
 	transform: scaleX(1);
-}
+} */
 .tab_menu ul li:nth-child(1) a{
   color:var(--primary);
 }
@@ -89,6 +89,37 @@ header .logo a {
 }
 .tab_menu ul li:hover::after{
   transform: scaleX(1);
+}
+.tab_menu a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+}
+.tab_menu a.active {
+  font-weight: bold;
+  color: var(--primary); 
+  width: 100%;
+  height: 87px;  
+  position: sticky;
+  bottom: -170%;
+  top: 0;
+  background-color: transparent;
+  z-index: 997;  
+}
+.tab_menu a.active::after {
+  content: '';
+  display: block;
+  height: 3px; /* 언더라인 두께 조정 */
+  background-color: var(--primary);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -128%; /* 언더라인의 위치를 조정 (위치 더 내리기) */
+  /* 다른 스타일 추가 가능 */
+}
+.tab_menu li {
+  display: inline;
+  margin-right: 20px;
 }
 
 
@@ -605,9 +636,9 @@ header .logo a {
 }
 
 .winwin h2 {
-  font-family: var(--mo_title) 
-  color: var(--secondary);
-  position: relative;
+  font-family: var(--mo_title);
+  color:var(--secondary);
+  position:relative;
 }
 
 .winwin h2::after {
@@ -655,7 +686,37 @@ header .logo a {
   }
 /*partner ///////////////////////////*/
 
-
+.tab_menu a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+}
+.tab_menu a.active {
+  font-weight: bold;
+  color: var(--primary); 
+  width: 100%;
+  height: 87px;  
+  position: sticky;
+  bottom: -170%;
+  top: 0;
+  background-color: transparent;
+  z-index: 997;  
+}
+.tab_menu a.active::after {
+  content: '';
+  display: block;
+  height: 2px; /* 언더라인 두께 조정 */
+  background-color: var(--primary);
+  position: absolute;
+  /* left: 0;
+  right: 0; */
+  bottom: -128%; /* 언더라인의 위치를 조정 (위치 더 내리기) */
+  /* 다른 스타일 추가 가능 */
+}
+.tab_menu li {
+  display: inline;
+  margin-right: 20px;
+}
 
 
 /*goro */
@@ -785,8 +846,6 @@ font-family: var(--mo_sub_title);
   }
 }
 
-
-
 /*fc////////////////////////////////////////////// */
 
 
@@ -803,18 +862,60 @@ font-family: var(--mo_sub_title);
   #popup .modal-body{
       flex-direction: column;  
     }
-  #popup .modal-body dl dd{
-      /* display: none; */
-      
-    }
   #popup .modal-body dl dt{
     border-bottom: 1px solid;
     margin-bottom: 20px;  
     }
-
-
-
-
+  .tab_menu ul li:after{
+    display: block;
+    content: '';
+    background-color: var(--primary);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -34px;
+    transition: 0.3s;
+    transform: scaleX(0);
+  }
+  .tab_menu ul li:hover::after{
+    transform: scaleX(1);
+  }
+    .tab_menu a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+    }
+    .tab_menu a.active {
+    font-weight: bold;
+    color: var(--primary); 
+    width: 100%;
+    height: 87px;  
+    position: sticky;
+    bottom: -32px;
+    top: 0;
+    background-color: transparent;
+    z-index: 997;  
+    }
+    .tab_menu a.active::after {
+    content: '';
+    display: block;
+    height: 3px; 
+    background-color: var(--primary);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -32px; /* 언더라인의 위치를 조정 (위치 더 내리기) */
+    /* 다른 스타일 추가 가능 */
+    }
+    .tab_menu ul {
+      flex-direction: row; 
+      flex-wrap: nowrap; 
+      gap: 38px;
+  }
+    .tab_menu li {
+    display: inline;
+    margin-right: 2px;
+    }
 
 
 
@@ -870,7 +971,7 @@ font-family: var(--mo_sub_title);
 }
 
 .winwin h2 {
-  font-family: var(--mo_title) 
+  font-family: var(--mo_title) ;
   color: var(--secondary);
   position: relative;
   text-align-last: left;
@@ -967,6 +1068,8 @@ font-family: var(--mo_sub_title);
 
 .gorotab-content {
   flex: 1; 
+  padding: 20px 0 0 0;
+  
 }
 /*goro ///////////////////////////////////////////////////*/
 /*fc */
