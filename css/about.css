@@ -1323,10 +1323,10 @@ font-family: var(--mo_sub_title);
     padding-top: 5px; 
     font-size: 14px;
   }
-  .vision > p{
-    text-align: center;
-        margin-left: 0;
-  }
+.vision > p{
+  text-align: center;
+      margin-left: 0;
+}
 .fc{
   margin-bottom: 40px;
 }
