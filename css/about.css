@@ -35,7 +35,7 @@ header .logo a {
   background-color: #fff;
   border-bottom: 1px solid #000;
 }
-.main_menu li a {
+.main_menu>li>a {
 	color: #000;
 }
 .tab_menu{
@@ -44,7 +44,7 @@ header .logo a {
   border-bottom:1px solid rgba(0,0,0,.5);
   position: sticky;
   top: 0;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255,255,255,.85);
   z-index: 997;
 }
 .tab_menu ul{
@@ -967,6 +967,8 @@ font-family: var(--mo_sub_title);
 
 .gorotab-content {
   flex: 1; 
+  padding: 20px 0 0 0;
+  
 }
 /*goro ///////////////////////////////////////////////////*/
 /*fc */
