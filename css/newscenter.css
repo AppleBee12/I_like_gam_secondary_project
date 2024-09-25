@@ -576,7 +576,7 @@ section {
   }
 
   .tabs.tab-header {
-    width: 88%;
+    width: 84%;
   }
 
   .swiper-slide {
@@ -692,6 +692,12 @@ section {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
+}
+@media (max-width: 1920px){
+  .search-wrapper {
+    width: 25%;
+    margin-left: 27%;
+}
 }
 
 @media screen and (max-width: 1035px) {
@@ -957,6 +963,7 @@ section {
     .more_btn {
       bottom: 14px;
       right: 30px;
+      padding: 4px;
     }
   }
 
