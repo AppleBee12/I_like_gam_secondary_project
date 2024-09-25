@@ -653,7 +653,9 @@ header .vwrapper::after {
     font-size: 18px;
     line-height: 22px;
   }
-
+  .details h3{
+    margin: 10px 0;
+  }
   .section2 {
     display: flex;
     flex-direction: column;
