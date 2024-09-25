@@ -54,7 +54,7 @@
           <ul class="main_menu">
             <li class="main_list"><a href="aboutcompany.html">회사소개</a>
               <ul class="sub_menu">
-                <li><a href="aboutcompany.html">사업소개</a></li>
+                <li id="about"><a href="aboutcompany.html">사업소개</a></li>
                 <li><a href="aboutcompany.html">사업장</a></li>
                 <li><a href="aboutcompany.html">CEO인사말</a></li>
                 <li><a href="aboutcompany.html">경영이념</a></li>
@@ -64,7 +64,7 @@
             </li>
             <li class="main_list"><a href="product.html">제품기술</a>
               <ul class="sub_menu">
-                <li><a href="product.html">제품목록</a></li>
+                <li id="product"><a href="product.html">제품목록</a></li>
                 <li><a href="product.html">종합 카탈로그</a></li>
                 <li><a href="product.html">생산공정</a></li>
               </ul>
@@ -83,12 +83,12 @@
                 <li><a href="csr.html">탄소중립 로드맵</a></li>
                 <li><a href="csr.html">지속가능 전략</a></li>
                 <li><a href="csr.html">통합보고서</a></li>
-                <li><a href="csr.html">사회공헌</a></li>
+                <li id="csr"><a href="csr.html">사회공헌</a></li>
               </ul>
             </li>
             <li class="main_list"><a href="newscenter.html">홍보센터</a>
               <ul class="sub_menu">
-                <li><a href="newscenter.html">뉴스센터</a></li>
+                <li id="newscenter"><a href="newscenter.html">뉴스센터</a></li>
                 <li><a href="newscenter.html">youtube</a></li>
                 <li><a href="newscenter.html">소식지</a></li>
                 <li><a href="newscenter.html">스포츠단</a></li>
@@ -106,7 +106,7 @@
       </div>
       <div id="controls">
         <div class="video_btn">
-          <div class="play_contain">
+          <div class="play_contain trigger">
             <div class="play_btn" title="Play">
               <span></span>
               <span></span>
@@ -192,6 +192,7 @@
   </header>
   <!--//Header 나승일-->
   <main>
+    <!-- 나승일 -->
     <div id="popupModal">
       <div class="popup_wrapper">
         <div class="modal_wrapper">
@@ -201,17 +202,22 @@
           <hr>
           <p><em>감2조아 : </em>홍수진(팀장),나승일,장지훈,조채림</p>
           <p><em>제작기간 : </em>2024.09.07 ~ 2024.09.26</p>
-          <p><em>기획서 : </em><a href="https://www.figma.com/design/YVIKik5wpUOhad1C7pNKnu/Untitled?node-id=1-2&t=HV8Lk0AkFPPCNbbw-1" target="blank">Figma</a> , <a href=" https://www.figma.com/board/R0YKPV4o9anaore6Qpqzku/Untitled?node-id=0-1&t=6RWqC2db3HP2GkKy-1" target="blank">Figjam</a> <em>버전관리:</em><a href="https://github.com/AppleBee12/I_like_gam_secondary_project.git" target="blank">Github</a></p>
+          <p><em>기획서 : </em><a
+              href="https://www.figma.com/design/YVIKik5wpUOhad1C7pNKnu/Untitled?node-id=1-2&t=HV8Lk0AkFPPCNbbw-1"
+              target="blank">Figma</a> , <a
+              href=" https://www.figma.com/board/R0YKPV4o9anaore6Qpqzku/Untitled?node-id=0-1&t=6RWqC2db3HP2GkKy-1"
+              target="blank">Figjam</a> <em>버전관리:</em><a
+              href="https://github.com/AppleBee12/I_like_gam_secondary_project.git" target="blank">Github</a></p>
           <p><em>개발환경 : </em>HTML5,CSS,Jqiery,Javascript</p>
           <hr>
           <p><em>업무분장</em></p>
           <p><em>기획 : </em>팀원 전체</p>
           <p><em>디자인 : </em>구현 담당자</p>
           <p><em>&#8211; 구현 완료 페이지 &#8211;</em></p>
-          <p><strong>홍수진 : main section2, <a href="product.html" target="blank">sub product</a></strong></p>        
-          <p><strong>나승일 : header, <a href="csr.html" target="blank">sub csr</a></strong></p>        
-          <p><strong>장지훈 : footer, <a href="aboutcompany.html" target="blank">sub aboutcompany</a></strong></p>        
-          <p><strong>조채림 : main section1, <a href="newscenter.html" target="blank">sub newscenter</a></strong></p>        
+          <p><strong>홍수진 : main section2, <a href="product.html">sub product</a></strong></p>        
+          <p><strong>나승일 : header, <a href="csr.html">sub csr</a></strong></p>        
+          <p><strong>장지훈 : footer, <a href="aboutcompany.html">sub aboutcompany</a></strong></p>        
+          <p><strong>조채림 : main section1, <a href="newscenter.html">sub newscenter</a></strong></p>        
         </div>
         <div class="day_btn">
           <span class="cookie_btn">오늘하루 안보기</span>
@@ -219,7 +225,7 @@
         </div>
       </div>
     </div>
-
+    <!-- //나승일 -->
     <!-- section2 조채림 -->
     <section class="section2 px-md-5 py-6">
       <div class="s2 container">
@@ -422,42 +428,42 @@
   <!--푸터-->
 
 
- <!--Footer 장지훈 -->
- <footer class="px-md-5">
-  <div class="container">
-    <div class="ft-1 d-flex justify-content-between align-items-end mb-3">
-      <div class="footer_left d-flex flex-column">
-        <h3 class="logo"><a href="">logo</a></h3>
-        <address>경기도 성남시 분당구 분당내곡로 117,<br>
-          그레이츠 판교(GREITS PANGYO) 9층 </address>
+  <!--Footer 장지훈 -->
+  <footer class="px-md-5">
+    <div class="container">
+      <div class="ft-1 d-flex justify-content-between align-items-end mb-3">
+        <div class="footer_left d-flex flex-column">
+          <h3 class="logo"><a href="">logo</a></h3>
+          <address>경기도 성남시 분당구 분당내곡로 117,<br>
+            그레이츠 판교(GREITS PANGYO) 9층 </address>
+          <ul class="d-flex justify-content-between">
+            <li><a href=""><strong>사이트 안내</strong></a></li>
+            <li><a href="">개인정보 취급방침</a></li>
+            <li><a href="">개인정보 처리방침</a></li>
+            <li><a href="">사이버 감사실</a></li>
+            <li><a href="">이용약관</a></li>
+          </ul>
+        </div>
         <ul class="d-flex justify-content-between">
-          <li><a href=""><strong>사이트 안내</strong></a></li>
-          <li><a href="">개인정보 취급방침</a></li>
-          <li><a href="">개인정보 처리방침</a></li>
-          <li><a href="">사이버 감사실</a></li>
-          <li><a href="">이용약관</a></li>
+          <li><a href="">제품 문의</a></li>
+          <li><a href="">인재 채용</a></li>
+          <li><a href="">지속 가능</a></li>
         </ul>
       </div>
-      <ul class="d-flex justify-content-between">
-        <li><a href="">제품 문의</a></li>
-        <li><a href="">인재 채용</a></li>
-        <li><a href="">지속 가능</a></li>
-      </ul>
-    </div>
-    <div class="sns d-flex justify-content-between align-items-center">
-      <div class="snsBtn">
-        <a href="#" target="_blank"><img src="images/footer/insta.svg" alt="현대제철 인스타그램 SNS"></a>
-        <a href="#" target="_blank"><img src="images/footer/facebook.svg" alt="현대제철 페이스북 SNS"></a>
-        <a href="#" target="_blank"><img src="images/footer/youtube.svg" alt="현대제철 유튜브 SNS"></a>
-      </div>
-      <div class="familysite">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup">
-          Family site <span>+</span>
-        </button>
+      <div class="sns d-flex justify-content-between align-items-center">
+        <div class="snsBtn">
+          <a href="#" target="_blank"><img src="images/footer/insta.svg" alt="현대제철 인스타그램 SNS"></a>
+          <a href="#" target="_blank"><img src="images/footer/facebook.svg" alt="현대제철 페이스북 SNS"></a>
+          <a href="#" target="_blank"><img src="images/footer/youtube.svg" alt="현대제철 유튜브 SNS"></a>
+        </div>
+        <div class="familysite">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup">
+            Family site <span>+</span>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <p class="copyright">© Copyright 2024. All Rights Reserved.</p>
+    <p class="copyright">© Copyright 2024. All Rights Reserved.</p>
 
 
   <!-- Button trigger modal -->

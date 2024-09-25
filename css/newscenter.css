@@ -577,27 +577,11 @@ section {
 /* lg devices (PC버전desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .section3 {
-    h2 {
-      font-size: 48px;
-    }
+    
 
-    h4.title {
-      width: 100%;
-      height: 30%;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      font-size: 24px;
-      line-height: 30px;
-    }
+    
 
-    .t3 {
-      height: 40%;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-    }
+    
 
     .t1 {
       height: 35%;
@@ -611,6 +595,9 @@ section {
 
 @media (min-width: 1035px) and (max-width: 1199px) {
   .section3 {
+    h2 {
+      font-size: 48px;
+    }
     .txt_box {
       padding: 50px 50px;
     }
@@ -620,7 +607,23 @@ section {
     }
 
     h4.title {
-      height: 33%;
+      width: 100%;
+      height: 29%;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    h4.title.work{
+      height: 32%;
+    }
+    .t3 {
+      height: 42%;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
   }
   .search-wrapper{
