@@ -162,12 +162,12 @@ header .logo a {
 	padding: 80px 0px;
 }
 
-.main_menu li a {
+.main_menu>li>a {
 	color: #fff;
 	padding-bottom: 40px;
 }
 
-.top_nav:hover .main_menu li a {
+.top_nav:hover .main_menu>li>a {
 	color: #000;
 }
 
@@ -190,7 +190,7 @@ header .logo a {
 	transform: scaleX(1);
 }
 
-.main_menu .sub_menu {
+.sub_menu {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
@@ -203,10 +203,22 @@ header .logo a {
 	width: 110px;
 }
 
-.main_menu .sub_menu li a {
+.sub_menu li a {
 	padding: 20px 0;
-	color: #000;
+	color: #ccc;
 	box-sizing: border-box;
+}
+.sub_menu #about a,
+.sub_menu #product a,
+.sub_menu #csr a,
+.sub_menu #newscenter a{
+	color: #000;
+}
+.sub_menu #about a:hover,
+.sub_menu #product a:hover,
+.sub_menu #csr a:hover,
+.sub_menu #newscenter a:hover{
+	color: var(--primary);
 }
 
 .main_menu .sub_menu li a:hover {
