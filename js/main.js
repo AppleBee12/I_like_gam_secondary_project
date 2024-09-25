@@ -39,16 +39,6 @@ const imgs = $('.she_pic img');
 const details = $('.details div');
 const pagers = $('.pager a');
 
-// pagers.click(function(e){
-//   e.preventDefault();
-//   let idx = $(this).index();
-//   imgs.removeClass('active');
-//   imgs.eq(idx).addClass('active');
-
-//   details.removeClass('active');
-//   details.eq(idx).addClass('active');
-//   $(this).addClass('focus');
-// }); 
 pagers.mouseenter(function (e) {
   e.preventDefault();
   let idx = $(this).index();
@@ -58,13 +48,9 @@ pagers.mouseenter(function (e) {
   details.removeClass('active');
   details.eq(idx).addClass('active');
 
-  pagers.css({ 'margin-bottom': '0px' });
   pagers.removeClass('focus');
-  pagers.css({ 'margin-top': '28px' });
 
   $(this).addClass('focus');
-  $(this).css({ 'margin-bottom': '28px' });
-  $(this).css({ 'margin-top': '0px' });
 });
 
 AOS.init({
