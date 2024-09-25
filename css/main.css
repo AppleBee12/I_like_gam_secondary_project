@@ -45,7 +45,6 @@ header .vwrapper::after {
   height: 7px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.2);
-  /* background: #fff; */
   position: absolute;
   border-radius: 5px;
 }
@@ -187,40 +186,6 @@ header .vwrapper::after {
   transition-delay: .25s;
 }
 
-/* .glightbox_video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.outer_circle {
-  stroke-width: 3;
-  stroke-dasharray: 410;
-  stroke-dashoffset: 0;
-  stroke-linecap: square;
-  transition: all .4s ease-out;
-}
-
-.glightbox_video:hover .outer_circle {
-  stroke-dashoffset: 410;
-  transition: stroke .7s .4s ease-out, stroke-dashoffset .4s ease-out
-}
-
-.glightbox_video:hover .inner-circle {
-  fill: rgba(0,160,200, 0.7);
-
-  transition: fill .4s .3s ease-out;
-
-}
-.glightbox_video .play{
-  fill: rgba(0, 0, 0, 0.7);
-}
-.glightbox_video:hover .play {
-  fill: white;
-  transition: fill .4s .3s ease-out;
-} */
-
 @media screen and (max-width: 768px) and (max-width: 991.98px) {}
 
 .s2.container {
@@ -242,7 +207,6 @@ header .vwrapper::after {
 
 #she_wrapper {
   display: flex;
-  /* width: 100%; */
 }
 
 .she_pic img {
@@ -276,21 +240,11 @@ header .vwrapper::after {
 }
 
 .pager {
-  /* height: 150px; */
-}
-
-.pager {
   a {
     font-size: var(--pc_big);
     font-weight: 600;
     color: var(--lightgray);
   }
-
-  /* a:hover {
-    color: var(--secondary);
-    transition: 0.3s;
-    margin-top: -28px;
-  } */
 
   a.focus {
     color: var(--secondary);
@@ -320,7 +274,6 @@ header .vwrapper::after {
     transition: 0.3s;
     line-height: 44px;
     font-size: var(--pc_sub_title);
-    /* font-size: 28px; */
   }
 }
 

@@ -231,7 +231,6 @@ section {
   }
 
   .tab-wrapper {
-    /* margin: 0 auto; */
     justify-content: center;
 
     .swiper-tab,
@@ -490,9 +489,6 @@ section {
     h2 {
       font-size: var(--mo_title);
     }
-    /* .tab_title p{
-      font-size: var(--mo_sub_title);
-    } */
 
     h4.title {
       height: 30%;
@@ -785,7 +781,6 @@ section {
   .tab_title {
     width: 100%;
     height: 40%;
-    /* margin-top: 37.9% !important; */
     top: 60%;
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid var(--lightgray);
@@ -807,7 +802,6 @@ section {
     border-radius: 20px;
     height: auto;
     object-fit: cover;
-    /* height: 300px; */
   }
 
   .img_box::after {
@@ -899,7 +893,6 @@ section {
   }
 
   .section_wrapper {
-    /* display: none; */
     height: 30%;
     width: 100%;
     background: #F0F3FA;
