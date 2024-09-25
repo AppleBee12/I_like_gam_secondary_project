@@ -636,9 +636,9 @@ header .logo a {
 }
 
 .winwin h2 {
-  font-family: var(--mo_title) 
-  color: var(--secondary);
-  position: relative;
+  font-family: var(--mo_title);
+  color:var(--secondary);
+  position:relative;
 }
 
 .winwin h2::after {
@@ -846,8 +846,6 @@ font-family: var(--mo_sub_title);
   }
 }
 
-
-
 /*fc////////////////////////////////////////////// */
 
 
@@ -863,10 +861,6 @@ font-family: var(--mo_sub_title);
   }
   #popup .modal-body{
       flex-direction: column;  
-    }
-  #popup .modal-body dl dd{
-      /* display: none; */
-      
     }
   #popup .modal-body dl dt{
     border-bottom: 1px solid;
@@ -977,7 +971,7 @@ font-family: var(--mo_sub_title);
 }
 
 .winwin h2 {
-  font-family: var(--mo_title) 
+  font-family: var(--mo_title) ;
   color: var(--secondary);
   position: relative;
   text-align-last: left;
