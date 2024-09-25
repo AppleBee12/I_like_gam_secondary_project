@@ -109,13 +109,13 @@ header .logo a {
 .tab_menu a.active::after {
   content: '';
   display: block;
-  height: 2px; /* 언더라인 두께 조정 */
+  height: 3px; /* 언더라인 두께 조정 */
   background-color: var(--primary);
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -128%; 
- 
+  bottom: -128%; /* 언더라인의 위치를 조정 (위치 더 내리기) */
+  /* 다른 스타일 추가 가능 */
 }
 .tab_menu li {
   display: inline;
@@ -922,8 +922,7 @@ font-family: var(--mo_sub_title);
     display: inline;
     margin-right: 2px;
     }
-    
-  }
+
 
 
 
