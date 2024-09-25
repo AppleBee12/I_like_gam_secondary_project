@@ -1176,6 +1176,175 @@ font-family: var(--mo_sub_title);
 
 
 
+/*mobile 320 구간 */
+
+@media screen and (max-width: 320px) {
+  header .logo a {
+    width: 60px; /* Adjusted width */
+    height: 18px; /* Adjusted height */
+    background: url(../images/header_icon_tb.svg) no-repeat; 
+  }
+  #tab-content h2{
+    font-size: 35px;
+  }
+  #popup .modal-body {
+    flex-direction: column;  
+  }
+  
+  #popup .modal-body dl dt {
+    border-bottom: 1px solid;
+    margin-bottom: 10px; /* Reduced margin */
+  }
+  #tab-content h2{
+    margin-bottom: 50px;
+    font-size:30px;
+  }
+  #tab-content img{
+    margin:0;
+  }
+  .tab-menu{
+    margin-bottom:33px;
+  }
+  .gorotab-content p{
+    line-height: 25px;
+    font-size: 15px;
+    letter-spacing: normal;
+  }
+  .tab_menu ul li:after {
+    display: block;
+    content: '';
+    background-color: var(--primary);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -30px; /* Adjusted position */
+    transition: 0.3s;
+    transform: scaleX(0);
+  }
+
+  .tab_menu ul li:hover::after {
+    transform: scaleX(1);
+  }
+
+  .tab_menu a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .tab_menu a.active {
+    font-weight: bold;
+    color: var(--primary); 
+    width: 100%;
+    height: 60px; /* Adjusted height */
+    position: sticky;
+    bottom: -30px;
+    top: 0;
+    background-color: transparent;
+    z-index: 997;  
+  }
+
+  .tab_menu a.active::after {
+    content: '';
+    display: block;
+    height: 3px; 
+    background-color: var(--primary);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px; /* Adjusted position */
+  }
+
+  .tab_menu ul {
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    gap: 20px; /* Adjusted gap */
+  }
+
+  .tab_menu li {
+    display: inline;
+    margin-right: 2px;
+  }
+
+  .section1 h2 {
+    font-family: var(--mo_sub_title);   
+    font-weight: 700;
+    font-size: 16px; /* Adjusted font size */
+  }
+  
+  .section1 h3 {
+    font-family: 'hdharmony';
+    font-size: 14px; /* Adjusted font size */
+  }
+
+  .section1 h4 {
+    font-family: 'hdharmony';
+    font-size: 16px; /* Adjusted font size */
+    font-weight: 300;
+  }  
+  
+  .section1 span {
+    color: var(--primary);
+    font-size: 12px; /* Adjusted font size */
+  }  
+
+  h2 {
+    font-family: var(--mo_title);
+    font-size: 16px; /* Adjusted font size */
+  }  
+
+  .section1 .container {
+    padding: 0 10px; /* Adjusted padding */
+  }
+
+  .section1 span {
+    font-weight: bold; 
+  }
+
+  /* Partner Section Adjustments */
+  .partner img {
+    width: 100%;
+    height: auto; 
+  }
+
+  .winwin h2 {
+    font-size: 18px; 
+  }
+
+  .winwin p {
+    font-size: 14px; 
+    line-height: 1.4; 
+  }
+
+  
+  .tab-menu li a{
+    /* height: 40px;  */
+    padding-top: 5px; 
+    font-size: 14px;
+  }
+  .vision > p{
+    text-align: center;
+        margin-left: 0;
+  }
+.fc{
+  margin-bottom: 40px;
+}
+.gorotext{
+  display: none;
+}
+#tab-content h2{
+  font-size: 24px;
+}
+.fc h2{
+  font-size: 24px;
+}
+.yh h2{
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+}
+/*mobile 320 구간 */
 
 
 
