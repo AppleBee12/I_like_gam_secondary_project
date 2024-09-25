@@ -7,7 +7,7 @@ header .logo a {
   border-bottom: 1px solid #000;
 }
 
-.main_menu li a {
+.main_menu>li>a {
   color: #000;
 }
 
@@ -18,7 +18,7 @@ header .logo a {
   margin-bottom: 110px;
   position: sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .85);
   z-index: 997;
 }
 
@@ -702,7 +702,7 @@ section {
     }
 
     .t3 {
-      height: 37%;
+      height: 35%;
     }
 
     .txt_box {
