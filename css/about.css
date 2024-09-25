@@ -1333,7 +1333,6 @@ font-family: var(--mo_sub_title);
 .gorotext{
   display: none;
 }
-}
 #tab-content h2{
   font-size: 24px;
 }
@@ -1343,6 +1342,7 @@ font-family: var(--mo_sub_title);
 .yh h2{
   font-size: 24px;
   margin-bottom: 32px;
+}
 }
 /*mobile 320 구간 */
 
