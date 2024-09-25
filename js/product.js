@@ -40,20 +40,33 @@ const primarySwiper = new Swiper('.sec1_swiper', {
 //section02 swiper01
 
 const secondarySwiper = new Swiper('.sec2_swiper01', {
-  direction: 'vertical',
   slidesPerView: 3,
   spaceBetween: 30,
-  speed: 2000,
+  speed: 3000,
   loop: true,
-  preventInteractionOnTransition: true,
+  preventInteractionOnTransition: false,
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
     pauseOnMouseEnter: false,
   },
+  observer: true,
+  observeParents: true,
+  breakpoints: {
+    // >= 250px
+    250: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      direction: 'horizontal',
+      loop: true,
+    },
+    767: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      direction: 'vertical',
+    },
+  },
 });
-
-console.log(document.querySelector('line').getTotalLength());
 
 $('.sec2_swiper01').mouseenter(function () {
   secondarySwiper.autoplay.stop();
@@ -62,6 +75,9 @@ $('.sec2_swiper01').mouseleave(function () {
   secondarySwiper.autoplay.start();
 });
 
+$(window).on('resize', function() {
+  secondarySwiper.update();
+});
 
 
 //section02 swiper02
@@ -70,9 +86,9 @@ const tertiarySwiper = new Swiper('.sec2_swiper02', {
   direction: 'vertical',
   slidesPerView: 3,
   spaceBetween: 30,
-  speed: 2000,
+  speed: 3000,
   loop: true,
-  preventInteractionOnTransition: true,
+  preventInteractionOnTransition: false,
 
   autoplay: {
     reverseDirection: true,
@@ -119,8 +135,8 @@ const quaternarySwiper = new Swiper('.sec3swiper', {
 
   //반응형
   breakpoints: {
-    // >= 576px
-    576: {
+    // >= 0px
+    250: {
       slidesPerView: 1,
       spaceBetween: 10,
 
