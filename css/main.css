@@ -656,6 +656,7 @@ header .vwrapper::after {
   .details h3{
     margin: 10px 0;
   }
+
   .section2 {
     display: flex;
     flex-direction: column;
@@ -676,6 +677,7 @@ header .vwrapper::after {
     height: 240px;
     display: none;
   }
+  
 
   /*section2 조채림 끝*/
   /* section03 홍수진 */
