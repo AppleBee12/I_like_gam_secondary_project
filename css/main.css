@@ -242,6 +242,7 @@ header .vwrapper::after {
 
 #she_wrapper {
   display: flex;
+  /* width: 100%; */
 }
 
 .she_pic img {
