@@ -109,11 +109,11 @@ header .logo a {
 .tab_menu a.active::after {
   content: '';
   display: block;
-  height: 2px; /* 언더라인 두께 조정 */
+  height: 3px; /* 언더라인 두께 조정 */
   background-color: var(--primary);
   position: absolute;
-  /* left: 0;
-  right: 0; */
+  left: 0;
+  right: 0;
   bottom: -128%; /* 언더라인의 위치를 조정 (위치 더 내리기) */
   /* 다른 스타일 추가 가능 */
 }
@@ -872,39 +872,55 @@ font-family: var(--mo_sub_title);
     border-bottom: 1px solid;
     margin-bottom: 20px;  
     }
-
-
-
+  .tab_menu ul li:after{
+    display: block;
+    content: '';
+    background-color: var(--primary);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -34px;
+    transition: 0.3s;
+    transform: scaleX(0);
+  }
+  .tab_menu ul li:hover::after{
+    transform: scaleX(1);
+  }
     .tab_menu a {
-      text-decoration: none;
-      color: #000;
-      transition: color 0.3s;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
     }
     .tab_menu a.active {
-      font-weight: bold;
-      color: var(--primary); 
-      width: 100%;
-      height: 87px;  
-      position: sticky;
-      bottom:0;
-      top: 0;
-      background-color: transparent;
-      z-index: 997;  
+    font-weight: bold;
+    color: var(--primary); 
+    width: 100%;
+    height: 87px;  
+    position: sticky;
+    bottom: -32px;
+    top: 0;
+    background-color: transparent;
+    z-index: 997;  
     }
     .tab_menu a.active::after {
-      content: '';
-      display: block;
-      height: 2px; /* 언더라인 두께 조정 */
-      background-color: var(--primary);
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -128%; /* 언더라인의 위치를 조정 (위치 더 내리기) */
-      /* 다른 스타일 추가 가능 */
+    content: '';
+    display: block;
+    height: 3px; 
+    background-color: var(--primary);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -32px; /* 언더라인의 위치를 조정 (위치 더 내리기) */
+    /* 다른 스타일 추가 가능 */
     }
+    .tab_menu ul {
+      flex-direction: row; 
+      flex-wrap: nowrap; 
+      gap: 38px;
+  }
     .tab_menu li {
-      display: inline;
-      margin-right: 20px;
+    display: inline;
+    margin-right: 2px;
     }
 
 
