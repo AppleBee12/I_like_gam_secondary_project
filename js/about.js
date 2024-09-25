@@ -75,3 +75,11 @@ AOS.init({
 })
 
 
+$('#popup .modal-body dl dt').hover(
+  function() {
+    $(this).focus();  // 마우스가 올라갔을 때 포커스
+  },
+  function() { 
+    $(this).blur();   // 마우스가 벗어났을 때 포커스 해제
+  }
+);

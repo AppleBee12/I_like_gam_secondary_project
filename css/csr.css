@@ -26,7 +26,7 @@ main h5 {
 header .logo a{
   background:url(../images/header_icon2.svg) no-repeat;
 }
-.main_menu li a {
+.main_menu>li>a {
 	color: #000;
 }
 
@@ -37,7 +37,7 @@ header .logo a{
   margin-bottom: 110px;
   position: sticky;
   top: 0;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255,255,255,.85);
   z-index: 997;
 }
 .tab_menu ul{
@@ -397,26 +397,7 @@ header .logo a{
 .symbol_img{
   padding-left: 20px;
 }
-.symbol_img img{
-  box-shadow: 0 1.85px 3.15px rgba(0,0,0,0.048),
-  0 8.15px 6.52px rgba(0,0,0,0.079),
-  0 20px 13px rgba(0,0,0,0.01),
-  0 39px 25px rgba(0,0,0,0.0121),
-  0 64px 47px rgba(0,0,0,0.0152),
-  0 100px 80px rgba(0,0,0,0.02);
-  animation-name: symbol;
-  animation-duration: 0.3s;
-  animation-iteration-count: infinite;
-}
-/* @keyframes symbol{
-  0%{box-shadow: none;}
-  100%{box-shadow: 0 1.85px 3.15px rgba(0,0,0,0.048),
-    0 8.15px 6.52px rgba(0,0,0,0.079),
-    0 20px 13px rgba(0,0,0,0.01),
-    0 39px 25px rgba(0,0,0,0.0121),
-    0 64px 47px rgba(0,0,0,0.0152),
-    0 100px 80px rgba(0,0,0,0.02);}
-} */
+
 .symbol_exam{
   display: flex;
   flex-direction: column;
@@ -525,6 +506,7 @@ header .logo a{
   left: 0;
   gap: 10px;
 }
+
 
 
 
@@ -813,9 +795,7 @@ margin-left: 60px;
 }
 
 @media screen and (max-width: 680px){
-  .tab_menu ul{
-    gap: 50px;
-  }
+  
   .symbol_exam{
     padding-left:80px;
   }
@@ -826,16 +806,24 @@ margin-left: 60px;
   .sdgs_exam{
     padding: 0 50px;
   }
+}@media screen and (max-width: 632px){
+  .tab_menu ul{
+    gap:50px;
+  }
 }
-@media screen and (max-width: 567px){
+@media screen and (max-width: 618px){
   
   .symbol_exam{
     padding-left:50px;
   }
+  .tab_menu ul{
+    gap:30px;
+    font-size: var(--mo_sub_body)
+  }
 }
 
 
-@media (max-width: 375px){
+@media (max-width: 460px){
   
   .tab_menu ul{
     gap:10px;
@@ -861,13 +849,13 @@ margin-left: 60px;
 .esn2,
 .esn3{
   gap:10px;
-  width: 180px;
+  width: 200px;
   height: 80px;
 }
 .exam1,
 .exam2,
 .exam3{
-  width: 240px;
+  width: 280px;
   height: 303px;
   gap:15px;
 }
