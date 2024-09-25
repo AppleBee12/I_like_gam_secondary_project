@@ -508,7 +508,7 @@ header .logo a {
 .swiper-slide img {
   display: block;
   width: 100%;  
-  object-fit: cover;
+  
   margin-bottom: 20px;
   object-fit: contain;
 }
