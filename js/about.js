@@ -72,14 +72,31 @@ let swiper = new Swiper(".mySwiper", {
 
 AOS.init({
   duration: 1200,
-})
+});
 
 
-$('#popup .modal-body dl dt').hover(
-  function() {
-    $(this).focus();  // 마우스가 올라갔을 때 포커스
-  },
-  function() { 
-    $(this).blur();   // 마우스가 벗어났을 때 포커스 해제
-  }
-);
+
+const tabs = document.querySelectorAll('.tab_menu ul li a'); 
+const sections = document.querySelectorAll('section'); 
+
+window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop; // 
+        const sectionHeight = section.clientHeight; // 
+
+       
+        if (scrollY >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute('id'); 
+        }
+    });
+
+    // 각 탭에 active 클래스 추가/제거
+    tabs.forEach(tab => {
+        tab.classList.remove('active'); // 모든 탭에서 active 클래스 제거
+        if (tab.getAttribute('href') === `#${current}`) {
+            tab.classList.add('active'); // 현재 섹션에 해당하는 탭에 active 클래스 추가
+        }
+    });
+});
