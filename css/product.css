@@ -43,9 +43,11 @@ main h5 {
 header {
   height: auto;
 }
-header .logo a{
-  background:url(../images/header_icon2.svg) no-repeat;
+
+header .logo a {
+  background: url(../images/header_icon2.svg) no-repeat;
 }
+
 header div.top_nav {
   border-bottom: 1px solid #000;
   background-color: #fff;
@@ -148,7 +150,8 @@ header div.top_nav {
 .sec1_title h3.sec_mo {
   display: none;
 }
-.sec1_progress-box{
+
+.sec1_progress-box {
   width: 100%;
   height: 100%;
 }
@@ -185,23 +188,26 @@ header div.top_nav {
 .section1 .swiper-pagination-bullet.on {
   /* background-color: rgba(255, 255, 255, .3); */
   position: relative;
-  z-index:1;
-}
-.section1 .swiper-pagination-bullet.on:after{
-  content:'';
-  position: absolute;
-  left: 0;top: 0;
-  bottom: 0;
-  width: calc(var(--progress) * 100%);
-  z-index:-1;
-  background:rgba(255, 255, 255, .5);
+  z-index: 1;
 }
 
-.autoplay-progress{
+.section1 .swiper-pagination-bullet.on:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: calc(var(--progress) * 100%);
+  z-index: -1;
+  background: rgba(255, 255, 255, .5);
+}
+
+.autoplay-progress {
   position: relative;
   /* width: 100%; */
   height: 5px;
 }
+
 /* .autoplay-progress svg {
 	--progress: 0;
 	position: absolute;
@@ -212,11 +218,11 @@ header div.top_nav {
 	stroke: #fff;
 	fill: none;
 } */
-.autoplay-progress svg line{
+.autoplay-progress svg line {
   stroke-width: 4px;
   stroke: #fff;
-  stroke-dashoffset: calc(950 * (1 - var(--progress))); 
-  stroke-dasharray: 950;  
+  stroke-dashoffset: calc(950 * (1 - var(--progress)));
+  stroke-dasharray: 950;
   width: 100%;
 }
 
@@ -301,7 +307,8 @@ header div.top_nav {
   white-space: pre-line;
   padding-top: 169px;
   padding-bottom: 573px;
-  margin-right: 18%;
+  margin-right: 15%;
+  margin-left: 3%;
 }
 
 .sec2_desc {
@@ -356,9 +363,9 @@ header div.top_nav {
 
 .sec2_list_car {
   background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)),
-   linear-gradient(rgba(255, 255, 255, .0),
-    rgba(0, 0, 0, .8) 75%, rgba(0, 0, 0, .2) 100%),
-     url(../images/product/sec2_list_lightcar.png);
+    linear-gradient(rgba(255, 255, 255, .0),
+      rgba(0, 0, 0, .8) 75%, rgba(0, 0, 0, .2) 100%),
+    url(../images/product/sec2_list_lightcar.png);
 }
 
 .sec2_list_car:hover {
@@ -550,7 +557,8 @@ header div.top_nav {
   /* transform: translateX(calc(-100% + 16px + 12px)); */
 
 }
-.sec3_pager span.swiper-pagination-bullet-active{
+
+.sec3_pager span.swiper-pagination-bullet-active {
   width: 25px;
   border-radius: 5px;
 }
@@ -569,7 +577,24 @@ header div.top_nav {
 
 
 /* xs devices (less than 576px) */
+@media (max-width: 530px) {
+  .sec2_wrap .sec2_title span {
+    display: block;
+  }
+
+
+}
 @media (max-width: 575.98px) {
+
+  /* tab_menu */
+
+  .tab_menu ul {
+    font-size: var(--mo_sub_body);
+    font-weight: 500;
+    gap: 40px;
+  }
+
+  /* tab_menu */
 
   /* section 01 */
 
@@ -622,23 +647,28 @@ header div.top_nav {
   .sec1_slide02 p {
     right: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
     text-align: center;
-
+    height: auto;
   }
 
   .section1 h3 {
     font-size: var(--mo_sub_title);
     line-height: 45px;
+    top: 50%;
+    text-align: center;
   }
 
   .sec1_desc h3 {
-    bottom: 55%;
+    bottom: 0;
   }
 
   .sec1_slide02 h3 {
-    bottom: 40%;
+    height: 53px;
+    top: 52%;
     line-height: 30px;
+
   }
 
   .sec1_slide02 h3 span {
@@ -657,21 +687,95 @@ header div.top_nav {
   }
 
   /* section 01 끝*/
+  /* section 02 */
+
+  .section2 {
+    height: 800px;
+  }
+
+  .sec2_list02 {
+    display: none;
+  }
+
+  .sec2_wrap {
+    flex-direction: column;
+  }
+
+  .sec2_wrap .sec2_title {
+    font-size: var(--mo_sub_title);
+    font-weight: 600;
+    font-family: 'SUIT Variable', sans-serif;
+    line-height: var(--mo_mid_body);
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 150px;
+    white-space: normal;
+    padding-bottom: 60px;
+    margin-right: 0;
+  }
+
+  .sec2_wrap .sec2_title span:first-child {
+    display: block;
+  }
+
+  .sec2_desc {
+    justify-content: center;
+  }
+
+  .section2 .swiper-slide {
+    height: 400px;
+  }
+
+  .sec2_list01 {
+    width: 90%;
+    height: 400px;
+  }
+
+
+  /* section 02 끝*/
 
   /* section 03 */
 
+  .section3 {
+    margin-top: 8rem;
+    height: 600px;
+  }
+  .sec3_title h2 {
+    font-size: var(--mo_sub_title);
+    font-weight: 600;
+    font-family: 'SUIT Variable', sans-serif;
+    line-height: var(--mo_mid_body);
+    text-align: center;
+  }
+  /* section 03 끝 */
+
 }
-@media (max-width: 767.98px){
+
+
+@media (max-width: 768px) {
 
   header .logo a {
     width: 78px;
     height: 21px;
     background: url(../images/header_icon_tb.svg) no-repeat;
   }
+
+  /* tab_menu */
+
+  .tab_menu ul {
+    font-size: var(--mo_body);
+    font-weight: 600;
+  }
+
+  /* tab_menu */
 }
+
+
 
 /* sm devices (phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+
   /* section 01 */
 
   .sec1_wrapper {
@@ -756,6 +860,67 @@ header div.top_nav {
   }
 
   /* section 01 끝*/
+  /* section 02 */
+
+  .section2 {
+    height: 900px;
+  }
+  .sec2_list02 {
+    display: none;
+  }
+
+  .sec2_wrap {
+    flex-direction: column;
+  }
+
+  .sec2_wrap .sec2_title {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 150px;
+    white-space: normal;
+    padding-bottom: 40px;
+    margin-right: 0;
+  }
+
+  .sec2_wrap .sec2_title span:first-child {
+    display: block;
+  }
+
+  .sec2_desc {
+    justify-content: center;
+  }
+
+  .section2 .swiper-slide {
+    height: 400px;
+  }
+
+  .sec2_list01 {
+    width: 90%;
+    height: 400px;
+  }
+
+  /* section 02 끝*/
+
+  
+  /* section 03 */
+
+  .section3 {
+    margin-top: 8rem;
+    height: 600px;
+  }
+
+  .sec3_title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'SUIT Variable', sans-serif;
+    line-height: 45px;
+    text-align: center;
+  }
+  /* section 03 끝 */
+
 
 }
 
@@ -833,10 +998,68 @@ header div.top_nav {
   }
 
   /* section 01 끝*/
+
+  /* section 02 */
+
+  .section2 .sec2_wrap {
+    position: relative;
+  }
+
+  .sec2_wrap .sec2_title {
+    position: absolute;
+    font-size: 1.9rem;
+    line-height: var(--mo_big);
+    left: 12.5%;
+    text-align: right;
+    padding-top: 100px;
+  }
+
+  .sec2_desc {
+    position: relative;
+    width: 100%;
+    /* display: flex;
+      justify-content: center;
+      align-items: center; */
+  }
+
+  .sec2_list01 {
+    position: absolute;
+    left: 14%;
+    top: 50%;
+    overflow: hidden;
+  }
+
+  .sec2_list02 {
+    margin-left: 55%;
+  }
+
+  /* section 02 끝*/
+  /* section 03 */
+
+  .sec3_title h2 {
+    font-size: 1.9rem;
+    line-height: var(--mo_big);
+  }
+  /* section 03 끝*/
+}
+
+/* lg devices (PC버전desktops, 992px and up) */
+@media (max-width: 1031px) {
+
+  /* tab_menu */
+
+  .tab_menu ul {
+    font-size: var(--sub_body);
+    font-weight: 600;
+
+
+    /* tab_menu */
+  }
 }
 
 /* lg devices (PC버전desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
 
   /* section 01 */
   .sec1_wrapper {
@@ -875,34 +1098,46 @@ header div.top_nav {
 
   /* section 01 끝*/
 
-    /* section 02 */
-    .sec2_wrap {
-      padding: 8rem 3rem;
-    }
-    .sec2_title {
-      font-size: var(--mo_title);
-      line-height: var(--mo_big);
-      white-space: pre-line;
-      padding-top: 169px;
-      padding-bottom: 573px;
-    }
-    
-    /* .sec2_swiper01,
-    .sec2_swiper02 {
-      width: 275px;
-      height: 1092px;
-    } */
-    
-    .sec2_swiper01 {
-      margin-left: 0;
-    }
-    
-    .sec2_swiper02 {
-      margin-right: 10%;
-      margin-top: -192px;
-    }
-    
-    /* section 02 끝 */
+  /* section 02 */
+  .section2 .sec2_wrap {
+    position: relative;
+  }
+
+  .sec2_wrap .sec2_title {
+    position: absolute;
+    font-size: 1.9rem;
+    line-height: var(--mo_big);
+    left: 18.5%;
+    text-align: right;
+    padding-top: 100px;
+  }
+
+  .sec2_title {
+    font-size: var(--mo_title);
+    line-height: var(--mo_big);
+    margin-right: 15%;
+  }
+  .sec2_desc {
+    position: relative;
+    width: 100%;
+    /* display: flex;
+      justify-content: center;
+      align-items: center; */
+  }
+
+  .sec2_list01 {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    overflow: hidden;
+  }
+
+  .sec2_list02 {
+    margin-left: 52%;
+  }
+
+
+  /* section 02 끝 */
 
 
 
@@ -942,31 +1177,22 @@ header div.top_nav {
   .sec2_wrap {
     padding: 8rem 3rem;
   }
+
   .sec2_title {
-    font-weight: 500;
     font-size: var(--mo_title);
     line-height: var(--mo_big);
-    white-space: pre-line;
-    padding-top: 169px;
-    padding-bottom: 573px;
     margin-right: 15%;
   }
-  
-  /* .sec2_swiper01,
-  .sec2_swiper02 {
-    width: 275px;
-    height: 1092px;
-  } */
-  
+
   .sec2_swiper01 {
     margin-left: 0;
   }
-  
+
   .sec2_swiper02 {
     margin-left: 10%;
     margin-top: -192px;
   }
-  
+
   /* section 02 끝 */
 
 }
