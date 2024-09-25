@@ -202,7 +202,6 @@ header .logo a{
   gap: 123px;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .circle1,
 .circle2,
@@ -211,7 +210,6 @@ header .logo a{
   border-radius: 50%;
   width: 240px;
   height: 240px;
-  position: relative;
 }
 .circle1{
   margin-bottom: -50px;
@@ -511,10 +509,6 @@ header .logo a{
 
 
 
-
-
-
-
 @media screen and (max-width: 1480px){
   .circles{
     gap: 80px;
@@ -625,6 +619,13 @@ header .logo a{
     left: 53%;
   }
 }
+@media (min-width:706px) and (max-width: 945px){
+  .circle1,
+  .circle3{
+    margin-right: 80px;
+   }
+  }
+
 
 @media screen and (max-width: 945px){
   .csr_focus{
@@ -669,6 +670,8 @@ header .logo a{
 .circle4{
   margin-bottom: 0;
 }
+
+
 .circles:hover .circle1,
 .circles:hover .circle2,
 .circles:hover .circle3,
