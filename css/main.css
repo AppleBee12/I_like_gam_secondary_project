@@ -122,7 +122,9 @@ header .vwrapper::after {
   -webkit-transition: .25s;
   transition: .25s;
 }
-
+section{
+  overflow: hidden;
+}
 .play_btn span:nth-child(1) {
   top: 46%;
   left: 43%;
