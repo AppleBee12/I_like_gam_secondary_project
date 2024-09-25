@@ -286,13 +286,12 @@ header .logo a {
 
 .quick-menu-list li {
   margin-bottom: 30px;
-  width: 50px;
+  width: 60px;
   height: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60px;
 }
 .quick-menu-list a {
   display: flex;
