@@ -40,13 +40,6 @@ slides.mouseleave(function(){
 slideMove();
 
 
-$(window).scroll(function(){
-  if($(this).scrollTop()>symbolOST-1000){
-    $('.sec3_title').addClass('active')
-  }else{
-    $('.sec3_title').removeClass('active');
-  }
-})
 
 $(window).scroll(function(){
   if($(this).scrollTop()>$('.symbol_exam p:nth-child(1)').offset().top-900){
