@@ -26,7 +26,7 @@ main h5 {
 header .logo a{
   background:url(../images/header_icon2.svg) no-repeat;
 }
-.main_menu>li>a {
+.main_menu>li>p {
 	color: #000;
 }
 

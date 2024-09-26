@@ -165,12 +165,14 @@ header .logo a {
 	padding: 80px 0px;
 }
 
-.main_menu>li>a {
+.main_menu>li>p {
 	color: #fff;
 	padding-bottom: 40px;
+	display: inline;
+	cursor: pointer;
 }
 
-.top_nav:hover .main_menu>li>a {
+.top_nav:hover .main_menu>li>p {
 	color: #000;
 }
 
