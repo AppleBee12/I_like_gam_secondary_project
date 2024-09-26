@@ -1352,7 +1352,7 @@ header .logo a {
 .m-slide-top img{
 width: 100%;
   }
-.mobils-slide{
+.mobile-slide-top{
   animation: slide-top 1s;
   }
 .m-slide-top{
@@ -1387,6 +1387,22 @@ width: 100%;
   }
 }
 
+@-webkit-keyframes fade-right {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 }
 /*mobile 320 구간 */
 
