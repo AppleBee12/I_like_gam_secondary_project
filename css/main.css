@@ -76,8 +76,8 @@ header .vwrapper::after {
 
 
 .play_contain {
-  width: 45px;
-  height: 45px;
+  /* width: 45px;
+  height: 45px; */
   position: absolute;
   top: 70%;
   left: 50%;
@@ -577,6 +577,13 @@ section{
   header {
     height: 44vh;
   }
+  .progress1{
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 5px;
+		border-radius: 0;
+	  }
 
   .explain>* {
     display: none;
@@ -584,7 +591,7 @@ section{
   .play_contain{
     width: 26px;
     height: 26px;
-    bottom: 10%;
+    top: 125%;
     margin-left: 10px;
   }
   .s2.container .she_title {
@@ -748,10 +755,6 @@ section{
     h4 {
       font-size: 20px;
     }
-  }
-  .play_contain{
-    width: 28px;
-    height: 28px;
   }
   #tab_id .pager {
     height: 100px;
