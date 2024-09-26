@@ -1165,6 +1165,9 @@ button:focus {
 	.modal-body dl dt{
 		font-size: 20px;
 	}
+	.modal-body dl dd{
+		font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 700px){
