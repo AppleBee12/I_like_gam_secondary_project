@@ -100,3 +100,12 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+$(window).resize(function(){
+    if($(window).width() < 480){
+    swiper.destroy(); //
+    } else{
+    swiper.init();
+}
+});
+
