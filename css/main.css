@@ -242,13 +242,13 @@ section{
 }
 
 .pager {
-  a {
+  p {
     font-size: var(--pc_big);
     font-weight: 600;
     color: var(--lightgray);
   }
 
-  a.focus {
+  p.focus {
     color: var(--secondary);
     transition: 0.3s;
     margin-top: -28px;
@@ -604,7 +604,7 @@ section{
     }
   }
 
-  #tab_id .pager a {
+  #tab_id .pager p {
     font-size: var(--mo_big);
   }
 
@@ -760,7 +760,7 @@ section{
     height: 100px;
   }
 
-  #tab_id .pager a {
+  #tab_id .pager p {
     font-size: var(--mo_big);
   }
 
@@ -912,7 +912,7 @@ section{
     height: 40px;
   }
 
-  #tab_id .pager a {
+  #tab_id .pager p {
     font-size: var(--mo_big);
   }
 
@@ -1046,7 +1046,7 @@ section{
       font-size: 22px;
     }
 
-    .pager a {
+    .pager p {
       font-size: 80px;
     }
   }
@@ -1104,7 +1104,7 @@ section{
       font-size: 22px;
     }
 
-    .pager a {
+    .pager p {
       font-size: 80px;
     }
   }
