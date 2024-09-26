@@ -92,8 +92,7 @@ header .logo a{
 
 /* section1 */
 .sec1_title>h4{
-  margin-bottom: 80px;
-  
+  margin-bottom: 80px;  
 }
 .csr_slogan,
 .csr_mission{
@@ -379,13 +378,8 @@ header .logo a{
   margin-bottom: 110px;
   position: relative;
   top:70px;
-  opacity: 0;
-  transition:0.5s;
-}
-.sec3_title.active{
-  margin-bottom: 110px;
   opacity: 1;
-  top: 0;
+  transition:0.5s;
 }
 .symbol{
   display: flex;
@@ -726,6 +720,22 @@ header .logo a{
     height: 21px;
     background: url(../images/header_icon_tb.svg) no-repeat; 
   }
+  .sec1_title>h4{
+    padding-bottom: 0;
+  }
+  .csr_slogan p:nth-child(2){
+    padding-bottom: 0;
+  }
+  .csr_slogan,
+  .sec1_title>h4,
+  .sec2_title,
+  .sec3_title,
+  .sec3_title.active,
+  .sec4_title,
+  .sec5_title,
+  .dashed{
+    margin-bottom: 60px;  
+  }
   .csr_focus{
     flex-direction: column;
   }
@@ -794,6 +804,15 @@ margin-left: 60px;
 }
 .sdgs_exam{
   padding: 0 130px;
+}
+.csr_slogan>.slg_1,
+.csr_mission>.ms_1{
+  color: var(--tertiary);
+  font-size:var(--mo_sub_title) ;
+}
+.csr_slogan>.slg_2,
+.csr_mission>.ms_2{
+  font-size: var(--mo_sub_title);  
 }
 }
 
@@ -872,16 +891,33 @@ margin-left: 10px;
 .sdgs_exam{
   padding: 0 0;
 }
-.sec3_title.active{
-  margin-bottom: 50px;
+
 }
-.sec1_title>h4,
-.sec2_title,
-.csr_slogan,
-.csr_mission,
-.sec3_title.active,
-.sec4_title,
-.sec5_title{
-  margin-bottom: 0;
-}
+
+@media (max-width: 320px){
+  .csr_focus,
+  .symbol,
+  .ungc,
+  .sdgs{
+    margin-bottom: 60px;
+  }
+  .sec3_title.active{
+    margin-bottom: 50px;
+  }
+  .sec1_title>h4,
+  .sec2_title,
+  .csr_slogan,
+  .csr_mission,
+  .sec3_title.active,
+  .sec4_title,
+  .sec5_title{
+    margin-bottom: 0;
+  }
+  .symbol_img img{
+    width: 210px;
+  }
+  .dashed{
+    margin-bottom: 0;
+  }
+  
 }
