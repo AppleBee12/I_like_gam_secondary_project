@@ -754,15 +754,9 @@ section {
 }
 
 /* sm */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767px) {}
 
-@media screen and (max-width: 768px) {
-  header .logo a {
-    width: 78px;
-    height: 21px;
-    background: url(../images/header_icon_tb.svg) no-repeat;
-  }
-
+@media screen and (max-width: 767px) {
   .tab-wrapper {
     display: block !important;
     border-radius: 10px;
@@ -945,6 +939,17 @@ section {
   .label {
     display: block;
   }
+  
+}
+
+@media screen and (max-width: 768px) {
+  header .logo a {
+    width: 78px;
+    height: 21px;
+    background: url(../images/header_icon_tb.svg) no-repeat;
+  }
+
+  
 }
 
 @media screen and (max-width: 680px) {
