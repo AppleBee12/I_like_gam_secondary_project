@@ -1163,6 +1163,15 @@ button:focus {
 
 
 /* 모바일반응형 */
+@media screen and (max-width: 768px){
+	.modal-body dl dt{
+		font-size: 20px;
+	}
+	.modal-body dl dd{
+		font-size: 12px;
+	}
+}
+
 @media screen and (max-width: 700px){
 	footer {
 		font-size: var(--mo_sub_body);
@@ -1200,6 +1209,7 @@ button:focus {
 		margin-top: 50px;
 		order: 2;
 	}
+
 
 
 
@@ -1392,3 +1402,8 @@ button:focus {
      margin-bottom: 20px;  
     }
 	}
+	@media screen and (max-width: 320px) {
+	.tit{
+		font-size: 28px;
+	}
+}

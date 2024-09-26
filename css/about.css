@@ -217,7 +217,7 @@ header .logo a {
   font-family: 'hdharmony';
   font-size: 28px;  
   text-decoration:none; 
-  padding:0 170px;   
+  padding:0 144px;   
   } 
 #tab-content > div {
   display: none;
@@ -584,7 +584,7 @@ header .logo a {
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .mobile-slide-top{
     display: none;
   }
@@ -622,7 +622,9 @@ header .logo a {
   gap: 90px;
   margin-bottom: 140px;
   }
-
+.winwin p:last-child{
+  display: none;
+}
 .winwin {
   display: flex;
   flex-direction: column;
@@ -732,7 +734,7 @@ header .logo a {
   border:none;
   }
 .tab-menu li a{
-  padding:0 88px;
+  padding:0 44px;
   }
 #tab-content {
   display: flex;
@@ -1325,43 +1327,43 @@ header .logo a {
 .vision > p{
   text-align: center;
       margin-left: 0;
-}
+  }
 .fc{
   margin-bottom: 40px;
-}
+  }
 .gorotext{
   display: none;
-}
+  }
 #tab-content h2{
   font-size: 24px;
-}
+  }
 .fc h2{
   font-size: 24px;
-}
+  }
 .yh h2{
   font-size: 24px;
   margin-bottom: 32px;
-}
+  }
+
+
 .swiper-button-next, .swiper-button-prev {
   display: none;
-}
+  }
 .swiper-wrapper{
-  display: none; 
-  
-}
+  display: none;   
+  }
 .mobile-slide-top{
   display: block;
-
-}
+  }
 .m-slide-top img{
 width: 100%;
-}
+  }
 .mobils-slide{
   animation: slide-top 1s;
-}
+  }
 .m-slide-top{
   margin-top: 15px;
-}
+  }
 
 
 
