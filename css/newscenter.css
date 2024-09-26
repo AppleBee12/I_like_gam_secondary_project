@@ -7,7 +7,7 @@ header .logo a {
   border-bottom: 1px solid #000;
 }
 
-.main_menu li a {
+.main_menu>li>a {
   color: #000;
 }
 
@@ -18,7 +18,7 @@ header .logo a {
   margin-bottom: 110px;
   position: sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .85);
   z-index: 997;
 }
 
@@ -231,7 +231,6 @@ section {
   }
 
   .tab-wrapper {
-    /* margin: 0 auto; */
     justify-content: center;
 
     .swiper-tab,
@@ -490,9 +489,6 @@ section {
     h2 {
       font-size: var(--mo_title);
     }
-    /* .tab_title p{
-      font-size: var(--mo_sub_title);
-    } */
 
     h4.title {
       height: 30%;
@@ -702,7 +698,7 @@ section {
     }
 
     .t3 {
-      height: 37%;
+      height: 35%;
     }
 
     .txt_box {
@@ -785,7 +781,6 @@ section {
   .tab_title {
     width: 100%;
     height: 40%;
-    /* margin-top: 37.9% !important; */
     top: 60%;
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid var(--lightgray);
@@ -807,7 +802,6 @@ section {
     border-radius: 20px;
     height: auto;
     object-fit: cover;
-    /* height: 300px; */
   }
 
   .img_box::after {
@@ -899,7 +893,6 @@ section {
   }
 
   .section_wrapper {
-    /* display: none; */
     height: 30%;
     width: 100%;
     background: #F0F3FA;
