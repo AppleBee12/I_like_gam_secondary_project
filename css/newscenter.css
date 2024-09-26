@@ -587,6 +587,9 @@ section {
     display: none;
   }
 }
+.btn-primary span{
+  display: inline-block;
+}
 
 /* lg devices (PC버전desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
