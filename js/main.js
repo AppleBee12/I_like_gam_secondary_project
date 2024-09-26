@@ -37,7 +37,7 @@ let timer = setInterval(() => {
 
 const imgs = $('.she_pic img');
 const details = $('.details div');
-const pagers = $('.pager a');
+const pagers = $('.pager p');
 
 pagers.mouseenter(function (e) {
   e.preventDefault();
@@ -56,16 +56,3 @@ pagers.mouseenter(function (e) {
 AOS.init({
   duration: 1000,
 })
-
-
-
-
-$(window).resize(function () {
-  if ($(window).width() < 768) {
-    $('.tab-wrapper').slick();
-  } else {
-    $('.tab-wrapper').slick('unslick');
-  }
-
-})
-$(window).trigger('resize');
