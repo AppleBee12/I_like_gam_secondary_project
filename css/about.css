@@ -1174,8 +1174,8 @@ header .logo a {
 
 @media screen and (max-width: 320px) {
   header .logo a {
-    width: 60px; /* Adjusted width */
-    height: 18px; /* Adjusted height */
+      width: 80px;
+      height: 24px;
     background: url(../images/header_icon_tb.svg) no-repeat; 
   }
   #tab-content h2{
