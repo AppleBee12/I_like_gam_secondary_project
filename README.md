@@ -7,11 +7,17 @@
 -
 
 - 팀장:
-  - 홍수진 (*총괄, 메인- section3/4/5, 서브- 제품기술)
+  - 홍수진 (*총괄, 메인페이지 section3(Business)/4(Sustainable)/5(인재채용), 서브페이지- 제품기술)
 - 팀원:
-  - 나승일(메인- header/menu, 서브- 사회공헌)
-  - 장지훈(메인- footer, 서브- 회사소개)
-  - 조채림(메인 - section1/2, 서브- 홍보센터)
+  - 나승일(메인페이지- header/menu, 서브페이지- 사회공헌)
+  - 장지훈(메인페이지- footer,  서브페이지- 회사소개)
+  - 조채림(메인페이지- section1(동영상)/2(S.H.E), 서브페이지- 홍보센터)
+
+--- 
+사용언어 / 라이브러리
+-
+HTML/CSS, JQuery, Javascript<br>
+JS slider, AOS , parallax, bootstrap, materialize
 
 --- 
 프로젝트 진행기간
